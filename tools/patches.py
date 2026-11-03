@@ -117,6 +117,17 @@ PATCHES += [
     (0x8BDAB9, bytes.fromhex('20D0C0'), b'\xEA' * 3, 'advisor box: no 』'),
 ]
 
+# Ship class names in the battle tabs ($83:8FE2) and the unit-data header ($81:DC92) read the class records at
+# $00:8CB0 ([layout byte: 0 = 2 kanji spread, 1 = 3, 2 = 4 cells][text]) and offset short ones. English: a copy of
+# the records at CLASS_TABS (file 0x7C00, bank $00 free space; build.class_names) with layout 2 and names over 8
+# letters condensed into 4 cells, and the battle tab always starts at the left.
+CLASS_TABS = 0x00FC00
+PATCHES += [
+    (0x838FEF, bytes.fromhex('BFB08C00'), b'\xBF' + ptr24(CLASS_TABS), 'battle tab: class records copy'),
+    (0x838FFD, bytes.fromhex('F011'), bytes.fromhex('8018'), 'battle tab: BRA $9017 (no centering offset)'),
+    (0x81DC9C, bytes.fromhex('BFB08C00'), b'\xBF' + ptr24(CLASS_TABS), 'unit data: class records copy'),
+]
+
 # Fortress header ($81:DCD9): code builds 第 <1-2 digits> 要塞 in $0E00. English "Fort <n>": start Y at 4 so the
 # digits land after three prefix cells; build.CODE_LABELS fills the "Fo"/"rt" immediates (placeholders here).
 PATCHES += [

@@ -41,7 +41,8 @@ def rows(name):
 
 
 # FF runs (docs/re/graphics.md §Free space) text blocks may move into; 0x1E0000+ is the code patches' (patches.py)
-FREE = [(0x006812, 0x007FB0), (0x017170, 0x018000), (0x01E562, 0x020000), (0x0407FE, 0x048000),
+FREE = [(0x006812, 0x007C00),  # 0x7C00-0x7FB0: patches.CLASS_TABS
+(0x017170, 0x018000), (0x01E562, 0x020000), (0x0407FE, 0x048000),
         (0x04ACCA, 0x050000), (0x05322F, 0x058000), (0x05DD10, 0x060000), (0x0669CD, 0x068000),
         (0x06ED2A, 0x070000), (0x1A22F0, 0x1A8000), (0x1D3071, 0x1D8000)]
 # Save-panel labels the code builds from cell immediates (LDY #cell / STY $1B6x, $BA:AB18-ABDB): JP Lv, 惑星数,
@@ -68,6 +69,16 @@ def speech_tags(rom_orig, script):
             assert len(t) <= 7 or len(font_en.strip(t)) <= TAG_PX, f'speech tag {t!r} too wide: add to TAG_SHORT'
             out.append((i, t))
     return out
+
+
+CLASS_TABLE, CLASSES, CLASS_TABS_END = 0x000CB0, 30, 0x007FB0  # $00:8CB0 ship class records; tabs end
+
+
+def class_names(rom_orig, script):
+    """English ship class name per class (records [layout byte][text] at CLASS_TABLE) for patches.CLASS_TABS."""
+    ps = [int.from_bytes(rom_orig[CLASS_TABLE + 2 * k:CLASS_TABLE + 2 * k + 2], 'little') & 0x7FFF
+          for k in range(CLASSES)]
+    return [script[p]['en'].replace('{end}', '') for p in ps]
 
 
 FAR = [(0x1E8000, 0x200000)]  # banks $BD-$BF (all FF): blocks reached only by 24-bit pointers
@@ -307,19 +318,32 @@ def english_edits(rom_orig, mode='en', qa=None):
     cells = alloc.cells()
     if mode == 'en':
         cells.update({c: font_en.cell(p) for c, p in en.QUOTES.items()})
-        tab, data, spare = bytearray(2 * OFFICERS), bytearray(), iter(alloc.spare)
-        base = patches.off(patches.TAG_TABLE)
-        for i, t in tags:
-            tab[2 * i:2 * i + 2] = ((patches.TAG_TABLE + len(tab) + len(data)) & 0xFFFF).to_bytes(2, 'little')
-            if len(t) <= 7:
-                data += alloc.encode(t + '{end}', 'plain')
-                continue
+        spare = iter(alloc.spare)
+
+        def fit(t, letters):  # pairs if it fits, else condensed glyph cells (4 cells)
+            if len(t) <= letters:
+                return alloc.encode(t + '{end}', 'plain')
+            out = b''
             for glyph in font_en.strip_cells(font_en.strip(t), 4):
                 c = next(spare)
                 cells[c] = glyph
-                data += c.to_bytes(2, 'little')
-            data += b'\xff\xff'
-        imms[base] = bytes(tab + data)
+                out += c.to_bytes(2, 'little')
+            return out + b'\xff\xff'
+
+        def table(addr, n, items, prefix=b''):  # word pointers (0 = none) then the strings, at CPU addr
+            tab, data, seen = bytearray(2 * n), bytearray(), {}
+            for i, t in items:
+                if t not in seen:
+                    seen[t] = addr + 2 * n + len(data)
+                    data += prefix + t
+                tab[2 * i:2 * i + 2] = (seen[t] & 0xFFFF).to_bytes(2, 'little')
+            imms[patches.off(addr)] = bytes(tab + data)
+
+        table(patches.TAG_TABLE, OFFICERS, [(i, fit(t, 7)) for i, t in tags])
+        names = class_names(rom_orig, script)
+        assert all(len(font_en.strip(t)) <= 48 for t in names if len(t) > 8), names
+        table(patches.CLASS_TABS, len(names), [(i, fit(t, 8)) for i, t in enumerate(names)], b'\x02')
+        assert patches.off(patches.CLASS_TABS) + 2 * len(names) + 13 * len(names) <= CLASS_TABS_END
     if mode == 'marker':  # every other cell shows '##': font text the extractor missed can't hide as Japanese
         cells.update({c: font_en.cell('##') for c in range(en.CELLS) if c not in cells and c not in en.RESERVED})
     return out, cells, moves, imms
