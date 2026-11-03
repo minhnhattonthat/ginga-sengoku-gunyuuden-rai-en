@@ -3,7 +3,7 @@
 Skill: translate-retro-game; `python tools/skill.py` prints its folder. Read its SKILL.md before ROM, text or QA work. `"$(python tools/skill.py)"` works in bash and PowerShell; never paste a `plugins/cache/<hash>` path.
 
 ## Commands (run from repo root)
-- Build:    `python -X utf8 tools/build.py`  -> build/rai_en.sfc (checks the dump against `rom.sha1` first; phase 3+)
+- Build:    `python -X utf8 tools/build.py`  -> build/rai_en.sfc + build/writes.log (checks the dump against `rom.sha1`, romdiff-checks every write; `--repack-all` = identity build through every codec). Container lists: `data/*.tsv`
 - Check:    `python -X utf8 tools/check.py`  (tests + lint; the pre-commit hook runs this)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/rai_en.sfc --out work/qa/smoke --route tools/routes/boot.txt --smoke`
 - Warp:     `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/rai_en.sfc --sav work/saves/blank.srm --out work/qa/warp --script tools/debug/scenes.lua --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 24000 --timeout 1800 --sheet` (scene list + step language: `tools/debug/scenes.lua`, `warp.lua`; never ask the user to play to a scene)

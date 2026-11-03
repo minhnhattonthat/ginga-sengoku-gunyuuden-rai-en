@@ -2,30 +2,30 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 2 (debug tool) done. Next: phase 3 (identity build).
-- **Phase 2 result:** `tools/debug/scenes.lua` lists 50 scenes; `python -X utf8 tools/debug/regen.py --jobs 6`
-  reaches every one from a cold boot (no save, no playthrough), saves `work/states/<scene>.mss` and a shot in
-  `work/qa/warp/<scene>/final.png`. Coverage: title (+ START…LOAD with a save), attract demo, faction select,
-  4 intros, 4 maps, map system bar / fleet list / planet list / save screen, planet menu / data / sortie /
-  production, fleet command bar / destination, invasion and attack notices, hex battle (move phase, attack bar,
-  target overlay, enemy attack animation, battle bar, unit/officer data cursor, battle settings), battle report,
-  post-battle notice, HQ screen, prisoner judge / recruit / execute / our officer captured, game save → load
-  screen → continued map, game over, 4 faction endings, staff roll. RAM map + main loop: `docs/re/ram.md`.
-- **Graphics survey extended** over all 50 scenes: 37 runtime LZ blocks the static scan misses
-  (`work/recon/lz_runtime.tsv`, `tools/lz_runtime.py`), one raw ROM DMA (4 icon tiles), and a list of Japanese
-  labels on the new screens that are not font strings (graphics or RLE tilemaps): `docs/re/graphics.md`
-  "Phase-2 tour". Phase 5 classifies them.
-- **Warp tricks worth knowing:** `exit_map` (patches the mode-1 jump-table entry in emulator ROM memory for one
-  dispatch so the map loop returns → game over / ending checks run), `force` (write `$0973` battle outcome at
-  `$8A:842B` → prisoner screens), `battle_auto` (AUTO / END on the battle bar), `cursor_to` (steer the map
-  cursor by RAM feedback), `text` (wait for N glyphs from the dialogue renderer `$BA:93FB`). Every run boots with
-  `work/saves/blank.srm` unless the scene names a fixture (`save_game` makes `nankyourou_start.srm`).
-- **Not covered yet (add when phase 8 needs them):** melee (白兵戦) and the attack-command target pick (needs the hex
-  cursor on an enemy), winning a battle by force of arms (fleet unit HP layout at `$7E5E70` unconfirmed), unit /
-  officer data pages (cursor must pick a unit), advisor tutorial pages (text 0x040016), planet/fleet sub-lists
-  (駐屯武将一覧 etc.), reinforcement messages, the other factions' battles. Each is one more scene entry.
-- **Phase 4 needs** an event-script parser for bank `$8D` (and others) to list every dialogue block pointer; the
-  blind 24-bit sweep (`tools/find_ptr24.py`) is noisy. Intro/ending script starts are logged in `scenes.lua`.
+- **Phase:** 3 (identity build) done. Next: phase 4 (extract to `script/`, roundtrip test, full text-range coverage).
+- **Phase 3 result:** `python -X utf8 tools/build.py --repack-all` unpacks and repacks every known container and
+  gives the original ROM byte for byte (`tests/test_identity.py`, in `check.py`): 162 LZ blocks
+  (`data/lz_blocks.tsv`), 50 word-RLE tilemaps (`data/rle_streams.tsv`), 37 16-bit pointer tables = 37 pools,
+  400 strings, 628 pointers (`data/ptr_tables.tsv`; pools = runs of back-to-back strings, `build.text_pools`).
+  Both compressors now match the original tools exactly (rules in `docs/re/graphics.md`), so an edited block that
+  still fits is recompressed in place; a grown one raises (relocation = phase 5/7 work). The plain build repacks
+  only edited containers (`build(edits={'lz'|'rle'|'text': ...})`); every changed byte goes through `Rom.write`
+  → `build/writes.log` → romdiff (fails on any unlogged change). The SNES checksum is refreshed every build.
+  Edit tests prove pointers move (shortened string shifts every later pointer) and LZ/RLE edits roundtrip.
+- **Phase 2 debug tool:** `tools/debug/scenes.lua` lists 50 scenes; `python -X utf8 tools/debug/regen.py --jobs 6`
+  reaches every one from a cold boot, saves `work/states/<scene>.mss` and `work/qa/warp/<scene>/final.png`.
+  RAM map + main loop + warp tricks: `docs/re/ram.md`. Not covered yet (add when phase 8 needs them): melee,
+  attack-command target pick, winning a battle by force, unit/officer data pages, advisor tutorial pages,
+  planet/fleet sub-lists, reinforcement messages, other factions' battles.
+- **Phase 4 needs:**
+  - an event-script parser for bank `$8D` (and others) to list every dialogue block pointer (24-bit, record +3..+5;
+    messages after the first are read on from the previous one's end); the blind sweep `tools/find_ptr24.py` is
+    noisy. Intro/ending script starts are logged in `scenes.lua`.
+  - dialogue ranges (`docs/re/text.md` table) are not behind `data/ptr_tables.tsv`; strings reached by code
+    immediates are not swept yet. Extract must cover the whole regions list and add their pointer slots to the
+    build's pools.
+  - text format per the skill: JSON per block, `id`/`ptr`/`jp`/`en`/`max`; dump never clobbers English.
+- **Graphics text:** survey + phase-2 tour list in `docs/re/graphics.md`; phase 5 classifies the battle-UI blocks.
 - **Open bugs:** none.
 - **Waiting on the user:** GUI keyboard input in `tools/mesen/Mesen.exe` not hand-tested (headless agent run);
   scripted input verified. Non-blocking: title logo has no known official English version, so per D5 it gets

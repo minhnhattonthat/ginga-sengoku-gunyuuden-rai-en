@@ -52,6 +52,48 @@ def decode(data, pos=0, running=0, maxwords=0x10000):
     return out, pos
 
 
+def encode(words):
+    """Inverse of decode(), byte-identical to the original tool on all 50 known streams (tests/test_identity.py).
+
+    Its rules: start with a literal; at each word take the longest repeat/increment/decrement run (1..63 words)
+    from the running word, ties in that order; otherwise extend the literal (chunks of 63); end with 0."""
+    out = bytearray()
+    lit = []
+    running = None
+    i = 0
+
+    def flush():
+        while lit:
+            chunk = lit[:63]
+            del lit[:63]
+            out.append(len(chunk) << 2)
+            for w in chunk:
+                out.extend(w.to_bytes(2, 'little'))
+
+    while i < len(words):
+        best = None
+        if running is not None:
+            for mode, step in ((2, 0), (1, 1), (3, -1)):
+                n = 0
+                while n < 63 and i + n < len(words) and words[i + n] == (running + step * (n + 1)) & 0xFFFF:
+                    n += 1
+                if n and (best is None or n > best[1]):
+                    best = (mode, n, step)
+        if best:
+            flush()
+            mode, n, step = best
+            out.append(n << 2 | mode)
+            running = (running + step * n) & 0xFFFF
+            i += n
+        else:
+            lit.append(words[i])
+            running = words[i]
+            i += 1
+    flush()
+    out.append(0)
+    return bytes(out)
+
+
 def main():
     rom = open(sys.argv[1], 'rb').read()
     off = int(sys.argv[2], 16)

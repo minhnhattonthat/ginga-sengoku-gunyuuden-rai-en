@@ -4,8 +4,11 @@
 
 Decoder `$00:8401` (source `$06D8-06DA`, dest `$06DB-06DD`). Block: u16 LE decompressed size, then groups of a flag
 byte (MSB first) + 8 items: flag 0 = literal byte; flag 1 = `lo len`, copy `len` (0 = 256) bytes from
-`dest - 0x100 + lo` (1..256 back). Stops when the output reaches the size. Codec: `tools/lz.py` (greedy
-compressor; output differs from the original tool, so edited blocks need relocation or a size check).
+`dest - 0x100 + lo` (1..256 back). Stops when the output reaches the size. Codec: `tools/lz.py`; its compressor
+reproduces the original tool byte for byte on all 162 known blocks (verified: `tests/test_identity.py`). The
+original's rules: copies 2..255 bytes from 1..255 back (lo 0 / len 0 never emitted), backs searched nearest first,
+a farther equal-length match wins, search stops at the first 255-byte match. The RLE encoder (`tools/rle.py`)
+matches all 50 streams the same way. An edited block that grows still needs relocation (the build refuses it).
 
 Blocks are referenced by code immediates `A2 lo hi A9 bank` + `STX $06D8 / STA $06DA` (e.g. `$8A:9A0F`), and are
 stored back to back. `tools/lz_blocks.py` finds 125 (63 referenced, the rest chained): banks 07-10, 13, 16

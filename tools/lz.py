@@ -40,7 +40,10 @@ def decompress(data, pos=0):
 
 
 def compress(raw):
-    """Greedy LZ in the same format. Not byte-identical to the original tool; decompress(compress(x)) == x."""
+    """Greedy LZ, byte-identical to the original tool on all 162 known blocks (tests/test_identity.py).
+
+    Its rules: copies of 2..255 bytes from 1..255 back (lo 0 and len 0 never used); backs searched nearest first,
+    a later (farther) equal-length match wins, but the search stops at the first 255-byte match."""
     out = bytearray(len(raw).to_bytes(2, 'little'))
     i = 0
     while i < len(raw):
@@ -50,16 +53,16 @@ def compress(raw):
             if i >= len(raw):
                 break
             best, blen = 0, 0
-            for back in range(1, min(256, i) + 1):
+            for back in range(1, min(255, i) + 1):
                 s = i - back
                 n = 0
-                while n < 256 and i + n < len(raw) and raw[s + n] == raw[i + n]:
+                while n < 255 and i + n < len(raw) and raw[s + n] == raw[i + n]:
                     n += 1
-                if n > blen:
+                if n >= blen:
                     best, blen = back, n
-                    if n == 256:
-                        break
-            if blen >= 3:
+                if n == 255:
+                    break
+            if blen >= 2:
                 out[flagpos] |= 0x80 >> bit
                 out += bytes([(0x100 - best) & 0xFF, blen & 0xFF])
                 i += blen
