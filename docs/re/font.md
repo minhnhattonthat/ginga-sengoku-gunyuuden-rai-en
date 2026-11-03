@@ -24,6 +24,12 @@ Cost and limits:
 - Pairs are cut from the start of each text run between control codes, so an odd run ends in "x " (half a
   cell of blank). Names inserted at runtime (`{FFFE}`/`{FFFD}` on `$81:E962`) are their own strings: an
   odd-length name leaves a 6-px gap after it. Fine as a word gap after a name; check in the marker tour.
+- Composite lines (map notices: name + fragment + planet + fragment, `0048FE`/`006181`/`00641F` with names
+  and planets) join strings at cell boundaries: an odd-length name ends in a blank half-cell, so a fragment
+  that starts with a space shows a 12-px gap after it instead of 6. Cosmetic; the glossary can prefer
+  even-length names where it costs nothing. The cell grid can't hold a half-width pad.
+- Label renderers that spread short strings were patched to pack (`docs/re/hooks.md`); the vertical name
+  blocks (005E17/005E61/006375) use `{FFFE}` as a spacing cell, so English simply drops those codes.
 - Numbers drawn by code use the 12-px digit cells 0-9 (wider than the 6-px letters). Left as is.
 
 ## Font

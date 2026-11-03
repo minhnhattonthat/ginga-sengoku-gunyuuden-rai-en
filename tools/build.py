@@ -78,7 +78,7 @@ def repack_rle(rom, edits=None):
         rom.write(off, packed, f'rle:{off:06X}')
 
 
-def repack_text(rom, edits=None, tails_ok=False):
+def repack_text(rom, edits=None, tails_ok=False, loose=False):
     """Rewrite text blocks (tools/extract.py): each block's strings back to back from its start, then every ref.
     edits: {string offset: new jp-style text, or encoded bytes}; None = repack every block unchanged. Returns the
     blocks repacked. tails_ok (marker build): a string with tails may change if its length stays the same.
@@ -112,6 +112,8 @@ def repack_text(rom, edits=None, tails_ok=False):
             for kind, slot, x, *delta in e['refs'] + e['tails']:
                 t = new[e['off']] + (delta[0] if delta else 0)
                 if kind == 'fixed':
+                    if loose and 'verified=n' in str(x):
+                        continue  # stress build: unverified immediates are probably constants
                     if t != e['off'] + (delta[0] if delta else 0):
                         raise ValueError(f'text {e["off"]:06X}: moved, but code at {slot:06X} holds it fixed')
                 elif (t ^ b['start']) & ~0x7FFF:
@@ -149,7 +151,8 @@ def english_edits(rom_orig, mode='en', qa=None):
     script = extract.load_script()
     texts = {}
     for b in extract.blocks(rom_orig):
-        short = any(e['off'] in (qa or {}) for e in b['entries'])  # room for the stress line
+        short = any(len(en.pairs(qa[e['off']])) > len(en.pairs(marker(e, extract.parse_fmt(e['fmt'])[0])))
+                    for e in b['entries'] if e['off'] in (qa or {}))  # a longer stress line needs room
         for e in b['entries']:
             s = script.get(e['off'], {})
             codec, _, fixed = extract.parse_fmt(e['fmt'])
@@ -189,7 +192,8 @@ def build(repack_all=False, edits=None, mode=None, qa=None):
             rom.write(en.FONT + c * 24, glyph, f'font:{c:03X}')
     repack_lz(rom, None if repack_all else edits.get('lz', {}))
     repack_rle(rom, None if repack_all else edits.get('rle', {}))
-    blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker')
+    blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker',
+                         loose=mode == 'marker' and bool(qa))
     fixed, _ = snes_checksum(rom.buf)
     for off in range(0x7FDC, 0x7FE0):
         rom.write(off, fixed[off:off + 1], 'checksum')

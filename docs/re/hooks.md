@@ -11,6 +11,9 @@ bytes checked before writing; `tests/test_patches.py` disassembles them). Free s
 | `$8E:C9C9..C9D2`, `$8E:F2F0..F2F9`, `$BA:8BF0..8BF9` | per-length layout ptrs (1-4 cells: spread, 16-px pitch) | the 5-cell routine (`$8E:CB1C`, `$8E:F443`, `$BA:8D44`): 12-px packed, left-aligned | digraph names in label boxes read "aa bb cc" otherwise | verified (same) |
 | `$8E:C9A7`, `$8E:F2D1` | `CPY #$0004` (skip strings < 2 cells) | `CPY #$0002` | 1-cell English strings (2 letters) would not draw | guess (no 1-cell string tested yet) |
 
+| `$BC:8011` | FF | name copy: up to 5 cells of the officer name to `$0E00` verbatim, `FFFF`-terminated | fleet-command name tag | verified: `work/qa/stress/fcname` |
+| `$8B:C8ED` | `LDA $000004,x / CMP #$FFFF` (2- vs 3-cell name, adds `{FFFE}` spacing) | `JSL $BC8011 / BRA $C938` | the game copied only 3 cells | verified (same); the tag box shows 4 cells (8 letters): widen in phase 7 |
+
 Label-box family: caller sets `$1AF0` = 24-bit string pointer, `$1AF4` = tile buffer; `$8E:C96D` counts cells
 (max 5, stops at `FFFF`) and picks the routine from the table by 3 * length; the routine draws each glyph via
 fetch (`$8E:CBCA`: font pointer `$95:8000 + c * 24` at `$1A00`) + shift (`CBEA` 0, `CBFE` 2 px, `CC1B` 4 px) +
