@@ -202,6 +202,18 @@ SCENES = {
     settle = 30,
     steps = boot(),
   },
+  -- $8D:8000 runs event 4 (story prologue, 10EC1C) before every faction's intro: stop on its first page
+  prologue = {
+    desc = "New-game story prologue (event 4, before the faction intro)",
+    settle = 400,
+    steps = (function()
+      local s = boot()
+      s[#s + 1] = { press = "a", frames = 6, gap = 60 }
+      s[#s + 1] = { wait = "event", timeout = 900 }
+      s[#s + 1] = { text = 10, timeout = 1500 }
+      return s
+    end)(),
+  },
   intro_nankyourou = {
     desc = "南京楼 (竜我雷) intro event",
     steps = to_intro(0),
@@ -238,10 +250,31 @@ SCENES = {
   fleet_list = { desc = "All fleets list (system bar icon 1)", settle = 40, steps = system_bar(0, 0x0B) },
   planet_list = { desc = "All planets list (system bar icon 2)", settle = 40, steps = system_bar(1, 0x09) },
   save_screen = { desc = "Game save screen (system bar icon 3)", settle = 40, steps = system_bar(2, 0x08) },
+  -- the slot panel ($BA:AAF4) reads the slot state $1B28: FF = no record (1D2C9B), FE = record broken (1D2CAB)
+  save_empty = { desc = "Save screen, slot forced to 'no record'", settle = 40,
+                 steps = (function() local s = system_bar(); s[#s + 1] = { force = { pc = 0xBAAAF4, write = { [0x1B28] = 0xFF } } }
+                   s[#s + 1] = { press = "right", times = 2, frames = 6, gap = 50 }; s[#s + 1] = { press = "a", frames = 8, gap = 20 }
+                   s[#s + 1] = { wait = 0x08, timeout = 600 }; return s end)() },
+  save_broken = { desc = "Save screen, slot forced to 'record broken'", settle = 40,
+                  steps = (function() local s = system_bar(); s[#s + 1] = { force = { pc = 0xBAAAF4, write = { [0x1B28] = 0xFE } } }
+                    s[#s + 1] = { press = "right", times = 2, frames = 6, gap = 50 }; s[#s + 1] = { press = "a", frames = 8, gap = 20 }
+                    s[#s + 1] = { wait = 0x08, timeout = 600 }; return s end)() },
   planet_data = { desc = "Planet data bar (planet menu icon 1)", settle = 40, steps = planet_icon(0, 0x0D) },
   fleet_sortie = { desc = "Fleet sortie: commander list (planet menu icon 2)", settle = 40, steps = planet_icon(1, 0x11) },
   production = { desc = "Ship production screen (planet menu icon 3)", settle = 40, steps = planet_icon(2, 0x12) },
   fleet_command = { desc = "Fleet command bar for 竜我雷 (sortie -> A)", settle = 30, steps = fleet_command() },
+  formation = {
+    desc = "Fleet formation screen (fleet bar icon 4, bank $8C: column labels 0623D8, help 16E05B)",
+    settle = 120,
+    steps = (function()
+      local s = fleet_command()
+      s[#s + 1] = { sleep = 40 }
+      s[#s + 1] = { press = "right", times = 3, frames = 6, gap = 40 }
+      s[#s + 1] = { press = "a", frames = 8, gap = 20 }
+      s[#s + 1] = { sleep = 120 }
+      return s
+    end)(),
+  },
   fleet_move = {
     desc = "Picking a fleet's destination (fleet bar: move)",
     settle = 30,
@@ -259,8 +292,11 @@ SCENES = {
   battle_attack_menu = { desc = "Player attack phase: command bar", settle = 30, steps = to_battle(1, 8) },
   battle_target = { desc = "Player attack phase: target / range overlay", settle = 30, steps = to_battle(1, 0x0A) },
   battle_bar = { desc = "Battle command bar (Y in the attack phase)", settle = 30, steps = battle_bar() },
-  battle_unit_data = { desc = "Battle bar icon 1: unit data", settle = 60, steps = battle_bar(0) },
-  battle_officer_data = { desc = "Battle bar icon 2: officer data", settle = 60, steps = battle_bar(1) },
+  -- icons 1 and 2 hand over a unit cursor (it starts on one of ours): A on it opens the data window
+  battle_unit_data = { desc = "Battle bar icon 1: unit data (fortress under the cursor)", settle = 60,
+                       steps = (function() local s = battle_bar(0); s[#s + 1] = { press = "a", frames = 6, gap = 60 }; return s end)() },
+  battle_officer_data = { desc = "Battle bar icon 2: officer data", settle = 60,
+                          steps = (function() local s = battle_bar(1); s[#s + 1] = { press = "a", frames = 6, gap = 60 }; return s end)() },
   battle_config = { desc = "Battle bar icon 6: settings (ship speed / battle animation / cursor ship count)",
                     settle = 60, steps = battle_bar(5) },
   battle_result = { desc = "Battle report after 紅沙嶺 falls ($8A:8456)", settle = 20, steps = to_battle_end("battle_report") },
@@ -362,6 +398,19 @@ SCENES = {
       local s = to_ending(0)
       s[#s + 1] = { mash = "a", goal = { script = CREDITS, hi = CREDITS + 1 }, every = 60, len = 6, timeout = 12000 }
       s[#s + 1] = { sleep = 640 }           -- first staff card fades in (drawn as graphics, no text hook)
+      return s
+    end)(),
+  },
+  -- map mode $1B ($8B:8565) fades out and plays the new-flagship speech ($8B:D064) for ship type $098C
+  -- ($8B:D3AB: 08 = 新金剛 -> speech 3, 08F60B)
+  flagship_speech = {
+    desc = "New-flagship speech (map mode $1B forced, ship type 08)",
+    settle = 600,
+    steps = (function()
+      local s = to_map(0)
+      s[#s + 1] = { poke = { [0x098C] = 0x08, [0x06E2] = 1, [0x0A91] = 0x1B } }
+      s[#s + 1] = { wait = { ram = { [0x0A91] = 0x1B } }, timeout = 60 }
+      s[#s + 1] = { sleep = 200 }
       return s
     end)(),
   },

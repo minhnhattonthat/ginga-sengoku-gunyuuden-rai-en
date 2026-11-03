@@ -6,8 +6,9 @@
 data/boxes.tsv: one row per box variant: name, letters per line, lines, wrap, state, evidence, then the
 strings it covers (block ids, or single string ids prefixed with '='; a single id wins over its block).
 wrap: br = explicit {br} lines (dialogue); pad = the box wraps at its width, {n} in en pads to the next line
-(the build fills blank cells); one = a single line. state: measured (evidence = shot) or guess (warns).
-A {skip:0N00} indent takes N letters of its line. Letters are 6 px (two per 12-px cell).
+(the build fills blank cells); one = a single line; page = {br} lines on a full-screen narration page, at
+most PAGE_CELLS glyph cells in all. state: measured (evidence = shot) or guess (warns).
+A {skip:0N00} indent takes N cells = 2N letters of its line. Letters are 6 px (two per 12-px cell).
 """
 import argparse
 import re
@@ -20,6 +21,7 @@ import extract  # noqa: E402
 
 BOXES = Path(__file__).resolve().parents[1] / 'data' / 'boxes.tsv'
 SKIP = re.compile(r'\{skip:0?([0-9A-Fa-f])00\}')
+PAGE_CELLS = 112  # full-screen narration: the 113th glyph cell overwrites other tiles (work/qa/stress/e113)
 
 
 def load_boxes():
@@ -46,13 +48,25 @@ def box_of(sid, block, owner):
 
 def lines_of(t, wrap):
     body = t.replace('{end}', '')
-    parts = body.split('{br}') if wrap == 'br' else body.split('{n}')
+    parts = body.split('{br}') if wrap in ('br', 'page') else body.split('{n}')
     out = []
     for p in parts:
-        indent = sum(int(m.group(1), 16) for m in SKIP.finditer(p))
+        indent = sum(2 * int(m.group(1), 16) for m in SKIP.finditer(p))  # N cells (work/qa/stress/prol2)
         visible = ''.join(s for is_code, s in en.runs(p) if not is_code)
         out.append(indent + len(visible))
     return out
+
+
+def expand_n(t, width):
+    """pad box: each {n} becomes the spaces that fill its line to `width` letters (the box wraps by itself)."""
+    parts = t.split('{n}')
+    out = []
+    for p in parts[:-1]:
+        n = lines_of(p, 'pad')[0]
+        if n > width:
+            raise ValueError(f'line {p!r} has {n} letters > {width}')
+        out.append(p + ' ' * (width - n))
+    return ''.join(out) + parts[-1]
 
 
 def lint(script, blocks):
@@ -83,6 +97,8 @@ def lint(script, blocks):
             for i, n in enumerate(ls):
                 if n > box['letters']:
                     errs.append(f'{sid}: line {i + 1} has {n} letters > {box["letters"]} ({name})')
+            if box['wrap'] == 'page' and len(en.pairs(t)) > PAGE_CELLS:
+                errs.append(f'{sid}: {len(en.pairs(t))} cells > {PAGE_CELLS} per full-screen page ({name})')
             fixed = extract.parse_fmt(e['fmt'])[2]
             if fixed and len(en.pairs(t)) * 2 > fixed:
                 errs.append(f'{sid}: {len(en.pairs(t))} cells > fixed field {fixed // 2}')

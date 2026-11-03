@@ -14,6 +14,7 @@
 --   { wait  = { script = 0x8D9458, hi = 0x8D9470 } }  wait for the event-script pointer $1B21-23 in [script, hi)
 --   { wait  = { ram = { [0x0915] = 1, [0x0737] = 8 } } }  wait until every listed byte has that value
 --   { force = { pc = 0x8A842B, write = { [0x0973] = 2 } } }  write those bytes whenever the CPU reaches pc
+--   { force = { pc = 0x81B6AD, write = { [0x0989] = 3 }, once = true } }  only the first time pc is reached
 --   { cursor_to = { 0x118, 0x1F8 } }  steer the map cursor to that world position (planet hit boxes: $7E:E037)
 --   { battle_auto = true, goal = 0x0F }  play the hex battle (AUTO each player attack phase) until the goal
 --   { text  = 12 }             wait until the dialogue renderer has drawn 12 more glyphs (text is on screen)
@@ -67,8 +68,7 @@ local PREDS = {
   event   = function() return (pc() & 0xFF0000) == 0x8D0000 end,  -- $8D event interpreter
   map     = function() return (pc() & 0xFF0000) == 0x8B0000 and rd(0x0A91) == 1 end,
   -- attract demo: the title returns 3 after its timeout ($0E32) and the main loop calls $8C:D0F0
-  demo = function() return (pc() & 0x7F0000) == 0x0C0000 end,
-  -- after-battle HQ screen ($8A:A79E, "<army> 本陣"), its wait loop $8A:A7F8-$A7FD
+  demo = function() return (pc() & 0x7F0000) == 0x0C0000 end,  -- after-battle HQ screen ($8A:A79E, "<army> 本陣"), its wait loop $8A:A7F8-$A7FD
   hq = function() return (pc() & 0x7FFFF0) == 0x0AA7F0 end,
   -- prisoner screens (recruit / execute a captured officer) run in bank $8E (NMI wait $8E:F831-F836)
   prisoner = function() return (pc() & 0x7F0000) == 0x0E0000 end,
@@ -189,8 +189,13 @@ L.on_frame(function(f)
     advance()
   elseif st.force then
     -- From now on, write these bytes each time the CPU reaches st.force.pc (just before the game reads them).
-    local f_pc, writes = st.force.pc, st.force.write
-    L.on_exec(f_pc, f_pc, function() for a, v in pairs(writes) do wr(a, v) end end)
+    local f_pc, writes, once = st.force.pc, st.force.write, st.force.once
+    local fired = false
+    L.on_exec(f_pc, f_pc, function()
+      if once and fired then return end
+      fired = true
+      for a, v in pairs(writes) do wr(a, v) end
+    end)
     L.log(string.format("f%d force at %06X", f, f_pc))
     advance()
   elseif st.cursor_to then

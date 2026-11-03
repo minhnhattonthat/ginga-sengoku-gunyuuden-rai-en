@@ -20,6 +20,7 @@ import check_rom  # noqa: E402
 import en  # noqa: E402
 import extract  # noqa: E402
 import font_en  # noqa: E402
+import lint  # noqa: E402
 import lz  # noqa: E402
 import patches  # noqa: E402
 import rle  # noqa: E402
@@ -149,6 +150,7 @@ def english_edits(rom_orig, mode='en', qa=None):
     """-> ({off: encoded bytes}, {font cell: glyph}). mode 'en': strings with an 'en' field (others stay
     Japanese and keep their cells); 'marker': every string as its marker. qa: {off: text} overrides."""
     script = extract.load_script()
+    boxes, owner = lint.load_boxes()
     texts = {}
     for b in extract.blocks(rom_orig):
         short = any(len(en.pairs(qa[e['off']])) > len(en.pairs(marker(e, extract.parse_fmt(e['fmt'])[0])))
@@ -161,6 +163,9 @@ def english_edits(rom_orig, mode='en', qa=None):
                 t += '{end}'
             t = t or (
                 marker(e, codec, short and not fixed and not e['tails']) if mode == 'marker' else s.get('en'))
+            box = boxes.get(lint.box_of(e['off'], b['start'], owner))
+            if t and box and box['wrap'] == 'pad':
+                t = lint.expand_n(t, box['letters'])
             if t:
                 texts[e['off']] = (e, t)
     jp_left = [e for b in extract.blocks(rom_orig) for e in b['entries'] if e['off'] not in texts]

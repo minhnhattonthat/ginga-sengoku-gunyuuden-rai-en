@@ -20,7 +20,7 @@ ROM: LoROM 2 MiB, map mode `$30` (FastROM), header title `GINGASENGOKUGUNYUUDEN`
 |---|---|---|
 | `0000` | 0 | end of message (clears window busy bit 7) |
 | `0001` | 0 | new line (`$08 += $30`, `$18 += $40`) |
-| `0002 n` | 1 | indent / skip: new line plus `n` half-cells (`$12 += 6` per 2) |
+| `0002 n` | 1 | indent / skip: new line plus `n` cells = 12n px = 2n letters (measured: `work/qa/stress/prol2`) |
 | `0003 a b` | 2 | wait / speed `(a<<4)|b` into `$02` |
 | `0005` / `0006` | 0 | set / clear flag `$1E` bit 0 (typewriter on/off; speaker name is printed before the `0005`) |
 | `0007` / `0008` | 0 | set / clear flag `$1E` bit 8 |
