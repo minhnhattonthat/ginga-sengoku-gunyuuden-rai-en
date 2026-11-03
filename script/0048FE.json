@@ -1,0 +1,27 @@
+{
+ "block": "0048FE",
+ "end": "004914",
+ "entries": [
+  {
+   "id": "0048FE",
+   "fmt": "plain",
+   "jp": "は、{end}",
+   "en": "",
+   "max": 6,
+   "ptr": [
+    "fixed 01CC92",
+    "fixed 052015"
+   ]
+  },
+  {
+   "id": "004904",
+   "fmt": "plain",
+   "jp": "に寝返りました{end}",
+   "en": "",
+   "max": 16,
+   "ptr": [
+    "fixed 01CCCA"
+   ]
+  }
+ ]
+}

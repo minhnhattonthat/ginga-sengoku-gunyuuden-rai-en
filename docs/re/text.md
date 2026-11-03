@@ -12,7 +12,7 @@ ROM: LoROM 2 MiB, map mode `$30` (FastROM), header title `GINGASENGOKUGUNYUUDEN`
 
 ## Two string formats
 
-**Plain** (menus, battle quotes, descriptions, tutorial): codes, ended by bare `FFFF` (`{end}`). `FFFE` appears inside some (likely line break, **guess**). Many strings are padded with spaces to the box width (20 cells per line on faction select) instead of a newline code.
+**Plain** (menus, battle quotes, descriptions, tutorial): codes, ended by bare `FFFF` (`{end}`). Many strings are padded with spaces to the box width (20 cells per line on faction select) instead of a newline code. `FFFE` = `{FFFE}` and `FFFD` = `{FFFD}` depend on the renderer (verified by disassembly): `$81:E962` inserts an officer name (`$00:90DC[$0950]`, e.g. `{FFFE}殿`) or a planet name (`$00:9C36[$0950]`, e.g. `{FFFD}を占領しました`); `$81:E4E5` (vertical faction/leader/ship names) treats `FFFE` as "skip one cell". Some records carry raw bytes before the text (`pre` in script/: 1 layout byte for ship classes, 4 bytes for unit and option labels).
 
 **Dialogue** (event scenes, read by the window renderer `$BA:92CD`, verified by disassembly + trace `tools/lua/msgptr.lua`): codes with inline commands `FFFF <cmd>`:
 
@@ -27,24 +27,34 @@ ROM: LoROM 2 MiB, map mode `$30` (FastROM), header title `GINGASENGOKUGUNYUUDEN`
 
 Other command numbers are ignored by the renderer. Typical message: `師真{c5}「いいだろ{c6}{spd:0200 0000}う ...」{end}`.
 
-## Pointers
+## Event scripts (bank `$8D`, verified by disassembly of `$8D:8185..82FB`; `tools/events.py`)
 
-- **16-bit in-bank tables** for plain strings: a table of `$8000+` words directly before its strings (bank 01: tables at 0x010000, 0x01003A, 0x0102CC, 0x010332...; bank 04: 0x040008...; bank 00: 0x000FC0, 0x0010DC, 0x001C36, 0x00589D). `tools/find_ptrs.py` lists 37 tables (`work/recon/ptrs.tsv`); some strings are reached by code immediates instead (not yet swept).
-- **24-bit pointers in event records** for dialogue (verified: record at 0x06B0EA `FF 00 08 | 1C EC A1 | ...` points at 0x10EC1C, the first message seen in the intro). The event command at `$8D:8652` copies record bytes +3..+5 to the window pointer `$1B64`. Messages after the first are read **on from the end of the previous one** (renderer pointer advances, `wr=BA92E5` in the trace), so a block of messages has one pointer at its start. Event scripts live at least in bank `$8D` (file 0x068000-0x06FFFF). A full event-script parser is phase 4 work.
+- Script starts: word table `$8D:933F` (38 events, `$8BD7` = unused); event index from the caller (`$8D:8000` intro, `$8D:8012` ending).
+- Script = lines `[word line number] ([cmd byte][word arg])* 00`; line `FFFF` is the last. Each cmd calls handler `$8D:938B[cmd]` with X = arg (a parameter record in bank `$8D`). Interpreter `$8D:82BC`.
+- Cmd `18` (`$8D:864B`): show message; record bytes +3..+5 = 24-bit text pointer to `$1B64`. The next messages of the scene are read on from the end of the previous one (one per cmd `1A`/`1B`), so one pointer reaches a whole chain.
+- Cmd `26` (`$8D:8854`): per-faction epilogue; 24-bit pointers at record +0D + 3 * faction (`$1B2B`).
+- A 6-byte header (`04xx 0000 00nn`) sits before several chains; the renderer doesn't read it (kept as not-text).
 
-## Text ranges (`tools/text_regions.py`, `work/recon/regions.tsv`)
+## Pointer forms (all in `tools/refs.py`; verified when every target lands on a string start, test `tests/test_extract.py`)
 
-| Range | Format | Content |
+| Kind | Where | What |
 |---|---|---|
-| 0x000C60-0x0012C0, 0x001C64-0x001D1C, 0x002C89, 0x0058A5-0x005933, 0x005E17, 0x006375, 0x00641F | plain | faction/general/planet names, unit labels, system messages |
-| 0x01004E-0x017170 | plain | battle commands, battle quotes, faction descriptions, capture/defeat quotes |
-| 0x040016-0x0407FE | plain | advisor tutorial pages |
-| 0x10EC1A-0x10EFAC, 0x1161FB-0x116557, 0x116A09-0x11701B, 0x11FC98-0x11FFB2, 0x12EA2F-0x12ED67, 0x176E64-0x17773A, 0x17FBD8-0x17FFA6, 0x187AB9-0x187F03, 0x18EC33-0x18FC47, 0x19E242-0x19E636 | dialogue | story scenes, per-faction intros and endings (banks shared with graphics) |
-| 0x148000-0x1491E4 | plain/dialogue mix | deployment prompts, general battle lines |
-| 0x1D8000-0x1DE866 | dialogue-like | recruitment / diplomacy lines |
+| p16 | `data/ptr_tables.tsv` (24 tables) | 16-bit in-bank tables; phase 4 merged split tables and added words between them (several point at shared tails) |
+| p16 | `refs.P16_TABLES` | ship classes 0x000CB0 (`[layout byte][text]`), vertical faction/leader/ship names 0x005E0F/0x005E59/0x006339, option labels 0x0119C6 and unit labels 0x0118B8 (`[4 bytes][text]`) |
+| p16 | `refs.QUOTE_LISTS` | bank `$82` battle quotes: index 0x013098 and 0x0132C9 (odd) -> per-officer lists `[opponent id or FE][word ptr]... FF` |
+| p24 | event cmd 18 / 26 records | story dialogue chains, per-faction epilogues |
+| p24 | `refs.P24_TABLES` | `$80:A41B` new-flagship speeches (bank `$91`), `$8D:9243` staff-roll leader lines (4 x 40-byte fixed fields) |
+| p24 + rel16 | `$BA:9925` | talk (recruit/diplomacy) texts: 8 pairs (cell map, table); table = 24-bit base + 80 word offsets (one per officer). Type 2 (`$BA:9E27`, base 0x1D9BA4 `・・・`) offsets land mid-string in type 3: a stale table, kept as tails |
+| rel16 | `$8E:CEC7` | battle-start quotes: 52 offsets from `$A9:8050` (base loaded by `LDX #$8050 / LDA #$A9`, `$8E:9B98`) |
+| fixed | `refs.FIXED` | base + index * stride: faction names `$8C60`/`$8C88` (10 bytes), unit labels `$AC91` (8), column labels `$8C:A3D8`, deployment prompts `$A9:8000` (40 cells) |
+| fixed | `data/imm16.tsv` | code immediates `LDX/LDY/LDA #$hhll` (`tools/find_imm16.py`); `verified=y` = one routine loads consecutive strings, `n` = may be a constant. The build never rewrites them, so their strings stay in place |
 
-Not yet proven complete: code-built strings, numbers, and small strings under 64 bytes (`--min`). Phase 4 sweeps code immediates and event records.
+Tails: refs that point inside a string (shared name tails in bank 0, the stale talk table). The build keeps them only while the host string is unchanged.
+
+## Extraction (`tools/extract.py` -> `script/<block>.json`)
+
+From each ref target the extractor reads on while strings decode cleanly, are non-empty and hit no other target, slot or not-text range. A block = strings stored back to back = the build's repack unit. 48 blocks, 1561 strings, 3579 refs. Coverage: every run in `data/text_scan.tsv` (`tools/text_regions.py --min 16 --gap 8`) is text, a slot or a reviewed row of `data/not_text.tsv` (`tools/gaps.py` = 0 unexplained bytes). Free-space candidates found on the way (FF fill): 0x017172-0x018000, 0x040800-0x048000, 0x05DD10-0x060000, 0x06ED28-0x070000, 0x1D3072-0x1D8000 (unverified: trap-test before use).
 
 ## Tools
 
-`tools/font_sheet.py` (labelled font sheet), `tools/font_cells.py` (zoom chosen cells), `tools/font_match.py` (template first guess), `tools/scan_text.py` (string runs), `tools/find_ptrs.py` (16-bit tables), `tools/find_ptr24.py` (24-bit pointers, noisy), `tools/text_regions.py` (text ranges), `tools/lua/romrange.lua` (per-PC ROM read ranges), `tools/lua/msgptr.lua` (dialogue window pointer log; slow: WRAM write hook).
+`tools/font_sheet.py` (labelled font sheet), `tools/font_cells.py` (zoom chosen cells), `tools/font_match.py` (template first guess), `tools/scan_text.py` (string runs), `tools/find_ptrs.py` (16-bit tables), `tools/find_ptr24.py` (24-bit pointers, noisy), `tools/text_regions.py` (text ranges), `tools/events.py` (event scripts and their message pointers), `tools/find_refs.py` (every 16/24-bit occurrence of an address), `tools/find_imm16.py` / `tools/find_imm24.py` (code immediates), `tools/gaps.py` (coverage gaps, `--refs`), `tools/lua/romrange.lua` (per-PC ROM read ranges), `tools/lua/msgptr.lua` (dialogue window pointer log; slow: WRAM write hook).

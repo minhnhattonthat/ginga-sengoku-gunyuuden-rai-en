@@ -1,0 +1,103 @@
+{
+ "block": "000C60",
+ "end": "000CB0",
+ "entries": [
+  {
+   "id": "000C60",
+   "fmt": "fixed:10",
+   "jp": "南京楼軍 ",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 00E545"
+   ]
+  },
+  {
+   "id": "000C6A",
+   "fmt": "fixed:10",
+   "jp": "練軍   ",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 00E545"
+   ]
+  },
+  {
+   "id": "000C74",
+   "fmt": "fixed:10",
+   "jp": "南天連合軍",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 00E545"
+   ]
+  },
+  {
+   "id": "000C7E",
+   "fmt": "fixed:10",
+   "jp": "大五丈軍 ",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 00E545",
+    "fixed 06891A",
+    "fixed 068929",
+    "fixed 068950",
+    "fixed 06895F",
+    "fixed 068F72",
+    "fixed 068F95",
+    "fixed 068FCB",
+    "fixed 069024",
+    "fixed 06903F",
+    "fixed 069110",
+    "fixed 06911F",
+    "fixed 070883",
+    "fixed 0708C5",
+    "fixed 076B1F",
+    "fixed 076B61",
+    "fixed 1D0860",
+    "fixed 1D08D0"
+   ]
+  },
+  {
+   "id": "000C88",
+   "fmt": "fixed:10",
+   "jp": "南京楼軍{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 0704ED"
+   ]
+  },
+  {
+   "id": "000C92",
+   "fmt": "fixed:10",
+   "jp": "練軍{end}00",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 0704ED"
+   ]
+  },
+  {
+   "id": "000C9C",
+   "fmt": "fixed:10",
+   "jp": "南天連合軍",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 0704ED"
+   ]
+  },
+  {
+   "id": "000CA6",
+   "fmt": "fixed:10",
+   "jp": "大五丈軍{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 0704ED"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "block": "002C91",
+ "end": "002CE9",
+ "entries": [
+  {
+   "id": "002C91",
+   "fmt": "fixed:8",
+   "jp": "  旗艦",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002C99",
+   "fmt": "fixed:8",
+   "jp": "第1部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F",
+    "fixed 002410"
+   ]
+  },
+  {
+   "id": "002CA1",
+   "fmt": "fixed:8",
+   "jp": "第2部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CA9",
+   "fmt": "fixed:8",
+   "jp": "第3部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CB1",
+   "fmt": "fixed:8",
+   "jp": "第4部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CB9",
+   "fmt": "fixed:8",
+   "jp": "第5部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CC1",
+   "fmt": "fixed:8",
+   "jp": "第6部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CC9",
+   "fmt": "fixed:8",
+   "jp": "第7部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CD1",
+   "fmt": "fixed:8",
+   "jp": "第8部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CD9",
+   "fmt": "fixed:8",
+   "jp": "第9部隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F"
+   ]
+  },
+  {
+   "id": "002CE1",
+   "fmt": "fixed:8",
+   "jp": "残存艦隊",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "fixed 00DC7F",
+    "fixed 00DC56"
+   ]
+  }
+ ]
+}

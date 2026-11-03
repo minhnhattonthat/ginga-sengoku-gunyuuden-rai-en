@@ -2,6 +2,11 @@
 # Keys are the bytes as stored (code 0x039E -> 9E03). Kanji read by eye from tools/font_sheet.py sheets;
 # a second copy of a glyph gets a "#2" note only if the font really holds it twice (see docs/re/text.md).
 FFFF={end}
+# FFFE / FFFD in plain strings: the $81:E962 renderer inserts a name from $00:90DC[$0950] (officer) or
+# $00:9C36[$0950] (planet); the $81:E4E5 renderer (vertical names, ship names) treats FFFE as "skip one cell".
+# Named by code because the meaning depends on the renderer (docs/re/text.md).
+FEFF={FFFE}
+FDFF={FFFD}
 0000=0
 0100=1
 0200=2

@@ -1,0 +1,5785 @@
+{
+ "block": "1D8000",
+ "end": "1DE866",
+ "entries": [
+  {
+   "id": "1D8000",
+   "fmt": "msg",
+   "jp": "過去のことは忘れたい どうだお前の力 天下のために使ってみないか?{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "p24 1D1A79",
+    "rel16 1D1A7C base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8046",
+   "fmt": "msg",
+   "jp": "俺の所へ戻って来てくれ!{br}そして銀河統一に力を貸してくれ!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1A7E base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8086",
+   "fmt": "msg",
+   "jp": "どうだ師真 今一度 俺と共に銀河統一を目指してみないか?{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D1A80 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D80C2",
+   "fmt": "msg",
+   "jp": "紫紋!{br}俺の所へ戻って来てくれ!!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D1A82 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D80EA",
+   "fmt": "msg",
+   "jp": "麗羅!{br}弾正公の専を共に果たそうぜ!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D1A84 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8114",
+   "fmt": "msg",
+   "jp": "狼刃様… 俺と共に専を…{br}天下統一の専を成しましょう!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D1A86 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8150",
+   "fmt": "msg",
+   "jp": "お前の才 今一度天下のために使ってはくれないか?{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1A88 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8184",
+   "fmt": "msg",
+   "jp": "我が軍に降れば 武将としての地位を保証しよう{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1A8A base 1D8000"
+   ]
+  },
+  {
+   "id": "1D81B4",
+   "fmt": "msg",
+   "jp": "紫紋ちゃん{br}今ならまだ間に合う!{br}俺達の所へ来ないかい?{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1A8C base 1D8000"
+   ]
+  },
+  {
+   "id": "1D81F4",
+   "fmt": "msg",
+   "jp": "おぬしの才 ふたたび天下のために使ってみないかね?{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D1A8E base 1D8000"
+   ]
+  },
+  {
+   "id": "1D822A",
+   "fmt": "msg",
+   "jp": "骸延よ 我が軍に降って今一度その才を活かしてみないか?{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D1A90 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8264",
+   "fmt": "msg",
+   "jp": "勝負ありましたね{br}共に来るのなら武将として迎える準備があります{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D1A92 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D82A8",
+   "fmt": "msg",
+   "jp": "師真様、勝負ありましたね{br}私と共に行きますか?{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1A94 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D82DC",
+   "fmt": "msg",
+   "jp": "観念して私と共に来てくださいあなたを武将として迎えます{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D1A96 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8316",
+   "fmt": "msg",
+   "jp": "麗羅、私と一緒にいきましょう友達同士で戦うことなんてないわ{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D1A98 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8354",
+   "fmt": "msg",
+   "jp": "あなたとはお友達になれそうなの だから一緒に来ない?{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D1A9A base 1D8000"
+   ]
+  },
+  {
+   "id": "1D838C",
+   "fmt": "msg",
+   "jp": "あんた、うちらと一緒に戦っていかんか?{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D1A9C base 1D8000"
+   ]
+  },
+  {
+   "id": "1D83B6",
+   "fmt": "msg",
+   "jp": "紫紋!うちと一緒に来るんや!悪いようにはせんから!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D1A9E base 1D8000"
+   ]
+  },
+  {
+   "id": "1D83EC",
+   "fmt": "msg",
+   "jp": "この馬鹿息子が!!{br}わしの所へ帰ってこい!!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1AA0 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D841E",
+   "fmt": "msg",
+   "jp": "親父!!{br}俺にはまだ親父の助けがいる!俺と一緒に来てくれ!!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D1AA2 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8460",
+   "fmt": "msg",
+   "jp": "お前見所があるな{br}どうだ? 俺の国に来ないか?{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1AA4 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8494",
+   "fmt": "msg",
+   "jp": "再び練のため 天下のため{br}お前の才 活かしてはくれないか?{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1AA6 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D84D4",
+   "fmt": "msg",
+   "jp": "邑峻… 俺の所へ帰って来い!今ならまだ間に合うぞ!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D1AA8 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D850C",
+   "fmt": "msg",
+   "jp": "老将軍よ! 今こそ真に覇者としてふさわしい者を見極めよ!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D1AAA base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8548",
+   "fmt": "msg",
+   "jp": "おぬしは父のかたき、だがそのことは忘れたい{br}俺の下で働かないか{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D1AAC base 1D8000"
+   ]
+  },
+  {
+   "id": "1D858C",
+   "fmt": "msg",
+   "jp": "虎丸! 俺の全銀河統一に力を貸してくれ!!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D1AAE base 1D8000"
+   ]
+  },
+  {
+   "id": "1D85BA",
+   "fmt": "msg",
+   "jp": "私の専にはおぬしのような人物が必要だ 我が軍へ来ないか?{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D1AB0 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D85F6",
+   "fmt": "msg",
+   "jp": "蹄庖、どうだ また私の右腕として働かないか?{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1AB2 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8626",
+   "fmt": "msg",
+   "jp": "どうだ飛竜{br}俺と共に専を見ないか{br}銀河統一という専を…{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D1AB4 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8664",
+   "fmt": "msg",
+   "jp": "ねえ! あたし達と銀河統一のお手伝いをしない?{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1AB6 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8696",
+   "fmt": "msg",
+   "jp": "姜子昌! ぐずぐずしてないでこっちへ来なさい!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1AB8 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D86CA",
+   "fmt": "msg",
+   "jp": "あたしと一緒に平和な世の到来を見ましょう!!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1ABA base 1D8000"
+   ]
+  },
+  {
+   "id": "1D86FA",
+   "fmt": "msg",
+   "jp": "夏候一族が殺し会う事はない!わしと共に来るのだ!!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D1ABC base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8730",
+   "fmt": "msg",
+   "jp": "夏候一族が殺し会う事はない!わしと共に来るのだ!!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D1ABE base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8766",
+   "fmt": "msg",
+   "jp": "邑峻様… 願わくばそれがしと共に来てくだされ{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1AC0 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8796",
+   "fmt": "msg",
+   "jp": "父上!私と共に来てください!共に戦って行きましょう!!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D1AC2 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D87D0",
+   "fmt": "msg",
+   "jp": "才! 俺と共に来い!{br}今ならまだ間に合うはずだ!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D1AC4 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8808",
+   "fmt": "msg",
+   "jp": "父上! 私と共に覇王となられる方のために戦いましょう!!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D1AC6 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8844",
+   "fmt": "msg",
+   "jp": "覇王に必要なものが分かれば{br}兄上にも進むべき道が分かるはずです!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D1AC8 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D888A",
+   "fmt": "msg",
+   "jp": "俺と共に来い!{br}そして俺の部下になれ!!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D1ACA base 1D8000"
+   ]
+  },
+  {
+   "id": "1D88B8",
+   "fmt": "msg",
+   "jp": "…?! ここは?!…!{br}おぬしの力ふたたび銀河で試してみないか?{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D1ACC base 1D8000"
+   ]
+  },
+  {
+   "id": "1D88FE",
+   "fmt": "msg",
+   "jp": "…姜子昌…様…!………{br}私についてくればよし{br}さもなくば…ふははは…{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D1ACE base 1D8000"
+   ]
+  },
+  {
+   "id": "1D894A",
+   "fmt": "msg",
+   "jp": "南天のため ひいては銀河のために働く気はないか?{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1AD0 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D897E",
+   "fmt": "msg",
+   "jp": "戻ってこい飛竜!!{br}そしてまた私の片腕として働いてくれ!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1AD2 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D89BE",
+   "fmt": "msg",
+   "jp": "虎丸! お前がいなくて将来銀河を誰が統治するのだ{br}戻ってきてくれ!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D1AD4 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8A06",
+   "fmt": "msg",
+   "jp": "儒李よ 南天連合に帰ってくる気はないか?{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D1AD6 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8A32",
+   "fmt": "msg",
+   "jp": "お前のような奴でもいれば戦力になる{br}それとも死を選ぶかね?{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1AD8 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8A72",
+   "fmt": "msg",
+   "jp": "おぬしを前から欲しかった{br}どうだ智に来ないか?{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1ADA base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8AA6",
+   "fmt": "msg",
+   "jp": "あなたはなかなか優秀な方のようだ わが国のために働いてみないか?{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D1ADC base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8AEA",
+   "fmt": "msg",
+   "jp": "虎丸様…{br}私は何と言ったら良いか…{br}私と共に来てください{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1ADE base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8B2A",
+   "fmt": "msg",
+   "jp": "姜子昌、私の勝ちだ…{br}私と共に銀河統一を実現させないか?{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D1AE0 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8B68",
+   "fmt": "msg",
+   "jp": "私とお前の力があれば天下など目の前だ 私と共に来い!!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D1AE2 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8BA2",
+   "fmt": "msg",
+   "jp": "僕と共に来ませんか? 銀河の進む道を見定めましょう!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D1AE4 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8BDA",
+   "fmt": "msg",
+   "jp": "勝負ありましたな どうです{br}私と共に来ませんか?{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D1AE6 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8C10",
+   "fmt": "msg",
+   "jp": "虎丸様… 私と一緒に来てください 決して悪いようには致しません{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D1AE8 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8C52",
+   "fmt": "msg",
+   "jp": "私どもと共に戦いましょう{br}あなたなら良い働きができましょう{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1AEA base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8C92",
+   "fmt": "msg",
+   "jp": "ぐふふっ! どうじゃ?{br}わしの下で働かんか?{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1AEC base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8CC4",
+   "fmt": "msg",
+   "jp": "ぐふふっ どうじゃ{br}わしは器が大きいからの{br}またわしの部下になるか?{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D1AEE base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8D10",
+   "fmt": "msg",
+   "jp": "雷神殿{br}今降れば命の保証だけは致しますぞ!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1AF0 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8D40",
+   "fmt": "msg",
+   "jp": "がっはっはっはっは どうだ{br}お前わしの下で働かんか?{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D1AF2 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8D7A",
+   "fmt": "msg",
+   "jp": "一度裏切ったとはいえ{br}お前は俺の弟だ{br}今なら許してやらぬでもない{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D1AF4 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8DC2",
+   "fmt": "msg",
+   "jp": "一度裏切ったとはいえ{br}お前は俺の弟だ{br}今なら許してやらぬでもない{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D1AF6 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8E0A",
+   "fmt": "msg",
+   "jp": "狼刃! たのむ…!{br}五丈に帰ってきてくれ!!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1AF8 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8E3C",
+   "fmt": "msg",
+   "jp": "私と共に来い!{br}生きて生き抜いて乱世を見定めよ!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D1AFA base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8E74",
+   "fmt": "msg",
+   "jp": "おぬしの武勇、ここで無くすには惜しいと思わんか?{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1AFC base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8EA8",
+   "fmt": "msg",
+   "jp": "お前の知略が必要なのだ!!{br}私と共に来い!!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1AFE base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8EDA",
+   "fmt": "msg",
+   "jp": "俺達の国へ来い!{br}それなら命を助けてやるぞ!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D1B00 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8F0E",
+   "fmt": "msg",
+   "jp": "俺と来い骸延!!{br}お前の才が必要なのだ!!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1B02 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8F3E",
+   "fmt": "msg",
+   "jp": "天命は我らにある!! その流れを知り我らと共に来るのだ!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D1B04 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8F7A",
+   "fmt": "msg",
+   "jp": "私達には兄上の武勇が必要なのです! ぜひ私達と共に来てください!!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D1B06 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D8FC0",
+   "fmt": "msg",
+   "jp": "仕える人物を間違えたか?{br}狼刃よ今ならまだ修正できると思うが?{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D1B08 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D9004",
+   "fmt": "msg",
+   "jp": "大覚屋… 我が国のためその才を生かしてはくれないか…?{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D1B0A base 1D8000"
+   ]
+  },
+  {
+   "id": "1D903E",
+   "fmt": "msg",
+   "jp": "がははははは!!{br}どうだ我が国に降らぬか?{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1B0C base 1D8000"
+   ]
+  },
+  {
+   "id": "1D906E",
+   "fmt": "msg",
+   "jp": "………そなたの力… それがしと共に来てこの国に役立てないか…?{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D1B0E base 1D8000"
+   ]
+  },
+  {
+   "id": "1D90B0",
+   "fmt": "msg",
+   "jp": "我の生き様男の生き様!!{br}生き抜いてこその生き様もある来い!!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D1B10 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D90F4",
+   "fmt": "msg",
+   "jp": "我は鬼! しかし有能なる将をみすみす死なせん!{br}我と共に来い!!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D1B12 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D913A",
+   "fmt": "msg",
+   "jp": "お前の進む道はどちらだ?{br}我らと共に戦う道と{br}死へと続く道…{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D1B14 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D917E",
+   "fmt": "msg",
+   "jp": "おぬしのその武勇 我らの国のため使ってみんか?{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1B16 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D91B0",
+   "fmt": "msg",
+   "jp": "時代の流れを見定められよ{br}流れを見定め我らと供に来い!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D1B18 base 1D8000"
+   ]
+  },
+  {
+   "id": "1D91EC",
+   "fmt": "msg",
+   "jp": "なかなかやるじゃねぇか!{br}オレ達と一緒に来るなら命まではとらねぇぜ!{end}",
+   "en": "",
+   "max": 74,
+   "ptr": [
+    "rel16 1D1B1A base 1D8000"
+   ]
+  },
+  {
+   "id": "1D9236",
+   "fmt": "msg",
+   "jp": "敵でさえなければな…{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "p24 1D1C50",
+    "rel16 1D1C53 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D924E",
+   "fmt": "msg",
+   "jp": "敵でさえなければな…{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1C55 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9266",
+   "fmt": "msg",
+   "jp": "師真…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D1C57 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9270",
+   "fmt": "msg",
+   "jp": "くっ!! 紫紋…{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "rel16 1D1C59 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9284",
+   "fmt": "msg",
+   "jp": "麗羅…{br}お前を死なせたら弾正公に合わす顔がない…{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D1C5B base 1D9236"
+   ]
+  },
+  {
+   "id": "1D92BA",
+   "fmt": "msg",
+   "jp": "狼刃様…{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D1C5D base 1D9236"
+   ]
+  },
+  {
+   "id": "1D92C6",
+   "fmt": "msg",
+   "jp": "覚悟はよろしいか…?{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1C5F base 1D9236"
+   ]
+  },
+  {
+   "id": "1D92DE",
+   "fmt": "msg",
+   "jp": "恨むなよ…{end}",
+   "en": "",
+   "max": 14,
+   "ptr": [
+    "rel16 1D1C61 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D92EC",
+   "fmt": "msg",
+   "jp": "…よろしいですか…{end}",
+   "en": "",
+   "max": 22,
+   "ptr": [
+    "rel16 1D1C63 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9302",
+   "fmt": "msg",
+   "jp": "おぬしほどの才{br}失うのは惜しいが…{br}これも宿命…{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D1C65 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D933A",
+   "fmt": "msg",
+   "jp": "これも我々の宿命だ…{br}恨むな…{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D1C67 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D935E",
+   "fmt": "msg",
+   "jp": "本当によろしいのですか?{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D1C69 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D937A",
+   "fmt": "msg",
+   "jp": "師真様{br}お覚悟はよろしいですか?{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D1C6B base 1D9236"
+   ]
+  },
+  {
+   "id": "1D93A0",
+   "fmt": "msg",
+   "jp": "私はあなた方の死を無駄にはしません{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D1C6D base 1D9236"
+   ]
+  },
+  {
+   "id": "1D93C6",
+   "fmt": "msg",
+   "jp": "麗羅…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D1C6F base 1D9236"
+   ]
+  },
+  {
+   "id": "1D93D0",
+   "fmt": "msg",
+   "jp": "あなたとはいいお友達になれると思ったのに…{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D1C71 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D93FE",
+   "fmt": "msg",
+   "jp": "あんたの命もろうたで!{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D1C73 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9418",
+   "fmt": "msg",
+   "jp": "紫紋! ええか!!{end}",
+   "en": "",
+   "max": 22,
+   "ptr": [
+    "rel16 1D1C75 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D942E",
+   "fmt": "msg",
+   "jp": "…馬鹿息子が…{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "rel16 1D1C77 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9440",
+   "fmt": "msg",
+   "jp": "覚悟はいいか! 親父!!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D1C79 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D945C",
+   "fmt": "msg",
+   "jp": "覚悟はよいか?{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "rel16 1D1C7B base 1D9236"
+   ]
+  },
+  {
+   "id": "1D946E",
+   "fmt": "msg",
+   "jp": "姜子昌… 俺は今でもお前を友と… 親友だと思っている…{br}これからも…{end}",
+   "en": "",
+   "max": 74,
+   "ptr": [
+    "rel16 1D1C7D base 1D9236"
+   ]
+  },
+  {
+   "id": "1D94B8",
+   "fmt": "msg",
+   "jp": "…邑峻…{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D1C7F base 1D9236"
+   ]
+  },
+  {
+   "id": "1D94C4",
+   "fmt": "msg",
+   "jp": "老将軍…{br}おぬし程の武将を失うのは残念だが…{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1C81 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D94F6",
+   "fmt": "msg",
+   "jp": "父上のかたき…{br}取らせてもらうぞ!!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D1C83 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9520",
+   "fmt": "msg",
+   "jp": "虎丸…!!{br}さらばだ!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D1C85 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D953C",
+   "fmt": "msg",
+   "jp": "専が散るとき命も散る…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D1C87 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9556",
+   "fmt": "msg",
+   "jp": "蹄庖…{br}お前… 一体?{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D1C89 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9572",
+   "fmt": "msg",
+   "jp": "専に破れ専に散る…か{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1C8B base 1D9236"
+   ]
+  },
+  {
+   "id": "1D958A",
+   "fmt": "msg",
+   "jp": "銀河を見る目が無かったようね{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D1C8D base 1D9236"
+   ]
+  },
+  {
+   "id": "1D95AA",
+   "fmt": "msg",
+   "jp": "残念ね姜子昌…{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "rel16 1D1C8F base 1D9236"
+   ]
+  },
+  {
+   "id": "1D95BC",
+   "fmt": "msg",
+   "jp": "本当にいくわよ…{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "rel16 1D1C91 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D95D0",
+   "fmt": "msg",
+   "jp": "…この馬鹿者が……!{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1C93 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D95E8",
+   "fmt": "msg",
+   "jp": "才よ…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D1C95 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D95F2",
+   "fmt": "msg",
+   "jp": "邑峻様…!!{end}",
+   "en": "",
+   "max": 16,
+   "ptr": [
+    "rel16 1D1C97 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9602",
+   "fmt": "msg",
+   "jp": "父上…!{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D1C99 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D960E",
+   "fmt": "msg",
+   "jp": "残念だ… 才…!{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "rel16 1D1C9B base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9622",
+   "fmt": "msg",
+   "jp": "父上…!{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D1C9D base 1D9236"
+   ]
+  },
+  {
+   "id": "1D962E",
+   "fmt": "msg",
+   "jp": "兄上…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D1C9F base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9638",
+   "fmt": "msg",
+   "jp": "お前の命運も尽きたな…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D1CA1 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9652",
+   "fmt": "msg",
+   "jp": "ふははははははは………{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D1CA3 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D966C",
+   "fmt": "msg",
+   "jp": "ふはは… ふはは…{br}殺す殺す殺す!!{br}お前を…殺す…!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D1CA5 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D96AA",
+   "fmt": "msg",
+   "jp": "銀河は貴様を必要としていなかったようだ…{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D1CA7 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D96D6",
+   "fmt": "msg",
+   "jp": "飛竜…{br}惜しいな…{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1CA9 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D96EE",
+   "fmt": "msg",
+   "jp": "虎丸…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D1CAB base 1D9236"
+   ]
+  },
+  {
+   "id": "1D96F8",
+   "fmt": "msg",
+   "jp": "銀河を見る目が無かったな…{end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D1CAD base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9716",
+   "fmt": "msg",
+   "jp": "ふん! この下衆が!!{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D1CAF base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9730",
+   "fmt": "msg",
+   "jp": "我が軍にいればと思うと非常に残念だ…{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D1CB1 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9758",
+   "fmt": "msg",
+   "jp": "覚悟はよろしいか…{end}",
+   "en": "",
+   "max": 22,
+   "ptr": [
+    "rel16 1D1CB3 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D976E",
+   "fmt": "msg",
+   "jp": "虎丸様…{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D1CB5 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D977A",
+   "fmt": "msg",
+   "jp": "お前ほどの男を失うのは{br}残念だ…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D1CB7 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D97A0",
+   "fmt": "msg",
+   "jp": "惜しいな… 儒李…!{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1CB9 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D97B8",
+   "fmt": "msg",
+   "jp": "覚悟はよろしいですか?{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D1CBB base 1D9236"
+   ]
+  },
+  {
+   "id": "1D97D2",
+   "fmt": "msg",
+   "jp": "残念ですが敵対してしまった以上仕方ありませんね{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D1CBD base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9804",
+   "fmt": "msg",
+   "jp": "覚悟は良いですかな…{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1CBF base 1D9236"
+   ]
+  },
+  {
+   "id": "1D981C",
+   "fmt": "msg",
+   "jp": "できれば我が軍に欲しかったですな…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D1CC1 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9842",
+   "fmt": "msg",
+   "jp": "ぐふふっ!{br}わしの部下であればのう～!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D1CC3 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D986E",
+   "fmt": "msg",
+   "jp": "わしの器量を計れんとは{br}哀れな奴よ!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D1CC5 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9898",
+   "fmt": "msg",
+   "jp": "あなたは天下を狙うには{br}狭量すぎる…!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D1CC7 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D98C4",
+   "fmt": "msg",
+   "jp": "ふんっ!{br}貴様など用無しだ!!{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D1CC9 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D98E8",
+   "fmt": "msg",
+   "jp": "ええい!!{br}この裏切り者が!{br}車裂きにしてくれる!!!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D1CCB base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9926",
+   "fmt": "msg",
+   "jp": "ふんっ!{br}愚か者め!!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D1CCD base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9942",
+   "fmt": "msg",
+   "jp": "うおおお…!{br}なぜだ狼刃よ!!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D1CCF base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9968",
+   "fmt": "msg",
+   "jp": "さらばだ…{end}",
+   "en": "",
+   "max": 14,
+   "ptr": [
+    "rel16 1D1CD1 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9976",
+   "fmt": "msg",
+   "jp": "さらばだ… 骸山!!{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D1CD3 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D998E",
+   "fmt": "msg",
+   "jp": "運が無かったな…{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "rel16 1D1CD5 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D99A2",
+   "fmt": "msg",
+   "jp": "貴様の考え俺には分からん…!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D1CD7 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D99C2",
+   "fmt": "msg",
+   "jp": "…実の弟と戦い殺さねばならんとはな…{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D1CD9 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D99EA",
+   "fmt": "msg",
+   "jp": "覚悟は良いか…?{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "rel16 1D1CDB base 1D9236"
+   ]
+  },
+  {
+   "id": "1D99FE",
+   "fmt": "msg",
+   "jp": "兄上…{br}残念でございます…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D1CDD base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9A1E",
+   "fmt": "msg",
+   "jp": "ついに理解し合うことはなかったな…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D1CDF base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9A44",
+   "fmt": "msg",
+   "jp": "悪く思うな…{end}",
+   "en": "",
+   "max": 16,
+   "ptr": [
+    "rel16 1D1CE1 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9A54",
+   "fmt": "msg",
+   "jp": "がっはっはっは!{br}哀れな奴よ!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D1CE3 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9A7A",
+   "fmt": "msg",
+   "jp": "………それもまた運命……{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D1CE5 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9A96",
+   "fmt": "msg",
+   "jp": "おぬしの生き様!{br}この武傭決して忘れぬ!!{br}安心せい!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D1CE7 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9AD6",
+   "fmt": "msg",
+   "jp": "人では{br}鬼に勝つこと無理である…!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D1CE9 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9AFE",
+   "fmt": "msg",
+   "jp": "死を選んだのも{br}汝の道であろう…{br}その姿しかと見届けよう…!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D1CEB base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9B42",
+   "fmt": "msg",
+   "jp": "覚悟は… よろしいですかな?{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D1CED base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9B62",
+   "fmt": "msg",
+   "jp": "まいりますぞ!{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "rel16 1D1CEF base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9B74",
+   "fmt": "msg",
+   "jp": "このオレを敵にまわすとは{br}運が無かったな…{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D1CF1 base 1D9236"
+   ]
+  },
+  {
+   "id": "1D9BA4",
+   "fmt": "msg",
+   "jp": "・・・{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "p24 1D1E27",
+    "rel16 1D1E2A base 1D9BA4"
+   ]
+  },
+  {
+   "id": "1D9BAE",
+   "fmt": "msg",
+   "jp": "雷の同意の台詞(エラ〜){end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "p24 1D1FFC",
+    "rel16 1D1FFF base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E2C base 1D9BA4 +14"
+   ]
+  },
+  {
+   "id": "1D9BCA",
+   "fmt": "msg",
+   "jp": "雷の同意の台詞(エラ〜){end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D2001 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E2E base 1D9BA4 +10",
+    "rel16 1D1E30 base 1D9BA4 +20"
+   ]
+  },
+  {
+   "id": "1D9BE6",
+   "fmt": "msg",
+   "jp": "ふっ… いいだろう{br}俺の考えはまだ甘かったみたいだぜ!!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2003 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E32 base 1D9BA4 +10",
+    "rel16 1D1E34 base 1D9BA4 +60"
+   ]
+  },
+  {
+   "id": "1D9C24",
+   "fmt": "msg",
+   "jp": "一度は裏切ったのに…{br}本当に戻っていいのですか?{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D2005 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E36 base 1D9BA4 +10",
+    "rel16 1D1E38 base 1D9BA4 +34",
+    "rel16 1D1E3A base 1D9BA4 +48"
+   ]
+  },
+  {
+   "id": "1D9C5A",
+   "fmt": "msg",
+   "jp": "うん! やっぱり父上の専を叶える事ができるのは雷だけや!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2007 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E3C base 1D9BA4 +16"
+   ]
+  },
+  {
+   "id": "1D9C96",
+   "fmt": "msg",
+   "jp": "ふっ…{br}それも… いいだろう…{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D2009 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E3E base 1D9BA4 +4"
+   ]
+  },
+  {
+   "id": "1D9CBA",
+   "fmt": "msg",
+   "jp": "…本当に俺の才を認めてくれるのか…?{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D1E40 base 1D9BA4",
+    "rel16 1D200B base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E42 base 1D9BA4 +28"
+   ]
+  },
+  {
+   "id": "1D9CE2",
+   "fmt": "msg",
+   "jp": "ああ、そうさせてもらおう{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D200D base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E44 base 1D9BA4 +24"
+   ]
+  },
+  {
+   "id": "1D9CFE",
+   "fmt": "msg",
+   "jp": "師真様…{br}そうさせてもらいます私は生きて平和な世を見てみたい!!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D200F base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E46 base 1D9BA4 +34",
+    "rel16 1D1E48 base 1D9BA4 +44"
+   ]
+  },
+  {
+   "id": "1D9D44",
+   "fmt": "msg",
+   "jp": "天下か…?!{br}いいだろう もう一度私はこの才で専を追う!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2011 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E4A base 1D9BA4 +20",
+    "rel16 1D1E4C base 1D9BA4 +46"
+   ]
+  },
+  {
+   "id": "1D9D82",
+   "fmt": "msg",
+   "jp": "敵であった俺をか?{br}可能な限りその希望に答えさせてもらおう!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2013 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E4E base 1D9BA4 +4",
+    "rel16 1D1E50 base 1D9BA4 +22",
+    "rel16 1D1E52 base 1D9BA4 +48"
+   ]
+  },
+  {
+   "id": "1D9DC4",
+   "fmt": "msg",
+   "jp": "どうか…{br}お助けを…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D1E54 base 1D9BA4",
+    "rel16 1D2015 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1D9DDE",
+   "fmt": "msg",
+   "jp": "ああそうさせてもらおう{br}私にはまだやりたいことがあるのだ{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2017 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E56 base 1D9BA4 +40",
+    "rel16 1D1E58 base 1D9BA4 +52"
+   ]
+  },
+  {
+   "id": "1D9E1C",
+   "fmt": "msg",
+   "jp": "私は生き抜くことを選ぶことにします{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2019 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E5A base 1D9BA4 +36"
+   ]
+  },
+  {
+   "id": "1D9E42",
+   "fmt": "msg",
+   "jp": "紫紋…{br}紫紋が言うならうちそっちに行ってもええで…{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D201B base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E5C base 1D9BA4 +36"
+   ]
+  },
+  {
+   "id": "1D9E7A",
+   "fmt": "msg",
+   "jp": "………そうね……{br}そちらに行かせてもらうわ…{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D201D base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E5E base 1D9BA4 +4",
+    "rel16 1D1E60 base 1D9BA4 +30"
+   ]
+  },
+  {
+   "id": "1D9EAC",
+   "fmt": "msg",
+   "jp": "うちに生きろいうんやな…!{end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D201F base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E62 base 1D9BA4 +2",
+    "rel16 1D1E64 base 1D9BA4 +26"
+   ]
+  },
+  {
+   "id": "1D9ECA",
+   "fmt": "msg",
+   "jp": "ありがとう麗羅…{br}一緒にいかせてもらうわ{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D2021 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E66 base 1D9BA4 +30"
+   ]
+  },
+  {
+   "id": "1D9EF8",
+   "fmt": "msg",
+   "jp": "親父の方が正しいみてえだな…そっちに行かせてもらうぜ!!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2023 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E68 base 1D9BA4 +2",
+    "rel16 1D1E6A base 1D9BA4 +22",
+    "rel16 1D1E6C base 1D9BA4 +46",
+    "rel16 1D1E6E base 1D9BA4 +56"
+   ]
+  },
+  {
+   "id": "1D9F34",
+   "fmt": "msg",
+   "jp": "わしの助けが必要とな?{br}ふふ…!{br}とんだ甘えん坊だな!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D2025 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E70 base 1D9BA4 +12",
+    "rel16 1D1E72 base 1D9BA4 +24",
+    "rel16 1D1E74 base 1D9BA4 +42",
+    "rel16 1D1E76 base 1D9BA4 +54"
+   ]
+  },
+  {
+   "id": "1D9F74",
+   "fmt": "msg",
+   "jp": "羅候の同意の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D1E78 base 1D9BA4",
+    "rel16 1D2027 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E7A base 1D9BA4 +26"
+   ]
+  },
+  {
+   "id": "1D9F92",
+   "fmt": "msg",
+   "jp": "他の国へ行った私が愚かでございました{br}王の偉大さに感謝致します{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2029 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E7C base 1D9BA4 +22"
+   ]
+  },
+  {
+   "id": "1D9FD6",
+   "fmt": "msg",
+   "jp": "…許してくれるの? 羅候…{br}羅候を裏切るなんてあたしどうかしてたんだわ{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D202B base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E7E base 1D9BA4 +6",
+    "rel16 1D1E80 base 1D9BA4 +50",
+    "rel16 1D1E82 base 1D9BA4 +70"
+   ]
+  },
+  {
+   "id": "1DA022",
+   "fmt": "msg",
+   "jp": "覇者…!{br}覇者としての器を持つのはやはり羅候様しかおらぬ{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D202D base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E84 base 1D9BA4 +4",
+    "rel16 1D1E86 base 1D9BA4 +34",
+    "rel16 1D1E88 base 1D9BA4 +58"
+   ]
+  },
+  {
+   "id": "1DA060",
+   "fmt": "msg",
+   "jp": "ふっ…{br}予想以上の男になってるな…{br}いいだろうお前と共に行こう{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D202F base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E8A base 1D9BA4 +36",
+    "rel16 1D1E8C base 1D9BA4 +58"
+   ]
+  },
+  {
+   "id": "1DA0A6",
+   "fmt": "msg",
+   "jp": "義兄上!{br}ぜひ虎丸にもお手伝いさせてください!!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D1E8E base 1D9BA4",
+    "rel16 1D2031 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E90 base 1D9BA4 +34"
+   ]
+  },
+  {
+   "id": "1DA0DC",
+   "fmt": "msg",
+   "jp": "行こう{br}そこにはきっと私の専もある!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D2033 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E92 base 1D9BA4 +2",
+    "rel16 1D1E94 base 1D9BA4 +28"
+   ]
+  },
+  {
+   "id": "1DA106",
+   "fmt": "msg",
+   "jp": "私を…?{br}ふははははは…{br}後悔することになるぞ…{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2035 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E96 base 1D9BA4 +36"
+   ]
+  },
+  {
+   "id": "1DA13E",
+   "fmt": "msg",
+   "jp": "同じ専…{br}そうか同じ専なのだ私もあなたと共に行こう{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2037 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E98 base 1D9BA4 +4",
+    "rel16 1D1E9A base 1D9BA4 +42"
+   ]
+  },
+  {
+   "id": "1DA176",
+   "fmt": "msg",
+   "jp": "いいわ!{br}ここで死んでしまうよりよっぽどいいわ!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2039 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E9C base 1D9BA4 +26"
+   ]
+  },
+  {
+   "id": "1DA1AE",
+   "fmt": "msg",
+   "jp": "私の専のためにもそちらに行きます{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D203B base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1E9E base 1D9BA4 +8"
+   ]
+  },
+  {
+   "id": "1DA1D2",
+   "fmt": "msg",
+   "jp": "私は世の中が平和になるまでは死ねないわ!{br}あなたについて行きます!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D203D base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EA0 base 1D9BA4 +12",
+    "rel16 1D1EA2 base 1D9BA4 +44"
+   ]
+  },
+  {
+   "id": "1DA21A",
+   "fmt": "msg",
+   "jp": "…父上!{br}私に生きろと…?!{br}生きろと言うのですか…?{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D203F base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EA4 base 1D9BA4 +26",
+    "rel16 1D1EA6 base 1D9BA4 +50"
+   ]
+  },
+  {
+   "id": "1DA258",
+   "fmt": "msg",
+   "jp": "父上…{br}私が間違っておりました…{br}共に行かせてください…!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2041 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EA8 base 1D9BA4 +22",
+    "rel16 1D1EAA base 1D9BA4 +36",
+    "rel16 1D1EAC base 1D9BA4 +58"
+   ]
+  },
+  {
+   "id": "1DA29A",
+   "fmt": "msg",
+   "jp": "仕方無いわね{br}そこまで言うんなら行ってあげるわ!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D2043 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EAE base 1D9BA4 +12",
+    "rel16 1D1EB0 base 1D9BA4 +44"
+   ]
+  },
+  {
+   "id": "1DA2D0",
+   "fmt": "msg",
+   "jp": "人を見る目はお前の方があったみたいだな…{br}そちらの陣営へ行こう{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2045 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EB2 base 1D9BA4 +30",
+    "rel16 1D1EB4 base 1D9BA4 +50"
+   ]
+  },
+  {
+   "id": "1DA314",
+   "fmt": "msg",
+   "jp": "兄上!{br}私が間違っておりました 兄上について行かせてもらいます!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D2047 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EB6 base 1D9BA4 +10",
+    "rel16 1D1EB8 base 1D9BA4 +48",
+    "rel16 1D1EBA base 1D9BA4 +64"
+   ]
+  },
+  {
+   "id": "1DA35A",
+   "fmt": "msg",
+   "jp": "覇王…か{br}ならばその覇王に会いに行くことにしよう{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D2049 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EBC base 1D9BA4 +28"
+   ]
+  },
+  {
+   "id": "1DA390",
+   "fmt": "msg",
+   "jp": "覇王に必要なもの…!{br}…俺が必要なのだな!{br}よし! 行くぞ! 才!{end}",
+   "en": "",
+   "max": 74,
+   "ptr": [
+    "rel16 1D204B base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EBE base 1D9BA4 +2",
+    "rel16 1D1EC0 base 1D9BA4 +58"
+   ]
+  },
+  {
+   "id": "1DA3DA",
+   "fmt": "msg",
+   "jp": "俺は死なない…!!{br}この銀河を手にするまで…!!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D204D base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EC2 base 1D9BA4 +20"
+   ]
+  },
+  {
+   "id": "1DA410",
+   "fmt": "msg",
+   "jp": "…ふはは…{br}そうやって生かしておくのが{br}間違いの始まりなのだ…!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D204F base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EC4 base 1D9BA4 +26",
+    "rel16 1D1EC6 base 1D9BA4 +56"
+   ]
+  },
+  {
+   "id": "1DA458",
+   "fmt": "msg",
+   "jp": "蹄庖!!{br}どうしたというのだ! 蹄庖を止められるのは私だけか?{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2051 base 1D9BAE"
+   ],
+   "tails": [
+    "rel16 1D1EC8 base 1D9BA4 +2"
+   ]
+  },
+  {
+   "id": "1DA49C",
+   "fmt": "msg",
+   "jp": "正宗の同意の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D2053 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA4BA",
+   "fmt": "msg",
+   "jp": "正宗様…{br}この飛竜 そのお言葉{br}謹んでお受けいたします{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2055 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA4F8",
+   "fmt": "msg",
+   "jp": "…姉上… すみません…{br}僕の考えが及びませんでした{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2057 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA530",
+   "fmt": "msg",
+   "jp": "外に出て初めて自国の良さが分かりました{br}ぜひ戻らせてください{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2059 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA572",
+   "fmt": "msg",
+   "jp": "おお… 正宗殿!{br}実は敵の情報を入手するため裏切ったふりをしたのだ{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D205B base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA5BA",
+   "fmt": "msg",
+   "jp": "それほど買ってくれるのなら行かぬわけには行かないな…{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D205D base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA5F2",
+   "fmt": "msg",
+   "jp": "自分の目で天下統一を見るために行きましょう…{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D205F base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA622",
+   "fmt": "msg",
+   "jp": "分かりました…{br}あなたにお任せ致します{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D2061 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA64E",
+   "fmt": "msg",
+   "jp": "いいだろう…!{br}俺達の専のために…!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D2063 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA678",
+   "fmt": "msg",
+   "jp": "私をそこまで買っていてくれていたとは…{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D2065 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA6A2",
+   "fmt": "msg",
+   "jp": "…行きましょう…{br}僕は火のような男になるまで死ねないから…{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D2067 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA6E2",
+   "fmt": "msg",
+   "jp": "そうだな…{br}ここで行かなければ己の目で{br}銀河の統一は見れないからな…{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D2069 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA72E",
+   "fmt": "msg",
+   "jp": "…あなたに任せることにしましょう…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D206B base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA754",
+   "fmt": "msg",
+   "jp": "そうだな…{br}そちらで思う存分働かせてもらうとしよう{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D206D base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA78C",
+   "fmt": "msg",
+   "jp": "貴様がそこまで言うのなら行ってやる!{br}有り難く思え!!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D206F base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA7C8",
+   "fmt": "msg",
+   "jp": "くっ…! いいでしょう{br}あなたの部下になりましょう{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2071 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA800",
+   "fmt": "msg",
+   "jp": "いいか!{br}わしが降ってやるのだ! これは貴様の手柄ではないのだ!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D2073 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA846",
+   "fmt": "msg",
+   "jp": "骸羅の同意の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D2075 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA864",
+   "fmt": "msg",
+   "jp": "兄者! ありがとうございます兄者あっての私であると{br}今気付きました!{end}",
+   "en": "",
+   "max": 74,
+   "ptr": [
+    "rel16 1D2077 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA8AE",
+   "fmt": "msg",
+   "jp": "兄上のお心の広さに感服致しました 兄上について行きたいと思います{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2079 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA8F2",
+   "fmt": "msg",
+   "jp": "ああ… いいだろう…{br}すまなかったな骸羅…{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D207B base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA922",
+   "fmt": "msg",
+   "jp": "よかろう…{br}まだ私もやり残したこともあるしな…{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D207D base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA956",
+   "fmt": "msg",
+   "jp": "俺の武勇が必要だと言うのならそれに応えよう!!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D207F base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA988",
+   "fmt": "msg",
+   "jp": "おぬしには私の才を買うに値する能力がある{br}おぬしと共に行こう…{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2081 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA9CC",
+   "fmt": "msg",
+   "jp": "行こう…! そこに俺の生きる世界があるのだ{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D2083 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DA9FA",
+   "fmt": "msg",
+   "jp": "…兄上…{br}ありがとうございます…{br}どうぞ私の才をお使いください{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D2085 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAA40",
+   "fmt": "msg",
+   "jp": "私の力で良いのなら{br}使ってくれ…!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D2087 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAA68",
+   "fmt": "msg",
+   "jp": "お前がそこまで言うのだ{br}行ってやろう…!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D2089 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAA96",
+   "fmt": "msg",
+   "jp": "そうだな…{br}今なら間に合うか…{br}間違いを正すとしよう{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D208B base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAAD2",
+   "fmt": "msg",
+   "jp": "お前の国にこそ俺の才を活かせる場所があるのかもな…{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D208D base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAB08",
+   "fmt": "msg",
+   "jp": "ぬおおお! わしは生きる!{br}おぬしと共に行っても良いぞ!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D208F base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAB46",
+   "fmt": "msg",
+   "jp": "………あい分かった…{br}共に行こう…{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D2091 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAB6E",
+   "fmt": "msg",
+   "jp": "我の死に様ではなく生き様を見たいのだな?!{br}見せてやろう! 生き様を!{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D2093 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DABBA",
+   "fmt": "msg",
+   "jp": "この白鬼 まだ死ぬわけにはいかん!!{br}共に行き鬼となろう{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2095 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DABF8",
+   "fmt": "msg",
+   "jp": "戦う姿勢こそが大切なのだ…{br}ゆえに共に行くことにしよう!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2097 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAC36",
+   "fmt": "msg",
+   "jp": "行こう! 天が俺を必要としているのだな!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D2099 base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAC62",
+   "fmt": "msg",
+   "jp": "それも良いかも知れんな…{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D209B base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DAC7E",
+   "fmt": "msg",
+   "jp": "…あんたにゃまいったぜ…{br}あっしの命、あんたにあずけるとしよう!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D209D base 1D9BAE"
+   ]
+  },
+  {
+   "id": "1DACC4",
+   "fmt": "msg",
+   "jp": "雷の拒否の台詞(エラ〜){end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "p24 1D21D1",
+    "rel16 1D21D4 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DACE0",
+   "fmt": "msg",
+   "jp": "雷の拒否の台詞(エラ〜){end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D21D6 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DACFC",
+   "fmt": "msg",
+   "jp": "いや…{br}俺の力はこの程度だったのだ…{br}人を見る才も無かったのだ…{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D21D8 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAD44",
+   "fmt": "msg",
+   "jp": "雷…{br}ごめんなさい…{br}もう雷の所へは戻れないわ…{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D21DA base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAD7C",
+   "fmt": "msg",
+   "jp": "残念やけど雷にはとうてい父上の叶えられへんのや…{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D21DC base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DADB0",
+   "fmt": "msg",
+   "jp": "私とお前はお互い精一杯戦い…そしてわたしの戦いも終ったのだ…{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D21DE base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DADF0",
+   "fmt": "msg",
+   "jp": "その言葉だけで充分だ…{br}国難の際に命乞いをして{br}恥を後世に残したくはない…!{end}",
+   "en": "",
+   "max": 84,
+   "ptr": [
+    "rel16 1D21E0 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAE44",
+   "fmt": "msg",
+   "jp": "俺の力を完全にだしきってこうなったのだ{br}俺もここで終りということだ{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D21E2 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAE8C",
+   "fmt": "msg",
+   "jp": "私はずっとこの国の人間でありたいのです{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D21E4 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAEB6",
+   "fmt": "msg",
+   "jp": "残念ながら私はそうそう国をかえたりしないものでね{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D21E6 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAEEA",
+   "fmt": "msg",
+   "jp": "国難の際に命乞をして恥を後世に残したくはない…{br}私は名を惜しむ!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D21E8 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAF30",
+   "fmt": "msg",
+   "jp": "お断り致します{br}どうやら私には器用な生き方はできないようです{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D21EA base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAF72",
+   "fmt": "msg",
+   "jp": "いや、{br}もうすでに私の居場所はない…{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D21EC base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAF9C",
+   "fmt": "msg",
+   "jp": "私にはこの国が全てなのです…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D21EE base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAFBC",
+   "fmt": "msg",
+   "jp": "ごめんな紫紋… うちはこの国を捨てられんのや…{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D21F0 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DAFEE",
+   "fmt": "msg",
+   "jp": "節操無く国をかえること{br}あたしにはできないの…{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D21F2 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB022",
+   "fmt": "msg",
+   "jp": "うちにはこの国を離れることができないんや…{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D21F4 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB050",
+   "fmt": "msg",
+   "jp": "麗羅…{br}私一緒に行けないの…{br}この国が好きだから…{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D21F6 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB08A",
+   "fmt": "msg",
+   "jp": "断わる!{br}俺はうちの大将に賭けたんだ{br}他にはいかん!!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D21F8 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB0C8",
+   "fmt": "msg",
+   "jp": "息子よ!{br}わしの命運も尽きた{br}首を切るがよい!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D21FA base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB100",
+   "fmt": "msg",
+   "jp": "羅候の拒否の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D21FC base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB11E",
+   "fmt": "msg",
+   "jp": "王よ せっかくですが私はこれ以上生き恥をさらしたくないのです{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D21FE base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB15E",
+   "fmt": "msg",
+   "jp": "ごめんなさい…{br}あたしもう練に…羅候の所へ戻りたくないの{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2200 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB19C",
+   "fmt": "msg",
+   "jp": "それがしの選ぶ道は もはや{br}王の進む道と交わることはありませぬ{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2202 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB1E0",
+   "fmt": "msg",
+   "jp": "あんたじゃまだ役不足だね{br}私はそんな奴の所に行きたくないね{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D2204 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB220",
+   "fmt": "msg",
+   "jp": "僕はもう駒として使われたくないのです!!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D2206 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB24C",
+   "fmt": "msg",
+   "jp": "私が敗れたとき{br}私の命運も尽きたのだ{br}私はここで散る…!!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2208 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB28E",
+   "fmt": "msg",
+   "jp": "…?!…私…は?{br}私は…もう…だ…め…殺…して…くだ…さい…{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D220A base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB2D0",
+   "fmt": "msg",
+   "jp": "私の専は 我が主あってのものお前と共には見れぬ!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D220C base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB304",
+   "fmt": "msg",
+   "jp": "銀河の覇者にふさわしくない奴について行く気はないわ!!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D220E base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB33E",
+   "fmt": "msg",
+   "jp": "私の専はそこには無い!!{br}ゆえにあなたの希望に添うことはできない!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D2210 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB386",
+   "fmt": "msg",
+   "jp": "平和へと導けるのはあなたがたではないの…{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D2212 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB3B2",
+   "fmt": "msg",
+   "jp": "父上…{br}一族の名を汚してしまうことをお許しください…{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D2214 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB3EC",
+   "fmt": "msg",
+   "jp": "父上!{br}私は己の能力全てを使い果たしてしまったのです…{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2216 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB428",
+   "fmt": "msg",
+   "jp": "いやよ!{br}私がついて行くのは 覇者としてふさわしい人だけよ!!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2218 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB46C",
+   "fmt": "msg",
+   "jp": "わしはこの国の武将として死のうと思っているのだ!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D221A base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB4A0",
+   "fmt": "msg",
+   "jp": "兄上! お気づきになられても良いはずです{br}覇者としてふさわしい方を…!{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D221C base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB4EC",
+   "fmt": "msg",
+   "jp": "お前の言う覇王と私の信じる王の姿とはあまりにも違うのだ…{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D221E base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB528",
+   "fmt": "msg",
+   "jp": "…!{br}…だが俺は死んで我を通す!{br}お前は生きて名を残せ!!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2220 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB56A",
+   "fmt": "msg",
+   "jp": "断わる!!{br}俺はもう 誰ぞかの部下でいることに堪えられん!!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2222 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB5AC",
+   "fmt": "msg",
+   "jp": "殺せ!殺せ!殺せ!{br}ふははははは……{br}殺すがいい!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D2224 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB5E6",
+   "fmt": "msg",
+   "jp": "何かがおかしい…!{br}そんな所へ行く気はない!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D2226 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB61A",
+   "fmt": "msg",
+   "jp": "正宗の拒否の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D2228 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB638",
+   "fmt": "msg",
+   "jp": "この飛竜 一度は正宗様に見切りをつけた者{br}再び戻ることなどできません{end}",
+   "en": "",
+   "max": 74,
+   "ptr": [
+    "rel16 1D222A base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB682",
+   "fmt": "msg",
+   "jp": "僕はもう姉上の道具になるのが嫌なのです!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D222C base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB6AE",
+   "fmt": "msg",
+   "jp": "南天連合? 実際は智の国で、名を偽っているうちは天下など取れませぬ{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D222E base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB6F4",
+   "fmt": "msg",
+   "jp": "ふん!{br}そんなに殺したいのなら死んでやるわ! この雌狐め!!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2230 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB736",
+   "fmt": "msg",
+   "jp": "それだけ買ってくれるのはありがたいがその気はないんでな…{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2232 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB772",
+   "fmt": "msg",
+   "jp": "我があるじに背くことなどできぬ…{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D2234 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB796",
+   "fmt": "msg",
+   "jp": "僕にはあなたが何を考えているのか分かりません{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D2236 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB7C6",
+   "fmt": "msg",
+   "jp": "俺にはもう専を見るための力もない…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2238 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB7EC",
+   "fmt": "msg",
+   "jp": "あなたと共に行くくらいなら{br}私は死を選びましょう…!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D223A base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB826",
+   "fmt": "msg",
+   "jp": "僕には無理のようだ…{br}火のような男になることなど…{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D223C base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB85E",
+   "fmt": "msg",
+   "jp": "私は…{br}お前に未来を感じることが出来ない…{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D223E base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB88E",
+   "fmt": "msg",
+   "jp": "僕の考えとあなた方の考えは合致しません{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D2240 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB8B8",
+   "fmt": "msg",
+   "jp": "所詮俺の力はこんなもの…{br}ここで終わりなのさ!!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D2242 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB8EE",
+   "fmt": "msg",
+   "jp": "ぐっ…!{br}どうじゃわしの負けっぷり!{br}見事であろう!!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2244 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB92C",
+   "fmt": "msg",
+   "jp": "あなたには器量がなさすぎる…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D2246 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB94C",
+   "fmt": "msg",
+   "jp": "貴様!{br}腹の中ではわしのことを笑っとるに違いないわ! 許せん!!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D2248 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB992",
+   "fmt": "msg",
+   "jp": "骸羅の拒否の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D224A base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB9B0",
+   "fmt": "msg",
+   "jp": "兄者!{br}俺は己の進んだ道が間違っているとは思っていません!!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D224C base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DB9F2",
+   "fmt": "msg",
+   "jp": "兄上!{br}力だけでは天下を治めることなどできないのです…!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D224E base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBA32",
+   "fmt": "msg",
+   "jp": "私はもう戻れない…!{br}許せ骸羅…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2250 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBA58",
+   "fmt": "msg",
+   "jp": "…もう充分だ…!{br}私はもう疲れた…{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D2252 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBA80",
+   "fmt": "msg",
+   "jp": "ふんっ!{br}俺はそう思わんがな!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2254 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBAA6",
+   "fmt": "msg",
+   "jp": "私の才は高い… おぬしには買えないくらいにな!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D2256 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBADA",
+   "fmt": "msg",
+   "jp": "貴様ごときに命乞する気はないわ!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2258 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBB00",
+   "fmt": "msg",
+   "jp": "…兄上…{br}もう昔のようには戻れないのです…{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D225A base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBB30",
+   "fmt": "msg",
+   "jp": "私は己の生き方が正しいと思っている!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D225C base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBB58",
+   "fmt": "msg",
+   "jp": "今さら命乞する気などないわ!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D225E base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBB78",
+   "fmt": "msg",
+   "jp": "私は己の判断に誤りがあったとは思わん!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D2260 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBBA2",
+   "fmt": "msg",
+   "jp": "俺の力もこの程度だったらしいならば生きている意味もない…{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2262 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBBDE",
+   "fmt": "msg",
+   "jp": "ぬううう…!!{br}わしが貴様等に降るわけなかろう!!!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D2264 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBC18",
+   "fmt": "msg",
+   "jp": "………それはできん…{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D2266 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBC30",
+   "fmt": "msg",
+   "jp": "我の死に様男の死に様!!{br}男の散り際とくと見よ!!!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D2268 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBC6A",
+   "fmt": "msg",
+   "jp": "この白鬼{br}そうそう主君がえは致さん!!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D226A base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBC96",
+   "fmt": "msg",
+   "jp": "己の意志を貫き通すのも{br}また武将の道!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D226C base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBCC2",
+   "fmt": "msg",
+   "jp": "さっさと首をはねるが良い!!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D226E base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBCE2",
+   "fmt": "msg",
+   "jp": "俺には…{br}今までの忠義を忘れることはできん…{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D2270 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBD14",
+   "fmt": "msg",
+   "jp": "悪いが生き恥をさらすつもりはねぇ!{br}さっさと殺せ!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2272 base 1DACC4"
+   ]
+  },
+  {
+   "id": "1DBD4C",
+   "fmt": "msg",
+   "jp": "雷の死ぬ前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "p24 1D23A6",
+    "rel16 1D23A9 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBD6A",
+   "fmt": "msg",
+   "jp": "雷の死ぬ前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D23AB base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBD88",
+   "fmt": "msg",
+   "jp": "もう言うな…{br}これも宿命!!{end}",
+   "en": "",
+   "max": 34,
+   "ptr": [
+    "rel16 1D23AD base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBDAA",
+   "fmt": "msg",
+   "jp": "…さようなら…雷…{end}",
+   "en": "",
+   "max": 22,
+   "ptr": [
+    "rel16 1D23AF base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBDC0",
+   "fmt": "msg",
+   "jp": "雷…いいんや、{br}これもうちの運命やさかい…{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D23B1 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBDF0",
+   "fmt": "msg",
+   "jp": "馬鹿野郎… 泣く奴があるか…雷… 戦って戦い抜いてお前の専を果たせ!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D23B3 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBE38",
+   "fmt": "msg",
+   "jp": "うむ…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D23B5 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBE42",
+   "fmt": "msg",
+   "jp": "俺の才もこの程度であったか…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D23B7 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBE62",
+   "fmt": "msg",
+   "jp": "…はい…{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D23B9 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBE6E",
+   "fmt": "msg",
+   "jp": "そのくらいのこと{br}心得ているつもりだ{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D23BB base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBE98",
+   "fmt": "msg",
+   "jp": "むろん…{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D23BD base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBEA4",
+   "fmt": "msg",
+   "jp": "全銀河の統一を{br}見てみたかった…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D23BF base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBECA",
+   "fmt": "msg",
+   "jp": "…ああ… やってくれ…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D23C1 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBEE4",
+   "fmt": "msg",
+   "jp": "みなさん… さようなら…{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D23C3 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBF00",
+   "fmt": "msg",
+   "jp": "おわかれや…{end}",
+   "en": "",
+   "max": 16,
+   "ptr": [
+    "rel16 1D23C5 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBF10",
+   "fmt": "msg",
+   "jp": "そうね…{br}あなたとは平和な時代に会いたかったわ…{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D23C7 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBF46",
+   "fmt": "msg",
+   "jp": "うちは… うちは…{end}",
+   "en": "",
+   "max": 22,
+   "ptr": [
+    "rel16 1D23C9 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBF5C",
+   "fmt": "msg",
+   "jp": "はい…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D23CB base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBF66",
+   "fmt": "msg",
+   "jp": "ふん!{br}さっさとしやがれ!!{end}",
+   "en": "",
+   "max": 34,
+   "ptr": [
+    "rel16 1D23CD base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBF88",
+   "fmt": "msg",
+   "jp": "息子に討たれるならば本望よ!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D23CF base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBFA8",
+   "fmt": "msg",
+   "jp": "羅候の死ぬ前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D23D1 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBFC8",
+   "fmt": "msg",
+   "jp": "…?!…{br}身に余る光栄でございます{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D23D3 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DBFF0",
+   "fmt": "msg",
+   "jp": "さよなら… 羅候…{br}さよなら…{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D23D5 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC014",
+   "fmt": "msg",
+   "jp": "これもそれがしの選んだ道であります{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D23D7 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC03A",
+   "fmt": "msg",
+   "jp": "ああ…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D23D9 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC044",
+   "fmt": "msg",
+   "jp": "…はい……!!{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "rel16 1D23DB base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC056",
+   "fmt": "msg",
+   "jp": "専が散るとき命も散る…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D23DD base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC070",
+   "fmt": "msg",
+   "jp": "早く…姜子昌さ…ま…!{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D23DF base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC08A",
+   "fmt": "msg",
+   "jp": "………{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D23E1 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC094",
+   "fmt": "msg",
+   "jp": "やっぱり死にたくない…!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D23E3 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC0B0",
+   "fmt": "msg",
+   "jp": "専が散り… 命も散る…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D23E5 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC0CA",
+   "fmt": "msg",
+   "jp": "はい… 今度生まれて来る時は平和な世界に…{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D23E7 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC0F8",
+   "fmt": "msg",
+   "jp": "父上… 辛い思いをさせて{br}申し訳ありません…{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D23E9 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC12A",
+   "fmt": "msg",
+   "jp": "父上…{br}お別れです…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D23EB base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC144",
+   "fmt": "msg",
+   "jp": "平和になった世の中も見たかったわ…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D23ED base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC16A",
+   "fmt": "msg",
+   "jp": "己の道を信じて生き続けよ!!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D23EF base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC18A",
+   "fmt": "msg",
+   "jp": "兄上…!!{end}",
+   "en": "",
+   "max": 14,
+   "ptr": [
+    "rel16 1D23F1 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC198",
+   "fmt": "msg",
+   "jp": "己の道を信じて生き続けよ!!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D23F3 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC1B8",
+   "fmt": "msg",
+   "jp": "覇王のために尽くせ…{br}さらばだ!!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D23F5 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC1E0",
+   "fmt": "msg",
+   "jp": "俺の命運も尽きたか…{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D23F7 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC1F8",
+   "fmt": "msg",
+   "jp": "ふははははははは………{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D23F9 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC212",
+   "fmt": "msg",
+   "jp": "一体どうしたのだ蹄庖…!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D23FB base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC22E",
+   "fmt": "msg",
+   "jp": "正宗の死ぬ前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D23FD base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC24E",
+   "fmt": "msg",
+   "jp": "買いかぶりでございます{br}正宗様…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D23FF base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC274",
+   "fmt": "msg",
+   "jp": "僕には姉上の決めた未来なら{br}生きている意味がありません!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D2401 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC2B2",
+   "fmt": "msg",
+   "jp": "正宗様こそ早く目を覚ましなされ…{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D2403 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC2D6",
+   "fmt": "msg",
+   "jp": "わ、わしがこんな奴に……!{end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D2405 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC2F4",
+   "fmt": "msg",
+   "jp": "期待に添えなくて悪かったな…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D2407 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC314",
+   "fmt": "msg",
+   "jp": "………{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D2409 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC31E",
+   "fmt": "msg",
+   "jp": "これできっと良かったのです…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D240B base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC33E",
+   "fmt": "msg",
+   "jp": "そんなに高く買ってもらえているとは光栄だ…{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D240D base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC36C",
+   "fmt": "msg",
+   "jp": "ふん!!{end}",
+   "en": "",
+   "max": 12,
+   "ptr": [
+    "rel16 1D240F base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC378",
+   "fmt": "msg",
+   "jp": "覚悟はできております…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D2411 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC392",
+   "fmt": "msg",
+   "jp": "………{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D2413 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC39C",
+   "fmt": "msg",
+   "jp": "はい…{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D2415 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC3A6",
+   "fmt": "msg",
+   "jp": "ふん! 残念だったな…!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D2417 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC3C2",
+   "fmt": "msg",
+   "jp": "…わしは…{br}わしは死ぬのか…?……{br}いやじゃ～!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2419 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC3FA",
+   "fmt": "msg",
+   "jp": "今ここで死ねるのは{br}幸せなことかもしれん…!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D241B base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC42C",
+   "fmt": "msg",
+   "jp": "ええい… だまれ!!{br}この死にぞこないがっ!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D241D base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC460",
+   "fmt": "msg",
+   "jp": "骸羅の死ぬ前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D241F base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC480",
+   "fmt": "msg",
+   "jp": "俺は兄者のそこについていけないのだ…{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D2421 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC4A8",
+   "fmt": "msg",
+   "jp": "兄上では無理なのです…!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D2423 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC4C4",
+   "fmt": "msg",
+   "jp": "………{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "rel16 1D2425 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC4CE",
+   "fmt": "msg",
+   "jp": "私の戦いも もう終わる……{br}長かった…{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D2427 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC4FA",
+   "fmt": "msg",
+   "jp": "惜しまれつつ散るのも一興よ!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D2429 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC51A",
+   "fmt": "msg",
+   "jp": "それも運命よ!!{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "rel16 1D242B base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC52E",
+   "fmt": "msg",
+   "jp": "…次こうなるのは貴様らだ…!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D242D base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC54E",
+   "fmt": "msg",
+   "jp": "これも運命なのです… 兄上{end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D242F base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC56C",
+   "fmt": "msg",
+   "jp": "私の命数が尽きたのか…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D2431 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC586",
+   "fmt": "msg",
+   "jp": "ふんっ!!{end}",
+   "en": "",
+   "max": 14,
+   "ptr": [
+    "rel16 1D2433 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC594",
+   "fmt": "msg",
+   "jp": "お前の判断は正しいのだ{br}そして私の判断もまた正しいのだ…!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D2435 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC5D4",
+   "fmt": "msg",
+   "jp": "これも俺の運命らしい…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D2437 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC5EE",
+   "fmt": "msg",
+   "jp": "うおおっ!!{br}わしは死しても魂は不滅!!!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D2439 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC61E",
+   "fmt": "msg",
+   "jp": "………これもまた運命……{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D243B base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC63A",
+   "fmt": "msg",
+   "jp": "我が首取ったこと{br}後代への誉れにせい!!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D243D base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC668",
+   "fmt": "msg",
+   "jp": "この世からまた一人の鬼が消える…{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D243F base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC68C",
+   "fmt": "msg",
+   "jp": "滅びる時に滅びぬのは恥であり迷惑である…!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D2441 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC6BA",
+   "fmt": "msg",
+   "jp": "早ようせい!!{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "rel16 1D2443 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC6CC",
+   "fmt": "msg",
+   "jp": "これも運命!!{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "rel16 1D2445 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC6DE",
+   "fmt": "msg",
+   "jp": "オレの悪運もここまでか・・・早くしやがれっ!!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D2447 base 1DBD4C"
+   ]
+  },
+  {
+   "id": "1DC710",
+   "fmt": "msg",
+   "jp": "一度自分の国に帰って銀河を統一する者が誰かを考えてみろ!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "p24 1D257D",
+    "rel16 1D2580 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC74C",
+   "fmt": "msg",
+   "jp": "一度自分の国に帰って銀河を統一する者が誰かを考えてみろ!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2582 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC788",
+   "fmt": "msg",
+   "jp": "師真!{br}お前と俺に何が必要かを考えてもう一度で直してこい!!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2584 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC7CA",
+   "fmt": "msg",
+   "jp": "紫紋…{br}できればもうおれの前には現れないで欲しい{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D2586 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC800",
+   "fmt": "msg",
+   "jp": "お前を殺すと弾正公と合わす顔が亡くなる… でももう俺の前に現れないでくれ{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D2588 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC84C",
+   "fmt": "msg",
+   "jp": "…俺には親同然の方を殺すことは出来ない…{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D258A base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC878",
+   "fmt": "msg",
+   "jp": "一度冷静になって銀河を見てみろ! その才の活かし方が分かるはずだ!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D258C base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC8BE",
+   "fmt": "msg",
+   "jp": "今回は見逃してやろう{br}その武勇を消してしまうのは惜しいからな…{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D258E base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC902",
+   "fmt": "msg",
+   "jp": "私にはあなたを殺すことは出来ない…{br}逃げてください…{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D2590 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC93C",
+   "fmt": "msg",
+   "jp": "お前を逃がすことにする…{br}その方が後々楽になるからな…{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2592 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC978",
+   "fmt": "msg",
+   "jp": "我が国の都合上 あなたには逃げていただく{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D2594 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC9A4",
+   "fmt": "msg",
+   "jp": "我々が銀河統一を成すために{br}あなたにはここで逃げてもらいます!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D2596 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DC9E8",
+   "fmt": "msg",
+   "jp": "師真様… 今日の所はここまでです… 再戦の日を楽しみに待っております{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D2598 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCA30",
+   "fmt": "msg",
+   "jp": "やはり人を殺すなんて{br}私には出来ない…!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D259A base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCA5E",
+   "fmt": "msg",
+   "jp": "今のうちに逃げて麗羅!{br}友達を殺すなんて私にはできないもの!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D259C base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCAA0",
+   "fmt": "msg",
+   "jp": "この銀河が平和になったら{br}もう一度会いたいの{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D259E base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCAD2",
+   "fmt": "msg",
+   "jp": "ほれ!{br}さっさと逃げて 次会う時は 仲間になってえな!!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D25A0 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCB10",
+   "fmt": "msg",
+   "jp": "うちを倒したいんなら もっと強くならんといかんで!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D25A2 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCB48",
+   "fmt": "msg",
+   "jp": "馬鹿息子よ!{br}今日はここまでじゃ早くわしを倒せるようになるんだな!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D25A4 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCB90",
+   "fmt": "msg",
+   "jp": "親父!{br}親だから逃がすんじゃねえぜ!命令だから逃がすんだぜ!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D25A6 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCBD2",
+   "fmt": "msg",
+   "jp": "俺に勝ちたいか?{br}だったら生きてまた俺の所に戦いに来い!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D25A8 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCC12",
+   "fmt": "msg",
+   "jp": "姜子昌!{br}お前には練のために生き恥をさらしてもらうぞ!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D25AA base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCC4E",
+   "fmt": "msg",
+   "jp": "ええい!失せろ!消え失せろ!もう俺の前に現れるんじゃねえ{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D25AC base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCC8A",
+   "fmt": "msg",
+   "jp": "老将軍よ!{br}今一度外から俺の覇者としての器を計る機会をやろう!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D25AE base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCCCE",
+   "fmt": "msg",
+   "jp": "生き恥をさらすがいい…!{br}父上のかたきだ!!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D25B0 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCD00",
+   "fmt": "msg",
+   "jp": "虎丸!{br}良く考えてみろ{br}銀河に今何が必要かを!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D25B2 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCD38",
+   "fmt": "msg",
+   "jp": "私の専のために あなたにここで死なれては困るのだ{br}逃げてもらう{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D25B4 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCD7C",
+   "fmt": "msg",
+   "jp": "今のお前はどこかおかしい!{br}お前を逃がして実態をつかんでやる!!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D25B6 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCDC2",
+   "fmt": "msg",
+   "jp": "俺の専である銀河の統一を{br}お前には生きて見てもらうぞ!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D25B8 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCDFE",
+   "fmt": "msg",
+   "jp": "私の気分が良いうちに{br}さっさと逃げなさいよ!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D25BA base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCE32",
+   "fmt": "msg",
+   "jp": "あたし姜子昌にはあまり興味ないの!{br}さっさと消えてちょうだい!!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D25BC base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCE78",
+   "fmt": "msg",
+   "jp": "どうしてもあなたと平和な世を見てみたいの…{br}だから今は逃げて!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D25BE base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCEBC",
+   "fmt": "msg",
+   "jp": "わしはお前の信じる道の行き先を見たくなった…!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D25C0 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCEEE",
+   "fmt": "msg",
+   "jp": "お前の考えていることをわしは知りたい!{br}わしにそれを見せてくれ!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D25C2 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCF34",
+   "fmt": "msg",
+   "jp": "邑峻様… お逃げください{br}それがしには王家の人間を殺せません…!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D25C4 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCF7A",
+   "fmt": "msg",
+   "jp": "国のためとはいえ 父上を利用することをお許しください…{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D25C6 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCFB4",
+   "fmt": "msg",
+   "jp": "お前なら分かるはずだ{br}覇者が誰であるべきかを!{br}それを見つけよ!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D25C8 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DCFFC",
+   "fmt": "msg",
+   "jp": "父上は戦場から退いて下さい{br}そうすればこのようなことはもう…{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D25CA base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD03E",
+   "fmt": "msg",
+   "jp": "兄上!{br}どうか御再考ください!{br}覇者とは何かを…!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D25CC base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD078",
+   "fmt": "msg",
+   "jp": "ふん! 弱い奴に用はねえ!{br}俺は強い奴を倒して名を上げるのだ!!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D25CE base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD0BE",
+   "fmt": "msg",
+   "jp": "ふははははは…{br}逃げて逃げてさらなる憎しみを生むのだ!!{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D25D0 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD0FC",
+   "fmt": "msg",
+   "jp": "ふははははは…{br}お前ならさらなる混乱を生むであろう{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D25D2 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD134",
+   "fmt": "msg",
+   "jp": "銀河のため{br}今 お前を殺さないのだ!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D25D4 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD15E",
+   "fmt": "msg",
+   "jp": "お前は殺さぬ…{br}生きて私の方が正しいことを{br}その目で見よ!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D25D6 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD1A0",
+   "fmt": "msg",
+   "jp": "虎丸…!{br}逃げ抜き生き抜け…!{br}そしていつの日か…{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D25D8 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD1DA",
+   "fmt": "msg",
+   "jp": "儒李よ…!{br}生きて私とお前、どちらが正しかったかを見定めよ!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D25DA base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD21C",
+   "fmt": "msg",
+   "jp": "貴様のような奴は殺すにも値しない!{br}さっさと失せろ!!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D25DC base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD258",
+   "fmt": "msg",
+   "jp": "お前は殺さない!{br}お前が生きていた方が流れを見定め易いからな{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D25DE base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD29A",
+   "fmt": "msg",
+   "jp": "あなたを生き長らえさせることで我々に利が生まれるのだ{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D25E0 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD2D2",
+   "fmt": "msg",
+   "jp": "虎丸様… 逃げてください{br}私には虎丸様を殺すことなど{br}できません…!{end}",
+   "en": "",
+   "max": 76,
+   "ptr": [
+    "rel16 1D25E2 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD31E",
+   "fmt": "msg",
+   "jp": "お前が逃げれば 我が国は有利になる!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D25E4 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD346",
+   "fmt": "msg",
+   "jp": "お前を逃がした時 我々に利が生まれる!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D25E6 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD370",
+   "fmt": "msg",
+   "jp": "僕が火のような男になるために強くなったあなたと戦いたい!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D25E8 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD3AC",
+   "fmt": "msg",
+   "jp": "あなたを利用させてもらいますよ…!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D25EA base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD3D2",
+   "fmt": "msg",
+   "jp": "虎丸様…{br}いけませんな、そんなに弱くては… もっと強くおなりなさい{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D25EC base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD41A",
+   "fmt": "msg",
+   "jp": "あなたを逃がすのは危険ですが命令ですから仕方ありません{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D25EE base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD454",
+   "fmt": "msg",
+   "jp": "ぐふっぐふふっ!{br}お前を逃がしてやるぞわしは心が広いからな{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D25F0 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD494",
+   "fmt": "msg",
+   "jp": "ぐふっ!{br}貴様など殺す価値もないわ!{br}そこいらで野垂れ死ぬが良いわ{end}",
+   "en": "",
+   "max": 74,
+   "ptr": [
+    "rel16 1D25F2 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD4DE",
+   "fmt": "msg",
+   "jp": "あなたは首を切るよりも{br}逃がした方が哀れで似合っている…{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D25F4 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD51C",
+   "fmt": "msg",
+   "jp": "貴様など わしの相手ではないわ!! さっさと失せろ!!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D25F6 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD556",
+   "fmt": "msg",
+   "jp": "わしを裏切った罪 殺しても足りん!{br}もう一度殺されに来い!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D25F8 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD596",
+   "fmt": "msg",
+   "jp": "わしを裏切った罪 殺しても足りん!{br}もう一度殺されに来い!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D25FA base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD5D6",
+   "fmt": "msg",
+   "jp": "狼刃… 考え直せ{br}今は敵陣にいても良い…{br}考え直してくれ…!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D25FC base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD61A",
+   "fmt": "msg",
+   "jp": "お前じゃ役不足だよ!{br}もっと強い奴を呼んできな!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D25FE base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD652",
+   "fmt": "msg",
+   "jp": "さっさと逃げな!{br}私の気が変わらないうちにな!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D2600 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD686",
+   "fmt": "msg",
+   "jp": "さっさと逃げな!{br}私の気が変わらないうちにな!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D2602 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD6BA",
+   "fmt": "msg",
+   "jp": "お前のような弱い奴に かまっていられるほど暇じゃねえんだよ!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D2604 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD6FA",
+   "fmt": "msg",
+   "jp": "骸延!{br}今はお前の命預けておく!!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D2606 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD722",
+   "fmt": "msg",
+   "jp": "お前を逃がすこと 情けではない!{br}我らに利があるからなのだ!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D2608 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD764",
+   "fmt": "msg",
+   "jp": "兄上をも利用せねばならんとは…{end}",
+   "en": "",
+   "max": 34,
+   "ptr": [
+    "rel16 1D260A base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD786",
+   "fmt": "msg",
+   "jp": "障りだ!{br}早々に立ち去れい!!{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D260C base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD7AA",
+   "fmt": "msg",
+   "jp": "俺は己の知略でお前を倒すまでお前を殺さぬ!{br}早々にここを去られよ!{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D260E base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD7F2",
+   "fmt": "msg",
+   "jp": "がははははは!!{br}再戦する時を楽しみに待っているぞ!!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2610 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD82E",
+   "fmt": "msg",
+   "jp": "……また会おう……{end}",
+   "en": "",
+   "max": 22,
+   "ptr": [
+    "rel16 1D2612 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD844",
+   "fmt": "msg",
+   "jp": "我の生き様男の生き様!!{br}お前の生き様殺すに値せず!!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2614 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD880",
+   "fmt": "msg",
+   "jp": "この白鬼、{br}敵を逃がすは情けにあらず!!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D2616 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD8AE",
+   "fmt": "msg",
+   "jp": "敵を逃がすとは武将の道ではない… だがこれも我が国が天下をとるため…{end}",
+   "en": "",
+   "max": 72,
+   "ptr": [
+    "rel16 1D2618 base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD8F6",
+   "fmt": "msg",
+   "jp": "もっと強くなって{br}俺の所へ来い!!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D261A base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD91E",
+   "fmt": "msg",
+   "jp": "お前など 俺が手を下すほどの者ではない!!{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D261C base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD94C",
+   "fmt": "msg",
+   "jp": "どこへなりと行くがいい!{br}オレの気がかわらねぇうちにな!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D261E base 1DC710"
+   ]
+  },
+  {
+   "id": "1DD98C",
+   "fmt": "msg",
+   "jp": "雷の逃げる前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "p24 1D2752",
+    "rel16 1D2755 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DD9AC",
+   "fmt": "msg",
+   "jp": "雷の逃げる前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D2757 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DD9CC",
+   "fmt": "msg",
+   "jp": "…恐らく今と代わらない…{br}しかし今は出直すとしよう!!{end}",
+   "en": "",
+   "max": 60,
+   "ptr": [
+    "rel16 1D2759 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDA08",
+   "fmt": "msg",
+   "jp": "雷…{br}さようなら…{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "rel16 1D275B base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDA20",
+   "fmt": "msg",
+   "jp": "うちは父上の意志を継ぐ者を採しとるだけや!!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D275D base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDA50",
+   "fmt": "msg",
+   "jp": "がっかりだよ…{br}私が目をかけてやった男が{br}この程度かい?{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D275F base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDA90",
+   "fmt": "msg",
+   "jp": "ふんっ!{br}考えるだけならしてやろう!!{end}",
+   "en": "",
+   "max": 44,
+   "ptr": [
+    "rel16 1D2761 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDABC",
+   "fmt": "msg",
+   "jp": "俺を逃がしたことを{br}後悔することになるぞ…!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D2763 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDAEE",
+   "fmt": "msg",
+   "jp": "師真様はおやさしいのですね…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D2765 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDB0E",
+   "fmt": "msg",
+   "jp": "そう思い通りになるとはかぎらんさ…{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2767 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDB34",
+   "fmt": "msg",
+   "jp": "…いいのか?{br}きっと後悔するぞ!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2769 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDB5A",
+   "fmt": "msg",
+   "jp": "あ、はいはい 今逃げます…!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D276B base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDB7A",
+   "fmt": "msg",
+   "jp": "この次も負けるほど俺は甘くないぞ!!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D276D base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDBA2",
+   "fmt": "msg",
+   "jp": "私のことを逃がして頂いて{br}ありがとうございます{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D276F base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDBD6",
+   "fmt": "msg",
+   "jp": "その甘さが命取りになるんや{br}紫紋!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D2771 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDBFE",
+   "fmt": "msg",
+   "jp": "…平和になるまで生きていればね!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2773 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDC24",
+   "fmt": "msg",
+   "jp": "きっと逃がしたこと{br}後悔するで!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D2775 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDC4A",
+   "fmt": "msg",
+   "jp": "麗羅…{br}あなたが戦うことなんてないのよ…{end}",
+   "en": "",
+   "max": 46,
+   "ptr": [
+    "rel16 1D2777 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDC78",
+   "fmt": "msg",
+   "jp": "うるせえ!!{br}言われなくても強くなってやらあ!!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D2779 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDCAE",
+   "fmt": "msg",
+   "jp": "次に会う時を楽しみに待っておれ!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D277B base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDCD4",
+   "fmt": "msg",
+   "jp": "羅候の逃げる前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 34,
+   "ptr": [
+    "rel16 1D277D base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDCF6",
+   "fmt": "msg",
+   "jp": "何と言う仕打ち!{br}だが敗れた俺が悪いのだ…!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D277F base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDD2A",
+   "fmt": "msg",
+   "jp": "言われなくたって{br}もう来ないわっ!!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D2781 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDD54",
+   "fmt": "msg",
+   "jp": "…おそらくはそれがしの考えは変わりませぬ…!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D2783 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDD84",
+   "fmt": "msg",
+   "jp": "…くっ…!!{br}殺さぬこと後悔させてやる!!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D2785 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDDB4",
+   "fmt": "msg",
+   "jp": "義兄上を倒しにまた現れます{end}",
+   "en": "",
+   "max": 30,
+   "ptr": [
+    "rel16 1D2787 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDDD2",
+   "fmt": "msg",
+   "jp": "ふふっ… 後悔するぞ!!{end}",
+   "en": "",
+   "max": 28,
+   "ptr": [
+    "rel16 1D2789 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDDEE",
+   "fmt": "msg",
+   "jp": "ふははははは…無駄なことを…{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D278B base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDE0E",
+   "fmt": "msg",
+   "jp": "そのために逃がすのか?{br}…甘いな…!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D278D base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDE38",
+   "fmt": "msg",
+   "jp": "きっと見返してやるんだから!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D278F base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDE58",
+   "fmt": "msg",
+   "jp": "すぐに興味がでてきますよ…{br}殺さなかったことの{br}後悔と共に…!{end}",
+   "en": "",
+   "max": 70,
+   "ptr": [
+    "rel16 1D2791 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDE9E",
+   "fmt": "msg",
+   "jp": "邑峻…!{br}ありがとうございます…!{br}きっと平和な世に…!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D2793 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDEDE",
+   "fmt": "msg",
+   "jp": "父上…!{br}きっと見せてさし上げます…!私の信じる道を…!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D2795 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDF1E",
+   "fmt": "msg",
+   "jp": "わかりました…{br}きっと父上に見せてさし上げます…!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D2797 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDF56",
+   "fmt": "msg",
+   "jp": "夏候獣… 分かったわ!{br}あたしは生き抜いて見せるわ!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D2799 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDF90",
+   "fmt": "msg",
+   "jp": "気にするな…!{br}それもまた正しき道なのだ!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D279B base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DDFC0",
+   "fmt": "msg",
+   "jp": "私の考えは変わりません!{br}そしてまた兄上と敵対するでしょう!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D279D base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE002",
+   "fmt": "msg",
+   "jp": "甘いのだ才!{br}父の死さえもお前は乗りこえることができんのか!!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D279F base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE046",
+   "fmt": "msg",
+   "jp": "才よ!{br}俺の考えは変わらぬぞ!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D27A1 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE06C",
+   "fmt": "msg",
+   "jp": "ぐっ! 俺はもっと強くなってやる 強くなってこの銀河を手にいれてやる!{end}",
+   "en": "",
+   "max": 74,
+   "ptr": [
+    "rel16 1D27A3 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE0B6",
+   "fmt": "msg",
+   "jp": "ふははははは…{br}逃げて逃げて さらなる混乱を生み出すのだ!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D27A5 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE0F6",
+   "fmt": "msg",
+   "jp": "蹄庖…!なぜ私を殺さぬのだ!どうしたのだ蹄庖…{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D27A7 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE128",
+   "fmt": "msg",
+   "jp": "正宗の逃げる前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 34,
+   "ptr": [
+    "rel16 1D27A9 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE14A",
+   "fmt": "msg",
+   "jp": "正宗様… 私は生きます{br}生きてどちらが正しいのかを確かめます{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D27AB base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE18C",
+   "fmt": "msg",
+   "jp": "僕は死にません!!{br}しかし姉上の思う通りになるとは限りません!{end}",
+   "en": "",
+   "max": 68,
+   "ptr": [
+    "rel16 1D27AD base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE1D0",
+   "fmt": "msg",
+   "jp": "いいでしょう…{br}私にはそれを見定める資格があると思いますから{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D27AF base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE212",
+   "fmt": "msg",
+   "jp": "ふん! 言っておれ!{br}今にお前の首取ってやるわ!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D27B1 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE24A",
+   "fmt": "msg",
+   "jp": "そんなに余裕でいられるのも{br}今の内だぞ…!{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D27B3 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE27A",
+   "fmt": "msg",
+   "jp": "銀河の統一のためにはもっと強くならなければ…!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D27B5 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE2AC",
+   "fmt": "msg",
+   "jp": "僕を逃がすなんて何を考えているのか分かりません…{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D27B7 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE2E0",
+   "fmt": "msg",
+   "jp": "お前の思惑通りになるのは不本意だが 今は生き抜くことが大切だ!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D27B9 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE322",
+   "fmt": "msg",
+   "jp": "そううまくいくと思わない方がよろしいですな…{end}",
+   "en": "",
+   "max": 48,
+   "ptr": [
+    "rel16 1D27BB base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE352",
+   "fmt": "msg",
+   "jp": "僕はもっと強くなって必ずあなたを倒して見せる!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D27BD base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE386",
+   "fmt": "msg",
+   "jp": "くっ! 何と言うことだ…{br}だがこのままでは終わらせんぞ!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D27BF base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE3C6",
+   "fmt": "msg",
+   "jp": "僕は強くなる!{br}強くなってあなたを倒します!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D27C1 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE3F8",
+   "fmt": "msg",
+   "jp": "まったくだ{br}俺を生かしておいて良いことなんてないぜ!{end}",
+   "en": "",
+   "max": 58,
+   "ptr": [
+    "rel16 1D27C3 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE432",
+   "fmt": "msg",
+   "jp": "わしは{br}わしは必ずお前を…!{end}",
+   "en": "",
+   "max": 34,
+   "ptr": [
+    "rel16 1D27C5 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE454",
+   "fmt": "msg",
+   "jp": "私は一体どうすれば良いのだ?{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D27C7 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE474",
+   "fmt": "msg",
+   "jp": "ぐぬぬぬ…覚えておれ座苞!!次会った時は殺してやる!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D27C9 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE4AC",
+   "fmt": "msg",
+   "jp": "骸羅の逃げる前の台詞(エラ〜){end}",
+   "en": "",
+   "max": 34,
+   "ptr": [
+    "rel16 1D27CB base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE4CE",
+   "fmt": "msg",
+   "jp": "兄者…!{br}私は兄者のそのような所が…{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D27CD base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE4F8",
+   "fmt": "msg",
+   "jp": "兄上!{br}武力だけでは駄目なのです!!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D27CF base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE522",
+   "fmt": "msg",
+   "jp": "ふっ… 甘いよ骸羅…{br}またな…{end}",
+   "en": "",
+   "max": 36,
+   "ptr": [
+    "rel16 1D27D1 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE546",
+   "fmt": "msg",
+   "jp": "この屈零{br}いつか晴らしてくれる…!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D27D3 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE56E",
+   "fmt": "msg",
+   "jp": "狼刃め{br}俺を生かしておいたこと{br}いつか後悔させてくれる…!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D27D5 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE5B0",
+   "fmt": "msg",
+   "jp": "私を逃がすだと?{br}狼刃め、{br}一体何を企んでいるのだ…?{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "rel16 1D27D7 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE5EE",
+   "fmt": "msg",
+   "jp": "くっ!{br}この俺が逃げるだと?{br}覚えてやがれ!!{end}",
+   "en": "",
+   "max": 54,
+   "ptr": [
+    "rel16 1D27D9 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE624",
+   "fmt": "msg",
+   "jp": "兄上…{br}またお会いしましょう!!{end}",
+   "en": "",
+   "max": 38,
+   "ptr": [
+    "rel16 1D27DB base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE64A",
+   "fmt": "msg",
+   "jp": "私の才も甘く見られたものだ!今殺さんと後悔するぞ!!{end}",
+   "en": "",
+   "max": 56,
+   "ptr": [
+    "rel16 1D27DD base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE682",
+   "fmt": "msg",
+   "jp": "俺に生き恥じかかせたこと{br}後悔させてくれる!!{end}",
+   "en": "",
+   "max": 52,
+   "ptr": [
+    "rel16 1D27DF base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE6B6",
+   "fmt": "msg",
+   "jp": "骸延…{br}また会おう…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D27E1 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE6D0",
+   "fmt": "msg",
+   "jp": "知略でか…{br}望むろころだ!{br}またな骸延!!{end}",
+   "en": "",
+   "max": 50,
+   "ptr": [
+    "rel16 1D27E3 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE702",
+   "fmt": "msg",
+   "jp": "ぬううう…!{br}次会う時こそ その首{br}たたっ切ってくれるわ!{end}",
+   "en": "",
+   "max": 66,
+   "ptr": [
+    "rel16 1D27E5 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE744",
+   "fmt": "msg",
+   "jp": "……この屈零忘れぬぞ…{end}",
+   "en": "",
+   "max": 26,
+   "ptr": [
+    "rel16 1D27E7 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE75E",
+   "fmt": "msg",
+   "jp": "我の生き様男の生き様!!{br}生き抜いてこその生き様もある!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D27E9 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE79E",
+   "fmt": "msg",
+   "jp": "我は鬼!{br}鬼も敗れることもある!!{end}",
+   "en": "",
+   "max": 40,
+   "ptr": [
+    "rel16 1D27EB base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE7C6",
+   "fmt": "msg",
+   "jp": "命ある限り戦い抜くことこそ{br}武将の道!!{br}次は負けん!!{end}",
+   "en": "",
+   "max": 64,
+   "ptr": [
+    "rel16 1D27ED base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE806",
+   "fmt": "msg",
+   "jp": "覚えていやがれ!!{end}",
+   "en": "",
+   "max": 22,
+   "ptr": [
+    "rel16 1D27EF base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE81C",
+   "fmt": "msg",
+   "jp": "逃がしたこと 後悔することになるぞ!!{end}",
+   "en": "",
+   "max": 42,
+   "ptr": [
+    "rel16 1D27F1 base 1DD98C"
+   ]
+  },
+  {
+   "id": "1DE846",
+   "fmt": "msg",
+   "jp": "くっ…{br}覚えていやがれ!!{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "rel16 1D27F3 base 1DD98C"
+   ]
+  }
+ ]
+}

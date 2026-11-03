@@ -1,0 +1,112 @@
+{
+ "block": "10EC1C",
+ "end": "10EFAC",
+ "entries": [
+  {
+   "id": "10EC1C",
+   "fmt": "msg",
+   "jp": "{spd:09000000} 比紀弾正は五丈軍を名乗り{br}{skip:0100}北天を席捲した{end}",
+   "en": "",
+   "max": 62,
+   "ptr": [
+    "p24 06B0EC"
+   ]
+  },
+  {
+   "id": "10EC5A",
+   "fmt": "msg",
+   "jp": "{skip:0100}鳳鳴、{end}",
+   "en": "",
+   "max": 16,
+   "read_on": true
+  },
+  {
+   "id": "10EC6A",
+   "fmt": "msg",
+   "jp": "玄偉、{end}",
+   "en": "",
+   "max": 10,
+   "read_on": true
+  },
+  {
+   "id": "10EC74",
+   "fmt": "msg",
+   "jp": "骸羅、{end}",
+   "en": "",
+   "max": 10,
+   "read_on": true
+  },
+  {
+   "id": "10EC7E",
+   "fmt": "msg",
+   "jp": "狼刃の四軍団は{br}{skip:0100}無敵を誇り もはや銀河統一も目前と{br}{skip:0100}噂されるところであった{end}",
+   "en": "",
+   "max": 94,
+   "read_on": true
+  },
+  {
+   "id": "10ECDC",
+   "fmt": "msg",
+   "jp": "{skip:0400}しかし 隆盛を誇った弾正も{br}{skip:0400}老いには勝てず{br}{skip:0400}病に倒れる事一ケ月{br}{skip:0400}享年七十四才にて逝去{br}{skip:0400}これにより 銀河は今一度{br}{skip:0400}麻のように乱れる事は{br}{skip:0400}誰の目にも明らかであった{end}",
+   "en": "",
+   "max": 216,
+   "read_on": true
+  },
+  {
+   "id": "10EDB4",
+   "fmt": "msg",
+   "jp": "{skip:0100}弾正の死後{spd:01000800} 最初に動いたのは{br}{skip:0100}車騎元帥・骸羅であった{end}",
+   "en": "",
+   "max": 78,
+   "read_on": true
+  },
+  {
+   "id": "10EE02",
+   "fmt": "msg",
+   "jp": "{skip:0100}電撃作戦により 武王都を占{spd:03000000}拠{br}{skip:0100}大元帥・鳳鳴{spd:02000000}、驃騎元帥・玄偉を葬{spd:02000000}り{br}{skip:0100}衛元帥・狼刃と共謀{end}",
+   "en": "",
+   "max": 134,
+   "read_on": true
+  },
+  {
+   "id": "10EE88",
+   "fmt": "msg",
+   "jp": "{skip:0100}都を斎王都へと移し{br}{skip:0100}国名を大五丈と号した{end}",
+   "en": "",
+   "max": 58,
+   "read_on": true
+  },
+  {
+   "id": "10EEC2",
+   "fmt": "msg",
+   "jp": "骸羅「わはははは{spd:02000000} 天よわめけ{spd:02000000}!{br}{skip:0300}泣き叫ぶがよい!」{end}",
+   "en": "",
+   "max": 78,
+   "read_on": true
+  },
+  {
+   "id": "10EF10",
+   "fmt": "msg",
+   "jp": "骸羅「お前がどうあがこうと{br}{skip:0300}この世はわしのものだ!」{end}",
+   "en": "",
+   "max": 64,
+   "read_on": true
+  },
+  {
+   "id": "10EF50",
+   "fmt": "msg",
+   "jp": "骸羅「やがて天をも{br}{skip:0300}わしが支配してやる!」{end}",
+   "en": "",
+   "max": 54,
+   "read_on": true
+  },
+  {
+   "id": "10EF86",
+   "fmt": "msg",
+   "jp": "骸羅「わしは大銀河の皇帝なのだ!」{end}",
+   "en": "",
+   "max": 38,
+   "read_on": true
+  }
+ ]
+}

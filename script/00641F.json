@@ -1,0 +1,66 @@
+{
+ "block": "00641F",
+ "end": "00648D",
+ "entries": [
+  {
+   "id": "00641F",
+   "fmt": "plain",
+   "jp": "    新造戦艦が完成しました{end}",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "fixed 05854F"
+   ]
+  },
+  {
+   "id": "00643F",
+   "fmt": "plain",
+   "jp": "艦隊が、{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "fixed 05D79B"
+   ]
+  },
+  {
+   "id": "006449",
+   "fmt": "plain",
+   "jp": "艦隊と接触しました{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "fixed 05D7AE"
+   ]
+  },
+  {
+   "id": "00645D",
+   "fmt": "plain",
+   "jp": "に攻め込みました{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "fixed 05D7BC"
+   ]
+  },
+  {
+   "id": "00646F",
+   "fmt": "plain",
+   "jp": "が、{end}",
+   "en": "",
+   "max": 6,
+   "ptr": [
+    "fixed 05D7CA"
+   ]
+  },
+  {
+   "id": "006475",
+   "fmt": "plain",
+   "jp": "艦隊に攻め込まれました{end}",
+   "en": "",
+   "max": 24,
+   "ptr": [
+    "fixed 05D7D9"
+   ]
+  }
+ ]
+}

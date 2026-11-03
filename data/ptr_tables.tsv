@@ -1,30 +1,18 @@
-# 16-bit in-bank string pointer tables (tools/find_ptrs.py): file offset, entry count (both hex)
-000FC0	8
-000FD2	2E
-001030	8
-001042	2E
+# 16-bit in-bank string pointer tables (tools/find_ptrs.py, merged and extended in phase 4 where a word between
+# two tables also points at text, often a shared tail): file offset, entry count (both hex)
+000FBE	39
+001030	37
 0010DC	38
 001C36	17
 010000	1C
 01003A	A
 0102CC	4
-010332	B
-010350	5
-010362	8
-010374	4
-010388	6
-010DCA	F
-010DEA	3
-010DF2	8
-010E10	4
+010332	32
+010DC8	32
 011A3E	4
 011B80	32
 011FB4	4
-0120F4	3
-0120FC	8
-012116	5
-01212A	B
-012142	3
+0120E8	32
 012948	32
 013484	4
 015A5E	32

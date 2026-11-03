@@ -1,0 +1,244 @@
+{
+ "block": "001C64",
+ "end": "001D1C",
+ "entries": [
+  {
+   "id": "001C64",
+   "fmt": "plain",
+   "jp": "南京楼{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C36"
+   ]
+  },
+  {
+   "id": "001C6C",
+   "fmt": "plain",
+   "jp": "益州都{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C38"
+   ]
+  },
+  {
+   "id": "001C74",
+   "fmt": "plain",
+   "jp": "南蛮王都{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "p16 001C3A"
+   ]
+  },
+  {
+   "id": "001C7E",
+   "fmt": "plain",
+   "jp": "南帝閣{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C3C"
+   ]
+  },
+  {
+   "id": "001C86",
+   "fmt": "plain",
+   "jp": "座王都{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C3E"
+   ]
+  },
+  {
+   "id": "001C8E",
+   "fmt": "plain",
+   "jp": "洛火閣{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C40"
+   ]
+  },
+  {
+   "id": "001C96",
+   "fmt": "plain",
+   "jp": "虎卓関{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C42"
+   ]
+  },
+  {
+   "id": "001C9E",
+   "fmt": "plain",
+   "jp": "流北平{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C44"
+   ]
+  },
+  {
+   "id": "001CA6",
+   "fmt": "plain",
+   "jp": "斉王都{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C46"
+   ]
+  },
+  {
+   "id": "001CAE",
+   "fmt": "plain",
+   "jp": "武王都{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C48"
+   ]
+  },
+  {
+   "id": "001CB6",
+   "fmt": "plain",
+   "jp": "遼陽{end}",
+   "en": "",
+   "max": 6,
+   "ptr": [
+    "p16 001C4A"
+   ]
+  },
+  {
+   "id": "001CBC",
+   "fmt": "plain",
+   "jp": "鴨緑江{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C4C"
+   ]
+  },
+  {
+   "id": "001CC4",
+   "fmt": "plain",
+   "jp": "魔天嶺{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C4E"
+   ]
+  },
+  {
+   "id": "001CCC",
+   "fmt": "plain",
+   "jp": "旅順{end}",
+   "en": "",
+   "max": 6,
+   "ptr": [
+    "p16 001C50"
+   ]
+  },
+  {
+   "id": "001CD2",
+   "fmt": "plain",
+   "jp": "鳳凰城{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C52"
+   ]
+  },
+  {
+   "id": "001CDA",
+   "fmt": "plain",
+   "jp": "艾塔堡子{end}",
+   "en": "",
+   "max": 10,
+   "ptr": [
+    "p16 001C54"
+   ]
+  },
+  {
+   "id": "001CE4",
+   "fmt": "plain",
+   "jp": "言堡子{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C56"
+   ]
+  },
+  {
+   "id": "001CEC",
+   "fmt": "plain",
+   "jp": "大堡屯{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C58"
+   ]
+  },
+  {
+   "id": "001CF4",
+   "fmt": "plain",
+   "jp": "弓張嶺{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C5A"
+   ]
+  },
+  {
+   "id": "001CFC",
+   "fmt": "plain",
+   "jp": "紅沙嶺{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C5C"
+   ]
+  },
+  {
+   "id": "001D04",
+   "fmt": "plain",
+   "jp": "孫家塞{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C5E",
+    "fixed 00A10F",
+    "fixed 01C8C1",
+    "fixed 01C911",
+    "fixed 01DA75",
+    "fixed 0660B0",
+    "fixed 072B9A",
+    "fixed 072F48",
+    "fixed 0732EE"
+   ]
+  },
+  {
+   "id": "001D0C",
+   "fmt": "plain",
+   "jp": "藍家屯{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C60"
+   ]
+  },
+  {
+   "id": "001D14",
+   "fmt": "plain",
+   "jp": "延高城{end}",
+   "en": "",
+   "max": 8,
+   "ptr": [
+    "p16 001C62"
+   ]
+  }
+ ]
+}

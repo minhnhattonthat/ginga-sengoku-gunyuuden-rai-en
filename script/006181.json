@@ -1,0 +1,36 @@
+{
+ "block": "006181",
+ "end": "0061A9",
+ "entries": [
+  {
+   "id": "006181",
+   "fmt": "plain",
+   "jp": "は、{end}",
+   "en": "",
+   "max": 6,
+   "ptr": [
+    "fixed 05ABF0"
+   ]
+  },
+  {
+   "id": "006187",
+   "fmt": "plain",
+   "jp": "に占領されました{end}",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "fixed 05AC12"
+   ]
+  },
+  {
+   "id": "006199",
+   "fmt": "plain",
+   "jp": "を占領しました{end}",
+   "en": "",
+   "max": 16,
+   "ptr": [
+    "fixed 05ABE8"
+   ]
+  }
+ ]
+}

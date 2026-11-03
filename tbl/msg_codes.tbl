@@ -1,0 +1,10 @@
+# Dialogue (event message) commands, FFFF <cmd> [args], from the window renderer $BA:92D5..93F8 (docs/re/text.md).
+# Loaded on top of jp.tbl minus its plain-format FFFF={end} (tools/text.py msg_table). Keys are bytes as stored.
+FFFF0000={end}
+FFFF0100={br}
+FFFF0200={skip:2}
+FFFF0300={spd:4}
+FFFF0500={c5}
+FFFF0600={c6}
+FFFF0700={c7}
+FFFF0800={c8}

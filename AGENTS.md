@@ -15,7 +15,7 @@ Skill: translate-retro-game; `python tools/skill.py` prints its folder. Read its
 ## Paths
 - Original ROM: `rom/Ginga Sengoku Gunyuuden Rai (Japan).sfc` (gitignored; SHA-1 in `rom.sha1`, checked by `tools/check_rom.py`). LoROM 2 MiB, 8 KiB SRAM.
 - Emulator: this repo's own copy in `tools/mesen/` (MesenCE 2.2.1, https://github.com/nesdev-org/MesenCE/releases/download/2.2.1/Mesen_2.2.1_Windows.zip; gitignored; settings in `tools/emu-config/`). Savestates: `work/states/`.
-- Text: `script/` (format: phase 4). Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md`. Fonts and their licences: `docs/fonts.md`.
+- Text: `script/<block>.json` from `python -X utf8 tools/extract.py` (fields in its docstring; writes only missing files, `--force` refreshes `jp` and keeps `en`). Pointer forms: `tools/refs.py`, `docs/re/text.md`. Tables: `tbl/`. Glossary: `glossary.md`. RE notes index: `docs/re/README.md`. Fonts and their licences: `docs/fonts.md`.
 - Repo copies of skill tools the build imports: `tools/tbl.py`, `tools/bps.py`, `tools/romdiff.py`.
 
 ## Rulings

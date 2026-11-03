@@ -1,0 +1,46 @@
+{
+ "block": "005E61",
+ "end": "005EAB",
+ "entries": [
+  {
+   "id": "005E61",
+   "fmt": "plain",
+   "jp": "{FFFE}竜{FFFE}{FFFE}我{FFFE}{FFFE}{FFFE}雷{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "p16 005E59"
+   ]
+  },
+  {
+   "id": "005E75",
+   "fmt": "plain",
+   "jp": "{FFFE}{FFFE}{FFFE}羅{FFFE}{FFFE}{FFFE}{FFFE}候{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "p16 005E5B"
+   ]
+  },
+  {
+   "id": "005E89",
+   "fmt": "plain",
+   "jp": "独眼竜{FFFE}正宗{end}",
+   "en": "",
+   "max": 14,
+   "ptr": [
+    "p16 005E5D"
+   ]
+  },
+  {
+   "id": "005E97",
+   "fmt": "plain",
+   "jp": "{FFFE}{FFFE}{FFFE}骸{FFFE}{FFFE}{FFFE}{FFFE}羅{end}",
+   "en": "",
+   "max": 20,
+   "ptr": [
+    "p16 005E5F"
+   ]
+  }
+ ]
+}
