@@ -7,7 +7,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "金{FFFE}剛{end}",
-   "en": "",
+   "en": "Kongo{end}",
    "max": 9,
    "ptr": [
     "p16 000CB0"
@@ -18,7 +18,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "戦{FFFE}艦{end}",
-   "en": "",
+   "en": "Battleship{end}",
    "max": 9,
    "ptr": [
     "p16 000CB2",
@@ -31,7 +31,7 @@
    "fmt": "plain@1",
    "pre": "01",
    "jp": "巡洋艦{end}",
-   "en": "",
+   "en": "Cruiser{end}",
    "max": 9,
    "ptr": [
     "p16 000CB4",
@@ -44,7 +44,7 @@
    "fmt": "plain@1",
    "pre": "01",
    "jp": "駆逐艦{end}",
-   "en": "",
+   "en": "Destroyer{end}",
    "max": 9,
    "ptr": [
     "p16 000CB6",
@@ -56,7 +56,7 @@
    "fmt": "plain@1",
    "pre": "01",
    "jp": "大帝山{end}",
-   "en": "",
+   "en": "Taiteizan{end}",
    "max": 9,
    "ptr": [
     "p16 000CB8"
@@ -67,7 +67,7 @@
    "fmt": "plain@1",
    "pre": "01",
    "jp": "威海洋{end}",
-   "en": "",
+   "en": "Ikaiyo{end}",
    "max": 9,
    "ptr": [
     "p16 000CC0"
@@ -78,7 +78,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "鎮{FFFE}遠{end}",
-   "en": "",
+   "en": "Chinen{end}",
    "max": 9,
    "ptr": [
     "p16 000CC2"
@@ -89,7 +89,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "定{FFFE}遠{end}",
-   "en": "",
+   "en": "Teien{end}",
    "max": 9,
    "ptr": [
     "p16 000CC4",
@@ -102,7 +102,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "帝{FFFE}虎{end}",
-   "en": "",
+   "en": "Teiko{end}",
    "max": 9,
    "ptr": [
     "p16 000CCA",
@@ -115,7 +115,7 @@
    "fmt": "plain@1",
    "pre": "02",
    "jp": "大型戦艦{end}",
-   "en": "",
+   "en": "Heavy Ship{end}",
    "max": 11,
    "ptr": [
     "p16 000CD0"
@@ -126,7 +126,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "狼{FFFE}焔{end}",
-   "en": "",
+   "en": "Roen{end}",
    "max": 9,
    "ptr": [
     "p16 000CD6"
@@ -137,7 +137,7 @@
    "fmt": "plain@1",
    "pre": "02",
    "jp": "南蛮大型{end}",
-   "en": "",
+   "en": "Big Nanban{end}",
    "max": 11,
    "ptr": [
     "p16 000CD8"
@@ -148,7 +148,7 @@
    "fmt": "plain@1",
    "pre": "02",
    "jp": "南蛮戦艦{end}",
-   "en": "",
+   "en": "Nanban{end}",
    "max": 11,
    "ptr": [
     "p16 000CDA"
@@ -159,7 +159,7 @@
    "fmt": "plain@1",
    "pre": "02",
    "jp": "海賊大型{end}",
-   "en": "",
+   "en": "Big Pirate{end}",
    "max": 11,
    "ptr": [
     "p16 000CDC"
@@ -170,7 +170,7 @@
    "fmt": "plain@1",
    "pre": "02",
    "jp": "海賊戦艦{end}",
-   "en": "",
+   "en": "Pirate{end}",
    "max": 11,
    "ptr": [
     "p16 000CDE"
@@ -181,7 +181,7 @@
    "fmt": "plain@1",
    "pre": "02",
    "jp": "大帝山弐{end}",
-   "en": "",
+   "en": "Taiteizan2{end}",
    "max": 11,
    "ptr": [
     "p16 000CE0"
@@ -192,7 +192,7 @@
    "fmt": "plain@1",
    "pre": "01",
    "jp": "新金剛{end}",
-   "en": "",
+   "en": "New Kongo{end}",
    "max": 9,
    "ptr": [
     "p16 000CE2"
@@ -203,7 +203,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "要{FFFE}塞{end}",
-   "en": "",
+   "en": "Fortress{end}",
    "max": 9,
    "ptr": [
     "p16 000CE4"
@@ -214,7 +214,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "比{FFFE}叡{end}",
-   "en": "",
+   "en": "Hiei{end}",
    "max": 9,
    "ptr": [
     "p16 000CE6"
@@ -225,7 +225,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "猛{FFFE}虎{end}",
-   "en": "",
+   "en": "Moko{end}",
    "max": 9,
    "ptr": [
     "p16 000CE8"
@@ -236,7 +236,7 @@
    "fmt": "plain@1",
    "pre": "00",
    "jp": "富{FFFE}嶽{end}",
-   "en": "",
+   "en": "Fugaku{end}",
    "max": 9,
    "ptr": [
     "p16 000CEA"

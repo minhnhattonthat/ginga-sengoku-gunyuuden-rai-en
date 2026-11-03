@@ -6,7 +6,7 @@
    "id": "116A0B",
    "fmt": "msg",
    "jp": "南蛮王{c5}「よく来て下さった 羅候殿{c6}・・{spd:03000000}・{br}{skip:0400}{c5}おぬしに会えずでは{br}{skip:0400}死んでも死にきれぬでな{c6}」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"You came, Rako-dono{c6}... {spd:03000000}{c5}I{br}{skip:0600} couldn't die in peace{br}{skip:0600} without seeing you.{c6}\"{end}",
    "max": 128,
    "ptr": [
     "p24 06B0BC"
@@ -16,7 +16,7 @@
    "id": "116A8B",
    "fmt": "msg",
    "jp": "羅候{c5}「何をおっしゃいます{c6}{spd:02000000}か{br}{skip:0300}{c5}大王様はまだまだ若こうございます{c6}」{end}",
-   "en": "",
+   "en": "Rako \"{c5}What are you saying? Your Majesty{br}{skip:0300}is still young.{c6}\"{end}",
    "max": 98,
    "read_on": true
   },
@@ -24,7 +24,7 @@
    "id": "116AED",
    "fmt": "msg",
    "jp": "南蛮王{c5}「いや{c6}{spd:02000000} {c5}自分の体じ{c6}{spd:02000000}ゃ{br}{skip:0400}{c5}わしにはようわかる{c6}・・・」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"No...{c6}{spd:02000000}{c5} It's my own body. I{br}{skip:0600} know it well...{c6}\"{end}",
    "max": 106,
    "read_on": true
   },
@@ -32,7 +32,7 @@
    "id": "116B57",
    "fmt": "msg",
    "jp": "邑峻{c5}「父上{c6}{spd:02000000} {c5}しっかり{c6}・・・」{end}",
-   "en": "",
+   "en": "Yushun \"{c5}Father... {c6}{spd:02000000}{c5}Hold on...{c6}\"{end}",
    "max": 56,
    "read_on": true
   },
@@ -40,7 +40,7 @@
    "id": "116B8F",
    "fmt": "msg",
    "jp": "南蛮王{c5}「おお邑峻{c6}・・{spd:02000000}・{br}{skip:0400}{c5}おまえは良き婿殿に{br}{skip:0400}めぐまれたのう{c6}・・・ 」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"Ah, Yushun...{c6}{spd:02000000}{c5} You've been{br}{skip:0600} blessed with a fine{br}{skip:0600} husband...{c6}\"{end}",
    "max": 112,
    "read_on": true
   },
@@ -48,7 +48,7 @@
    "id": "116BFF",
    "fmt": "msg",
    "jp": "南蛮王{c5}「羅候殿{c6}{spd:02000000} {c5}おぬしの器量を見込んで{br}{skip:0400}頼みがある{c6}」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"Rako-dono, {c6}{spd:02000000}{c5}trusting in{br}{skip:0600} your caliber, I have a{br}{skip:0600} request.{c6}\"{end}",
    "max": 88,
    "read_on": true
   },
@@ -56,7 +56,7 @@
    "id": "116C57",
    "fmt": "msg",
    "jp": "羅候{c5}「はっ{c6}{spd:02000000} {c5}なんなりとお申しつけ下さい{c6}」{end}",
-   "en": "",
+   "en": "Rako \"{c5}Yes.{c6}{spd:02000000}{c5} Ask anything of me.{c6}\"{end}",
    "max": 68,
    "read_on": true
   },
@@ -64,7 +64,7 @@
    "id": "116C9B",
    "fmt": "msg",
    "jp": "南蛮王{c5}「この世はまだ激動の渦じゃ{c6}{spd:02000000} {c5}この{br}{skip:0400}南蛮王国とていつどこの国の版図に{br}{skip:0400}組み込まれるやもしれん{c6}・・・」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"The world is in turmoil{br}{skip:0600} still. {c6}{spd:02000000}{c5}Nanban could fall{br}{skip:0600} to anyone, anytime...{c6}\"{end}",
    "max": 148,
    "read_on": true
   },
@@ -72,7 +72,7 @@
    "id": "116D2F",
    "fmt": "msg",
    "jp": "南蛮王{c5}「わしら蛮人はいつも{br}{skip:0400}そのような目にあっておった{c6}」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"We barbarians have always{br}{skip:0600} suffered such a fate.{c6}\"{end}",
    "max": 76,
    "read_on": true
   },
@@ -80,7 +80,7 @@
    "id": "116D7B",
    "fmt": "msg",
    "jp": "南蛮王{c5}「それゆえにこの国の将来や{br}{skip:0400}民のことが心配でならぬ{c6}」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"That is why I fear so for{br}{skip:0600} this nation's future and{br}{skip:0600} its people.{c6}\"{end}",
    "max": 78,
    "read_on": true
   },
@@ -88,7 +88,7 @@
    "id": "116DC9",
    "fmt": "msg",
    "jp": "南蛮王{c5}「のう羅候{c6}{spd:02000000}殿{br}{skip:0400}{c5}わしはそちに南蛮の王位を{br}{skip:0400}継いでもらいたいのじゃ{c6}」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"Rako-dono, {c6}{spd:02000000}{c5}I want you to{br}{skip:0600} inherit the throne of{br}{skip:0600} Nanban.{c6}\"{end}",
    "max": 114,
    "read_on": true
   },
@@ -96,7 +96,7 @@
    "id": "116E3B",
    "fmt": "msg",
    "jp": "羅候{c5}「えっ!!{c6}」{end}",
-   "en": "",
+   "en": "Rako \"{c5}What!!{c6}\"{end}",
    "max": 28,
    "read_on": true
   },
@@ -104,7 +104,7 @@
    "id": "116E57",
    "fmt": "msg",
    "jp": "南蛮王{c5}「そうして南蛮と練の二国を合わせ{br}{skip:0400}その力で天下に乗り出して欲しい{c6}」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"Join Nanban and Ren as one,{br}{skip:0600} and with that power set out{br}{skip:0600} to take the realm.{c6}\"{end}",
    "max": 92,
    "read_on": true
   },
@@ -112,7 +112,7 @@
    "id": "116EB3",
    "fmt": "msg",
    "jp": "羅候{c5}「しかし{c6}・・・{end}",
-   "en": "",
+   "en": "Rako \"{c5}But...{c6}{end}",
    "max": 30,
    "read_on": true
   },
@@ -120,7 +120,7 @@
    "id": "116ED1",
    "fmt": "msg",
    "jp": "{c5} それは{c6}・・・」{end}",
-   "en": "",
+   "en": "{c5} that is...{c6}\"{end}",
    "max": 28,
    "read_on": true
   },
@@ -128,7 +128,7 @@
    "id": "116EED",
    "fmt": "msg",
    "jp": "南蛮王{c5}「世が平和なら{br}{skip:0400}このようなことは言わ{c6}{spd:03000000}ん{br}{skip:0400}{c5}重臣一同ともよく相談した結果じゃ{c6}{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"Were the world at peace, I{br}{skip:0600} would not ask. {c6}{spd:03000000}{c5}I decided{br}{skip:0600} this with all my ministers.{c6}{end}",
    "max": 122,
    "read_on": true
   },
@@ -136,7 +136,7 @@
    "id": "116F67",
    "fmt": "msg",
    "jp": "南蛮王{c5}「受けて下さるのう{c6}」{end}",
-   "en": "",
+   "en": "Nanban King{c5}\"You will accept, won't{br}{skip:0600} you?{c6}\"{end}",
    "max": 38,
    "read_on": true
   },
@@ -144,7 +144,7 @@
    "id": "116F8D",
    "fmt": "msg",
    "jp": "羅候「・・・{c5}わかりました{c6}{end}",
-   "en": "",
+   "en": "Rako \"...{c5}I understand.{c6}{end}",
    "max": 36,
    "read_on": true
   },
@@ -152,7 +152,7 @@
    "id": "116FB1",
    "fmt": "msg",
    "jp": "{br}{skip:0300}{c5}未熟者ですがお引き受けいたしま{c6}{spd:03000000}す{br}{skip:0300}{c5}必ずやこの手で銀河統一を{c6}」{end}",
-   "en": "",
+   "en": "{br}{skip:0300}{c5}Inexperienced as I am, I accept.{c6}{spd:03000000}{br}{skip:0300}{c5}I swear I'll unify the galaxy!{c6}\"{end}",
    "max": 106,
    "read_on": true
   }

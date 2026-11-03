@@ -6,7 +6,7 @@
    "id": "18EC39",
    "fmt": "msg",
    "jp": "正宗{c5}「銀河を統一はし{c6}{spd:04000000}た{br}{skip:0300}{c5}しかし乱世の世は長くつづきすぎ{c6}{spd:04000000}た{br}{skip:0300}{c5}真の平和はまだ遠い{c6}・・・」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}The galaxy is united. But the{br}{skip:0500}chaos lasted too long. True{br}{skip:0500}peace is still far off...\"{c6}{end}",
    "max": 144,
    "ptr": [
     "p24 06B1CF"
@@ -16,7 +16,7 @@
    "id": "18ECC9",
    "fmt": "msg",
    "jp": "飛竜{c5}「お館様{c6}{spd:03000000},{br}{skip:0300}{c5}銀河統一おめでとうございます{c6}」{end}",
-   "en": "",
+   "en": "Hiryu{c5}\"My lord, {c6}{spd:03000000}{c5}congratulations on{br}{skip:0300} uniting the galaxy.{c6}\"{end}",
    "max": 82,
    "ptr": [
     "p24 06B1DF"
@@ -26,7 +26,7 @@
    "id": "18ED1B",
    "fmt": "msg",
    "jp": "正宗{c5}「ああ,{c6}{spd:02000000} {c5}しかし乱世の世は長すぎ{c6}{spd:04000000}た{br}{skip:0300}{c5}平和な世にするにはしなければならな{br}{skip:0300}いことが山積みだ{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}Yes,{c6}{spd:02000000}{c5} but the chaos lasted too{br}{skip:0500}long. {c6}{spd:04000000}{c5}There's a mountain of{br}{skip:0500}work before we have peace.{c6}\"{end}",
    "max": 154,
    "read_on": true
   },
@@ -34,7 +34,7 @@
    "id": "18EDB5",
    "fmt": "msg",
    "jp": "正宗{c5}「飛竜,{c6}{spd:03000000} {br}{skip:0300}{c5}これからも私のために働いてくれ{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}Hiryu,{c6}{spd:03000000}{c5} keep working for me{br}{skip:0500}from here on.{c6}\"{end}",
    "max": 84,
    "read_on": true
   },
@@ -42,7 +42,7 @@
    "id": "18EE09",
    "fmt": "msg",
    "jp": "飛竜{c5}「はい{c6}{spd:03000000} {br}{skip:0300}{c5}よろこんでお引き受けいたします{c6}」{end}",
-   "en": "",
+   "en": "Hiryu{c5}\"Yes. {c6}{spd:03000000}{c5}I accept gladly.{c6}\"{end}",
    "max": 82,
    "read_on": true
   },
@@ -50,7 +50,7 @@
    "id": "18EE5B",
    "fmt": "msg",
    "jp": "正宗{c5}「銀河を統一した{c6}{spd:02000000}今{c5} これからは虎丸{c6}{spd:02000000},{br}{skip:0300}{c5}おまえが先頭に立って政治を行ってゆ{br}{skip:0300}ゆくのだぞ{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}Now that the galaxy is united,{c6}{spd:02000000}{br}{skip:0500}{c5}you, Toramaru, will lead the{br}{skip:0500}government.{c6}\"{end}",
    "max": 150,
    "ptr": [
     "p24 06B1EF"
@@ -60,7 +60,7 @@
    "id": "18EEF1",
    "fmt": "msg",
    "jp": "虎丸{c5}「は{spd:02000000}い姉上{spd:02000000}!{c6}{end}",
-   "en": "",
+   "en": "Toramaru \"{c5}Yes,{spd:02000000} sister!{c6}{end}",
    "max": 44,
    "read_on": true
   },
@@ -68,7 +68,7 @@
    "id": "18EF1D",
    "fmt": "msg",
    "jp": "{c5} 父上や姉上の苦労を無駄{br}{skip:0300}にせず必ず良い政治を行います{c6}」{end}",
-   "en": "",
+   "en": "{br}{skip:0500}{c5}I won't waste your hardships{br}{skip:0500}or Father's. I'll rule well.\"{c6}{end}",
    "max": 76,
    "read_on": true
   },
@@ -76,7 +76,7 @@
    "id": "18EF69",
    "fmt": "msg",
    "jp": "正宗{c5}「ああ,{c6}{spd:02000000} {c5}お前なら絶対にできる{c6}{spd:03000000}!{br}{skip:0300}{c5}期待しているぞ!{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}Good. {c6}{spd:02000000}{c5}I know you can do it!{c6}{spd:03000000}{br}{skip:0500}{c5}I'm counting on you!{c6}\"{end}",
    "max": 108,
    "read_on": true
   },
@@ -84,7 +84,7 @@
    "id": "18EFD5",
    "fmt": "msg",
    "jp": "飛竜{c5}「お館様{c6}{spd:03000000},{br}{skip:0300}{c5}銀河統一おめでとうございます{c6}」{end}",
-   "en": "",
+   "en": "Hiryu{c5}\"My lord, {c6}{spd:03000000}{c5}congratulations on{br}{skip:0300} uniting the galaxy.{c6}\"{end}",
    "max": 82,
    "ptr": [
     "p24 06B1FF"
@@ -94,7 +94,7 @@
    "id": "18F027",
    "fmt": "msg",
    "jp": "正宗{c5}「ああ{c6}{spd:02000000},{c5}これで私も安心して虎丸を新王{br}{skip:0300}に即位させることができる{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}Yes.{c6}{spd:02000000}{c5} Now I can crown Toramaru{br}{skip:0500}the new king with peace of{br}{skip:0500}mind.{c6}\"{end}",
    "max": 104,
    "read_on": true
   },
@@ -102,7 +102,7 @@
    "id": "18F08F",
    "fmt": "msg",
    "jp": "虎丸{c5}「姉上!{c6}{end}",
-   "en": "",
+   "en": "Toramaru \"{c5}Sister!{c6}{end}",
    "max": 24,
    "read_on": true
   },
@@ -110,7 +110,7 @@
    "id": "18F0A7",
    "fmt": "msg",
    "jp": " {c5}これからはもう姉上に苦労は{br}{skip:0300}かけません{c6}」{end}",
-   "en": "",
+   "en": " {c5}From now on,{br}{skip:0500}I won't be a burden to you.{c6}\"{end}",
    "max": 62,
    "read_on": true
   },
@@ -118,7 +118,7 @@
    "id": "18F0E5",
    "fmt": "msg",
    "jp": "虎丸{c5}「これからは僕が先頭に立って銀河を平{br}{skip:0300}和にしてみせます{c6}」{end}",
-   "en": "",
+   "en": "Toramaru \"{c5}From now on, I'll lead the way{br}{skip:0500}and bring peace to the{br}{skip:0500}galaxy.{c6}\"{end}",
    "max": 80,
    "read_on": true
   },
@@ -126,7 +126,7 @@
    "id": "18F135",
    "fmt": "msg",
    "jp": "正宗{c5}「そうだ{c6}{spd:02000000} {c5}おまえが良い政治をし{c6}{spd:02000000},{c6}平和{br}{skip:0300}な世を作るのだ{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}That's right. {c6}{spd:02000000}{c5}Govern well,{c6}{spd:02000000}{br}{skip:0500}{c5}and build a peaceful world.{c6}\"{end}",
    "max": 110,
    "read_on": true
   },
@@ -134,7 +134,7 @@
    "id": "18F1A3",
    "fmt": "msg",
    "jp": "骸羅{c5}「少々てこずったが もうこの大銀河は{br}{skip:0300}わしのものだ{c6}!!{end}",
-   "en": "",
+   "en": "Gaira{c5}\"It took some doing, but this{br}{skip:0300} great galaxy is now mine!!{c6}{end}",
    "max": 78,
    "ptr": [
     "p24 06B20F"
@@ -144,7 +144,7 @@
    "id": "18F1F1",
    "fmt": "msg",
    "jp": "{br}{skip:0300}{c5}がっはっはっはっは{c6}!!」{end}",
-   "en": "",
+   "en": "{br}{skip:0300}{c5} Gwahahahahaha!!{c6}\"{end}",
    "max": 46,
    "read_on": true
   },
@@ -152,7 +152,7 @@
    "id": "18F21F",
    "fmt": "msg",
    "jp": "狼刃{c5}「ふふっ{c6}{end}",
-   "en": "",
+   "en": "Roha \"{c5}Heh heh.{c6}{end}",
    "max": 24,
    "ptr": [
     "p24 06B21F"
@@ -162,7 +162,7 @@
    "id": "18F237",
    "fmt": "msg",
    "jp": "{br}{skip:0300}{c5}まったく偉くなったもんだね{c6}」{end}",
-   "en": "",
+   "en": "{br}{skip:0300}{c5}You've sure come up in the world.\"{c6}{end}",
    "max": 50,
    "read_on": true
   },
@@ -170,7 +170,7 @@
    "id": "18F269",
    "fmt": "msg",
    "jp": "骸{c5}羅「まったくだ{c6}{spd:04000000} {br}{skip:0300}{c5}狼刃{c6}{spd:02000000},{c5}これからもオレを助けていって{br}{skip:0300}くれるな?{c6}」{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Sure have. {c6}{spd:04000000}{c5}Roha, {c6}{spd:02000000}{c5}you'll keep{br}{skip:0300} helping me from here on, won't{br}{skip:0300} you?{c6}\"{end}",
    "max": 128,
    "read_on": true
   },
@@ -178,7 +178,7 @@
    "id": "18F2E9",
    "fmt": "msg",
    "jp": "狼刃{c5}「ふっ・・{c6}{spd:02000000}・{br}{skip:0300}{c5}いいだろう・・・」{c6}{end}",
-   "en": "",
+   "en": "Roha \"{c5}Heh...{c6}{spd:02000000}{c5} Very well...\"{c6}{end}",
    "max": 72,
    "read_on": true
   },
@@ -186,7 +186,7 @@
    "id": "18F331",
    "fmt": "msg",
    "jp": "骸延{c5}「兄上{c6}{spd:01000800},{c5}いえ{c6}{spd:01000000},{c5}皇帝陛{c6}{spd:04000000}下{br}{skip:0300}{c5}全銀河の統一おめでとうございます{c6}」{end}",
-   "en": "",
+   "en": "Gaien{c5}\"Brother, {c6}{spd:01000800}{c5}no, {c6}{spd:01000000}{c5}Your Majesty,{c6}{spd:04000000}{br}{skip:0300}{c5} congratulations on uniting the{br}{skip:0300} galaxy.{c6}\"{end}",
    "max": 130,
    "ptr": [
     "p24 06B22F"
@@ -196,7 +196,7 @@
    "id": "18F3B3",
    "fmt": "msg",
    "jp": "骸延{c5}「これで陛下の御威光も全銀河の隅々ま{br}{skip:0300}で行き渡ることでありましょう{c6}」{end}",
-   "en": "",
+   "en": "Gaien{c5}\"Now Your Majesty's glory will{br}{skip:0300} reach every corner of the{br}{skip:0300} galaxy.{c6}\"{end}",
    "max": 92,
    "read_on": true
   },
@@ -204,7 +204,7 @@
    "id": "18F40F",
    "fmt": "msg",
    "jp": "骸羅{c5}「わっはっはっは{c6}{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Wahahahaha!{c6}{end}",
    "max": 32,
    "read_on": true
   },
@@ -212,7 +212,7 @@
    "id": "18F42F",
    "fmt": "msg",
    "jp": "{br}{skip:0300}{c5}実に気分がいいぞ{c6}{spd:02000000} {c5}わしはこの大銀河{br}{skip:0300}{c5}帝国の皇帝なのだ{c6}!!」{end}",
-   "en": "",
+   "en": "{br}{skip:0300}{c5} I feel great!{c6}{spd:02000000}{c5} I am the Emperor{br}{skip:0300}{c5} of this great galactic empire!!\"{c6}{end}",
    "max": 108,
    "read_on": true
   },
@@ -220,7 +220,7 @@
    "id": "18F49B",
    "fmt": "msg",
    "jp": "骸延{c5}「兄上{c6}{spd:01000800},{c5} いえ{c6}{spd:01000800},{c5}皇帝陛{c6}{spd:04000000}下{br}{skip:0300}{c5}全銀河の統一おめでとうございます{c6}」{end}",
-   "en": "",
+   "en": "Gaien{c5}\"Brother, {c6}{spd:01000800}{c5}no, {c6}{spd:01000800}{c5}Your Majesty,{c6}{spd:04000000}{br}{skip:0300}{c5} congratulations on uniting the{br}{skip:0300} galaxy.{c6}\"{end}",
    "max": 132,
    "read_on": true
   },
@@ -228,7 +228,7 @@
    "id": "18F51F",
    "fmt": "msg",
    "jp": "骸延{c5}「これで陛下の御威光も全銀河の隅々ま{br}{skip:0300}で行き渡ることでありましょう{c6}」{end}",
-   "en": "",
+   "en": "Gaien{c5}\"Now Your Majesty's glory will{br}{skip:0300} reach every corner of the{br}{skip:0300} galaxy.{c6}\"{end}",
    "max": 92,
    "read_on": true
   },
@@ -236,7 +236,7 @@
    "id": "18F57B",
    "fmt": "msg",
    "jp": "骸羅{c5}「わっはっはっは{c6}{spd:03000000} {br}{skip:0300}{c5}実に気分がいいぞ{c6}{spd:02000000} {c5}わしはこの大銀河{br}{skip:0300}{c5}帝国の皇帝なのだ{c6}!!」{c6}狼刃{c5}「ふふっ{c6}{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Wahahahaha! I feel great!{c6}{spd:03000000}{br}{skip:0300}{c5} I am Emperor of the galaxy!!\"{c6}{br}Roha{c5}\"Heh heh.{c6}{end}",
    "max": 170,
    "read_on": true
   },
@@ -244,7 +244,7 @@
    "id": "18F625",
    "fmt": "msg",
    "jp": "{br}{skip:0300}{c5}まったく偉くなったもんだね{c6}」{end}",
-   "en": "",
+   "en": "{br}{skip:0300}{c5}You've sure come up in the world.\"{c6}{end}",
    "max": 50,
    "read_on": true
   },
@@ -252,7 +252,7 @@
    "id": "18F657",
    "fmt": "msg",
    "jp": "骸羅{c5}「まったく{c6}{spd:04000000}だ{br}{skip:0300}{c5}狼刃{c6}{spd:02000000},{c5}これからもオレを助けていって{br}{skip:0300}くれるな?{c6}」{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Sure have. {c6}{spd:04000000}{c5}Roha, {c6}{spd:02000000}{c5}you'll keep{br}{skip:0300} helping me from here on, won't{br}{skip:0300} you?{c6}\"{end}",
    "max": 126,
    "read_on": true
   },
@@ -260,7 +260,7 @@
    "id": "18F6D5",
    "fmt": "msg",
    "jp": "狼刃{c5}「ふっ・・{c6}{spd:02000000}・{br}{skip:0300}{c5}いいだろう{c6}・・・」{end}",
-   "en": "",
+   "en": "Roha \"{c5}Heh...{c6}{spd:02000000}{c5} Very well...\"{c6}{end}",
    "max": 72,
    "read_on": true
   },
@@ -268,7 +268,7 @@
    "id": "18F71D",
    "fmt": "msg",
    "jp": "骸山{c5}「兄者{c6}{spd:02000000}!{c5} ついに全銀河の統一がなりま{br}{skip:0300}したな{c6}!」{end}",
-   "en": "",
+   "en": "Gaizan \"{c5}Brother!{c6}{spd:02000000}{c5} The whole galaxy is{br}{skip:0400}finally united!\"{c6}{end}",
    "max": 88,
    "ptr": [
     "p24 06B23F"
@@ -278,7 +278,7 @@
    "id": "18F775",
    "fmt": "msg",
    "jp": "骸山{c5}「しかし 我らが三兄弟の力をもってす{br}{skip:0300}れば銀河などものの数ではありません{br}{skip:0300}でしたな{c6}」{end}",
-   "en": "",
+   "en": "Gaizan \"{c5}With the might of us three{br}{skip:0400}brothers, the galaxy was nothing{br}{skip:0400}to fear.\"{c6}{end}",
    "max": 116,
    "read_on": true
   },
@@ -286,7 +286,7 @@
    "id": "18F7E9",
    "fmt": "msg",
    "jp": "骸羅{c5}「がっはっはっは{c6}!{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Gahahahaha!{c6}{end}",
    "max": 34,
    "read_on": true
   },
@@ -294,7 +294,7 @@
    "id": "18F80B",
    "fmt": "msg",
    "jp": "{c5} まったく{c6}{spd:04000000}だ{br}{skip:0300}{c5}骸山{c6}{spd:01000800},{c5}骸延{c6}{spd:01000800},{c5}これからもわしの手足と{br}{skip:0300}なって働いていってくれるな{c6}?」{end}",
-   "en": "",
+   "en": "{c5} Indeed!{c6}{spd:04000000}{br}{skip:0300}{c5} Gaizan, Gaien, keep serving{br}{skip:0300} as my hands and feet, won't you?\"{c6}{end}",
    "max": 156,
    "read_on": true
   },
@@ -302,7 +302,7 @@
    "id": "18F8A7",
    "fmt": "msg",
    "jp": "骸山・骸延{c5}「ははっ{c6}」{end}",
-   "en": "",
+   "en": "Gaizan & Gaien{c5}\"Yes, sire!\"{c6}{end}",
    "max": 32,
    "read_on": true
   },
@@ -310,7 +310,7 @@
    "id": "18F8C7",
    "fmt": "msg",
    "jp": "骸山{c5}「兄者{c6}{spd:02000000}!{c5} ついに全銀河の統一がなりま{br}{skip:0300}したな{c6}!」{end}",
-   "en": "",
+   "en": "Gaizan \"{c5}Brother!{c6}{spd:02000000}{c5} The whole galaxy is{br}{skip:0400}finally united!\"{c6}{end}",
    "max": 88,
    "ptr": [
     "p24 06B24F"
@@ -320,7 +320,7 @@
    "id": "18F91F",
    "fmt": "msg",
    "jp": "骸山{c5}「しかし 我らが三兄弟の力をもってす{br}{skip:0300}れば銀河などものの数ではありません{br}{skip:0300}でしたな{c6}」{end}",
-   "en": "",
+   "en": "Gaizan \"{c5}With the might of us three{br}{skip:0400}brothers, the galaxy was nothing{br}{skip:0400}to fear.\"{c6}{end}",
    "max": 116,
    "read_on": true
   },
@@ -328,7 +328,7 @@
    "id": "18F993",
    "fmt": "msg",
    "jp": "骸羅{c5}「がっはっはっは{c6}!{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Gahahahaha!{c6}{end}",
    "max": 34,
    "read_on": true
   },
@@ -336,7 +336,7 @@
    "id": "18F9B5",
    "fmt": "msg",
    "jp": "{c5} まったくだ{c6}」{end}",
-   "en": "",
+   "en": "{c5} Indeed!\"{c6}{end}",
    "max": 26,
    "read_on": true
   },
@@ -344,7 +344,7 @@
    "id": "18F9CF",
    "fmt": "msg",
    "jp": "骸羅{c5}「しかし 銀河を統一してしまっては{br}{skip:0300}わしの力を示す場所がなくなってし{br}{skip:0300}まったな{c6}」{end}",
-   "en": "",
+   "en": "Gaira{c5}\"But with the galaxy united,{br}{skip:0300} there's nowhere left to show my{br}{skip:0300} power.\"{c6}{end}",
    "max": 112,
    "read_on": true
   },
@@ -352,7 +352,7 @@
    "id": "18FA3F",
    "fmt": "msg",
    "jp": "骸延{c5}「兄上{c6}{spd:02000000}!{c5} 御心配にはおよびませ{c6}{spd:02000000}ん{br}{skip:0300}{c5}まだ西羌なる地が銀河の外れにござい{br}{skip:0300}ます{c6}」{end}",
-   "en": "",
+   "en": "Gaien{c5}\"Brother! {c6}{spd:02000000}{c5}Fear not. {c6}{spd:02000000}{c5}There is{br}{skip:0300} still a land called Seikyo at the{br}{skip:0300} galaxy's edge.\"{c6}{end}",
    "max": 140,
    "read_on": true
   },
@@ -360,7 +360,7 @@
    "id": "18FACB",
    "fmt": "msg",
    "jp": "骸羅{c5}「そうか!{c6}{spd:03000000} {br}{skip:0300}{c5}よし{c6}{spd:02000000}!{c5}今すぐ戦いの準備をしろ{c6}!!」{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Is there!{c6}{spd:03000000}{c5} Right! {c6}{spd:02000000}{c5}Prepare for{br}{skip:0300} battle at once!!\"{c6}{end}",
    "max": 104,
    "read_on": true
   },
@@ -368,7 +368,7 @@
    "id": "18FB33",
    "fmt": "msg",
    "jp": "骸羅{c5}「西羌へ攻め込み大銀河帝国の力を見せ{br}{skip:0300}つけてやるのだ{c6}!!」{end}",
-   "en": "",
+   "en": "Gaira{c5}\"We'll invade Seikyo and show them{br}{skip:0300} the might of the great galactic{br}{skip:0300} empire!!\"{c6}{end}",
    "max": 82,
    "read_on": true
   },
@@ -376,7 +376,7 @@
    "id": "18FB85",
    "fmt": "msg",
    "jp": "骸羅{c5}「狼刃!{c6}{spd:02000000} {br}{skip:0300}{c5}西羌へ行って大銀河帝国の力をやつら{br}{skip:0300}に思い知らせてやってくれんか{c6}?」{end}",
-   "en": "",
+   "en": "Gaira{c5}\"Roha!{c6}{spd:02000000}{c5} Will you go to Seikyo and{br}{skip:0300} teach them the might of the great{br}{skip:0300} galactic empire?\"{c6}{end}",
    "max": 128,
    "read_on": true
   },
@@ -384,7 +384,7 @@
    "id": "18FC05",
    "fmt": "msg",
    "jp": "狼刃{c5}「わかった{c6}{spd:02000000} {br}{skip:0300}{c5}いいだろう{c6}」{end}",
-   "en": "",
+   "en": "Roha \"{c5}All right.{c6}{spd:02000000}{c5} Very well.\"{c6}{end}",
    "max": 66,
    "read_on": true
   }

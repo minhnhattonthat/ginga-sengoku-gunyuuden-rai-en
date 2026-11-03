@@ -6,7 +6,7 @@
    "id": "00641F",
    "fmt": "plain",
    "jp": "    新造戦艦が完成しました{end}",
-   "en": "",
+   "en": "    A new battleship has been completed!{end}",
    "max": 32,
    "ptr": [
     "fixed 05854F"
@@ -16,7 +16,7 @@
    "id": "00643F",
    "fmt": "plain",
    "jp": "艦隊が、{end}",
-   "en": "",
+   "en": " Fleet:{end}",
    "max": 10,
    "ptr": [
     "fixed 05D79B"
@@ -26,7 +26,7 @@
    "id": "006449",
    "fmt": "plain",
    "jp": "艦隊と接触しました{end}",
-   "en": "",
+   "en": " Fleet in contact!{end}",
    "max": 20,
    "ptr": [
     "fixed 05D7AE"
@@ -36,7 +36,7 @@
    "id": "00645D",
    "fmt": "plain",
    "jp": "に攻め込みました{end}",
-   "en": "",
+   "en": " invaded!{end}",
    "max": 18,
    "ptr": [
     "fixed 05D7BC"
@@ -46,7 +46,7 @@
    "id": "00646F",
    "fmt": "plain",
    "jp": "が、{end}",
-   "en": "",
+   "en": ":{end}",
    "max": 6,
    "ptr": [
     "fixed 05D7CA"
@@ -56,7 +56,7 @@
    "id": "006475",
    "fmt": "plain",
    "jp": "艦隊に攻め込まれました{end}",
-   "en": "",
+   "en": " Fleet invading!{end}",
    "max": 24,
    "ptr": [
     "fixed 05D7D9"

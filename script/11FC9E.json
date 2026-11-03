@@ -6,7 +6,7 @@
    "id": "11FC9E",
    "fmt": "msg",
    "jp": "正宗「玄偉・鳳鳴は骸羅に斬られ{br}{skip:0300}優れた将の大半も粛正された」{end}",
-   "en": "",
+   "en": "Masamune \"Gaira has slain Geni and{br}{skip:0500}Homei, and purged most of the{br}{skip:0500}able generals.\"{end}",
    "max": 72,
    "ptr": [
     "p24 06B0CC"
@@ -16,7 +16,7 @@
    "id": "11FCE6",
    "fmt": "msg",
    "jp": "正宗「内政はゆるみ財政も逼迫してい{spd:03000000}る{br}{skip:0300}五丈を討つなら今だ!」{end}",
-   "en": "",
+   "en": "Masamune \"Gojo's rule is lax and its{br}{skip:0500}coffers are bare. {spd:03000000}Now is the{br}{skip:0500}time to strike!\"{end}",
    "max": 80,
    "read_on": true
   },
@@ -24,7 +24,7 @@
    "id": "11FD36",
    "fmt": "msg",
    "jp": "飛竜{c5}「お館様{c6}{spd:02000000} {c5}大変です!」{c6}{end}",
-   "en": "",
+   "en": "Hiryu{c5}\"My lord! {c6}{spd:02000000}{c5}Terrible news!\"{c6}{end}",
    "max": 54,
    "read_on": true
   },
@@ -32,7 +32,7 @@
    "id": "11FD6C",
    "fmt": "msg",
    "jp": "正宗{c5}「なにぃ?{c6}{spd:02000000}!{br}{skip:0300}{c5}羅候が謀反をおこしただと?!{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}What?!{c6}{spd:02000000}{c5} Rako has rebelled?!{c6}\"{end}",
    "max": 84,
    "read_on": true
   },
@@ -40,7 +40,7 @@
    "id": "11FDC0",
    "fmt": "msg",
    "jp": "飛竜{c5}「はい{c6}{spd:02000000} {c5}あの男一軍の将には飽き足らず{br}{skip:0300}南蛮諸国と通じて{br}{skip:0300}日に日に勢力を拡大しつつあります{c6}」{end}",
-   "en": "",
+   "en": "Hiryu{c5}\"Yes. Not content with one army,{br}{skip:0300} he's allied with Nanban and grows{br}{skip:0300} stronger daily.{c6}\"{end}",
    "max": 138,
    "read_on": true
   },
@@ -48,7 +48,7 @@
    "id": "11FE4A",
    "fmt": "msg",
    "jp": "正宗「{c5}むうう・・・{c6}{end}",
-   "en": "",
+   "en": "Masamune \"{c5}Grrr...{c6}{end}",
    "max": 30,
    "read_on": true
   },
@@ -56,7 +56,7 @@
    "id": "11FE68",
    "fmt": "msg",
    "jp": "{br}{skip:0300}{c5}五丈の混乱に乗じられる今こそが{br}{skip:0300}北伐の絶好機だというものを{c6}・・・」{end}",
-   "en": "",
+   "en": "{br}{skip:0500}{c5}Gojo's chaos was our chance{br}{skip:0500}to march north...{c6}\"{end}",
    "max": 96,
    "read_on": true
   },
@@ -64,7 +64,7 @@
    "id": "11FEC8",
    "fmt": "msg",
    "jp": "儒李{c5}「お館様{c6}{spd:02000000} {c5}とにかく今は{br}{skip:0300}国を立て直すのが先決かと{c6}・・・」{end}",
-   "en": "",
+   "en": "Juri \"{c5}My lord,{c6}{spd:02000000}{c5} for now, rebuilding the{br}{skip:0300}nation must come first...{c6}\"{end}",
    "max": 96,
    "read_on": true
   },
@@ -72,7 +72,7 @@
    "id": "11FF28",
    "fmt": "msg",
    "jp": "正宗{c5}「わかっている!{c6}{spd:04000000} {br}{skip:0300}{c5}羅候め{c6}・・{spd:02000000}・{c5} この怒り{br}{skip:0300}いつか必ず晴らしてくれるわ!{c6}」{end}",
-   "en": "",
+   "en": "Masamune \"{c5}I know! {c6}{spd:04000000}{c5}Rako... {c6}{spd:02000000}{c5}One day{br}{skip:0500}I'll pay him back for this!{c6}\"{end}",
    "max": 138,
    "read_on": true
   }

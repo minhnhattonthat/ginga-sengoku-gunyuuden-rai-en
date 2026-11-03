@@ -6,7 +6,7 @@
    "id": "0623D8",
    "fmt": "fixed:8",
    "jp": "部隊旗艦",
-   "en": "",
+   "en": "Unit{n}Flag",
    "max": 8,
    "ptr": [
     "fixed 062339",
@@ -17,7 +17,7 @@
    "id": "0623E0",
    "fmt": "plain",
    "jp": "艦種艦数{end}",
-   "en": "",
+   "en": "Type{n}Size{end}",
    "max": 10,
    "ptr": [
     "fixed 062367"

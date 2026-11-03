@@ -6,7 +6,7 @@
    "id": "005E17",
    "fmt": "plain",
    "jp": "{FFFE}南{FFFE}京{FFFE}楼{FFFE}軍{end}",
-   "en": "",
+   "en": "Nankinro{end}",
    "max": 18,
    "ptr": [
     "p16 005E0F"
@@ -16,7 +16,7 @@
    "id": "005E29",
    "fmt": "plain",
    "jp": "{FFFE}{FFFE}{FFFE}練{FFFE}{FFFE}{FFFE}{FFFE}軍{end}",
-   "en": "",
+   "en": "Ren Army{end}",
    "max": 20,
    "ptr": [
     "p16 005E11"
@@ -26,7 +26,7 @@
    "id": "005E3D",
    "fmt": "plain",
    "jp": "南天連合軍{end}",
-   "en": "",
+   "en": "Nanten{end}",
    "max": 12,
    "ptr": [
     "p16 005E13"
@@ -36,7 +36,7 @@
    "id": "005E49",
    "fmt": "plain",
    "jp": "大{FFFE}五{FFFE}丈{FFFE}軍{end}",
-   "en": "",
+   "en": "Great Gojo{end}",
    "max": 16,
    "ptr": [
     "p16 005E15"

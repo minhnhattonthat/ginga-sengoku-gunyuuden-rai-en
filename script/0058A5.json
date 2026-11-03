@@ -6,7 +6,7 @@
    "id": "0058A5",
    "fmt": "plain",
    "jp": "南京楼軍大守 竜我雷は死亡しました{end}",
-   "en": "",
+   "en": "Nankinro Governor Rai Ryuga has died.{end}",
    "max": 36,
    "ptr": [
     "p16 00589D"
@@ -16,7 +16,7 @@
    "id": "0058C9",
    "fmt": "plain",
    "jp": "練国国主 羅候は死亡しました{end}",
-   "en": "",
+   "en": "Rako, Lord of Ren, has died.{end}",
    "max": 30,
    "ptr": [
     "p16 00589F"
@@ -26,7 +26,7 @@
    "id": "0058E7",
    "fmt": "plain",
    "jp": "南天連合軍盟主 独眼竜正宗は死亡しました{end}",
-   "en": "",
+   "en": "Nanten leader Masamune has died.{end}",
    "max": 42,
    "ptr": [
     "p16 0058A1"
@@ -36,7 +36,7 @@
    "id": "005911",
    "fmt": "plain",
    "jp": "大五丈軍皇帝 骸羅は死亡しました{end}",
-   "en": "",
+   "en": "Gaira, Emperor of Great Gojo, has died.{end}",
    "max": 34,
    "ptr": [
     "p16 0058A3"

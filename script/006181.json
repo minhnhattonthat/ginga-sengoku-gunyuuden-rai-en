@@ -6,7 +6,7 @@
    "id": "006181",
    "fmt": "plain",
    "jp": "は、{end}",
-   "en": "",
+   "en": ":{end}",
    "max": 6,
    "ptr": [
     "fixed 05ABF0"
@@ -16,7 +16,7 @@
    "id": "006187",
    "fmt": "plain",
    "jp": "に占領されました{end}",
-   "en": "",
+   "en": " has taken it!{end}",
    "max": 18,
    "ptr": [
     "fixed 05AC12"
@@ -26,7 +26,7 @@
    "id": "006199",
    "fmt": "plain",
    "jp": "を占領しました{end}",
-   "en": "",
+   "en": " taken!{end}",
    "max": 16,
    "ptr": [
     "fixed 05ABE8"

@@ -7,7 +7,7 @@
    "fmt": "plain@4",
    "pre": "000AA081",
    "jp": "隻{end}",
-   "en": "",
+   "en": " ships{end}",
    "max": 8,
    "ptr": [
     "p16 0118B8"
@@ -18,7 +18,7 @@
    "fmt": "plain@4",
    "pre": "00000083",
    "jp": "敵旗艦{end}",
-   "en": "",
+   "en": "Enemy flagship{end}",
    "max": 12,
    "ptr": [
     "p16 0118BA"
@@ -29,7 +29,7 @@
    "fmt": "plain@4",
    "pre": "00000085",
    "jp": "敵戦艦{end}",
-   "en": "",
+   "en": "Enemy battleship{end}",
    "max": 12,
    "ptr": [
     "p16 0118BC"
@@ -40,7 +40,7 @@
    "fmt": "plain@4",
    "pre": "00000087",
    "jp": "敵巡洋艦{end}",
-   "en": "",
+   "en": "Enemy cruiser{end}",
    "max": 14,
    "ptr": [
     "p16 0118BE"
@@ -51,7 +51,7 @@
    "fmt": "plain@4",
    "pre": "00000089",
    "jp": "敵駆逐艦{end}",
-   "en": "",
+   "en": "Enemy destroyer{end}",
    "max": 14,
    "ptr": [
     "p16 0118C0"
@@ -62,7 +62,7 @@
    "fmt": "plain@4",
    "pre": "01088083",
    "jp": "味方旗艦{end}",
-   "en": "",
+   "en": "Allied flagship{end}",
    "max": 14,
    "ptr": [
     "p16 0118C2"
@@ -73,7 +73,7 @@
    "fmt": "plain@4",
    "pre": "01088085",
    "jp": "味方戦艦{end}",
-   "en": "",
+   "en": "Allied battleship{end}",
    "max": 14,
    "ptr": [
     "p16 0118C4"
@@ -84,7 +84,7 @@
    "fmt": "plain@4",
    "pre": "01088087",
    "jp": "味方巡洋艦{end}",
-   "en": "",
+   "en": "Allied cruiser{end}",
    "max": 16,
    "ptr": [
     "p16 0118C6"
@@ -95,7 +95,7 @@
    "fmt": "plain@4",
    "pre": "01088089",
    "jp": "味方駆逐艦{end}",
-   "en": "",
+   "en": "Allied destroyer{end}",
    "max": 16,
    "ptr": [
     "p16 0118C8"
@@ -106,7 +106,7 @@
    "fmt": "plain@4",
    "pre": "0000008B",
    "jp": "ただ今の戦闘結果を報告致します。{end}",
-   "en": "",
+   "en": "Here is the report on the battle.{end}",
    "max": 38,
    "ptr": [
     "p16 0118CA"
@@ -117,7 +117,7 @@
    "fmt": "plain@4",
    "pre": "0000008F",
    "jp": "撃沈された両軍の艦艇は、{end}",
-   "en": "",
+   "en": "Ships sunk on both sides:{end}",
    "max": 30,
    "ptr": [
     "p16 0118CC"
@@ -128,7 +128,7 @@
    "fmt": "plain@4",
    "pre": "00000093",
    "jp": "戦果は以上です。{end}",
-   "en": "",
+   "en": "That concludes the results.{end}",
    "max": 22,
    "ptr": [
     "p16 0118CE"
@@ -139,7 +139,7 @@
    "fmt": "plain@4",
    "pre": "00000097",
    "jp": "戦闘結果をご覧になりますか?{end}",
-   "en": "",
+   "en": "View the battle results?{end}",
    "max": 34,
    "ptr": [
     "p16 0118D0"

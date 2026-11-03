@@ -6,7 +6,7 @@
    "id": "00114C",
    "fmt": "plain",
    "jp": "竜我{end}",
-   "en": "",
+   "en": "Ryuga{end}",
    "max": 6,
    "ptr": [
     "p16 0010DC"
@@ -16,7 +16,7 @@
    "id": "001152",
    "fmt": "plain",
    "jp": "孟閣{end}",
-   "en": "",
+   "en": "Mokaku{end}",
    "max": 6,
    "ptr": [
     "p16 000FC0",
@@ -28,7 +28,7 @@
    "id": "001158",
    "fmt": "plain",
    "jp": "鐘士元{end}",
-   "en": "",
+   "en": "Sho Shigen{end}",
    "max": 8,
    "ptr": [
     "p16 000FC2",
@@ -40,7 +40,7 @@
    "id": "001160",
    "fmt": "plain",
    "jp": "姚文{end}",
-   "en": "",
+   "en": "Yobun{end}",
    "max": 6,
    "ptr": [
     "p16 000FC4",
@@ -53,7 +53,7 @@
    "id": "001166",
    "fmt": "plain",
    "jp": "項焉{end}",
-   "en": "",
+   "en": "Koen{end}",
    "max": 6,
    "ptr": [
     "p16 000FC6",
@@ -65,7 +65,7 @@
    "id": "00116C",
    "fmt": "plain",
    "jp": "項武{end}",
-   "en": "",
+   "en": "Kobu{end}",
    "max": 6,
    "ptr": [
     "p16 000FC8",
@@ -77,7 +77,7 @@
    "id": "001172",
    "fmt": "plain",
    "jp": "師真{end}",
-   "en": "",
+   "en": "Shishin{end}",
    "max": 6,
    "ptr": [
     "p16 0010E8"
@@ -87,7 +87,7 @@
    "id": "001178",
    "fmt": "plain",
    "jp": "三楽斎{end}",
-   "en": "",
+   "en": "Sanrakusai{end}",
    "max": 8,
    "ptr": [
     "p16 000FCC",
@@ -100,7 +100,7 @@
    "id": "001180",
    "fmt": "plain",
    "jp": "林則嘉{end}",
-   "en": "",
+   "en": "Rin Sokuka{end}",
    "max": 8,
    "ptr": [
     "p16 000FCE",
@@ -112,7 +112,7 @@
    "id": "001188",
    "fmt": "plain",
    "jp": "紫紋{end}",
-   "en": "",
+   "en": "Shimon{end}",
    "max": 6,
    "ptr": [
     "p16 0010EE"
@@ -122,7 +122,7 @@
    "id": "00118E",
    "fmt": "plain",
    "jp": "麗羅{end}",
-   "en": "",
+   "en": "Reira{end}",
    "max": 6,
    "ptr": [
     "p16 0010F0"
@@ -132,7 +132,7 @@
    "id": "001194",
    "fmt": "plain",
    "jp": "羅候{end}",
-   "en": "",
+   "en": "Rako{end}",
    "max": 6,
    "ptr": [
     "p16 000FD4",
@@ -144,7 +144,7 @@
    "id": "00119A",
    "fmt": "plain",
    "jp": "姜子昌{end}",
-   "en": "",
+   "en": "Kyo Shisho{end}",
    "max": 8,
    "ptr": [
     "p16 000FD6",
@@ -156,7 +156,7 @@
    "id": "0011A2",
    "fmt": "plain",
    "jp": "蹄庖{end}",
-   "en": "",
+   "en": "Teiho{end}",
    "max": 6,
    "ptr": [
     "p16 000FD8",
@@ -168,7 +168,7 @@
    "id": "0011A8",
    "fmt": "plain",
    "jp": "究興{end}",
-   "en": "",
+   "en": "Enko{end}",
    "max": 6,
    "ptr": [
     "p16 000FDA",
@@ -180,7 +180,7 @@
    "id": "0011AE",
    "fmt": "plain",
    "jp": "夏候獣{end}",
-   "en": "",
+   "en": "Kako Ju{end}",
    "max": 8,
    "ptr": [
     "p16 000FDC",
@@ -192,7 +192,7 @@
    "id": "0011B6",
    "fmt": "plain",
    "jp": "夏候牙{end}",
-   "en": "",
+   "en": "Kako Ga{end}",
    "max": 8,
    "ptr": [
     "p16 000FDE",
@@ -204,7 +204,7 @@
    "id": "0011BE",
    "fmt": "plain",
    "jp": "夏候才{end}",
-   "en": "",
+   "en": "Kako Sai{end}",
    "max": 8,
    "ptr": [
     "p16 000FE0",
@@ -216,7 +216,7 @@
    "id": "0011C6",
    "fmt": "plain",
    "jp": "豪蛮{end}",
-   "en": "",
+   "en": "Goban{end}",
    "max": 6,
    "ptr": [
     "p16 000FE2",
@@ -228,7 +228,7 @@
    "id": "0011CC",
    "fmt": "plain",
    "jp": "邑峻{end}",
-   "en": "",
+   "en": "Yushun{end}",
    "max": 6,
    "ptr": [
     "p16 001102"
@@ -238,7 +238,7 @@
    "id": "0011D2",
    "fmt": "plain",
    "jp": "正宗{end}",
-   "en": "",
+   "en": "Masamune{end}",
    "max": 6,
    "ptr": [
     "p16 001104"
@@ -248,7 +248,7 @@
    "id": "0011D8",
    "fmt": "plain",
    "jp": "飛竜{end}",
-   "en": "",
+   "en": "Hiryu{end}",
    "max": 6,
    "ptr": [
     "p16 000FE8",
@@ -260,7 +260,7 @@
    "id": "0011DE",
    "fmt": "plain",
    "jp": "王華{end}",
-   "en": "",
+   "en": "Oka{end}",
    "max": 6,
    "ptr": [
     "p16 000FEA",
@@ -272,7 +272,7 @@
    "id": "0011E4",
    "fmt": "plain",
    "jp": "武尊{end}",
-   "en": "",
+   "en": "Buson{end}",
    "max": 6,
    "ptr": [
     "p16 000FEC",
@@ -285,7 +285,7 @@
    "id": "0011EA",
    "fmt": "plain",
    "jp": "斎遠{end}",
-   "en": "",
+   "en": "Seien{end}",
    "max": 6,
    "ptr": [
     "p16 000FEE",
@@ -297,7 +297,7 @@
    "id": "0011F0",
    "fmt": "plain",
    "jp": "峰索{end}",
-   "en": "",
+   "en": "Hosaku{end}",
    "max": 6,
    "ptr": [
     "p16 000FF0",
@@ -309,7 +309,7 @@
    "id": "0011F6",
    "fmt": "plain",
    "jp": "狼平{end}",
-   "en": "",
+   "en": "Rohei{end}",
    "max": 6,
    "ptr": [
     "p16 000FF2",
@@ -321,7 +321,7 @@
    "id": "0011FC",
    "fmt": "plain",
    "jp": "儒李{end}",
-   "en": "",
+   "en": "Juri{end}",
    "max": 6,
    "ptr": [
     "p16 000FF4",
@@ -333,7 +333,7 @@
    "id": "001202",
    "fmt": "plain",
    "jp": "虎丸{end}",
-   "en": "",
+   "en": "Toramaru{end}",
    "max": 6,
    "ptr": [
     "p16 000FF6",
@@ -345,7 +345,7 @@
    "id": "001208",
    "fmt": "plain",
    "jp": "雷神{end}",
-   "en": "",
+   "en": "Raijin{end}",
    "max": 6,
    "ptr": [
     "p16 000FF8",
@@ -357,7 +357,7 @@
    "id": "00120E",
    "fmt": "plain",
    "jp": "座苞{end}",
-   "en": "",
+   "en": "Zaho{end}",
    "max": 6,
    "ptr": [
     "p16 000FFA",
@@ -369,7 +369,7 @@
    "id": "001214",
    "fmt": "plain",
    "jp": "剛志{end}",
-   "en": "",
+   "en": "Goshi{end}",
    "max": 6,
    "ptr": [
     "p16 000FFC",
@@ -381,7 +381,7 @@
    "id": "00121A",
    "fmt": "plain",
    "jp": "座楽{end}",
-   "en": "",
+   "en": "Zaraku{end}",
    "max": 6,
    "ptr": [
     "p16 000FFE",
@@ -393,7 +393,7 @@
    "id": "001220",
    "fmt": "plain",
    "jp": "修理{end}",
-   "en": "",
+   "en": "Shuri{end}",
    "max": 6,
    "ptr": [
     "p16 001000",
@@ -405,7 +405,7 @@
    "id": "001226",
    "fmt": "plain",
    "jp": "曹州{end}",
-   "en": "",
+   "en": "Soshu{end}",
    "max": 6,
    "ptr": [
     "p16 001002",
@@ -417,7 +417,7 @@
    "id": "00122C",
    "fmt": "plain",
    "jp": "骸羅{end}",
-   "en": "",
+   "en": "Gaira{end}",
    "max": 6,
    "ptr": [
     "p16 001004",
@@ -429,7 +429,7 @@
    "id": "001232",
    "fmt": "plain",
    "jp": "骸山{end}",
-   "en": "",
+   "en": "Gaizan{end}",
    "max": 6,
    "ptr": [
     "p16 001006",
@@ -441,7 +441,7 @@
    "id": "001238",
    "fmt": "plain",
    "jp": "骸延{end}",
-   "en": "",
+   "en": "Gaien{end}",
    "max": 6,
    "ptr": [
     "p16 001008",
@@ -453,7 +453,7 @@
    "id": "00123E",
    "fmt": "plain",
    "jp": "狼刃{end}",
-   "en": "",
+   "en": "Roha{end}",
    "max": 6,
    "ptr": [
     "p16 00100A",
@@ -465,7 +465,7 @@
    "id": "001244",
    "fmt": "plain",
    "jp": "蒲生{end}",
-   "en": "",
+   "en": "Gamo{end}",
    "max": 6,
    "ptr": [
     "p16 00100C",
@@ -477,7 +477,7 @@
    "id": "00124A",
    "fmt": "plain",
    "jp": "白鬼{end}",
-   "en": "",
+   "en": "Hakki{end}",
    "max": 6,
    "ptr": [
     "p16 00100E",
@@ -489,7 +489,7 @@
    "id": "001250",
    "fmt": "plain",
    "jp": "王政{end}",
-   "en": "",
+   "en": "Osei{end}",
    "max": 6,
    "ptr": [
     "p16 001010",
@@ -501,7 +501,7 @@
    "id": "001256",
    "fmt": "plain",
    "jp": "亮厳格{end}",
-   "en": "",
+   "en": "Ryogenkaku{end}",
    "max": 8,
    "ptr": [
     "p16 001012",
@@ -513,7 +513,7 @@
    "id": "00125E",
    "fmt": "plain",
    "jp": "武庸{end}",
-   "en": "",
+   "en": "Buyo{end}",
    "max": 6,
    "ptr": [
     "p16 001014",
@@ -525,7 +525,7 @@
    "id": "001264",
    "fmt": "plain",
    "jp": "魏相如{end}",
-   "en": "",
+   "en": "Gi Shojo{end}",
    "max": 8,
    "ptr": [
     "p16 001016",
@@ -537,7 +537,7 @@
    "id": "00126C",
    "fmt": "plain",
    "jp": "法権{end}",
-   "en": "",
+   "en": "Hoken{end}",
    "max": 6,
    "ptr": [
     "p16 001018",
@@ -549,7 +549,7 @@
    "id": "001272",
    "fmt": "plain",
    "jp": "馬元宇{end}",
-   "en": "",
+   "en": "Ba Genu{end}",
    "max": 8,
    "ptr": [
     "p16 00101A",
@@ -561,7 +561,7 @@
    "id": "00127A",
    "fmt": "plain",
    "jp": "武倒国{end}",
-   "en": "",
+   "en": "Butokoku{end}",
    "max": 8,
    "ptr": [
     "p16 00101C",
@@ -573,7 +573,7 @@
    "id": "001282",
    "fmt": "plain",
    "jp": "僧関{end}",
-   "en": "",
+   "en": "Sokan{end}",
    "max": 6,
    "ptr": [
     "p16 00101E",
@@ -585,7 +585,7 @@
    "id": "001288",
    "fmt": "plain",
    "jp": "興起{end}",
-   "en": "",
+   "en": "Koki{end}",
    "max": 6,
    "ptr": [
     "p16 001020",
@@ -597,7 +597,7 @@
    "id": "00128E",
    "fmt": "plain",
    "jp": "雲海{end}",
-   "en": "",
+   "en": "Unkai{end}",
    "max": 6,
    "ptr": [
     "p16 001022",
@@ -609,7 +609,7 @@
    "id": "001294",
    "fmt": "plain",
    "jp": "太助{end}",
-   "en": "",
+   "en": "Tasuke{end}",
    "max": 6,
    "ptr": [
     "p16 001024",
@@ -621,7 +621,7 @@
    "id": "00129A",
    "fmt": "plain",
    "jp": "装民{end}",
-   "en": "",
+   "en": "Somin{end}",
    "max": 6,
    "ptr": [
     "p16 001026",
@@ -633,7 +633,7 @@
    "id": "0012A0",
    "fmt": "plain",
    "jp": "蘭々{end}",
-   "en": "",
+   "en": "Ranran{end}",
    "max": 6,
    "ptr": [
     "p16 001028",
@@ -646,7 +646,7 @@
    "id": "0012A6",
    "fmt": "plain",
    "jp": "英真{end}",
-   "en": "",
+   "en": "Eishin{end}",
    "max": 6,
    "ptr": [
     "p16 00102A",
@@ -658,7 +658,7 @@
    "id": "0012AC",
    "fmt": "plain",
    "jp": "龍緒{end}",
-   "en": "",
+   "en": "Ryusho{end}",
    "max": 6,
    "ptr": [
     "p16 00102C",
@@ -670,7 +670,7 @@
    "id": "0012B2",
    "fmt": "plain",
    "jp": "艦隊{end}",
-   "en": "",
+   "en": "Fleet{end}",
    "max": 6,
    "ptr": [
     "fixed 00DC4C"
@@ -680,7 +680,7 @@
    "id": "0012B8",
    "fmt": "plain",
    "jp": "………{end}",
-   "en": "",
+   "en": "...{end}",
    "max": 8,
    "read_on": true
   }

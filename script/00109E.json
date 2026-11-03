@@ -6,7 +6,7 @@
    "id": "00109E",
    "fmt": "plain",
    "jp": "竜我{FFFE}雷{end}",
-   "en": "",
+   "en": "Rai Ryuga{end}",
    "max": 10,
    "ptr": [
     "p16 000FBE"
@@ -20,7 +20,7 @@
    "id": "0010A8",
    "fmt": "plain",
    "jp": "大覚屋師真紫紋姫{end}",
-   "en": "",
+   "en": "Shishin Daigakuya{end}",
    "max": 18,
    "ptr": [
     "p16 000FCA",
@@ -35,7 +35,7 @@
    "id": "0010BA",
    "fmt": "plain",
    "jp": "麗羅姫{end}",
-   "en": "",
+   "en": "Princess Reira{end}",
    "max": 8,
    "ptr": [
     "p16 000FD2",
@@ -46,7 +46,7 @@
    "id": "0010C2",
    "fmt": "plain",
    "jp": "邑峻姫{end}",
-   "en": "",
+   "en": "Princess Yushun{end}",
    "max": 8,
    "ptr": [
     "p16 000FE4",
@@ -57,7 +57,7 @@
    "id": "0010CA",
    "fmt": "plain",
    "jp": "独眼竜正宗竜我雷{end}",
-   "en": "",
+   "en": "Masamune{end}",
    "max": 18,
    "ptr": [
     "p16 000FE6",

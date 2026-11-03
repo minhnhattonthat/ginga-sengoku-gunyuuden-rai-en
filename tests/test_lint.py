@@ -8,7 +8,13 @@ import lint  # noqa: E402
 
 def test_skip_counts_cells():
     # {skip:0100} indents one 12-px cell = 2 letters (measured: work/qa/stress/prol2)
-    assert lint.lines_of('ab{br}{skip:0100}cd{br}{skip:0400}e{end}', 'br') == [2, 4, 9]
+    assert lint.lines_of('ab{br}{skip:0100}cd{br}{skip:0400}e{end}', 'br') == [2, 4, 10]
+
+
+def test_odd_run_takes_whole_cell():
+    # a run between codes is cut into pairs: 'Rai' + {c5} = 2 cells, so the line is 4 + 2 letters wide
+    assert lint.lines_of('Rai{c5}"ab', 'br') == [8]
+    assert lint.expand_n('abc{c6}{n}x', 6) == 'abc{c6}  x'
 
 
 def test_expand_n_pads_to_width():

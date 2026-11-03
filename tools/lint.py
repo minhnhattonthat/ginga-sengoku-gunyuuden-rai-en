@@ -22,6 +22,7 @@ import extract  # noqa: E402
 BOXES = Path(__file__).resolve().parents[1] / 'data' / 'boxes.tsv'
 SKIP = re.compile(r'\{skip:0?([0-9A-Fa-f])00\}')
 PAGE_CELLS = 112  # full-screen narration: the 113th glyph cell overwrites other tiles (work/qa/stress/e113)
+NAME = 10  # letters an inserted name ({FFFE} officer, {FFFD} planet) may take: officer_name / label budgets
 
 
 def load_boxes():
@@ -52,8 +53,9 @@ def lines_of(t, wrap):
     out = []
     for p in parts:
         indent = sum(2 * int(m.group(1), 16) for m in SKIP.finditer(p))  # N cells (work/qa/stress/prol2)
-        visible = ''.join(s for is_code, s in en.runs(p) if not is_code)
-        out.append(indent + len(visible))
+        # each text run between codes fills whole cells: an odd run ends in a blank half-cell (en.pairs)
+        names = NAME * (p.count('{FFFE}') + p.count('{FFFD}'))  # officer / planet name drawn there
+        out.append(indent + names + sum(len(s) + len(s) % 2 for is_code, s in en.runs(p) if not is_code))
     return out
 
 
@@ -63,6 +65,9 @@ def expand_n(t, width):
     out = []
     for p in parts[:-1]:
         n = lines_of(p, 'pad')[0]
+        r = en.runs(p)
+        if r and not r[-1][0]:  # the padding spaces join the last run: it gets no half-cell of its own
+            n -= len(r[-1][1]) % 2
         if n > width:
             raise ValueError(f'line {p!r} has {n} letters > {width}')
         out.append(p + ' ' * (width - n))
@@ -97,6 +102,8 @@ def lint(script, blocks):
             for i, n in enumerate(ls):
                 if n > box['letters']:
                     errs.append(f'{sid}: line {i + 1} has {n} letters > {box["letters"]} ({name})')
+            if box['wrap'] == 'pad' and re.search(r'\{FFF[DE]\}.*\{n\}', t):
+                errs.append(f'{sid}: a name before {{n}}: the padding cannot know its length ({name})')
             if box['wrap'] == 'page' and len(en.pairs(t)) > PAGE_CELLS:
                 errs.append(f'{sid}: {len(en.pairs(t))} cells > {PAGE_CELLS} per full-screen page ({name})')
             fixed = extract.parse_fmt(e['fmt'])[2]

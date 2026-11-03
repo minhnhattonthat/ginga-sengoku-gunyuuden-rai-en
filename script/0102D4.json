@@ -6,7 +6,7 @@
    "id": "0102D4",
    "fmt": "plain",
    "jp": "艦隊の到着は目前です{end}",
-   "en": "",
+   "en": "The fleet's arrival is imminent.{end}",
    "max": 22,
    "ptr": [
     "p16 0102CC"
@@ -16,7 +16,7 @@
    "id": "0102EA",
    "fmt": "plain",
    "jp": "艦隊はまもなく到着します{end}",
-   "en": "",
+   "en": "The fleet will arrive soon.{end}",
    "max": 26,
    "ptr": [
     "p16 0102CE"
@@ -26,7 +26,7 @@
    "id": "010304",
    "fmt": "plain",
    "jp": "艦隊の到着は遅れております{end}",
-   "en": "",
+   "en": "The fleet's arrival is delayed.{end}",
    "max": 28,
    "ptr": [
     "p16 0102D0"
@@ -36,7 +36,7 @@
    "id": "010320",
    "fmt": "plain",
    "jp": "援軍はありません{end}",
-   "en": "",
+   "en": "No reinforcements.{end}",
    "max": 18,
    "ptr": [
     "p16 0102D2",

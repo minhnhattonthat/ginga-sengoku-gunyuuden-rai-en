@@ -6,7 +6,8 @@ staff_caption	40	1	one	measured	work/qa/stress/staff (credits: the 40-letter fie
 talk	28	3	br	measured	work/qa/stress/talk: wraps by itself after 14 cells; 3 lines show ({br} also works)	1D8000
 faction_desc	40	2	pad	measured	work/qa/marker/faction_select (40 letters fill each line)	011A46
 label	10	1	one	measured	work/qa/stress/lbl2 (5 cells packed after the label patch)	000C60 000CEC 001C64
-officer_name	8	1	one	measured	work/qa/stress/fcname: fleet-command name tag shows 4 cells; widen it in phase 7 for 10	00109E 00114C
+officer_name	10	1	one	guess	work/qa/stress/fcname: fleet-command name tag shows 4 cells (8 letters) and copies 5; phase 7 widens the tag to 5 cells for the 10-letter names (Sanrakusai), then measure	00114C
+full_name	18	1	one	guess	full names and titles (Princess Shimon): screen not found yet (refs 000FBE..001056, tails +2/+10 need a split in phase 7)	00109E
 vertical_name	11	1	one	measured	work/qa/stress/vname (map side panel, faction and leader rows: letter 12 wraps to the next row; ship names 006375 share the renderer $81:E4E5, not seen yet); drop {FFFE}	005E17 005E61 006375
 unit_label	8	1	one	measured	by code: $81:DC8A draws exactly 4 cells (LDA #$04, $81:E4DF) where the 4-cell JP label sits, so 8 letters cover the JP pixels; not seen on screen yet (fortress units have none)	002C91
 column_label	4	2	pad	measured	by code: $8C:A338 draws two 2-cell column labels per string (write Unit{n}Ship); formation screen sub-view, not seen yet	0623D8

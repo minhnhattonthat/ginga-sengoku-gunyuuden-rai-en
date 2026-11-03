@@ -6,7 +6,7 @@
    "id": "01348C",
    "fmt": "plain",
    "jp": "銀河一のお前の才 今こそその全てを見せてもらう 大覚屋師真!!{end}",
-   "en": "",
+   "en": "Show me all of it now, the{n}galaxy's finest talent...{n}Shishin Daigakuya!!{end}",
    "max": 64,
    "ptr": [
     "p16 0130FD"
@@ -16,7 +16,7 @@
    "id": "0134CC",
    "fmt": "plain",
    "jp": "紫紋…?紫紋と俺がなぜ戦わなければならないんだ!教えてくれ! 紫紋!!{end}",
-   "en": "",
+   "en": "Shimon...? Why must Shimon{n}and I fight?! Tell me!{n}Shimon!!{end}",
    "max": 72,
    "ptr": [
     "p16 013100"
@@ -26,7 +26,7 @@
    "id": "013514",
    "fmt": "plain",
    "jp": "お前は俺に天下を取って 欲しいんじゃないのか? なぜ敵になるんだ!!{end}",
-   "en": "",
+   "en": "Didn't you want me to take{n}the realm? Why become my{n}enemy?!{end}",
    "max": 70,
    "ptr": [
     "p16 013103"
@@ -36,7 +36,7 @@
    "id": "01355A",
    "fmt": "plain",
    "jp": "俺は羅候と共に天下をいただくつもりはない!今こそその雌雄を決する時だ!{end}",
-   "en": "",
+   "en": "I won't share the realm{n}with Rako! Now's the time{n}to settle it!{end}",
    "max": 72,
    "ptr": [
     "p16 013106"
@@ -46,7 +46,7 @@
    "id": "0135A2",
    "fmt": "plain",
    "jp": "お前は昔の俺に似ている…しかし だからこそ俺は お前を倒さねばならん!{end}",
-   "en": "",
+   "en": "You're like I used to{n}be... and that's why I{n}must defeat you!{end}",
    "max": 72,
    "ptr": [
     "p16 013109"
@@ -56,7 +56,7 @@
    "id": "0135EA",
    "fmt": "plain",
    "jp": "独眼竜が相手では    一筋縄ではいかないな  だが俺は独眼竜を倒す!{end}",
-   "en": "",
+   "en": "The One-Eyed Dragon won't{n}be easy... But I'll beat{n}her!{end}",
    "max": 72,
    "ptr": [
     "p16 01310C",
@@ -67,7 +67,7 @@
    "id": "013632",
    "fmt": "plain",
    "jp": "偽帝骸羅に引導を渡すぞ!全艦戦闘態勢!!{end}",
-   "en": "",
+   "en": "Send the false emperor{n}Gaira to his grave! All{n}ships, battle stations!!{end}",
    "max": 42,
    "ptr": [
     "p16 01310F"
@@ -77,7 +77,7 @@
    "id": "01365C",
    "fmt": "plain",
    "jp": "この戦い俺の全てを狼刃様に ぶつけてみたい!! 俺の好きに戦わせてくれ{end}",
-   "en": "",
+   "en": "I want to throw everything{n}I've got at Roha-sama!!{n}Let me fight my way!{end}",
    "max": 72,
    "ptr": [
     "p16 013112"
@@ -87,7 +87,7 @@
    "id": "0136A4",
    "fmt": "plain",
    "jp": "我々の行く手を阻む奴は 誰であろうと容赦するな!全艦突撃!!!{end}",
-   "en": "",
+   "en": "No mercy for anyone who{n}blocks our way! All ships,{n}charge!!!{end}",
    "max": 64,
    "ptr": [
     "p16 013115"
@@ -97,7 +97,7 @@
    "id": "0136E4",
    "fmt": "plain",
    "jp": "三楽斎…再び主君替えするとは…! 今すぐその首 たたっ切ってくれるわ!{end}",
-   "en": "",
+   "en": "Sanrakusai... switching{n}masters again! I'll lop{n}your head off now!{end}",
    "max": 72,
    "ptr": [
     "p16 013118",
@@ -108,7 +108,7 @@
    "id": "01372C",
    "fmt": "plain",
    "jp": "この銀河に新しい流れが生まれている…!それを作っているのが我らなのだ!{end}",
-   "en": "",
+   "en": "A new tide is rising in{n}this galaxy...! And we're{n}the ones making it!{end}",
    "max": 72,
    "ptr": [
     "p16 01311B",
@@ -120,7 +120,7 @@
    "id": "013774",
    "fmt": "plain",
    "jp": "いいか野郎ども!!   気ィ締めていけ!!!{end}",
-   "en": "",
+   "en": "Listen up, ya dogs!! Stay{n}sharp!!!{end}",
    "max": 46,
    "ptr": [
     "p16 01311E",
@@ -134,7 +134,7 @@
    "id": "0137A2",
    "fmt": "plain",
    "jp": "勝つも負けるも兵家の常!しかしここで負けるつもりはない!!{end}",
-   "en": "",
+   "en": "Win or lose, that's a{n}soldier's lot! But I don't{n}plan to lose here!!{end}",
    "max": 60,
    "ptr": [
     "p16 013121",
@@ -150,7 +150,7 @@
    "id": "0137DE",
    "fmt": "plain",
    "jp": "我が息子よ       どこまで武将として成長しているか見定めてやる!{end}",
-   "en": "",
+   "en": "My son, let me see how far{n}you've grown as a warrior!{end}",
    "max": 72,
    "ptr": [
     "p16 013124",
@@ -168,7 +168,7 @@
    "id": "013826",
    "fmt": "plain",
    "jp": "この老いぼれの 戦い方をしかと見よ!!{end}",
-   "en": "",
+   "en": "Watch well how this{n}old-timer fights!!{end}",
    "max": 40,
    "ptr": [
     "p16 013127",
@@ -186,7 +186,7 @@
    "id": "01384E",
    "fmt": "plain",
    "jp": "親父と戦うことになるとは思わなかったぜ…親父とは俺が戦う!!いいな!!{end}",
-   "en": "",
+   "en": "Never thought I'd be{n}fighting my old man...{n}He's mine!! Got it?!{end}",
    "max": 72,
    "ptr": [
     "p16 01312A",
@@ -206,7 +206,7 @@
    "id": "013896",
    "fmt": "plain",
    "jp": "よ～し!この時を 待ってたぜ!! 全艦戦闘準備はできてるんだろうな!!{end}",
-   "en": "",
+   "en": "All right! I've been{n}waitin' for this!! All{n}ships ready for battle?!{end}",
    "max": 72,
    "ptr": [
     "p16 01312D",
@@ -226,7 +226,7 @@
    "id": "0138DE",
    "fmt": "plain",
    "jp": "雷 お前は『情』に生き 俺は『理』に生きる…  それだけのことだ…!{end}",
-   "en": "",
+   "en": "Rai, you live by feeling,{n}and I live by reason...{n}That's all it is...!{end}",
    "max": 70,
    "ptr": [
     "p16 013130",
@@ -248,7 +248,7 @@
    "id": "013924",
    "fmt": "plain",
    "jp": "紫紋ちゃん…      …?! しっかりしろ師真もう忘れたはずだろ?{end}",
-   "en": "",
+   "en": "Shimon-chan... ?! Get a{n}grip, Shishin, you put{n}that behind you!{end}",
    "max": 70,
    "ptr": [
     "p16 013133",
@@ -270,7 +270,7 @@
    "id": "01396A",
    "fmt": "plain",
    "jp": "練の羅候を倒せばこの銀河の地図は大きく変わる!{end}",
-   "en": "",
+   "en": "Beat Rako of Ren, and the{n}map of this galaxy{n}changes!{end}",
    "max": 48,
    "ptr": [
     "p16 01313F",
@@ -292,7 +292,7 @@
    "id": "01399A",
    "fmt": "plain",
    "jp": "姜子昌とやらはなかなかの切れ者らしいがはたして どうかな…?{end}",
-   "en": "",
+   "en": "They say this Kyo Shisho{n}is quite sharp, but we'll{n}see...{end}",
    "max": 62,
    "ptr": [
     "p16 013136",
@@ -314,7 +314,7 @@
    "id": "0139D8",
    "fmt": "plain",
    "jp": "俺の策の前では例え相手が独眼竜であってもその命を散らすことになる{end}",
-   "en": "",
+   "en": "Before my strategy, even{n}the One-Eyed Dragon will{n}lose her life.{end}",
    "max": 66,
    "ptr": [
     "p16 013139",
@@ -336,7 +336,7 @@
    "id": "013A1A",
    "fmt": "plain",
    "jp": "偽帝骸羅など 所詮五丈の寄生虫にすぎん     俺の相手にもならん{end}",
-   "en": "",
+   "en": "The false emperor Gaira is{n}a mere parasite on Gojo.{n}No match for me.{end}",
    "max": 68,
    "ptr": [
     "p16 01313C",
@@ -358,7 +358,7 @@
    "id": "013A5E",
    "fmt": "plain",
    "jp": "…骸延が相手か…    どのような策を用いてくるのか楽しみだ{end}",
-   "en": "",
+   "en": "...So Gaien's my{n}opponent... I look forward{n}to his schemes.{end}",
    "max": 62,
    "read_on": true
   },
@@ -366,7 +366,7 @@
    "id": "013A9C",
    "fmt": "plain",
    "jp": "私の知略の前に敵はない!各艦 戦闘態勢に入れ!{end}",
-   "en": "",
+   "en": "No foe can stand against{n}my wits! All ships, battle{n}stations!{end}",
    "max": 48,
    "ptr": [
     "p16 013142",
@@ -388,7 +388,7 @@
    "id": "013ACC",
    "fmt": "plain",
    "jp": "私の戦いは舌先のみであると思っていましたが…まあ戦ってみましょう!{end}",
-   "en": "",
+   "en": "I thought I fought only{n}with my tongue... Well,{n}let's give it a try!{end}",
    "max": 68,
    "ptr": [
     "p16 013145",
@@ -412,7 +412,7 @@
    "id": "013B10",
    "fmt": "plain",
    "jp": "師真様が相手では一筋縄 では行きませんね 私も 全力でお相手致します!{end}",
-   "en": "",
+   "en": "Facing Shishin-sama won't{n}be easy. I'll fight you{n}with all I have!{end}",
    "max": 72,
    "ptr": [
     "p16 013148",
@@ -438,7 +438,7 @@
    "id": "013B58",
    "fmt": "plain",
    "jp": "竜我様の銀河統一の障害になるものは排除します!{end}",
-   "en": "",
+   "en": "I shall remove whatever{n}stands in the way of{n}Ryuga-sama's unification!{end}",
    "max": 48,
    "ptr": [
     "p16 01314B",
@@ -456,7 +456,7 @@
    "id": "013B88",
    "fmt": "plain",
    "jp": "私の能力が 続くかぎり 突き進むのみ!!{end}",
-   "en": "",
+   "en": "As long as my strength{n}holds, I'll keep pushing{n}forward!!{end}",
    "max": 42,
    "ptr": [
     "p16 01335F",
@@ -473,7 +473,7 @@
    "id": "013BB2",
    "fmt": "plain",
    "jp": "なぜこうなったの…   銀河が平和になることを 望んだだけなのに…{end}",
-   "en": "",
+   "en": "Why did it come to this...{n}All I wanted was peace for{n}the galaxy...{end}",
    "max": 68,
    "ptr": [
     "p16 01314E",
@@ -501,7 +501,7 @@
    "id": "013BF6",
    "fmt": "plain",
    "jp": "話し合うことができるなら分かりあうことだって  きっと できるのに…{end}",
-   "en": "",
+   "en": "If only we could talk, I'm{n}sure we could understand{n}each other...{end}",
    "max": 70,
    "ptr": [
     "p16 013154",
@@ -520,7 +520,7 @@
    "id": "013C3C",
    "fmt": "plain",
    "jp": "麗羅… 私達友達でしょ?なのに なぜ戦うの…?{end}",
-   "en": "",
+   "en": "Reira... We're friends,{n}aren't we? So why are we{n}fighting...?{end}",
    "max": 48,
    "ptr": [
     "p16 013151",
@@ -548,7 +548,7 @@
    "id": "013C6C",
    "fmt": "plain",
    "jp": "平和な時に 出会うことができたならきっといい友達になれたはずよ{end}",
-   "en": "",
+   "en": "Had we met in peaceful{n}times, I'm sure we'd have{n}been good friends.{end}",
    "max": 64,
    "ptr": [
     "p16 013157",
@@ -576,7 +576,7 @@
    "id": "013CAC",
    "fmt": "plain",
    "jp": "みなさん!私達には天運があります 平和の為に戦いましょう!!{end}",
-   "en": "",
+   "en": "Everyone! Heaven is on our{n}side. Let us fight for{n}peace!!{end}",
    "max": 62,
    "ptr": [
     "p16 01315A",
@@ -604,7 +604,7 @@
    "id": "013CEA",
    "fmt": "plain",
    "jp": "まっててや 雷!    すぐに殺してやるさかい{end}",
-   "en": "",
+   "en": "Wait right there, Rai! I'm{n}gonna kill ya real soon.{end}",
    "max": 48,
    "ptr": [
     "p16 01315D",
@@ -634,7 +634,7 @@
    "id": "013D1A",
    "fmt": "plain",
    "jp": "紫紋! うちはどうしたらいいのかわからへん…{end}",
-   "en": "",
+   "en": "Shimon! I don't know what{n}I'm supposed to do...{end}",
    "max": 46,
    "ptr": [
     "p16 013160",
@@ -664,7 +664,7 @@
    "id": "013D48",
    "fmt": "plain",
    "jp": "雷が天下を統一するために戦うんや!!一気に勝負決めるんや!{end}",
-   "en": "",
+   "en": "We fight so Rai can unify{n}the realm!! Let's settle{n}this in one go!{end}",
    "max": 60,
    "ptr": [
     "p16 013163",
@@ -684,7 +684,7 @@
    "id": "013D84",
    "fmt": "plain",
    "jp": "ほないくで～!     一気に勝負決めるんや!{end}",
-   "en": "",
+   "en": "Here we go! Let's settle{n}this in one go!{end}",
    "max": 48,
    "ptr": [
     "p16 013374",
@@ -703,7 +703,7 @@
    "id": "013DB4",
    "fmt": "plain",
    "jp": "天命は我らに有り!大儀に背く賊を退けるのだ!!{end}",
-   "en": "",
+   "en": "Heaven's mandate is ours!{n}Drive off the rebels who{n}defy the cause!!{end}",
    "max": 48,
    "ptr": [
     "p16 013484"
@@ -713,7 +713,7 @@
    "id": "013DE4",
    "fmt": "plain",
    "jp": "あいつと戦うときが   遂に来たか…!!    竜我雷は俺が倒す!!!{end}",
-   "en": "",
+   "en": "The time to fight him has{n}come at last!! Rai Ryuga{n}is mine!!!{end}",
    "max": 72,
    "ptr": [
     "p16 013166",
@@ -734,7 +734,7 @@
    "id": "013E2C",
    "fmt": "plain",
    "jp": "例え友といえども俺の銀河統一の前に立ちふさがるのなら倒さねばならん!!{end}",
-   "en": "",
+   "en": "If a friend stands in the{n}way of my unification, he{n}must fall!!{end}",
    "max": 72,
    "ptr": [
     "p16 013169",
@@ -755,7 +755,7 @@
    "id": "013E74",
    "fmt": "plain",
    "jp": "年寄りとはいえ南蛮王国を裏切った者だ! いいか!生きて帰すな!!{end}",
-   "en": "",
+   "en": "Old or not, he betrayed{n}the Nanban Kingdom! Let{n}none return alive!!{end}",
    "max": 66,
    "ptr": [
     "p16 01316C",
@@ -776,7 +776,7 @@
    "id": "013EB6",
    "fmt": "plain",
    "jp": "今は亡き南蛮王の御意志を忘れ 俺をも裏切るというのか… 邑峻よ…!{end}",
-   "en": "",
+   "en": "Forgetting the late Nanban{n}King's will, you betray me{n}too... Yushun...!{end}",
    "max": 68,
    "ptr": [
     "p16 01316F",
@@ -797,7 +797,7 @@
    "id": "013EFA",
    "fmt": "plain",
    "jp": "長く続いた練対智の戦いもこの一戦で終らせる!!{end}",
-   "en": "",
+   "en": "This battle ends the long{n}war between Ren and Chi!!{end}",
    "max": 48,
    "ptr": [
     "p16 013172",
@@ -818,7 +818,7 @@
    "id": "013F2A",
    "fmt": "plain",
    "jp": "ほう…偽帝のおでましか…このような小物に敗れる俺ではないわ!!{end}",
-   "en": "",
+   "en": "Oh... the false emperor{n}shows up... I'd never lose{n}to small fry!!{end}",
    "max": 64,
    "ptr": [
     "p16 013175",
@@ -839,7 +839,7 @@
    "id": "013F6A",
    "fmt": "plain",
    "jp": "ようやく父上のかたきを 討てる時が来たぜ!!{end}",
-   "en": "",
+   "en": "At last the time has come{n}to avenge my father!!{end}",
    "max": 46,
    "ptr": [
     "p16 013178",
@@ -860,7 +860,7 @@
    "id": "013F98",
    "fmt": "plain",
    "jp": "狙うは敵大将の首一つ!!練に 盾突いたことを後悔させてやれ!!{end}",
-   "en": "",
+   "en": "We want only the enemy{n}commander's head!! Make{n}them regret defying Ren!!{end}",
    "max": 64,
    "ptr": [
     "p16 01317B",
@@ -881,7 +881,7 @@
    "id": "013FD8",
    "fmt": "plain",
    "jp": "羅候…残念だがお前に覇者としての器はないのだ!{end}",
-   "en": "",
+   "en": "Rako... sadly, you lack{n}what it takes to be a{n}conqueror!{end}",
    "max": 48,
    "ptr": [
     "p16 01317E",
@@ -904,7 +904,7 @@
    "id": "014008",
    "fmt": "plain",
    "jp": "蹄庖… 私の片腕で   ありながら 羅候様に  背くとは 何事だ!!{end}",
-   "en": "",
+   "en": "Teiho... You, my right{n}hand, turning on{n}Rako-sama?! What is this!!{end}",
    "max": 70,
    "ptr": [
     "p16 013181",
@@ -926,7 +926,7 @@
    "id": "01404E",
    "fmt": "plain",
    "jp": "…?! …蹄庖ではないような気がするが…敵対しているからなのか…?{end}",
-   "en": "",
+   "en": "...?! It doesn't feel like{n}Teiho... Is it because{n}we're enemies...?{end}",
    "max": 68,
    "ptr": [
     "p16 01337B"
@@ -936,7 +936,7 @@
    "id": "014092",
    "fmt": "plain",
    "jp": "俺は 命の続くかぎり  羅候様を 覇者とするべく戦い続ける!!{end}",
-   "en": "",
+   "en": "As long as I live, I'll{n}fight to make Rako-sama{n}the conqueror!!{end}",
    "max": 64,
    "ptr": [
     "p16 013184",
@@ -958,7 +958,7 @@
    "id": "0140D2",
    "fmt": "plain",
    "jp": "お前と俺は 同じ専を  見ているのかもしれぬのに今は敵同士なのだな…{end}",
-   "en": "",
+   "en": "You and I may share the{n}same dream, yet now we are{n}enemies...{end}",
    "max": 70,
    "ptr": [
     "p16 01337E"
@@ -968,7 +968,7 @@
    "id": "014118",
    "fmt": "plain",
    "jp": "殿の天下統一の障害となるのであれば 全力をもってそれを叩く!!{end}",
-   "en": "",
+   "en": "If it blocks my lord's{n}unification, I'll smash it{n}with all I've got!!{end}",
    "max": 64,
    "ptr": [
     "p16 013187",
@@ -990,7 +990,7 @@
    "id": "014158",
    "fmt": "plain",
    "jp": "銀河統一を 我があるじが成し得るまで俺は果てなき専を目指して戦うのみ!{end}",
-   "en": "",
+   "en": "Until my master unifies{n}the galaxy, I fight on for{n}an endless dream!{end}",
    "max": 72,
    "ptr": [
     "p16 013381"
@@ -1000,7 +1000,7 @@
    "id": "0141A0",
    "fmt": "plain",
    "jp": "…き 姜…子昌…さ…ま…………………………………た…すけ……!{end}",
-   "en": "",
+   "en": "...K-Kyo... Shi...sho...{n}sa...ma...... he...lp...!{end}",
    "max": 64,
    "ptr": [
     "p16 01318A",
@@ -1025,7 +1025,7 @@
    "id": "0141E0",
    "fmt": "plain",
    "jp": "ふははははははははは……この世は 憎しみ合い  傷つけ合うためにある!{end}",
-   "en": "",
+   "en": "Fuhahahahaha... This world{n}exists for hating and{n}hurting each other!{end}",
    "max": 72,
    "ptr": [
     "p16 01318D",
@@ -1048,7 +1048,7 @@
    "id": "014228",
    "fmt": "plain",
    "jp": "ふははははははははは……殺せ!!殺せ!!!   皆殺しだ!!!!!!!{end}",
-   "en": "",
+   "en": "Fuhahahahahaha... Kill!!{n}Kill!!! Kill them{n}all!!!!!!!{end}",
    "max": 72,
    "ptr": [
     "p16 013387",
@@ -1059,7 +1059,7 @@
    "id": "014270",
    "fmt": "plain",
    "jp": "今は戦国の世…!    座すれば死を待つのみ… 動き…戦い…生きるのだ{end}",
-   "en": "",
+   "en": "An age of war...! Sit{n}still and death awaits...{n}Move, fight, live!{end}",
    "max": 72,
    "ptr": [
     "p16 013190",
@@ -1086,7 +1086,7 @@
    "id": "0142B8",
    "fmt": "plain",
    "jp": "今は亡き 南蛮王様…  それがしの 不忠をお許しください…{end}",
-   "en": "",
+   "en": "O late Nanban King...{n}Forgive my disloyalty...{end}",
    "max": 60,
    "ptr": [
     "p16 013193",
@@ -1115,7 +1115,7 @@
    "id": "0142F4",
    "fmt": "plain",
    "jp": "羅候様に盾突く とは……この親不孝者めが!!{end}",
-   "en": "",
+   "en": "Defying Rako-sama......{n}You unfilial child!!{end}",
    "max": 46,
    "ptr": [
     "p16 013196",
@@ -1156,7 +1156,7 @@
    "id": "014322",
    "fmt": "plain",
    "jp": "…この親不孝者めが…{end}",
-   "en": "",
+   "en": "...You unfilial child...{end}",
    "max": 22,
    "ptr": [
     "p16 013390",
@@ -1173,7 +1173,7 @@
    "id": "014338",
    "fmt": "plain",
    "jp": "邑峻様は亡き 南蛮王様の御遺言をお忘れになられたのですか…?{end}",
-   "en": "",
+   "en": "Yushun-sama, have you{n}forgotten the late Nanban{n}King's last will...?{end}",
    "max": 62,
    "ptr": [
     "p16 01319C",
@@ -1198,7 +1198,7 @@
    "id": "014376",
    "fmt": "plain",
    "jp": "邑峻様…それがしは不忠者でございます…{end}",
-   "en": "",
+   "en": "Yushun-sama... I am a{n}disloyal servant...{end}",
    "max": 40,
    "ptr": [
     "p16 013396",
@@ -1211,7 +1211,7 @@
    "id": "01439E",
    "fmt": "plain",
    "jp": "全ての将兵よ!     羅候様のため敵を蹴散らし突き進むのだ!!{end}",
-   "en": "",
+   "en": "All officers and men! For{n}Rako-sama, scatter the{n}enemy and press on!!{end}",
    "max": 66,
    "ptr": [
     "p16 01319F",
@@ -1236,7 +1236,7 @@
    "id": "0143E0",
    "fmt": "plain",
    "jp": "俺は 前々から南蛮王家の血を引かぬ者を 王にするのには反対だったのだ!{end}",
-   "en": "",
+   "en": "I always opposed crowning{n}one without Nanban royal{n}blood!{end}",
    "max": 72,
    "ptr": [
     "p16 0131A2",
@@ -1263,7 +1263,7 @@
    "id": "014428",
    "fmt": "plain",
    "jp": "父上との戦いといえど  俺の意志は 変わらん! 俺は我を貫き通す…!{end}",
-   "en": "",
+   "en": "Father or not, my will{n}won't change! I'll stay{n}true to myself...!{end}",
    "max": 70,
    "ptr": [
     "p16 0131A5",
@@ -1290,7 +1290,7 @@
    "id": "01446E",
    "fmt": "plain",
    "jp": "早く目を覚ますのだ 才!羅候様と共に 天下を手に入れるために…!{end}",
-   "en": "",
+   "en": "Wake up, Sai! We must take{n}the realm with{n}Rako-sama...!{end}",
    "max": 66,
    "ptr": [
     "p16 0131A8",
@@ -1316,7 +1316,7 @@
    "id": "0144B0",
    "fmt": "plain",
    "jp": "兄弟といえども 俺の前に立ちふさがるのならば… 倒す!!{end}",
-   "en": "",
+   "en": "Brother or not... if he{n}stands in my way... I'll{n}beat him!!{end}",
    "max": 58,
    "ptr": [
     "p16 0133A0"
@@ -1326,7 +1326,7 @@
    "id": "0144EA",
    "fmt": "plain",
    "jp": "俺の前に立ちふさがった のが運のつき!!    すぐに倒してやるぞ!!{end}",
-   "en": "",
+   "en": "Your bad luck to stand in{n}my way!! I'll beat you in{n}no time!!{end}",
    "max": 72,
    "ptr": [
     "p16 0131AB",
@@ -1353,7 +1353,7 @@
    "id": "014532",
    "fmt": "plain",
    "jp": "天下を 取ることのできる器量とやらを 見せてもらうぞ!!{end}",
-   "en": "",
+   "en": "Show me this caliber that{n}can take the realm!!{end}",
    "max": 58,
    "ptr": [
     "p16 0131AE",
@@ -1382,7 +1382,7 @@
    "id": "01456C",
    "fmt": "plain",
    "jp": "父上はなぜ あの様な者の下におられるのだ…?{end}",
-   "en": "",
+   "en": "Father, why do you serve{n}under such a man...?{end}",
    "max": 46,
    "ptr": [
     "p16 0131B1",
@@ -1411,7 +1411,7 @@
    "id": "01459A",
    "fmt": "plain",
    "jp": "…兄上! 羅候様には覇王としての器がございます 早く帰ってきて下さい…{end}",
-   "en": "",
+   "en": "...Brother! Rako-sama has{n}a true king's mettle.{n}Please come back soon...{end}",
    "max": 72,
    "ptr": [
     "p16 0131B4",
@@ -1438,7 +1438,7 @@
    "id": "0145E2",
    "fmt": "plain",
    "jp": "兄上が 相手であっても 俺は 決して手を抜かん{end}",
-   "en": "",
+   "en": "Even against you, brother,{n}I won't hold back.{end}",
    "max": 48,
    "ptr": [
     "p16 0133AC",
@@ -1449,7 +1449,7 @@
    "id": "014612",
    "fmt": "plain",
    "jp": "相手が誰であっても 俺は決して手を抜かん!   全力をもって倒す!!{end}",
-   "en": "",
+   "en": "Whoever I face, I never{n}hold back! I'll beat you{n}with all I've got!!{end}",
    "max": 70,
    "ptr": [
     "p16 0131B7",
@@ -1478,7 +1478,7 @@
    "id": "014658",
    "fmt": "plain",
    "jp": "あんたを倒して俺は天下に覇をとなえられる男に  なってやる!!{end}",
-   "en": "",
+   "en": "I'll beat you and become{n}the man who rules the{n}realm!!{end}",
    "max": 64,
    "ptr": [
     "p16 0131BA",
@@ -1509,7 +1509,7 @@
    "id": "014698",
    "fmt": "plain",
    "jp": "あんたは 俺が天下を取るための 踏み台なのさ!{end}",
-   "en": "",
+   "en": "You're just a stepping{n}stone for me to take the{n}realm!{end}",
    "max": 48,
    "ptr": [
     "p16 0131BD",
@@ -1540,7 +1540,7 @@
    "id": "0146C8",
    "fmt": "plain",
    "jp": "美人と噂の紫紋ちゃんね?あたしとどっちが    美人なのかしら?{end}",
-   "en": "",
+   "en": "So you're Shimon-chan, the{n}rumored beauty? Which of{n}us is prettier?{end}",
    "max": 66,
    "ptr": [
     "p16 0131C1"
@@ -1550,7 +1550,7 @@
    "id": "01470A",
    "fmt": "plain",
    "jp": "みんな!!       羅候なんてさっさと片付けちゃいましょ!{end}",
-   "en": "",
+   "en": "Everyone!! Let's hurry and{n}finish off Rako!{end}",
    "max": 64,
    "ptr": [
     "p16 0131C4",
@@ -1561,7 +1561,7 @@
    "id": "01474A",
    "fmt": "plain",
    "jp": "えっ!何で姜子昌がそっちにいるの? 羅候の親友のはずでしょう?{end}",
-   "en": "",
+   "en": "Huh! Why's Kyo Shisho on{n}that side? Isn't he Rako's{n}best friend?{end}",
    "max": 64,
    "ptr": [
     "p16 0131C7"
@@ -1571,7 +1571,7 @@
    "id": "01478A",
    "fmt": "plain",
    "jp": "あら!姜子昌ってばあたしよりよっぽど 頭良いから苦戦しちゃうかも…{end}",
-   "en": "",
+   "en": "Oh my! Kyo Shisho's way{n}smarter than me, this{n}might be tough...{end}",
    "max": 68,
    "ptr": [
     "p16 0133BC"
@@ -1581,7 +1581,7 @@
    "id": "0147CE",
    "fmt": "plain",
    "jp": "さっさとこの敵やっつけて羅候の足手まといに ならないようにしないとね!{end}",
-   "en": "",
+   "en": "Gotta beat this enemy{n}quick so I don't hold Rako{n}back!{end}",
    "max": 72,
    "ptr": [
     "p16 0131CA"
@@ -1591,7 +1591,7 @@
    "id": "014816",
    "fmt": "plain",
    "jp": "雑魚には用ないからさっさと消えてちょうだい!!{end}",
-   "en": "",
+   "en": "I've no business with{n}small fry, so just{n}disappear!!{end}",
    "max": 48,
    "ptr": [
     "p16 0133BF"
@@ -1601,7 +1601,7 @@
    "id": "014846",
    "fmt": "plain",
    "jp": "今こそ強力無比な練の力を他国に見せつけるのだ!{end}",
-   "en": "",
+   "en": "Now's the time to show the{n}other nations Ren's{n}unrivaled might!{end}",
    "max": 48,
    "ptr": [
     "p16 013486"
@@ -1611,7 +1611,7 @@
    "id": "014876",
    "fmt": "plain",
    "jp": "竜我雷…一兵卒から銀河の統一を目指す者へと…か 恐ろしい男だ…{end}",
-   "en": "",
+   "en": "Rai Ryuga... a mere{n}soldier who now aims for{n}the galaxy... Fearsome...{end}",
    "max": 64,
    "ptr": [
     "p16 0131CD",
@@ -1622,7 +1622,7 @@
    "id": "0148B6",
    "fmt": "plain",
    "jp": "この男のせいで ここまで南天の統一遅れたのだ… この怒り帰してくれる!{end}",
-   "en": "",
+   "en": "This man delayed Nanten's{n}unification so long...{n}Feel my wrath!{end}",
    "max": 72,
    "ptr": [
     "p16 0131D0",
@@ -1633,7 +1633,7 @@
    "id": "0148FE",
    "fmt": "plain",
    "jp": "飛竜…! ふふっ…   そうか… わかった…{end}",
-   "en": "",
+   "en": "Hiryu...! Heh... I see...{n}I understand...{end}",
    "max": 46,
    "ptr": [
     "p16 0131D3",
@@ -1644,7 +1644,7 @@
    "id": "01492C",
    "fmt": "plain",
    "jp": "己の能力に溺れて 大局を見失ったか?{end}",
-   "en": "",
+   "en": "Drunk on your own talent,{n}have you lost sight of the{n}big picture?{end}",
    "max": 38,
    "ptr": [
     "p16 0131D6",
@@ -1655,7 +1655,7 @@
    "id": "014952",
    "fmt": "plain",
    "jp": "なぜだ虎丸…!     私は 智のために…   お前のために…{end}",
-   "en": "",
+   "en": "Why, Toramaru...! I did it{n}for Chi... for you...{end}",
    "max": 64,
    "ptr": [
     "p16 0131D9",
@@ -1666,7 +1666,7 @@
    "id": "014992",
    "fmt": "plain",
    "jp": "骸羅か…楽勝だな    とはいえ全力で倒すことに違いないがな!!{end}",
-   "en": "",
+   "en": "Gaira, huh... Easy win.{n}Still, I'll beat him with{n}all I've got!!{end}",
    "max": 66,
    "ptr": [
     "p16 0131DC",
@@ -1677,7 +1677,7 @@
    "id": "0149D4",
    "fmt": "plain",
    "jp": "この独眼竜の目の黒いうちは 他国の跳梁を    許すわけにはいかん!!{end}",
-   "en": "",
+   "en": "While this One-Eyed Dragon{n}lives, no nation shall run{n}rampant!!{end}",
    "max": 72,
    "ptr": [
     "p16 0131DF",
@@ -1688,7 +1688,7 @@
    "id": "014A1C",
    "fmt": "plain",
    "jp": "私は正宗様を天下統一へと導く! あなたには絶体に負けない!!{end}",
-   "en": "",
+   "en": "I'll lead Masamune-sama to{n}rule the realm! I'll never{n}lose to you!!{end}",
    "max": 62,
    "ptr": [
     "p16 0131E2",
@@ -1700,7 +1700,7 @@
    "id": "014A5A",
    "fmt": "plain",
    "jp": "あなたを… 倒します…!{end}",
-   "en": "",
+   "en": "I... will defeat you...!{end}",
    "max": 26,
    "ptr": [
     "p16 0131E5",
@@ -1713,7 +1713,7 @@
    "id": "014A74",
    "fmt": "plain",
    "jp": "虎丸様…        ご乱心なされたのですか!正宗様を裏切るなど…!{end}",
-   "en": "",
+   "en": "Toramaru-sama... have you{n}lost your mind?! Betraying{n}Masamune-sama...!{end}",
    "max": 72,
    "ptr": [
     "p16 0131E8",
@@ -1725,7 +1725,7 @@
    "id": "014ABC",
    "fmt": "plain",
    "jp": "この一戦でどちらの能力が上か見定めようではないか…儒李!!{end}",
-   "en": "",
+   "en": "Let this battle decide{n}whose ability is{n}greater... Juri!!{end}",
    "max": 60,
    "ptr": [
     "p16 0131EB",
@@ -1738,7 +1738,7 @@
    "id": "014AF8",
    "fmt": "plain",
    "jp": "智の銀河統一を 阻むのであれば それを叩くまでのこと!!{end}",
-   "en": "",
+   "en": "If you block Chi's{n}unification, then I'll{n}just smash you!!{end}",
    "max": 58,
    "ptr": [
     "p16 0131EE",
@@ -1750,7 +1750,7 @@
    "id": "014B32",
    "fmt": "plain",
    "jp": "銀河統一を阻む者がいればそれを叩く!!{end}",
-   "en": "",
+   "en": "If anyone blocks the{n}galaxy's unification, I'll{n}smash them!!{end}",
    "max": 40,
    "ptr": [
     "p16 0133C9"
@@ -1760,7 +1760,7 @@
    "id": "014B5A",
    "fmt": "plain",
    "jp": "戦闘の準備は良いな!! 少しは 骨のあるところを見せてやれ!!{end}",
-   "en": "",
+   "en": "Ready for battle?! Show{n}'em we've got some{n}backbone!!{end}",
    "max": 64,
    "ptr": [
     "p16 0131F1",
@@ -1775,7 +1775,7 @@
    "id": "014B9A",
    "fmt": "plain",
    "jp": "わしに 勝つつもりでいるのか?この斎遠の刃で  専から覚めるがよいわ!{end}",
-   "en": "",
+   "en": "You think you can beat me?{n}Seien's blade will wake{n}you from your dream!{end}",
    "max": 72,
    "ptr": [
     "p16 0131F5",
@@ -1786,7 +1786,7 @@
    "id": "014BE2",
    "fmt": "plain",
    "jp": "全力で敵を叩く!!   気合い入れていけよ!!{end}",
-   "en": "",
+   "en": "Hit the enemy with{n}everything!! Put your{n}backs into it!!{end}",
    "max": 48,
    "ptr": [
     "p16 0131F8",
@@ -1799,7 +1799,7 @@
    "id": "014C12",
    "fmt": "plain",
    "jp": "私の指揮通りに戦えば  負けることはない!   安心して戦え!!{end}",
-   "en": "",
+   "en": "Fight as I command and we{n}cannot lose! Fight without{n}fear!!{end}",
    "max": 66,
    "ptr": [
     "p16 0131FB",
@@ -1814,7 +1814,7 @@
    "id": "014C54",
    "fmt": "plain",
    "jp": "我が策の前では大覚屋とて赤子同然! 全軍安心して戦うがよい!!{end}",
-   "en": "",
+   "en": "Before my schemes, even{n}Daigakuya is a babe! All{n}troops, fight on!!{end}",
    "max": 64,
    "ptr": [
     "p16 0131FE",
@@ -1831,7 +1831,7 @@
    "id": "014C94",
    "fmt": "plain",
    "jp": "正宗様…結局 智が天下を取ることなど 不可能なのですよ…{end}",
-   "en": "",
+   "en": "Masamune-sama... In the{n}end, Chi can never take{n}the realm...{end}",
    "max": 58,
    "ptr": [
     "p16 013201",
@@ -1848,7 +1848,7 @@
    "id": "014CCE",
    "fmt": "plain",
    "jp": "今こそあなたより私の方が優れていることを証明してさしあげましょう!{end}",
-   "en": "",
+   "en": "Now I shall prove to you{n}that I am the better of us{n}two!{end}",
    "max": 68,
    "ptr": [
     "p16 013204",
@@ -1865,7 +1865,7 @@
    "id": "014D12",
    "fmt": "plain",
    "jp": "虎丸様の 器量の見定め といきますか{end}",
-   "en": "",
+   "en": "Shall we gauge{n}Toramaru-sama's caliber,{n}then?{end}",
    "max": 38,
    "ptr": [
     "p16 013207",
@@ -1882,7 +1882,7 @@
    "id": "014D38",
    "fmt": "plain",
    "jp": "このような雑魚にかまってばかりは いられぬ   早い所倒すとしよう{end}",
-   "en": "",
+   "en": "I can't waste all my time{n}on small fry like this.{n}Let's end it fast.{end}",
    "max": 68,
    "ptr": [
     "p16 01320A",
@@ -1899,7 +1899,7 @@
    "id": "014D7C",
    "fmt": "plain",
    "jp": "僕はあなたを倒すことで あなたを超える!!{end}",
-   "en": "",
+   "en": "By defeating you, I will{n}surpass you!!{end}",
    "max": 44,
    "ptr": [
     "p16 01320D",
@@ -1918,7 +1918,7 @@
    "id": "014DA8",
    "fmt": "plain",
    "jp": "全力で義兄上を倒すことで僕の義兄上への 恩返しとさせていただきます!!{end}",
-   "en": "",
+   "en": "Beating you with all my{n}might is how I'll repay{n}you, brother!!{end}",
    "max": 72,
    "ptr": [
     "p16 013210",
@@ -1937,7 +1937,7 @@
    "id": "014DF0",
    "fmt": "plain",
    "jp": "もう姉上の言いなりに生きていくのはうんざりだ! 僕は自分の意志で生きる{end}",
-   "en": "",
+   "en": "I'm sick of living as my{n}sister says! I'll live by{n}my own will!{end}",
    "max": 72,
    "ptr": [
     "p16 013213",
@@ -1956,7 +1956,7 @@
    "id": "014E38",
    "fmt": "plain",
    "jp": "必ず火のような男になってやる!だからこんな戦いで負けるわけにはいかない{end}",
-   "en": "",
+   "en": "I'll be a man of fire! So{n}I can't lose a battle like{n}this!{end}",
    "max": 72,
    "ptr": [
     "p16 013216",
@@ -1975,7 +1975,7 @@
    "id": "014E80",
    "fmt": "plain",
    "jp": "正宗を 智を倒し わしが南天の盟主になるのだ!{end}",
-   "en": "",
+   "en": "I'll beat Masamune and Chi{n}and lead Nanten myself!{end}",
    "max": 48,
    "ptr": [
     "p16 013219",
@@ -1996,7 +1996,7 @@
    "id": "014EB0",
    "fmt": "plain",
    "jp": "目障りな敗北主義者め! またわしの前に現れるとはいまいましい奴め!!{end}",
-   "en": "",
+   "en": "You eyesore of a{n}defeatist! Showing{n}yourself before me again!!{end}",
    "max": 70,
    "ptr": [
     "p16 01321C",
@@ -2017,7 +2017,7 @@
    "id": "014EF6",
    "fmt": "plain",
    "jp": "ぐふふっ…       わしの 戦上手な所を  見せてくれるわ!!{end}",
-   "en": "",
+   "en": "Guhuhu... I'll show you{n}how good I am at war!!{end}",
    "max": 68,
    "ptr": [
     "p16 01321F",
@@ -2038,7 +2038,7 @@
    "id": "014F3A",
    "fmt": "plain",
    "jp": "明国はもはや無いも同然!せめてその原因を討つのが良心というものであろう{end}",
-   "en": "",
+   "en": "Min is as good as gone!{n}The least I can do is{n}strike down its cause.{end}",
    "max": 72,
    "ptr": [
     "p16 013222",
@@ -2054,7 +2054,7 @@
    "id": "014F82",
    "fmt": "plain",
    "jp": "ようやく戦闘か!    腕がなってなって がまんできんところだったんだ{end}",
-   "en": "",
+   "en": "A fight at last! My arm's{n}been itching so bad I{n}couldn't stand it!{end}",
    "max": 72,
    "ptr": [
     "p16 013226",
@@ -2065,7 +2065,7 @@
    "id": "014FCA",
    "fmt": "plain",
    "jp": "我らに比べれば 敵どもは赤子同然!!      早い所 倒してしまえ!{end}",
-   "en": "",
+   "en": "Next to us, the enemy are{n}mere babes!! Hurry up and{n}finish them!{end}",
    "max": 72,
    "ptr": [
     "p16 01322B",
@@ -2076,7 +2076,7 @@
    "id": "015012",
    "fmt": "plain",
    "jp": "南天こそ銀河統一するのにふさわしい 邪魔する者はただでは帰さん!!{end}",
-   "en": "",
+   "en": "Nanten alone deserves to{n}unify the galaxy! No one{n}blocks us and lives!!{end}",
    "max": 68,
    "ptr": [
     "p16 013488"
@@ -2086,7 +2086,7 @@
    "id": "015056",
    "fmt": "plain",
    "jp": "いいか! 奴の首はわしがはねる!!邪魔立てする者は許さんぞ!!{end}",
-   "en": "",
+   "en": "Listen! I'll take his head{n}myself!! No one gets in my{n}way!!{end}",
    "max": 64,
    "ptr": [
     "p16 01322E",
@@ -2097,7 +2097,7 @@
    "id": "015096",
    "fmt": "plain",
    "jp": "小わっぱが わしに盾突くなど 百年早いわっ!!{end}",
-   "en": "",
+   "en": "A brat like you defying{n}me? A hundred years too{n}early!!{end}",
    "max": 48,
    "ptr": [
     "p16 013231",
@@ -2108,7 +2108,7 @@
    "id": "0150C6",
    "fmt": "plain",
    "jp": "けっ! 独眼竜だぁ?  わしの敵ではないわ!!{end}",
-   "en": "",
+   "en": "Bah! One-Eyed Dragon?{n}She's no match for me!!{end}",
    "max": 48,
    "ptr": [
     "p16 013234",
@@ -2119,7 +2119,7 @@
    "id": "0150F6",
    "fmt": "plain",
    "jp": "実の弟でありながらわしを裏切り しかもわしの前に現れるとはゆるさん!{end}",
-   "en": "",
+   "en": "My own brother betrays me,{n}then dares to face me?{n}Unforgivable!{end}",
    "max": 70,
    "ptr": [
     "p16 013237",
@@ -2130,7 +2130,7 @@
    "id": "01513C",
    "fmt": "plain",
    "jp": "骸延め…実の弟でありながらわしを 裏切るとは  馬鹿な奴だ!!{end}",
-   "en": "",
+   "en": "Gaien... My own brother,{n}betraying me... What a{n}fool!!{end}",
    "max": 64,
    "ptr": [
     "p16 01323A",
@@ -2141,7 +2141,7 @@
    "id": "01517C",
    "fmt": "plain",
    "jp": "うおおおおおおおおお!!なぜ裏切ったのだ!   狼刃よ!{end}",
-   "en": "",
+   "en": "Uoooooooh!! Why did you{n}betray me?! Roha!{end}",
    "max": 58,
    "ptr": [
     "p16 01323D",
@@ -2152,7 +2152,7 @@
    "id": "0151B6",
    "fmt": "plain",
    "jp": "がっはっはっはっ!!  わしを倒せるとでも   思っとるのか?{end}",
-   "en": "",
+   "en": "Gahahaha!! You really{n}think you can beat me?{end}",
    "max": 64,
    "ptr": [
     "p16 013240",
@@ -2163,7 +2163,7 @@
    "id": "0151F6",
    "fmt": "plain",
    "jp": "貴様のような賊など 俺にかかれば 一ひねりりで おしまいよ!!{end}",
-   "en": "",
+   "en": "Bandits like you, I'll{n}crush with a flick of my{n}wrist!!{end}",
    "max": 64,
    "ptr": [
     "p16 013243",
@@ -2175,7 +2175,7 @@
    "id": "015236",
    "fmt": "plain",
    "jp": "兄者の非道ぶり もはや 俺にはついていけぬ!!{end}",
-   "en": "",
+   "en": "I can't follow my{n}brother's cruelty{n}anymore!!{end}",
    "max": 48,
    "ptr": [
     "p16 013246",
@@ -2188,7 +2188,7 @@
    "id": "015266",
    "fmt": "plain",
    "jp": "実の弟でも 俺はぜったい手を抜かん!!{end}",
-   "en": "",
+   "en": "Own brother or not, I{n}won't hold back!!{end}",
    "max": 40,
    "ptr": [
     "p16 013249",
@@ -2201,7 +2201,7 @@
    "id": "01528E",
    "fmt": "plain",
    "jp": "大五丈を裏切った者がどうなるか見せてくれるわ!{end}",
-   "en": "",
+   "en": "I'll show you what happens{n}to those who betray Great{n}Gojo!{end}",
    "max": 48,
    "ptr": [
     "p16 01324C",
@@ -2213,7 +2213,7 @@
    "id": "0152BE",
    "fmt": "plain",
    "jp": "陛下に逆らうとは 身の程知らずめ! 一気に撃ち 破ってくれるわ!!{end}",
-   "en": "",
+   "en": "Fools, to defy His{n}Majesty! I'll shoot you to{n}pieces at once!!{end}",
    "max": 68,
    "ptr": [
     "p16 01324F",
@@ -2225,7 +2225,7 @@
    "id": "015302",
    "fmt": "plain",
    "jp": "雑魚がっ お前らなど俺の敵ではないわ!!{end}",
-   "en": "",
+   "en": "Small fry! You're no match{n}for me!!{end}",
    "max": 42,
    "ptr": [
     "p16 01340D"
@@ -2235,7 +2235,7 @@
    "id": "01532C",
    "fmt": "plain",
    "jp": "全艦戦闘準備!!    竜我の首を 取った者には金千を与えるぞ!!{end}",
-   "en": "",
+   "en": "All ships, prepare for{n}battle!! A thousand gold{n}for Ryuga's head!!{end}",
    "max": 68,
    "ptr": [
     "p16 013252",
@@ -2250,7 +2250,7 @@
    "id": "015370",
    "fmt": "plain",
    "jp": "大覚屋師真か… 貴様の策俺には 通用せんぞ!!{end}",
-   "en": "",
+   "en": "Shishin Daigakuya, eh...{n}Your schemes won't work on{n}me!!{end}",
    "max": 48,
    "ptr": [
     "p16 013255",
@@ -2265,7 +2265,7 @@
    "id": "0153A0",
    "fmt": "plain",
    "jp": "兄上では 駄目なのです この大銀河を 手に入れることなど……!{end}",
-   "en": "",
+   "en": "It can't be you, brother.{n}You'll never take this{n}great galaxy...!{end}",
    "max": 64,
    "ptr": [
     "p16 013258",
@@ -2280,7 +2280,7 @@
    "id": "0153E0",
    "fmt": "plain",
    "jp": "確かに 兄上の武勇は  恐ろしいが 我が知略を 充分に発揮すれば…!{end}",
-   "en": "",
+   "en": "My brother's valor is{n}fearsome, but if I use all{n}my cunning...!{end}",
    "max": 70,
    "ptr": [
     "p16 01325B",
@@ -2295,7 +2295,7 @@
    "id": "015426",
    "fmt": "plain",
    "jp": "うぬぬぬぬぬぬ……   やはり大五丈を裏切ったか狼刃…!{end}",
-   "en": "",
+   "en": "Nnnnngh... So you did{n}betray Great Gojo,{n}Roha...!{end}",
    "max": 58,
    "ptr": [
     "p16 01325E",
@@ -2308,7 +2308,7 @@
    "id": "015460",
    "fmt": "plain",
    "jp": "この私と 対峙したが運のつき! すでに勝負は見えている!!{end}",
-   "en": "",
+   "en": "Your bad luck to face me!{n}The outcome is already{n}clear!!{end}",
    "max": 60,
    "ptr": [
     "p16 013261",
@@ -2323,7 +2323,7 @@
    "id": "01549C",
    "fmt": "plain",
    "jp": "我が知略を もってすればこの程度の武将 敵では ないわ!!{end}",
-   "en": "",
+   "en": "With my cunning, an{n}officer like this is no{n}threat!!{end}",
    "max": 60,
    "ptr": [
     "p16 01341C",
@@ -2334,7 +2334,7 @@
    "id": "0154D8",
    "fmt": "plain",
    "jp": "大海を得た竜がどのくらい成長しているか…    楽しみだね!!{end}",
-   "en": "",
+   "en": "How much has the dragon{n}grown since it reached the{n}sea... Can't wait!!{end}",
    "max": 64,
    "ptr": [
     "p16 013264",
@@ -2348,7 +2348,7 @@
    "id": "015518",
    "fmt": "plain",
    "jp": "雷…お前が どれほど成長しているか…      見せてもらうよ!!{end}",
-   "en": "",
+   "en": "Rai... Show me how much{n}you've grown!!{end}",
    "max": 68,
    "ptr": [
     "p16 01341F",
@@ -2360,7 +2360,7 @@
    "id": "01555C",
    "fmt": "plain",
    "jp": "同じ女将として堂々と戦いそして 勝つ!!{end}",
-   "en": "",
+   "en": "As a fellow woman general,{n}I'll fight fair and{n}square, and win!!{end}",
    "max": 42,
    "ptr": [
     "p16 013267",
@@ -2377,7 +2377,7 @@
    "id": "015586",
    "fmt": "plain",
    "jp": "…骸羅……       お前に龍ほうのひたたれは似合わないよ…!{end}",
-   "en": "",
+   "en": "...Gaira... The dragon{n}robe doesn't suit you...!{end}",
    "max": 66,
    "ptr": [
     "p16 01326A",
@@ -2394,7 +2394,7 @@
    "id": "0155C8",
    "fmt": "plain",
    "jp": "大五丈を滅ぼさんとする賊どもめ 私が全力をもって攻め滅ぼしてやろう!{end}",
-   "en": "",
+   "en": "Bandits who would destroy{n}Great Gojo! I'll crush you{n}with all I have!{end}",
    "max": 70,
    "ptr": [
     "p16 01326D",
@@ -2408,7 +2408,7 @@
    "id": "01560E",
    "fmt": "plain",
    "jp": "私の前に 現れた以上  ただですむとは思うなよ{end}",
-   "en": "",
+   "en": "Now that you've shown{n}yourself to me, don't{n}expect to get off easy.{end}",
    "max": 48,
    "ptr": [
     "p16 013428",
@@ -2420,7 +2420,7 @@
    "id": "01563E",
    "fmt": "plain",
    "jp": "…うむ…        この程度の敵であれば問題なかろう…{end}",
-   "en": "",
+   "en": "...Hmm... A foe like this{n}should be no problem...{end}",
    "max": 60,
    "ptr": [
     "p16 013270",
@@ -2439,7 +2439,7 @@
    "id": "01567A",
    "fmt": "plain",
    "jp": "五虎将裏切る賊を討つ!!賊を滅ぼす鬼となる!!{end}",
-   "en": "",
+   "en": "I'll smite the traitor of{n}the Five Tigers!! I'll be{n}a demon to destroy him!!{end}",
    "max": 48,
    "ptr": [
     "p16 013273",
@@ -2476,7 +2476,7 @@
    "id": "0156AA",
    "fmt": "plain",
    "jp": "銀河の統一阻む者!   この白鬼が鬼となり その全てを 滅ぼさん!!{end}",
-   "en": "",
+   "en": "All who block unification!{n}Hakki becomes a demon to{n}destroy you all!!{end}",
    "max": 70,
    "ptr": [
     "p16 01342E",
@@ -2505,7 +2505,7 @@
    "id": "0156F0",
    "fmt": "plain",
    "jp": "五丈に仇成す 賊を討つ!戦場駆ける鬼と成る!!{end}",
-   "en": "",
+   "en": "I'll smite Gojo's foes!{n}I'll be a demon that rides{n}the battlefield!!{end}",
    "max": 48,
    "ptr": [
     "p16 01327F",
@@ -2521,7 +2521,7 @@
    "id": "015720",
    "fmt": "plain",
    "jp": "我は鬼!        戦場駆ける鬼!!{end}",
-   "en": "",
+   "en": "I am a demon! A demon who{n}rides the battlefield!!{end}",
    "max": 42,
    "ptr": [
     "p16 01343A",
@@ -2535,7 +2535,7 @@
    "id": "01574A",
    "fmt": "plain",
    "jp": "………不届者め……………{end}",
-   "en": "",
+   "en": "......Insolent{n}wretch......{end}",
    "max": 26,
    "ptr": [
     "p16 013282",
@@ -2576,7 +2576,7 @@
    "id": "015764",
    "fmt": "plain",
    "jp": "………………………………{end}",
-   "en": "",
+   "en": "......................{end}",
    "max": 26,
    "ptr": [
     "p16 01343D",
@@ -2609,7 +2609,7 @@
    "id": "01577E",
    "fmt": "plain",
    "jp": "…………ゆくぞ!!{end}",
-   "en": "",
+   "en": "......Here I come!!{end}",
    "max": 20,
    "ptr": [
     "p16 01328E",
@@ -2632,7 +2632,7 @@
    "id": "015792",
    "fmt": "plain",
    "jp": "がはははは! 五虎将で ありながら 五丈を裏切るとは見下げ果てた奴よ!{end}",
-   "en": "",
+   "en": "Gahahaha! A Five Tiger{n}General betraying Gojo?{n}Contemptible!{end}",
    "max": 72,
    "ptr": [
     "p16 013291",
@@ -2677,7 +2677,7 @@
    "id": "0157DA",
    "fmt": "plain",
    "jp": "がはははは!      わっはっはっはっは!! 倒す倒す倒すっ!!{end}",
-   "en": "",
+   "en": "Gahahaha! Wahahahaha!!{n}Crush crush crush!!{end}",
    "max": 68,
    "ptr": [
     "p16 01344C",
@@ -2714,7 +2714,7 @@
    "id": "01581E",
    "fmt": "plain",
    "jp": "がはははははははははは!進め進め進め!突き進め!がっはっはっはっは!!{end}",
-   "en": "",
+   "en": "Gahahahahahahaha! Forward,{n}forward! Charge!{n}Gahahahaha!!{end}",
    "max": 72,
    "ptr": [
     "p16 01329D",
@@ -2739,7 +2739,7 @@
    "id": "015866",
    "fmt": "plain",
    "jp": "我の生き様男の生き様!!貴様の生き様許すまじ!!我が生き様に改心せい!{end}",
-   "en": "",
+   "en": "My way is a man's way!!{n}Your way I won't forgive!!{n}Repent before my way!{end}",
    "max": 72,
    "ptr": [
     "p16 0132A0",
@@ -2788,7 +2788,7 @@
    "id": "0158AE",
    "fmt": "plain",
    "jp": "我の生き様男の生き様!!銀河の覇者こそ我が忠義を得るにふさわしい!!{end}",
-   "en": "",
+   "en": "My way is a man's way!!{n}Only the ruler of the{n}galaxy earns my loyalty!!{end}",
    "max": 70,
    "ptr": [
     "p16 01345B",
@@ -2829,7 +2829,7 @@
    "id": "0158F4",
    "fmt": "plain",
    "jp": "我の生き様 これすなわち男の生き様!!我の生き様見るがよい!{end}",
-   "en": "",
+   "en": "My way of life is the way{n}of a man!! Behold my way{n}of life!{end}",
    "max": 62,
    "ptr": [
     "p16 0132AC",
@@ -2856,7 +2856,7 @@
    "id": "015932",
    "fmt": "plain",
    "jp": "貴様の選んだ道ならば裏切るもよかろう! 武将同士として戦ってやる!!{end}",
-   "en": "",
+   "en": "If you chose that path,{n}then betray! I'll fight{n}you officer to officer!!{end}",
    "max": 70,
    "ptr": [
     "p16 0132AF",
@@ -2920,7 +2920,7 @@
    "id": "015978",
    "fmt": "plain",
    "jp": "戦って戦って戦いぬくことこそ武将の道!!{end}",
-   "en": "",
+   "en": "To fight and fight and{n}fight to the end is an{n}officer's way!!{end}",
    "max": 42,
    "ptr": [
     "p16 01346A",
@@ -2974,7 +2974,7 @@
    "id": "0159A2",
    "fmt": "plain",
    "jp": "武将たるもの目釘の折れるまで戦い抜くのが本意!{end}",
-   "en": "",
+   "en": "An officer's duty is to{n}fight until his sword{n}breaks!{end}",
    "max": 48,
    "ptr": [
     "p16 0132BE",
@@ -3003,7 +3003,7 @@
    "id": "0159D2",
    "fmt": "plain",
    "jp": "よ…よし戦闘開始じゃ! ちゃんと勝ってくれよ…{end}",
-   "en": "",
+   "en": "R-right, battle start!{n}Make sure you win for{n}me...{end}",
    "max": 48,
    "ptr": [
     "p16 0132C2",
@@ -3014,7 +3014,7 @@
    "id": "015A02",
    "fmt": "plain",
    "jp": "この武倒国の武勇    身をもって知るが良い!{end}",
-   "en": "",
+   "en": "Learn the valor of{n}Butokoku in your own{n}flesh!{end}",
    "max": 48,
    "ptr": [
     "p16 0132C5",
@@ -3027,7 +3027,7 @@
    "id": "015A32",
    "fmt": "plain",
    "jp": "よいか!! 絶対に賊を 生かして帰すな!!{end}",
-   "en": "",
+   "en": "Listen!! Let no bandit{n}return alive!!{end}",
    "max": 44,
    "ptr": [
     "p16 01348A"

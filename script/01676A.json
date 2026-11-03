@@ -6,7 +6,7 @@
    "id": "01676A",
    "fmt": "plain",
    "jp": "俺は俺は…銀河を…この 銀河を統一するまでは… うおおおお…{end}",
-   "en": "",
+   "en": "I... I... the galaxy...{n}until I unify this{n}galaxy... Uoooooh...{end}",
    "max": 62,
    "ptr": [
     "p16 016706"
@@ -16,7 +16,7 @@
    "id": "0167A8",
    "fmt": "plain",
    "jp": "す すまねえな…みんな…俺は一足先に あの世へ 行かせてもらうぜ…!{end}",
-   "en": "",
+   "en": "S-sorry, everyone... Looks{n}like I'm headin' to the{n}next world first...!{end}",
    "max": 70,
    "ptr": [
     "p16 016710"
@@ -26,7 +26,7 @@
    "id": "0167EE",
    "fmt": "plain",
    "jp": "俺 俺が負けるだと?! くっ…!! 俺の力もここまでか…!!{end}",
-   "en": "",
+   "en": "Me? I lost?! Ngh...!! Is{n}this all I had in me...!!{end}",
    "max": 62,
    "ptr": [
     "p16 016712"
@@ -36,7 +36,7 @@
    "id": "01682C",
    "fmt": "plain",
    "jp": "私の能力も ここまで…!銀河統一の日を 見てみたかった……{end}",
-   "en": "",
+   "en": "So this is my limit...! I{n}wanted to see the day the{n}galaxy united...{end}",
    "max": 60,
    "ptr": [
     "p16 016716"
@@ -46,7 +46,7 @@
    "id": "016868",
    "fmt": "plain",
    "jp": "みなさん…ごめんなさい…先立つことを… 許して ください…{end}",
-   "en": "",
+   "en": "Everyone... I'm sorry...{n}Please forgive me for{n}going first...{end}",
    "max": 60,
    "ptr": [
     "p16 016718"
@@ -56,7 +56,7 @@
    "id": "0168A4",
    "fmt": "plain",
    "jp": "う うちは死ぬんか?  うちはまだ…うちは…!{end}",
-   "en": "",
+   "en": "A-am I dyin'? I still...{n}I...!{end}",
    "max": 48,
    "ptr": [
     "p16 01671A"
@@ -66,7 +66,7 @@
    "id": "0168D4",
    "fmt": "plain",
    "jp": "くっそおおお!俺はこんな所で終わっちまうのか? うおおおお…!!{end}",
-   "en": "",
+   "en": "Damn iiit! Am I gonna end{n}in a place like this?{n}Uoooooh...!!{end}",
    "max": 66,
    "ptr": [
     "p16 01671C"
@@ -76,7 +76,7 @@
    "id": "016916",
    "fmt": "plain",
    "jp": "俺の専は…俺の思うよりもはるか遠くにあったか… 専の散る時…命も散る…{end}",
-   "en": "",
+   "en": "My dream lay farther than{n}I knew... As the dream{n}falls, so does my life...{end}",
    "max": 72,
    "ptr": [
     "p16 01671E"
@@ -86,7 +86,7 @@
    "id": "01695E",
    "fmt": "plain",
    "jp": "ふはははははは…!!  ふはっふはっふはははは…死ぬぞ死ぬぞ…俺が!!{end}",
-   "en": "",
+   "en": "Fuhahahahaha...!! Fuha,{n}fuha, fuhahaha... I die, I{n}die... me!!{end}",
    "max": 72,
    "ptr": [
     "p16 016720"
@@ -96,7 +96,7 @@
    "id": "0169A6",
    "fmt": "plain",
    "jp": "わしも ここまでか…{end}",
-   "en": "",
+   "en": "So this is my end too...{end}",
    "max": 22,
    "ptr": [
     "p16 016724"
@@ -106,7 +106,7 @@
    "id": "0169BC",
    "fmt": "plain",
    "jp": "あたしまだ死にたくない!やだったら いやだっ!!死にたくないよ～!!{end}",
-   "en": "",
+   "en": "I don't wanna die yet! No,{n}no, no!! I don't wanna{n}die!!{end}",
    "max": 70,
    "ptr": [
     "p16 01672C"
@@ -116,7 +116,7 @@
    "id": "016A02",
    "fmt": "plain",
    "jp": "智による全銀河の統一も ついには専と消えたか…!…それも良かろう…!{end}",
-   "en": "",
+   "en": "So a galaxy united by Chi{n}was only a dream...!{n}...That is fine too...!{end}",
    "max": 70,
    "ptr": [
     "p16 01672E"
@@ -126,7 +126,7 @@
    "id": "016A48",
    "fmt": "plain",
    "jp": "…ついに私の生きている間には銀河の統一を達成する者はいなかったか…{end}",
-   "en": "",
+   "en": "...So no one unified the{n}galaxy in my lifetime{n}after all...{end}",
    "max": 68,
    "ptr": [
     "p16 016730"
@@ -136,7 +136,7 @@
    "id": "016A8C",
    "fmt": "plain",
    "jp": "私が負けるはず…死ぬはずありません!!まだまだ私にはしなければ…!!{end}",
-   "en": "",
+   "en": "I can't lose... I can't{n}die!! I still have so much{n}to do...!!{end}",
    "max": 70,
    "ptr": [
     "p16 01673C"
@@ -146,7 +146,7 @@
    "id": "016AD2",
    "fmt": "plain",
    "jp": "ぼ 僕は…なれたのかな…火のような…男に…!{end}",
-   "en": "",
+   "en": "D-did I... become... a man{n}of fire...?!{end}",
    "max": 46,
    "ptr": [
     "p16 01673E"
@@ -156,7 +156,7 @@
    "id": "016B00",
    "fmt": "plain",
    "jp": "ば…ばかな!!わっわっしがっ…!!いっいっやっ…じゃ～!!{end}",
-   "en": "",
+   "en": "N-no way!! M-m-me...!!{n}N-n-no...!! Nooo!!{end}",
    "max": 60,
    "ptr": [
     "p16 016740",
@@ -508,7 +508,7 @@
    "id": "016B3C",
    "fmt": "plain",
    "jp": "今 ここで死ねるのは… 幸せなこと なのかも  しれん…!!{end}",
-   "en": "",
+   "en": "Maybe dying here, now...{n}is a happy thing after{n}all...!!{end}",
    "max": 62,
    "ptr": [
     "p16 016742"
@@ -518,7 +518,7 @@
    "id": "016B7A",
    "fmt": "plain",
    "jp": "おのれ!!こんなばかな!おのれーーーーーっ!!!ぐおおおおおおおおおお{end}",
-   "en": "",
+   "en": "Damn you!! This can't be!{n}Damn youuuuu!!!{n}Guoooooooooh{end}",
    "max": 72,
    "ptr": [
     "p16 01674C"
@@ -528,7 +528,7 @@
    "id": "016BC2",
    "fmt": "plain",
    "jp": "このま…まですむとは思うなよ…!!次…こ…こうなるのは貴様達だぞ……!{end}",
-   "en": "",
+   "en": "Don't think... this is{n}over...!! Next... it'll be{n}you lot...!{end}",
    "max": 72,
    "ptr": [
     "p16 01674E"
@@ -538,7 +538,7 @@
    "id": "016C0A",
    "fmt": "plain",
    "jp": "くっ私としたことが…  これも私の宿命だと…?{end}",
-   "en": "",
+   "en": "Ngh, how could I... Is{n}this too my destiny...?{end}",
    "max": 48,
    "ptr": [
     "p16 016750"
@@ -548,7 +548,7 @@
    "id": "016C3A",
    "fmt": "plain",
    "jp": "私の長い戦いもようやく 終わる…        …やっと終わった…{end}",
-   "en": "",
+   "en": "My long battle is finally{n}over... ...It's over at{n}last...{end}",
    "max": 68,
    "ptr": [
     "p16 016752"
@@ -558,7 +558,7 @@
    "id": "016C7E",
    "fmt": "plain",
    "jp": "鬼の滅ぶところを!!  白鬼の死をとくと見よ!{end}",
-   "en": "",
+   "en": "Watch a demon fall!!{n}Behold the death of Hakki!{end}",
    "max": 48,
    "ptr": [
     "p16 016756"
@@ -568,7 +568,7 @@
    "id": "016CAE",
    "fmt": "plain",
    "jp": "…!!…ぐっ!!…{end}",
-   "en": "",
+   "en": "...!! ...Ngh!! ...{end}",
    "max": 20,
    "ptr": [
     "p16 016758"
@@ -578,7 +578,7 @@
    "id": "016CC2",
    "fmt": "plain",
    "jp": "がはははははははははははははははははははははははははははは…………!!{end}",
-   "en": "",
+   "en": "Gahahahahahahahahahahaha{n}hahahahahahahahahahahaha{n}hahaha.........!!{end}",
    "max": 72,
    "ptr": [
     "p16 01675A"
@@ -588,7 +588,7 @@
    "id": "016D0A",
    "fmt": "plain",
    "jp": "こ…これが!!     これが男の死に様よおおおおおおおおお…!!!{end}",
-   "en": "",
+   "en": "Th-this!! This is how a{n}man dieeeeeeeees...!!!{end}",
    "max": 70,
    "ptr": [
     "p16 01675C"
@@ -598,7 +598,7 @@
    "id": "016D50",
    "fmt": "plain",
    "jp": "後の兵士達のために…!!これこそが 武将の道!!ぐおおおおおお……!!{end}",
-   "en": "",
+   "en": "For the soldiers to come!!{n}This is an officer's way!!{n}Guoooooh...!!{end}",
    "max": 72,
    "ptr": [
     "p16 01675E"
@@ -608,7 +608,7 @@
    "id": "016D98",
    "fmt": "plain",
    "jp": "そ そんなばかな…!! うおおおおお…!!{end}",
-   "en": "",
+   "en": "N-no way...!! Uoooooh...!!{end}",
    "max": 44,
    "ptr": [
     "p16 016708",

@@ -6,7 +6,7 @@
    "id": "010396",
    "fmt": "plain",
    "jp": "どうしたどうした!   戦いはこの俺に任せた方がいいんじゃねぇのか?{end}",
-   "en": "",
+   "en": "What's the matter?! Better{n}leave this fight to me,{n}don't ya think?{end}",
    "max": 70,
    "ptr": [
     "p16 010332"
@@ -16,7 +16,7 @@
    "id": "0103DC",
    "fmt": "plain",
    "jp": "敵はどいつか知らねえがこの孟閣様にかかりゃあ、あの世行きよ!{end}",
-   "en": "",
+   "en": "Whoever they are, once{n}Mokaku's on 'em, they're{n}bound for hell!{end}",
    "max": 62,
    "ptr": [
     "p16 010334"
@@ -26,7 +26,7 @@
    "id": "01041A",
    "fmt": "plain",
    "jp": "命知らずの鐘士元艦隊参上!{end}",
-   "en": "",
+   "en": "The fearless Sho Shigen{n}Fleet has arrived!{end}",
    "max": 28,
    "ptr": [
     "p16 010336"
@@ -36,7 +36,7 @@
    "id": "010436",
    "fmt": "plain",
    "jp": "おおっ?やってるな?  俺達も入れてもらうぜ!{end}",
-   "en": "",
+   "en": "Ooh? Fighting already?{n}Count us in!{end}",
    "max": 48,
    "ptr": [
     "p16 010338"
@@ -46,7 +46,7 @@
    "id": "010466",
    "fmt": "plain",
    "jp": "敵は近けぇぜ、野郎ども ぬかるんじゃあねえぞ!{end}",
-   "en": "",
+   "en": "Enemy's close, ya dogs!{n}Don't get sloppy!{end}",
    "max": 48,
    "ptr": [
     "p16 01033A"
@@ -56,7 +56,7 @@
    "id": "010496",
    "fmt": "plain",
    "jp": "どけどけどけ〜!この項武様が、てがらをもらいに参上したぜえっ!{end}",
-   "en": "",
+   "en": "Outta the way! The great{n}Kobu's here to grab some{n}glory!{end}",
    "max": 64,
    "ptr": [
     "p16 01033C"
@@ -66,7 +66,7 @@
    "id": "0104D6",
    "fmt": "plain",
    "jp": "やはり俺の考えた通り、常道だけでは難しいようだな。{end}",
-   "en": "",
+   "en": "Just as I thought: the{n}orthodox approach alone{n}won't cut it.{end}",
    "max": 52,
    "ptr": [
     "p16 01033E"
@@ -76,7 +76,7 @@
    "id": "01050A",
    "fmt": "plain",
    "jp": "えぇ～、コホン…。どなたかこの三楽斎をお呼びですかな?{end}",
-   "en": "",
+   "en": "Ahem... Did someone call{n}for Sanrakusai?{end}",
    "max": 56,
    "ptr": [
     "p16 010340"
@@ -86,7 +86,7 @@
    "id": "010542",
    "fmt": "plain",
    "jp": "わ、私にだって皆さんのお役に立つ事くらいできますから…。{end}",
-   "en": "",
+   "en": "E-even I can be of some{n}use to everyone...{end}",
    "max": 58,
    "ptr": [
     "p16 010342"
@@ -96,7 +96,7 @@
    "id": "01057C",
    "fmt": "plain",
    "jp": "私もただ見ている訳にはまいりません。皆さんとともに戦います!{end}",
-   "en": "",
+   "en": "I cannot just stand by and{n}watch. I will fight{n}alongside you all!{end}",
    "max": 62,
    "ptr": [
     "p16 010344"
@@ -106,7 +106,7 @@
    "id": "0105BA",
    "fmt": "plain",
    "jp": "何やってんねんしっかりしぃや!うちが来たからにはようしゃせぇへんで!{end}",
-   "en": "",
+   "en": "What're ya doin'? Pull{n}yourself together! Now I'm{n}here, no mercy, y'hear!{end}",
    "max": 70,
    "ptr": [
     "p16 010346"
@@ -116,7 +116,7 @@
    "id": "010600",
    "fmt": "plain",
    "jp": "ど〜した{FFFE}!こんな連中にいつまでももたついてんじゃねぇっ!{end}",
-   "en": "",
+   "en": "What's the hold-up?! Quit{n}fumbling around with this{n}rabble, {FFFE}!{end}",
    "max": 60,
    "ptr": [
     "p16 010348",
@@ -146,7 +146,7 @@
    "id": "01063C",
    "fmt": "plain",
    "jp": "姜子昌、ただ今殿の命により参上した。これより援護する!{end}",
-   "en": "",
+   "en": "Kyo Shisho, here by my{n}lord's command. I shall{n}now give support!{end}",
    "max": 56,
    "ptr": [
     "p16 01034A"
@@ -156,7 +156,7 @@
    "id": "010674",
    "fmt": "plain",
    "jp": "今こそ我々の力を見せつける時、いざっ!{end}",
-   "en": "",
+   "en": "Now is the time to show{n}our strength. Forward!{end}",
    "max": 40,
    "ptr": [
     "p16 01034C"
@@ -166,7 +166,7 @@
    "id": "01069C",
    "fmt": "plain",
    "jp": "よ〜し!{FFFE}殿、我々の戦いを御覧なされませいっ!{end}",
-   "en": "",
+   "en": "All right! Watch how we{n}fight, {FFFE}-dono!{end}",
    "max": 48,
    "ptr": [
     "p16 01034E"
@@ -176,7 +176,7 @@
    "id": "0106CC",
    "fmt": "plain",
    "jp": "陣形を整え、ただちに援護いたす!{end}",
-   "en": "",
+   "en": "Forming up. Moving to{n}support at once!{end}",
    "max": 34,
    "ptr": [
     "p16 010350"
@@ -186,7 +186,7 @@
    "id": "0106EE",
    "fmt": "plain",
    "jp": "敵は目前! いざっ!{end}",
-   "en": "",
+   "en": "The enemy is before us!{n}Charge!{end}",
    "max": 22,
    "ptr": [
     "p16 010352"
@@ -196,7 +196,7 @@
    "id": "010704",
    "fmt": "plain",
    "jp": "ウォ〜ッ!腕がなるぜぇっ!{end}",
-   "en": "",
+   "en": "Whoa! I'm itching for a{n}fight!{end}",
    "max": 28,
    "ptr": [
     "p16 010354"
@@ -206,7 +206,7 @@
    "id": "010720",
    "fmt": "plain",
    "jp": "オラオラァッ!どいてろどいてろっ!俺にまかせとけぇっ!{end}",
-   "en": "",
+   "en": "Outta my way, outta my{n}way! Leave it to me!{end}",
    "max": 56,
    "ptr": [
     "p16 010356",
@@ -219,7 +219,7 @@
    "id": "010758",
    "fmt": "plain",
    "jp": "あたいの事、あまく見てたらそのドテッパラに一発おみまいするよっ!{end}",
-   "en": "",
+   "en": "Take me lightly and I'll{n}plant one right in your{n}gut!{end}",
    "max": 66,
    "ptr": [
     "p16 010358"
@@ -229,7 +229,7 @@
    "id": "01079A",
    "fmt": "plain",
    "jp": "{FFFE}!これより大帝山も攻撃に加わる。ぶざまな戦いはするなよ。{end}",
-   "en": "",
+   "en": "The Taiteizan joins the{n}attack. No sorry fighting,{n}{FFFE}!{end}",
    "max": 60,
    "ptr": [
     "p16 01035A"
@@ -239,7 +239,7 @@
    "id": "0107D6",
    "fmt": "plain",
    "jp": "{FFFE}!そなたの戦いぶり、じっくりと見せていただく。{end}",
-   "en": "",
+   "en": "I shall watch closely how{n}you fight, {FFFE}.{end}",
    "max": 50,
    "ptr": [
     "p16 01035C"
@@ -249,7 +249,7 @@
    "id": "010808",
    "fmt": "plain",
    "jp": "この戦い、我々が頂きに参ったっ!{end}",
-   "en": "",
+   "en": "We've come to claim this{n}battle!{end}",
    "max": 34,
    "ptr": [
     "p16 01035E",
@@ -261,7 +261,7 @@
    "id": "01082A",
    "fmt": "plain",
    "jp": "{FFFE}殿!ただ今我ら武尊艦隊、はせ参じましたぞっ!{end}",
-   "en": "",
+   "en": "The Buson Fleet has rushed{n}to your side,{n}{FFFE}-dono!{end}",
    "max": 48,
    "ptr": [
     "p16 010360"
@@ -271,7 +271,7 @@
    "id": "01085A",
    "fmt": "plain",
    "jp": "今駆けつけて参った! 敵を皆殺しにしてくれようぞっ!{end}",
-   "en": "",
+   "en": "Here we are! We'll{n}slaughter every last{n}enemy!{end}",
    "max": 54,
    "ptr": [
     "p16 010362"
@@ -281,7 +281,7 @@
    "id": "010890",
    "fmt": "plain",
    "jp": "こんな連中など、今すぐなで斬りにしてやるぜ!{end}",
-   "en": "",
+   "en": "I'll cut this lot down{n}right now!{end}",
    "max": 46,
    "ptr": [
     "p16 010364"
@@ -291,7 +291,7 @@
    "id": "0108BE",
    "fmt": "plain",
    "jp": "この狼平が、敵どもを銀河のクズとしてくれようぞっ!{end}",
-   "en": "",
+   "en": "Rohei will turn the enemy{n}into galactic scrap!{end}",
    "max": 52,
    "ptr": [
     "p16 010366"
@@ -301,7 +301,7 @@
    "id": "0108F2",
    "fmt": "plain",
    "jp": "今は戦国の時、私とて手をこまねいてばかりはおられませぬ。{end}",
-   "en": "",
+   "en": "This is an age of war.{n}Even I cannot sit idly by.{end}",
    "max": 58,
    "ptr": [
     "p16 010368"
@@ -311,7 +311,7 @@
    "id": "01092C",
    "fmt": "plain",
    "jp": "姉上、私の戦いを見ていて下さい!{end}",
-   "en": "",
+   "en": "Sister, watch me fight!{end}",
    "max": 34,
    "ptr": [
     "p16 01036A"
@@ -321,7 +321,7 @@
    "id": "01094E",
    "fmt": "plain",
    "jp": "ええい! きさまらっ!なんだそのザマはっ!この腰ぬけどもがっ!{end}",
-   "en": "",
+   "en": "Blast it! You lot! What a{n}disgrace! You spineless{n}cowards!{end}",
    "max": 64,
    "ptr": [
     "p16 01036C"
@@ -331,7 +331,7 @@
    "id": "01098E",
    "fmt": "plain",
    "jp": "座苞、これより援護いたすっ!全艦発進!{end}",
-   "en": "",
+   "en": "Zaho here, moving to{n}support! All ships,{n}launch!{end}",
    "max": 40,
    "ptr": [
     "p16 01036E"
@@ -341,7 +341,7 @@
    "id": "0109B6",
    "fmt": "plain",
    "jp": "はぁ〜っははっはっ! 腕がなってガマンできなかったところだ。{end}",
-   "en": "",
+   "en": "Hahahaha! My arm was{n}itching, I couldn't hold{n}back any longer.{end}",
    "max": 62,
    "ptr": [
     "p16 010370"
@@ -351,7 +351,7 @@
    "id": "0109F4",
    "fmt": "plain",
    "jp": "{FFFE}殿、今より攻撃に加わる!…以上!{end}",
-   "en": "",
+   "en": "Joining the attack now!{n}...That is all,{n}{FFFE}-dono!{end}",
    "max": 36,
    "ptr": [
     "p16 010372"
@@ -361,7 +361,7 @@
    "id": "010A18",
    "fmt": "plain",
    "jp": "全艦、準備完了!{end}",
-   "en": "",
+   "en": "All ships ready!{end}",
    "max": 18,
    "ptr": [
     "p16 010374"
@@ -371,7 +371,7 @@
    "id": "010A2A",
    "fmt": "plain",
    "jp": "今こそ我が国の底力を見せる時!全員、戦闘配置につけ!{end}",
-   "en": "",
+   "en": "Now's the time to show our{n}nation's true might! All{n}hands, battle stations!{end}",
    "max": 54,
    "ptr": [
     "p16 010376"
@@ -381,7 +381,7 @@
    "id": "010A60",
    "fmt": "plain",
    "jp": "ええい!そんなこわっぱ共にいつまでかかっとる! とっとと片づけろ!{end}",
-   "en": "",
+   "en": "Blast! How long will these{n}brats take you?! Finish{n}them off!{end}",
    "max": 68,
    "ptr": [
     "p16 010378"
@@ -391,7 +391,7 @@
    "id": "010AA4",
    "fmt": "plain",
    "jp": "てめえら、もたもたして俺の足を引っぱるんじゃあねえぞ!{end}",
-   "en": "",
+   "en": "You lot, don't you dawdle{n}and drag me down!{end}",
    "max": 56,
    "ptr": [
     "p16 01037A"
@@ -401,7 +401,7 @@
    "id": "010ADC",
    "fmt": "plain",
    "jp": "敵の陣形が崩れた時を狙って砲撃せよ! {FFFE}!この機を絶体逃すな!{end}",
-   "en": "",
+   "en": "Fire when their formation{n}breaks! Don't miss this{n}chance, {FFFE}!{end}",
    "max": 64,
    "ptr": [
     "p16 01037C"
@@ -411,7 +411,7 @@
    "id": "010B1C",
    "fmt": "plain",
    "jp": "{FFFE}!私の前でぶざまな戦い方をすると承知しないよ!{end}",
-   "en": "",
+   "en": "Fight sloppily in front of{n}me and you'll regret it,{n}{FFFE}!{end}",
    "max": 50,
    "ptr": [
     "p16 01037E",
@@ -424,7 +424,7 @@
    "id": "010B4E",
    "fmt": "plain",
    "jp": "苦戦しているようですな{FFFE}殿。これも閣下のため、援護いたしますぞ。{end}",
-   "en": "",
+   "en": "Hard-pressed? For His{n}Excellency, I'll assist{n}you, {FFFE}-dono.{end}",
    "max": 66,
    "ptr": [
     "p16 010380"
@@ -434,7 +434,7 @@
    "id": "010B90",
    "fmt": "plain",
    "jp": "{FFFE}! 抜け駆けは許さんぞ! 奴らはこの白鬼が討つ!{end}",
-   "en": "",
+   "en": "No glory-grabbing! Hakki{n}will strike them down,{n}{FFFE}!{end}",
    "max": 52,
    "ptr": [
     "p16 010382"
@@ -444,7 +444,7 @@
    "id": "010BC4",
    "fmt": "plain",
    "jp": "情けないぞ{FFFE}! 我らの戦いぶりをそこで見ているがいい!{end}",
-   "en": "",
+   "en": "Pathetic! Just watch how{n}we fight from there,{n}{FFFE}!{end}",
    "max": 56,
    "ptr": [
     "p16 010384"
@@ -454,7 +454,7 @@
    "id": "010BFC",
    "fmt": "plain",
    "jp": "{FFFE}!そのような奴ら,何を恐れるか!恥を知れ!恥を!{end}",
-   "en": "",
+   "en": "What do you fear from such{n}men? Shame on you,{n}{FFFE}! Shame!{end}",
    "max": 52,
    "ptr": [
     "p16 010386"
@@ -464,7 +464,7 @@
    "id": "010C30",
    "fmt": "plain",
    "jp": "我らに逆らうとはおろかな!五虎将軍・武庸の恐ろしさを思い知れ!{end}",
-   "en": "",
+   "en": "Fools, to defy us! Learn{n}the terror of Buyo of the{n}Five Tiger Generals!{end}",
    "max": 64,
    "ptr": [
     "p16 010388"
@@ -474,7 +474,7 @@
    "id": "010C70",
    "fmt": "plain",
    "jp": "我が君主に刃向かうとはおろかな! この魏相如の手で討ちとってくれる!{end}",
-   "en": "",
+   "en": "Fools, to defy my liege!{n}Gi Shojo shall strike you{n}down himself!{end}",
    "max": 70,
    "ptr": [
     "p16 01038A"
@@ -484,7 +484,7 @@
    "id": "010CB6",
    "fmt": "plain",
    "jp": "わしが法権じゃ!お主達なら、わしなど呼ばずとも戦えようものを。{end}",
-   "en": "",
+   "en": "I am Hoken! You could've{n}fought fine without{n}calling on an old man.{end}",
    "max": 64,
    "ptr": [
     "p16 01038C"
@@ -494,7 +494,7 @@
    "id": "010CF6",
    "fmt": "plain",
    "jp": "馬元宇、ただいま無事に到着、ようし!すぐに艦を味方艦隊の後につけい!{end}",
-   "en": "",
+   "en": "Ba Genu, arrived safely.{n}Right! Bring the ship in{n}behind our fleet at once!{end}",
    "max": 70,
    "ptr": [
     "p16 01038E"
@@ -504,7 +504,7 @@
    "id": "010D3C",
    "fmt": "plain",
    "jp": "それがしっ!それがしにすべてお任せをっ!{end}",
-   "en": "",
+   "en": "I, sir! Leave it all to{n}me, sir!{end}",
    "max": 42,
    "ptr": [
     "p16 010390"
@@ -514,7 +514,7 @@
    "id": "010D66",
    "fmt": "plain",
    "jp": "この戦の勝利は、我が軍がいただく!{end}",
-   "en": "",
+   "en": "Victory in this battle{n}goes to our army!{end}",
    "max": 36,
    "ptr": [
     "p16 010392"
@@ -524,7 +524,7 @@
    "id": "010D8A",
    "fmt": "plain",
    "jp": "苦しいのは敵とて同じ事。{FFFE}殿、もうしばらくのしんぼうですぞ!{end}",
-   "en": "",
+   "en": "The enemy suffers just as{n}we do. Hold on a little{n}longer, {FFFE}-dono!{end}",
    "max": 62,
    "ptr": [
     "p16 010394"

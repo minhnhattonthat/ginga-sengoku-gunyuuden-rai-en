@@ -6,7 +6,7 @@
    "id": "006375",
    "fmt": "plain",
    "jp": "{FFFE}新金剛{end}",
-   "en": "",
+   "en": "New Kongo{end}",
    "max": 10,
    "ptr": [
     "p16 006339",
@@ -37,7 +37,7 @@
    "id": "00637F",
    "fmt": "plain",
    "jp": "{FFFE}威海洋{end}",
-   "en": "",
+   "en": "Ikaiyo{end}",
    "max": 10,
    "ptr": [
     "p16 006349"
@@ -47,7 +47,7 @@
    "id": "006389",
    "fmt": "plain",
    "jp": "{FFFE}{FFFE}帝{FFFE}{FFFE}虎{end}",
-   "en": "",
+   "en": "Teiko{end}",
    "max": 14,
    "ptr": [
     "p16 006353",
@@ -59,7 +59,7 @@
    "id": "006397",
    "fmt": "plain",
    "jp": "大帝山2{end}",
-   "en": "",
+   "en": "Taiteizan2{end}",
    "max": 10,
    "ptr": [
     "p16 006369"
@@ -69,7 +69,7 @@
    "id": "0063A1",
    "fmt": "plain",
    "jp": "{FFFE}{FFFE}比{FFFE}{FFFE}叡{end}",
-   "en": "",
+   "en": "Hiei{end}",
    "max": 14,
    "ptr": [
     "p16 00636F"
@@ -79,7 +79,7 @@
    "id": "0063AF",
    "fmt": "plain",
    "jp": "{FFFE}{FFFE}猛{FFFE}{FFFE}虎{end}",
-   "en": "",
+   "en": "Moko{end}",
    "max": 14,
    "ptr": [
     "p16 006371"
@@ -89,7 +89,7 @@
    "id": "0063BD",
    "fmt": "plain",
    "jp": "{FFFE}{FFFE}富{FFFE}{FFFE}嶽{end}",
-   "en": "",
+   "en": "Fugaku{end}",
    "max": 14,
    "ptr": [
     "p16 006373"

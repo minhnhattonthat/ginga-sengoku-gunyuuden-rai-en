@@ -6,7 +6,7 @@
    "id": "0048FE",
    "fmt": "plain",
    "jp": "は、{end}",
-   "en": "",
+   "en": " defects to{end}",
    "max": 6,
    "ptr": [
     "fixed 01CC92",
@@ -17,7 +17,7 @@
    "id": "004904",
    "fmt": "plain",
    "jp": "に寝返りました{end}",
-   "en": "",
+   "en": "!{end}",
    "max": 16,
    "ptr": [
     "fixed 01CCCA"

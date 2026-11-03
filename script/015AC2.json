@@ -6,7 +6,7 @@
    "id": "015AC2",
    "fmt": "plain",
    "jp": "ここを攻め落とすと また一歩 銀河統一に近づく ことになる!!{end}",
-   "en": "",
+   "en": "Take this place, and we're{n}one step closer to{n}unifying the galaxy!!{end}",
    "max": 64,
    "ptr": [
     "p16 015A5E"
@@ -16,7 +16,7 @@
    "id": "015B02",
    "fmt": "plain",
    "jp": "へへっ!        一気に攻め込んでこの星をいただくぜ!!{end}",
-   "en": "",
+   "en": "Heh heh! We storm in and{n}this planet is ours!!{end}",
    "max": 64,
    "ptr": [
     "p16 015A68"
@@ -26,7 +26,7 @@
    "id": "015B42",
    "fmt": "plain",
    "jp": "私の手にかかれば星の一つくらい 簡単に攻略する ことができる!!{end}",
-   "en": "",
+   "en": "In my hands, taking a{n}planet or two is easy!!{end}",
    "max": 66,
    "ptr": [
     "p16 015A6A"
@@ -36,7 +36,7 @@
    "id": "015B84",
    "fmt": "plain",
    "jp": "この星を攻略し 銀河統一へと一歩進みましょう!{end}",
-   "en": "",
+   "en": "Let's take this planet,{n}one step closer to{n}unifying the galaxy!{end}",
    "max": 48,
    "ptr": [
     "p16 015A6E"
@@ -46,7 +46,7 @@
    "id": "015BB4",
    "fmt": "plain",
    "jp": "この星を 攻め取るのも…平和のためなの…!{end}",
-   "en": "",
+   "en": "Even taking this planet...{n}is for the sake of{n}peace...!{end}",
    "max": 44,
    "ptr": [
     "p16 015A70"
@@ -56,7 +56,7 @@
    "id": "015BE0",
    "fmt": "plain",
    "jp": "うちだったら すぐにでも占領できるはずや!!{end}",
-   "en": "",
+   "en": "If it was me, I'd take it{n}in no time!!{end}",
    "max": 46,
    "ptr": [
     "p16 015A72"
@@ -66,7 +66,7 @@
    "id": "015C0E",
    "fmt": "plain",
    "jp": "練国を強大にするために この拠点は、是が比でも 落とす!!{end}",
-   "en": "",
+   "en": "To make Ren mighty, we{n}must take this base at all{n}costs!!{end}",
    "max": 60,
    "ptr": [
     "p16 015A74"
@@ -76,7 +76,7 @@
    "id": "015C4A",
    "fmt": "plain",
    "jp": "星を一つ落としていくごとに俺の専へと近づいて行く銀河統一の専に…!{end}",
-   "en": "",
+   "en": "Each planet I take brings{n}me closer to my dream...{n}of a united galaxy...!{end}",
    "max": 68,
    "ptr": [
     "p16 015A76"
@@ -86,7 +86,7 @@
    "id": "015C8E",
    "fmt": "plain",
    "jp": "ふははははは…!    殺せ殺せ!!      ふはははははははははは{end}",
-   "en": "",
+   "en": "Fuhahahaha...! Kill,{n}kill!! Fuhahahahahahaha{end}",
    "max": 72,
    "ptr": [
     "p16 015A78"
@@ -96,7 +96,7 @@
    "id": "015CD6",
    "fmt": "plain",
    "jp": "全将兵よ!我らが銀河統一の手伝いが できることをありがたく思うのだ!!{end}",
-   "en": "",
+   "en": "Officers and men! Be{n}grateful you may help us{n}unify the galaxy!!{end}",
    "max": 72,
    "ptr": [
     "p16 015A7C"
@@ -106,7 +106,7 @@
    "id": "015D1E",
    "fmt": "plain",
    "jp": "こ～んな星あたしがさっさと占領してあげるわ!!{end}",
-   "en": "",
+   "en": "A planet like thiiis? I'll{n}take it in a jiffy!!{end}",
    "max": 48,
    "ptr": [
     "p16 015A84"
@@ -116,7 +116,7 @@
    "id": "015D4E",
    "fmt": "plain",
    "jp": "智の国を大きくしていかねば…智による銀河統一は専となって消えてしまう…{end}",
-   "en": "",
+   "en": "If Chi doesn't grow... a{n}galaxy united by Chi will{n}fade like a dream...{end}",
    "max": 72,
    "ptr": [
     "p16 015A86",
@@ -127,7 +127,7 @@
    "id": "015D96",
    "fmt": "plain",
    "jp": "銀河統一のためにはすべての星が自国の物とならねばいけないのだ…!{end}",
-   "en": "",
+   "en": "To unify the galaxy, every{n}planet must belong to our{n}nation...!{end}",
    "max": 66,
    "ptr": [
     "p16 015A88"
@@ -137,7 +137,7 @@
    "id": "015DD8",
    "fmt": "plain",
    "jp": "この程度の 防衛力なら 何とか 占領が可能でありましょう!{end}",
-   "en": "",
+   "en": "With defenses this weak,{n}we can surely take it!{end}",
    "max": 60,
    "ptr": [
     "p16 015A94"
@@ -147,7 +147,7 @@
    "id": "015E14",
    "fmt": "plain",
    "jp": "僕は勝つ…!      星の一つも 攻略できないようではいけないから!{end}",
-   "en": "",
+   "en": "I'll win...! I can't be{n}someone who can't even{n}take one planet!{end}",
    "max": 72,
    "ptr": [
     "p16 015A96"
@@ -157,7 +157,7 @@
    "id": "015E5C",
    "fmt": "plain",
    "jp": "ぐふふっ!!      この星を わしの物にしてやろう…!!{end}",
-   "en": "",
+   "en": "Guhuhu!! I'll make this{n}planet mine...!!{end}",
    "max": 62,
    "ptr": [
     "p16 015A98"
@@ -167,7 +167,7 @@
    "id": "015E9A",
    "fmt": "plain",
    "jp": "がっはっはっは!!   この星はわしの物になったも同然だ!!{end}",
-   "en": "",
+   "en": "Gahahaha!! This planet's{n}as good as mine!!{end}",
    "max": 62,
    "ptr": [
     "p16 015AA4"
@@ -177,7 +177,7 @@
    "id": "015ED8",
    "fmt": "plain",
    "jp": "雑魚がいくら守っても俺の前では意味が無いぞ!!{end}",
-   "en": "",
+   "en": "No matter how much small{n}fry defend it, it's no use{n}against me!!{end}",
    "max": 48,
    "ptr": [
     "p16 015AA6"
@@ -187,7 +187,7 @@
    "id": "015F08",
    "fmt": "plain",
    "jp": "私の知略の前では どんなに守りの堅い星であっても陥落することになる!{end}",
-   "en": "",
+   "en": "Before my cunning, even{n}the best-defended planet{n}will fall!{end}",
    "max": 70,
    "ptr": [
     "p16 015AA8"
@@ -197,7 +197,7 @@
    "id": "015F4E",
    "fmt": "plain",
    "jp": "いくら戦闘で勝とうとも 星を取らねば意味が無い{end}",
-   "en": "",
+   "en": "No matter how many battles{n}we win, it's pointless if{n}we don't take planets.{end}",
    "max": 48,
    "ptr": [
     "p16 015AAA"
@@ -207,7 +207,7 @@
    "id": "015F7E",
    "fmt": "plain",
    "jp": "鬼に小手先の策など 通じぬぞ!!星を守りたいなら死ぬ気で来い!!{end}",
-   "en": "",
+   "en": "Petty tricks won't fool a{n}demon!! Want your planet?{n}Come ready to die!!{end}",
    "max": 66,
    "ptr": [
     "p16 015AAE"
@@ -217,7 +217,7 @@
    "id": "015FC0",
    "fmt": "plain",
    "jp": "…………ゆくぞ!!{end}",
-   "en": "",
+   "en": "......Here I come!!{end}",
    "max": 20,
    "ptr": [
     "p16 015AB0",
@@ -228,7 +228,7 @@
    "id": "015FD4",
    "fmt": "plain",
    "jp": "がははははは…!    落とせ落とせ攻め落とせ!がはははははははははは{end}",
-   "en": "",
+   "en": "Gahahahaha...! Take it,{n}take it, storm it!{n}Gahahahahahahaha{end}",
    "max": 72,
    "ptr": [
     "p16 015AB2"
@@ -238,7 +238,7 @@
    "id": "01601C",
    "fmt": "plain",
    "jp": "我の生き様男の生き様!!男の星取り見せてやる!{end}",
-   "en": "",
+   "en": "My way is a man's way!!{n}I'll show you how a man{n}takes a planet!{end}",
    "max": 48,
    "ptr": [
     "p16 015AB4"
@@ -248,7 +248,7 @@
    "id": "01604C",
    "fmt": "plain",
    "jp": "この星落とせば銀河の地図もまた変わる!しかし武将の道は決して変わらぬ!{end}",
-   "en": "",
+   "en": "Take this planet, and the{n}map changes! An officer's{n}way never does!{end}",
    "max": 72,
    "ptr": [
     "p16 015AB6"
@@ -258,7 +258,7 @@
    "id": "016094",
    "fmt": "plain",
    "jp": "この星 見事攻略して見せよう!!{end}",
-   "en": "",
+   "en": "I'll take this planet in{n}fine style!!{end}",
    "max": 34,
    "ptr": [
     "p16 015A60",

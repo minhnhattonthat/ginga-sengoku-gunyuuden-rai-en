@@ -6,7 +6,7 @@
    "id": "010E2C",
    "fmt": "plain",
    "jp": "竜我雷!ただいま参上!{FFFE}、待たせたな!俺も一暴れさせてもらうぜ!{end}",
-   "en": "",
+   "en": "Rai Ryuga is here! Let me{n}cut loose too! Sorry for{n}the wait, {FFFE}!{end}",
    "max": 66,
    "ptr": [
     "p16 010DC8"
@@ -16,7 +16,7 @@
    "id": "010E6E",
    "fmt": "plain",
    "jp": "大丈夫ですかい? このあっしが来たからにゃあ、もう安心ですぜ!{end}",
-   "en": "",
+   "en": "You all right? Now yours{n}truly is here, ya got{n}nothin' to worry about!{end}",
    "max": 64,
    "ptr": [
     "p16 010DCA"
@@ -26,7 +26,7 @@
    "id": "010EAE",
    "fmt": "plain",
    "jp": "鐘士元ただいま参上いたしやした。お助けいたしやすぜ!{end}",
-   "en": "",
+   "en": "Sho Shigen, reportin' in.{n}I'm here to help ya out!{end}",
    "max": 54,
    "ptr": [
     "p16 010DCC"
@@ -36,7 +36,7 @@
    "id": "010EE4",
    "fmt": "plain",
    "jp": "敵艦隊確認!これより追撃を開始する!{end}",
-   "en": "",
+   "en": "Enemy fleet sighted!{n}Beginning pursuit!{end}",
    "max": 38,
    "ptr": [
     "p16 010DCE"
@@ -46,7 +46,7 @@
    "id": "010F0A",
    "fmt": "plain",
    "jp": "この老いぼれ、死にばなをさかせる覚悟はいつでもできておりまする!{end}",
-   "en": "",
+   "en": "This old-timer is always{n}ready for one last blaze{n}of glory!{end}",
    "max": 66,
    "ptr": [
     "p16 010DD0"
@@ -56,7 +56,7 @@
    "id": "010F4C",
    "fmt": "plain",
    "jp": "ちぃっ! もう始まってやがったか!俺様を忘れてもらっちゃ困るぜ!{end}",
-   "en": "",
+   "en": "Tch! It's started{n}already?! Don't you forget{n}about me!{end}",
    "max": 66,
    "ptr": [
     "p16 010DD2"
@@ -66,7 +66,7 @@
    "id": "010F8E",
    "fmt": "plain",
    "jp": "どうやら軍師であるこの俺が力を見せる時がきたようだな。{end}",
-   "en": "",
+   "en": "Seems the time has come{n}for me, the strategist, to{n}show my power.{end}",
    "max": 56,
    "ptr": [
     "p16 010DD4"
@@ -76,7 +76,7 @@
    "id": "010FC6",
    "fmt": "plain",
    "jp": "だぁ〜っはっはっ!およばずながら、わたくしもお手伝いしますぞ!{end}",
-   "en": "",
+   "en": "Dahahaha! I shall lend my{n}humble aid as well!{end}",
    "max": 64,
    "ptr": [
     "p16 010DD6"
@@ -86,7 +86,7 @@
    "id": "011006",
    "fmt": "plain",
    "jp": "私がここまでになれたのも、皆さんのおかげ。全力で戦います!{end}",
-   "en": "",
+   "en": "I owe all I've become to{n}you all. I'll fight with{n}all I've got!{end}",
    "max": 60,
    "ptr": [
     "p16 010DD8"
@@ -96,7 +96,7 @@
    "id": "011042",
    "fmt": "plain",
    "jp": "皆さん、私達も応援にきました。これより援護します。{end}",
-   "en": "",
+   "en": "Everyone, we've come to{n}help. We'll cover you now.{end}",
    "max": 52,
    "ptr": [
     "p16 010DDA"
@@ -106,7 +106,7 @@
    "id": "011076",
    "fmt": "plain",
    "jp": "来たったでぇ～!やっぱうちがおらんとアカンなぁ。派手に暴れたるでぇっ!{end}",
-   "en": "",
+   "en": "Here I am! Y'all can't do{n}without me, huh? Let's{n}raise some hell!{end}",
    "max": 72,
    "ptr": [
     "p16 010DDC"
@@ -116,7 +116,7 @@
    "id": "0110BE",
    "fmt": "plain",
    "jp": "俺の天下統一を邪魔するヤツは、誰であろうが叩きつぶしてやるぜ!{end}",
-   "en": "",
+   "en": "Anyone who gets in the way{n}of my unification, I'll{n}crush 'em!{end}",
    "max": 64,
    "ptr": [
     "p16 010DDE"
@@ -126,7 +126,7 @@
    "id": "0110FE",
    "fmt": "plain",
    "jp": "姜子昌、参上したっ! 今こそ天の時、この私の命にかえてもお守りする!{end}",
-   "en": "",
+   "en": "Kyo Shisho is here! The{n}hour has come. I'll guard{n}you with my life!{end}",
    "max": 70,
    "ptr": [
     "p16 010DE0"
@@ -136,7 +136,7 @@
    "id": "011144",
    "fmt": "plain",
    "jp": "こちら蹄庖!すべて整いました。いつでもご命令を!{end}",
-   "en": "",
+   "en": "Teiho here! All is ready.{n}Awaiting your orders!{end}",
    "max": 50,
    "ptr": [
     "p16 010DE2"
@@ -146,7 +146,7 @@
    "id": "011176",
    "fmt": "plain",
    "jp": "ご心配にはおよびませんぞ!この究興におまかせを!{end}",
-   "en": "",
+   "en": "No need to worry! Leave it{n}to Enko!{end}",
    "max": 50,
    "ptr": [
     "p16 010DE4"
@@ -156,7 +156,7 @@
    "id": "0111A8",
    "fmt": "plain",
    "jp": "今は亡き南蛮王のため、南蛮の民のために一命をかけて戦いまする!{end}",
-   "en": "",
+   "en": "For the late Nanban King{n}and the Nanban people,{n}I'll fight with my life!{end}",
    "max": 64,
    "ptr": [
     "p16 010DE6"
@@ -166,7 +166,7 @@
    "id": "0111E8",
    "fmt": "plain",
    "jp": "安心されよ!{FFFE}殿!南蛮の夏候牙、ただ今参りました!{end}",
-   "en": "",
+   "en": "Kako Ga of Nanban has{n}come! Rest easy,{n}{FFFE}-dono!{end}",
    "max": 52,
    "ptr": [
     "p16 010DE8"
@@ -176,7 +176,7 @@
    "id": "01121C",
    "fmt": "plain",
    "jp": "南蛮王様!この私の戦いぶりを見ていて下さい!{end}",
-   "en": "",
+   "en": "Your Majesty, Nanban King!{n}Please watch how I fight!{end}",
    "max": 46,
    "ptr": [
     "p16 010DEA"
@@ -186,7 +186,7 @@
    "id": "01124A",
    "fmt": "plain",
    "jp": "へっへぇん!どんな戦いになろうとオレは負ける気がしねぇぜっ!{end}",
-   "en": "",
+   "en": "Heh heh! Whatever kind of{n}fight it is, I don't plan{n}on losing!{end}",
    "max": 62,
    "ptr": [
     "p16 010DEC"
@@ -196,7 +196,7 @@
    "id": "011288",
    "fmt": "plain",
    "jp": "ヤッホ〜ッ!あたいが今助けにいったげるからね〜っ!{end}",
-   "en": "",
+   "en": "Yoo-hoo! I'm comin' to{n}save ya!{end}",
    "max": 52,
    "ptr": [
     "p16 010DEE"
@@ -206,7 +206,7 @@
    "id": "0112BC",
    "fmt": "plain",
    "jp": "{FFFE}殿! たかだかこれしきの艦隊、恐るるに足りまぜぬぞ!{end}",
-   "en": "",
+   "en": "A mere fleet like this is{n}nothing to fear,{n}{FFFE}-dono!{end}",
    "max": 56,
    "ptr": [
     "p16 010DF0"
@@ -216,7 +216,7 @@
    "id": "0112F4",
    "fmt": "plain",
    "jp": "飛竜ただ今到着しました。ただちに攻撃に入ります!{end}",
-   "en": "",
+   "en": "Hiryu has arrived.{n}Commencing attack at once!{end}",
    "max": 50,
    "ptr": [
     "p16 010DF2"
@@ -226,7 +226,7 @@
    "id": "011326",
    "fmt": "plain",
    "jp": "王華艦隊、これより援護いたします!{end}",
-   "en": "",
+   "en": "Oka Fleet, moving to{n}support!{end}",
    "max": 36,
    "ptr": [
     "p16 010DF4"
@@ -236,7 +236,7 @@
    "id": "01134A",
    "fmt": "plain",
    "jp": "武尊艦隊、たた今駆けつけましたぞ!{end}",
-   "en": "",
+   "en": "Buson Fleet, here on the{n}double!{end}",
    "max": 36,
    "ptr": [
     "p16 010DF6"
@@ -246,7 +246,7 @@
    "id": "01136E",
    "fmt": "plain",
    "jp": "斎遠艦隊、まかりこしましたっ!何なりと申しつけ下されっ!{end}",
-   "en": "",
+   "en": "Seien Fleet, reporting!{n}Command me as you will!{end}",
    "max": 58,
    "ptr": [
     "p16 010DF8"
@@ -256,7 +256,7 @@
    "id": "0113A8",
    "fmt": "plain",
    "jp": "峰索、今より攻撃に加わりまするっ!{end}",
-   "en": "",
+   "en": "Hosaku joins the attack!{end}",
    "max": 36,
    "ptr": [
     "p16 010DFA"
@@ -266,7 +266,7 @@
    "id": "0113CC",
    "fmt": "plain",
    "jp": "おおせの通りに致しまするゆえ、何なりとお申しつけ下さい。{end}",
-   "en": "",
+   "en": "I shall do as you command.{n}Give me any order.{end}",
    "max": 58,
    "ptr": [
     "p16 010DFC"
@@ -276,7 +276,7 @@
    "id": "011406",
    "fmt": "plain",
    "jp": "我が艦隊にも優れた兵がそろっておりまする!ぜひお使い下さいませ。{end}",
-   "en": "",
+   "en": "My fleet too has fine{n}soldiers! Please, make use{n}of them.{end}",
    "max": 66,
    "ptr": [
     "p16 010DFE"
@@ -286,7 +286,7 @@
    "id": "011448",
    "fmt": "plain",
    "jp": "虎丸とて、もう立派に戦えます。心配にはおよびません!{end}",
-   "en": "",
+   "en": "Even Toramaru can fight{n}properly now. No need to{n}worry!{end}",
    "max": 54,
    "ptr": [
     "p16 010E00"
@@ -296,7 +296,7 @@
    "id": "01147E",
    "fmt": "plain",
    "jp": "おやおや、{FFFE}殿ともあろうお方が、この連中相手に苦戦とは情けない!{end}",
-   "en": "",
+   "en": "My, my! Struggling against{n}this lot? How pitiful,{n}{FFFE}-dono!{end}",
    "max": 66,
    "ptr": [
     "p16 010E02"
@@ -306,7 +306,7 @@
    "id": "0114C0",
    "fmt": "plain",
    "jp": "戦いの勝敗は時の運!どんな敵とて、あなどるは禁物ですぞ!{end}",
-   "en": "",
+   "en": "Victory in battle is a{n}matter of luck! Never{n}underestimate any foe!{end}",
    "max": 58,
    "ptr": [
     "p16 010E04"
@@ -316,7 +316,7 @@
    "id": "0114FA",
    "fmt": "plain",
    "jp": "{FFFE}殿! これより援護いたすぞ!{end}",
-   "en": "",
+   "en": "I'll cover you now,{n}{FFFE}-dono!{end}",
    "max": 32,
    "ptr": [
     "p16 010E06"
@@ -326,7 +326,7 @@
    "id": "01151A",
    "fmt": "plain",
    "jp": "すべての準備、整いました!{end}",
-   "en": "",
+   "en": "All preparations complete!{end}",
    "max": 28,
    "ptr": [
     "p16 010E08"
@@ -336,7 +336,7 @@
    "id": "011536",
    "fmt": "plain",
    "jp": "こちら修理!全艦ただ今到着いたしました!{end}",
-   "en": "",
+   "en": "Shuri here! All ships have{n}arrived!{end}",
    "max": 42,
    "ptr": [
     "p16 010E0A"
@@ -346,7 +346,7 @@
    "id": "011560",
    "fmt": "plain",
    "jp": "{FFFE}殿、我々も出陣して参った!これより援護にまわる。{end}",
-   "en": "",
+   "en": "We've sortied too! Moving{n}to support you,{n}{FFFE}-dono.{end}",
    "max": 52,
    "ptr": [
     "p16 010E0C"
@@ -356,7 +356,7 @@
    "id": "011594",
    "fmt": "plain",
    "jp": "{FFFE}!おまえらだけで充分だろうとは思ったんだが、見物しに来たぜ!{end}",
-   "en": "",
+   "en": "Thought you could handle{n}it alone, but I came to{n}watch, {FFFE}!{end}",
    "max": 64,
    "ptr": [
     "p16 010E0E"
@@ -366,7 +366,7 @@
    "id": "0115D4",
    "fmt": "plain",
    "jp": "俺だ、骸山だ!早いとこかたづけちまってうまい酒でものもうぜ!{end}",
-   "en": "",
+   "en": "It's me, Gaizan! Let's{n}finish this quick and{n}drink some good sake!{end}",
    "max": 62,
    "ptr": [
     "p16 010E10"
@@ -376,7 +376,7 @@
    "id": "011612",
    "fmt": "plain",
    "jp": "敵の大将の首を斬るまでは、油断禁物ですぞ…。私も援護いたします。{end}",
-   "en": "",
+   "en": "Stay on guard till the{n}enemy general's head is{n}off... I'll support you.{end}",
    "max": 66,
    "ptr": [
     "p16 010E12"
@@ -386,7 +386,7 @@
    "id": "011654",
    "fmt": "plain",
    "jp": "狼刃ただいま見参!死にたい奴は、かかっておいで!{end}",
-   "en": "",
+   "en": "Roha has arrived! Whoever{n}wants to die, come at me!{end}",
    "max": 50,
    "ptr": [
     "p16 010E14"
@@ -396,7 +396,7 @@
    "id": "011686",
    "fmt": "plain",
    "jp": "どうやら間に合ったようですな。およばずながら加勢させて頂きます。{end}",
-   "en": "",
+   "en": "Seems I made it in time.{n}Allow me to lend my humble{n}aid.{end}",
    "max": 66,
    "ptr": [
     "p16 010E16"
@@ -406,7 +406,7 @@
    "id": "0116C8",
    "fmt": "plain",
    "jp": "でてきたな逆賊どもめ! {FFFE}殿、ここは私にお任せください!{end}",
-   "en": "",
+   "en": "So, the traitors show{n}themselves! Leave this to{n}me, {FFFE}-dono!{end}",
    "max": 58,
    "ptr": [
     "p16 010E18"
@@ -416,7 +416,7 @@
    "id": "011702",
    "fmt": "plain",
    "jp": "御無事ですか{FFFE}殿! これより援護いたします! 全艦砲撃準備!{end}",
-   "en": "",
+   "en": "Moving to support! All{n}guns ready! Are you safe,{n}{FFFE}-dono?{end}",
    "max": 62,
    "ptr": [
     "p16 010E1A"
@@ -426,7 +426,7 @@
    "id": "011740",
    "fmt": "plain",
    "jp": "ようし、我々ものりこむぞ!特大の軍旗をかかげいっ!{end}",
-   "en": "",
+   "en": "Right, we're going in too!{n}Raise the giant war{n}banner!{end}",
    "max": 52,
    "ptr": [
     "p16 010E1C",
@@ -437,7 +437,7 @@
    "id": "011774",
    "fmt": "plain",
    "jp": "{FFFE}殿、ただ今参りましたぞ!あとは我らにお任せください!{end}",
-   "en": "",
+   "en": "We've arrived! Leave the{n}rest to us,{n}{FFFE}-dono!{end}",
    "max": 56,
    "ptr": [
     "p16 010E1E"
@@ -447,7 +447,7 @@
    "id": "0117AC",
    "fmt": "plain",
    "jp": "{FFFE}殿をここまで追込むとはな… 相手にとって不足はないっ!{end}",
-   "en": "",
+   "en": "A worthy foe, to corner{n}{FFFE}-dono so!{end}",
    "max": 58,
    "ptr": [
     "p16 010E20"
@@ -457,7 +457,7 @@
    "id": "0117E6",
    "fmt": "plain",
    "jp": "今こそ世直しの時、この法権も全力をもってつくしまする。{end}",
-   "en": "",
+   "en": "Now is the time to set the{n}world right. Hoken too{n}will give his all.{end}",
    "max": 56,
    "ptr": [
     "p16 010E22"
@@ -467,7 +467,7 @@
    "id": "01181E",
    "fmt": "plain",
    "jp": "{FFFE}様、馬元宇もただいま無事到着いたしました。{end}",
-   "en": "",
+   "en": "Ba Genu has arrived{n}safely, {FFFE}-sama.{end}",
    "max": 46,
    "ptr": [
     "p16 010E24"
@@ -477,7 +477,7 @@
    "id": "01184C",
    "fmt": "plain",
    "jp": "あいや!ここはそれがしにお任せをっ!{end}",
-   "en": "",
+   "en": "Ho there! Leave this to{n}me!{end}",
    "max": 38,
    "ptr": [
     "p16 010E26"
@@ -487,7 +487,7 @@
    "id": "011872",
    "fmt": "plain",
    "jp": "我が軍の勝利はもはや決まった様なもの!{end}",
-   "en": "",
+   "en": "Our army's victory is as{n}good as decided!{end}",
    "max": 40,
    "ptr": [
     "p16 010E28"
@@ -497,7 +497,7 @@
    "id": "01189A",
    "fmt": "plain",
    "jp": "{FFFE}様、ただ今到着致しました!{end}",
-   "en": "",
+   "en": "I have just arrived,{n}{FFFE}-sama!{end}",
    "max": 30,
    "ptr": [
     "p16 010E2A"

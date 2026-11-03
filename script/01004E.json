@@ -6,7 +6,7 @@
    "id": "01004E",
    "fmt": "plain",
    "jp": "惑星デ〜タの表示{end}",
-   "en": "",
+   "en": "Show planet data{end}",
    "max": 18,
    "ptr": [
     "p16 010000"
@@ -16,7 +16,7 @@
    "id": "010060",
    "fmt": "plain",
    "jp": "部隊デ〜タの表示{end}",
-   "en": "",
+   "en": "Show unit data{end}",
    "max": 18,
    "ptr": [
     "p16 010002",
@@ -28,7 +28,7 @@
    "id": "010072",
    "fmt": "plain",
    "jp": "武将デ〜タの表示{end}",
-   "en": "",
+   "en": "Show officer data{end}",
    "max": 18,
    "ptr": [
     "p16 010004"
@@ -38,7 +38,7 @@
    "id": "010084",
    "fmt": "plain",
    "jp": "惑星に駐屯中の武将一覧を表示{end}",
-   "en": "",
+   "en": "List officers posted on this planet{end}",
    "max": 30,
    "ptr": [
     "p16 010006"
@@ -48,7 +48,7 @@
    "id": "0100A2",
    "fmt": "plain",
    "jp": "惑星に駐屯中の艦隊一覧を表示{end}",
-   "en": "",
+   "en": "List fleets posted on this planet{end}",
    "max": 30,
    "ptr": [
     "p16 010008"
@@ -58,7 +58,7 @@
    "id": "0100C0",
    "fmt": "plain",
    "jp": "艦隊の移動{end}",
-   "en": "",
+   "en": "Move a fleet{end}",
    "max": 12,
    "ptr": [
     "p16 01000A"
@@ -68,7 +68,7 @@
    "id": "0100CC",
    "fmt": "plain",
    "jp": "移動フェ〜ズを強制的に終了{end}",
-   "en": "",
+   "en": "End the move phase now{end}",
    "max": 28,
    "ptr": [
     "p16 01000C"
@@ -78,7 +78,7 @@
    "id": "0100E8",
    "fmt": "plain",
    "jp": "援軍の確認{end}",
-   "en": "",
+   "en": "Check reinforcements{end}",
    "max": 12,
    "ptr": [
     "p16 01000E",
@@ -89,7 +89,7 @@
    "id": "0100F4",
    "fmt": "plain",
    "jp": "自軍の全惑星一覧を表示{end}",
-   "en": "",
+   "en": "List all our planets{end}",
    "max": 24,
    "ptr": [
     "p16 010010"
@@ -99,7 +99,7 @@
    "id": "01010C",
    "fmt": "plain",
    "jp": "自軍の全艦隊一覧を表示{end}",
-   "en": "",
+   "en": "List all our fleets{end}",
    "max": 24,
    "ptr": [
     "p16 010012"
@@ -109,7 +109,7 @@
    "id": "010124",
    "fmt": "plain",
    "jp": "自軍の全武将一覧を表示{end}",
-   "en": "",
+   "en": "List all our officers{end}",
    "max": 24,
    "ptr": [
     "p16 010014"
@@ -119,7 +119,7 @@
    "id": "01013C",
    "fmt": "plain",
    "jp": "射程範囲の確認{end}",
-   "en": "",
+   "en": "Check firing range{end}",
    "max": 16,
    "ptr": [
     "p16 010016"
@@ -129,7 +129,7 @@
    "id": "01014C",
    "fmt": "plain",
    "jp": "部隊の射程{end}",
-   "en": "",
+   "en": "Unit range{end}",
    "max": 12,
    "ptr": [
     "p16 010018"
@@ -139,7 +139,7 @@
    "id": "010158",
    "fmt": "plain",
    "jp": "艦隊の射程{end}",
-   "en": "",
+   "en": "Fleet range{end}",
    "max": 12,
    "ptr": [
     "p16 01001A"
@@ -149,7 +149,7 @@
    "id": "010164",
    "fmt": "plain",
    "jp": "環境設定{end}",
-   "en": "",
+   "en": "Settings{end}",
    "max": 10,
    "ptr": [
     "p16 01001C"
@@ -159,7 +159,7 @@
    "id": "01016E",
    "fmt": "plain",
    "jp": "ゲ〜ム中断{end}",
-   "en": "",
+   "en": "Suspend game{end}",
    "max": 12,
    "ptr": [
     "p16 01001E"
@@ -169,7 +169,7 @@
    "id": "01017A",
    "fmt": "plain",
    "jp": "フォ〜メ〜ションの回頭{end}",
-   "en": "",
+   "en": "Turn the formation{end}",
    "max": 24,
    "ptr": [
     "p16 010020"
@@ -179,7 +179,7 @@
    "id": "010192",
    "fmt": "plain",
    "jp": "左に60度回頭{end}",
-   "en": "",
+   "en": "Turn 60 degrees left{end}",
    "max": 16,
    "ptr": [
     "p16 010022"
@@ -189,7 +189,7 @@
    "id": "0101A2",
    "fmt": "plain",
    "jp": "右に60度回頭{end}",
-   "en": "",
+   "en": "Turn 60 degrees right{end}",
    "max": 16,
    "ptr": [
     "p16 010024"
@@ -199,7 +199,7 @@
    "id": "0101B2",
    "fmt": "plain",
    "jp": "攻撃{end}",
-   "en": "",
+   "en": "Attack{end}",
    "max": 6,
    "ptr": [
     "p16 010026"
@@ -209,7 +209,7 @@
    "id": "0101B8",
    "fmt": "plain",
    "jp": "艦砲射撃{end}",
-   "en": "",
+   "en": "Cannon fire{end}",
    "max": 10,
    "ptr": [
     "p16 010028"
@@ -219,7 +219,7 @@
    "id": "0101C2",
    "fmt": "plain",
    "jp": "魚雷攻撃{end}",
-   "en": "",
+   "en": "Torpedo attack{end}",
    "max": 10,
    "ptr": [
     "p16 01002A"
@@ -229,7 +229,7 @@
    "id": "0101CC",
    "fmt": "plain",
    "jp": "白兵戦{end}",
-   "en": "",
+   "en": "Melee combat{end}",
    "max": 8,
    "ptr": [
     "p16 01002C"
@@ -239,7 +239,7 @@
    "id": "0101D4",
    "fmt": "plain",
    "jp": "特殊攻撃{end}",
-   "en": "",
+   "en": "Special attack{end}",
    "max": 10,
    "ptr": [
     "p16 01002E"
@@ -249,7 +249,7 @@
    "id": "0101DE",
    "fmt": "plain",
    "jp": "艦隊の編成{end}",
-   "en": "",
+   "en": "Organize fleet{end}",
    "max": 12,
    "ptr": [
     "p16 010030"
@@ -259,7 +259,7 @@
    "id": "0101EA",
    "fmt": "plain",
    "jp": "艦隊の撤退{end}",
-   "en": "",
+   "en": "Retreat fleet{end}",
    "max": 12,
    "ptr": [
     "p16 010032"
@@ -269,7 +269,7 @@
    "id": "0101F6",
    "fmt": "plain",
    "jp": "キャンセル{end}",
-   "en": "",
+   "en": "Cancel{end}",
    "max": 12,
    "ptr": [
     "p16 010034"
@@ -279,7 +279,7 @@
    "id": "010202",
    "fmt": "plain",
    "jp": "決定{end}",
-   "en": "",
+   "en": "Confirm{end}",
    "max": 6,
    "ptr": [
     "p16 010036"

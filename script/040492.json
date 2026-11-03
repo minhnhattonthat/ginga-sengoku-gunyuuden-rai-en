@@ -6,7 +6,7 @@
    "id": "040492",
    "fmt": "plain",
    "jp": "雷! 占領戦は長びけば 長びくほど 惑星に被害が出る 早めに決めるんだ{end}",
-   "en": "",
+   "en": "Rai! The longer a siege{n}drags, the more the planet{n}suffers. Be quick!{end}",
    "max": 72,
    "ptr": [
     "p16 040484"
@@ -16,7 +16,7 @@
    "id": "0404DA",
    "fmt": "plain",
    "jp": "占領戦は長びくと惑星にも被害がおよびます    お気を付けください{end}",
-   "en": "",
+   "en": "A long siege damages the{n}planet too. Please be{n}careful.{end}",
    "max": 68,
    "ptr": [
     "p16 040486"
@@ -26,7 +26,7 @@
    "id": "04051E",
    "fmt": "plain",
    "jp": "殿! 占領戦は長引くと 惑星への被害も大きくなります 敵の早期撃退を!{end}",
-   "en": "",
+   "en": "My lord! A longer siege{n}means worse damage. Repel{n}them quickly!{end}",
    "max": 72,
    "ptr": [
     "p16 040488"
@@ -36,7 +36,7 @@
    "id": "040566",
    "fmt": "plain",
    "jp": "殿! 占領戦は惑星にも 被害がでます お早めに 敵を撃退なさって下さい{end}",
-   "en": "",
+   "en": "My lord! Sieges damage the{n}planet too. Drive off the{n}enemy quickly.{end}",
    "max": 72,
    "ptr": [
     "p16 04048A"
@@ -46,7 +46,7 @@
    "id": "0405AE",
    "fmt": "plain",
    "jp": "お館様! 占領戦は惑星に被害がおよびます 早めに決着をつけてください{end}",
-   "en": "",
+   "en": "My lord! Sieges harm the{n}planet. Please settle it{n}quickly.{end}",
    "max": 70,
    "ptr": [
     "p16 04048C"
@@ -56,7 +56,7 @@
    "id": "0405F4",
    "fmt": "plain",
    "jp": "お館様!占領戦は長引くと惑星を弱らせます お早く決着をおつけ下さい!{end}",
-   "en": "",
+   "en": "My lord! A long siege{n}weakens the planet. Please{n}finish it quickly!{end}",
    "max": 70,
    "ptr": [
     "p16 04048E"
@@ -66,7 +66,7 @@
    "id": "04063A",
    "fmt": "plain",
    "jp": "陛下! 占領戦は惑星にも被害がでます 長引かせるのは 禁物でございます{end}",
-   "en": "",
+   "en": "Your Majesty! Sieges harm{n}the planet too. Dragging{n}one out is unwise.{end}",
    "max": 72,
    "ptr": [
     "p16 040490"
@@ -76,7 +76,7 @@
    "id": "040682",
    "fmt": "plain",
    "jp": "くらえっ!!      これが、新金剛の最新兵器轟雷砲だ〜〜〜っ!!!{end}",
-   "en": "",
+   "en": "Take this!! The New{n}Kongo's newest weapon, the{n}Thunder Cannon!!!{end}",
    "max": 72,
    "read_on": true
   },
@@ -84,7 +84,7 @@
    "id": "0406CA",
    "fmt": "plain",
    "jp": "帝虎の真の威力     身をもって知るがいい!!艦首砲! 発射〜っ!!{end}",
-   "en": "",
+   "en": "Learn the Teiko's true{n}power firsthand!! Bow{n}cannon, fire!!{end}",
    "max": 72,
    "read_on": true
   },
@@ -92,7 +92,7 @@
    "id": "040712",
    "fmt": "plain",
    "jp": "ふははははっ!     ついに この時が来た!!艦首砲! 撃て〜っ!!{end}",
-   "en": "",
+   "en": "Fuhahaha! The moment has{n}finally come!! Bow cannon!{n}Fire!!{end}",
    "max": 72,
    "read_on": true
   },
@@ -100,7 +100,7 @@
    "id": "04075A",
    "fmt": "plain",
    "jp": "艦首砲 発射用意!!  我が帝虎の恐ろしさ   その身で味わえ!!!{end}",
-   "en": "",
+   "en": "Bow cannon, ready!! Taste{n}the terror of my Teiko!!!{end}",
    "max": 70,
    "read_on": true
   },
@@ -108,7 +108,7 @@
    "id": "0407A0",
    "fmt": "plain",
    "jp": "今だっ!!       轟雷砲 撃て〜〜っ!!{end}",
-   "en": "",
+   "en": "Now!! Thunder Cannon,{n}fire!!{end}",
    "max": 48,
    "read_on": true
   },
@@ -116,7 +116,7 @@
    "id": "0407D0",
    "fmt": "plain",
    "jp": "これでも くらえっ!! 艦首砲 発射〜っ!!!{end}",
-   "en": "",
+   "en": "Eat this!! Bow cannon,{n}fire!!!{end}",
    "max": 48,
    "read_on": true
   }

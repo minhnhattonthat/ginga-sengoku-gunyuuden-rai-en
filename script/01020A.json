@@ -6,7 +6,7 @@
    "id": "01020A",
    "fmt": "plain",
    "jp": "攻撃を各部隊にまかせる{end}",
-   "en": "",
+   "en": "Leave the attack to each unit{end}",
    "max": 24,
    "ptr": [
     "p16 01003A"
@@ -16,7 +16,7 @@
    "id": "010222",
    "fmt": "plain",
    "jp": "攻撃フェ〜ズを強制的に終了{end}",
-   "en": "",
+   "en": "End the attack phase now{end}",
    "max": 28,
    "ptr": [
     "p16 01003C"
@@ -26,7 +26,7 @@
    "id": "01023E",
    "fmt": "plain",
    "jp": "移動先の確認{end}",
-   "en": "",
+   "en": "Check destination{end}",
    "max": 14,
    "ptr": [
     "p16 01003E"
@@ -36,7 +36,7 @@
    "id": "01024C",
    "fmt": "plain",
    "jp": "艦艇の生産{end}",
-   "en": "",
+   "en": "Build ships{end}",
    "max": 12,
    "ptr": [
     "p16 010040"
@@ -46,7 +46,7 @@
    "id": "010258",
    "fmt": "plain",
    "jp": "艦隊デ〜タの表示{end}",
-   "en": "",
+   "en": "Show fleet data{end}",
    "max": 18,
    "ptr": [
     "p16 010042"
@@ -56,7 +56,7 @@
    "id": "01026A",
    "fmt": "plain",
    "jp": "艦隊の出撃{end}",
-   "en": "",
+   "en": "Launch fleet{end}",
    "max": 12,
    "ptr": [
     "p16 010044"
@@ -66,7 +66,7 @@
    "id": "010276",
    "fmt": "plain",
    "jp": "ゲ〜ムセ〜ブ{end}",
-   "en": "",
+   "en": "Save game{end}",
    "max": 14,
    "ptr": [
     "p16 010046"
@@ -76,7 +76,7 @@
    "id": "010284",
    "fmt": "plain",
    "jp": "全部隊が攻撃に参加する{end}",
-   "en": "",
+   "en": "All units join the attack{end}",
    "max": 24,
    "ptr": [
     "p16 010048"
@@ -86,7 +86,7 @@
    "id": "01029C",
    "fmt": "plain",
    "jp": "勝てる敵だけを攻撃する{end}",
-   "en": "",
+   "en": "Attack only enemies we can beat{end}",
    "max": 24,
    "ptr": [
     "p16 01004A"
@@ -96,7 +96,7 @@
    "id": "0102B4",
    "fmt": "plain",
    "jp": "旗艦を優先的に攻撃する{end}",
-   "en": "",
+   "en": "Target flagships first{end}",
    "max": 24,
    "ptr": [
     "p16 01004C"

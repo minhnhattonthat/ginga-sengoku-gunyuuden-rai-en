@@ -6,7 +6,7 @@
    "id": "01214C",
    "fmt": "plain",
    "jp": "{FFFD}は、頂いたぜ!{end}",
-   "en": "",
+   "en": "{FFFD} is mine now!{end}",
    "max": 18,
    "ptr": [
     "p16 0120E8"
@@ -16,7 +16,7 @@
    "id": "01215E",
    "fmt": "plain",
    "jp": "でかしたぞ、野郎ども! {FFFD}は、陥落した!{end}",
-   "en": "",
+   "en": "Nice work, ya dogs!{n}{FFFD} has fallen!{end}",
    "max": 42,
    "ptr": [
     "p16 0120EA"
@@ -26,7 +26,7 @@
    "id": "012188",
    "fmt": "plain",
    "jp": "これで、{FFFD}は俺達のもんだ!{end}",
-   "en": "",
+   "en": "{FFFD} is ours now!{end}",
    "max": 28,
    "ptr": [
     "p16 0120EC"
@@ -36,7 +36,7 @@
    "id": "0121A4",
    "fmt": "plain",
    "jp": "なんとか占領できて   ほっとしたぜ!{end}",
-   "en": "",
+   "en": "Phew, glad we managed to{n}take it!{end}",
    "max": 40,
    "ptr": [
     "p16 0120EE"
@@ -46,7 +46,7 @@
    "id": "0121CC",
    "fmt": "plain",
    "jp": "{FFFD}は、我々が占領した!{end}",
-   "en": "",
+   "en": "We have taken {FFFD}!{end}",
    "max": 24,
    "ptr": [
     "p16 0120F0"
@@ -56,7 +56,7 @@
    "id": "0121E4",
    "fmt": "plain",
    "jp": "{FFFD}は、この項武様が占領したぜ!{end}",
-   "en": "",
+   "en": "The great Kobu has taken{n}{FFFD}!{end}",
    "max": 32,
    "ptr": [
     "p16 0120F2"
@@ -66,7 +66,7 @@
    "id": "012204",
    "fmt": "plain",
    "jp": "ここを落したことは   後々とても重要な意味を 持つだろう{end}",
-   "en": "",
+   "en": "Taking this place will{n}mean a great deal later{n}on.{end}",
    "max": 60,
    "ptr": [
     "p16 0120F4",
@@ -79,7 +79,7 @@
    "id": "012240",
    "fmt": "plain",
    "jp": "占領しましたぞっ!   まだまだ私も捨てたもんじゃないですな{end}",
-   "en": "",
+   "en": "Captured! Seems I'm not{n}washed up just yet!{end}",
    "max": 62,
    "ptr": [
     "p16 0120F6",
@@ -90,7 +90,7 @@
    "id": "01227E",
    "fmt": "plain",
    "jp": "銀河統一にまた一歩   近づきましたね{end}",
-   "en": "",
+   "en": "We're one step closer to{n}unifying the galaxy.{end}",
    "max": 40,
    "ptr": [
     "p16 0120F8"
@@ -100,7 +100,7 @@
    "id": "0122A6",
    "fmt": "plain",
    "jp": "{FFFD}を占領しました。{end}",
-   "en": "",
+   "en": "{FFFD} has been taken.{end}",
    "max": 20,
    "ptr": [
     "p16 0120FA",
@@ -111,7 +111,7 @@
    "id": "0122BA",
    "fmt": "plain",
    "jp": "やったぁ!占領なら、  うちにまかしとき〜!{end}",
-   "en": "",
+   "en": "Yay! Leave occupyin' to{n}me!{end}",
    "max": 46,
    "ptr": [
     "p16 0120FC",
@@ -123,7 +123,7 @@
    "id": "0122E8",
    "fmt": "plain",
    "jp": "よし!ここを足掛かりに 一気に攻め込むぞ!{end}",
-   "en": "",
+   "en": "Good! From this foothold,{n}we strike all at once!{end}",
    "max": 44,
    "ptr": [
     "p16 0120FE",
@@ -134,7 +134,7 @@
    "id": "012314",
    "fmt": "plain",
    "jp": "拠点は占領してからが  肝要なのだ{end}",
-   "en": "",
+   "en": "Holding a base matters{n}most after you take it.{end}",
    "max": 36,
    "ptr": [
     "p16 012100"
@@ -144,7 +144,7 @@
    "id": "012338",
    "fmt": "plain",
    "jp": "やったぞ!占領成功だ!{end}",
-   "en": "",
+   "en": "We did it! Occupation{n}successful!{end}",
    "max": 24,
    "ptr": [
     "p16 012102"
@@ -154,7 +154,7 @@
    "id": "012350",
    "fmt": "plain",
    "jp": "この占領で、戦局も大きく変わるだろう。     わっはっはっ!{end}",
-   "en": "",
+   "en": "This capture will turn the{n}tide of war. Wahahaha!{end}",
    "max": 64,
    "ptr": [
     "p16 012104"
@@ -164,7 +164,7 @@
    "id": "012390",
    "fmt": "plain",
    "jp": "ふうっ!なんとかここも 占領することができたな{end}",
-   "en": "",
+   "en": "Phew! Somehow we took this{n}one too.{end}",
    "max": 48,
    "ptr": [
     "p16 012106"
@@ -174,7 +174,7 @@
    "id": "0123C0",
    "fmt": "plain",
    "jp": "我らの手にかかれば   占領などたやすいわっ!{end}",
-   "en": "",
+   "en": "In our hands, taking{n}planets is child's play!{end}",
    "max": 48,
    "ptr": [
     "p16 012108"
@@ -184,7 +184,7 @@
    "id": "0123F0",
    "fmt": "plain",
    "jp": "この夏候才、占領ばかり では腕がなまるわ!{end}",
-   "en": "",
+   "en": "Kako Sai's arm grows dull{n}with nothing but{n}occupying!{end}",
    "max": 44,
    "ptr": [
     "p16 01210A",
@@ -195,7 +195,7 @@
    "id": "01241C",
    "fmt": "plain",
    "jp": "この豪蛮が、{FFFD}を占領したぞ!{end}",
-   "en": "",
+   "en": "Goban has taken{n}{FFFD}!{end}",
    "max": 30,
    "ptr": [
     "p16 01210C"
@@ -205,7 +205,7 @@
    "id": "01243A",
    "fmt": "plain",
    "jp": "あたいにだって惑星の占領ぐらいできるのよっ!{end}",
-   "en": "",
+   "en": "Even I can take a planet,{n}y'know!{end}",
    "max": 46,
    "ptr": [
     "p16 01210E"
@@ -215,7 +215,7 @@
    "id": "012468",
    "fmt": "plain",
    "jp": "よし、よくやった。   {FFFD}を落した意味は大きい!{end}",
-   "en": "",
+   "en": "Good, well done. Taking{n}{FFFD} means a lot!{end}",
    "max": 50,
    "ptr": [
     "p16 012110"
@@ -225,7 +225,7 @@
    "id": "01249A",
    "fmt": "plain",
    "jp": "これで少しは動きやすく なるだろう{end}",
-   "en": "",
+   "en": "This should give us a{n}little more room to move.{end}",
    "max": 36,
    "ptr": [
     "p16 012112"
@@ -235,7 +235,7 @@
    "id": "0124BE",
    "fmt": "plain",
    "jp": "これより、{FFFD}は、我が軍の拠点となる!{end}",
-   "en": "",
+   "en": "Our army's new base shall{n}be {FFFD}!{end}",
    "max": 38,
    "ptr": [
     "p16 012114"
@@ -245,7 +245,7 @@
    "id": "0124E4",
    "fmt": "plain",
    "jp": "この惑星は、武尊が占領 した!{end}",
-   "en": "",
+   "en": "Buson has taken this{n}planet!{end}",
    "max": 32,
    "ptr": [
     "p16 012116",
@@ -256,7 +256,7 @@
    "id": "012504",
    "fmt": "plain",
    "jp": "軍のためとあらば、この 斎遠、いくらでも占領いたしましょう!{end}",
-   "en": "",
+   "en": "For the army's sake, Seien{n}will take as many as you{n}like!{end}",
    "max": 62,
    "ptr": [
     "p16 012118"
@@ -266,7 +266,7 @@
    "id": "012542",
    "fmt": "plain",
    "jp": "この星は占領した!{end}",
-   "en": "",
+   "en": "This planet is taken!{end}",
    "max": 20,
    "ptr": [
     "p16 01211A"
@@ -276,7 +276,7 @@
    "id": "012556",
    "fmt": "plain",
    "jp": "よ〜し、占領完了だ!{end}",
-   "en": "",
+   "en": "All right, occupation{n}complete!{end}",
    "max": 22,
    "ptr": [
     "p16 01211C"
@@ -286,7 +286,7 @@
    "id": "01256C",
    "fmt": "plain",
    "jp": "ようやく占領できたか…{end}",
-   "en": "",
+   "en": "Finally, we've taken it...{end}",
    "max": 24,
    "ptr": [
     "p16 01211E"
@@ -296,7 +296,7 @@
    "id": "012584",
    "fmt": "plain",
    "jp": "姉上、見ておられましたかこの虎丸が、{FFFD}を占領致しました!{end}",
-   "en": "",
+   "en": "Sister, were you watching?{n}Toramaru has taken{n}{FFFD}!{end}",
    "max": 58,
    "ptr": [
     "p16 012120"
@@ -306,7 +306,7 @@
    "id": "0125BE",
    "fmt": "plain",
    "jp": "こんな星を占領するのに わしの艦隊を使いおって!{end}",
-   "en": "",
+   "en": "Using my fleet to take a{n}planet like this!{end}",
    "max": 50,
    "ptr": [
     "p16 012122"
@@ -316,7 +316,7 @@
    "id": "0125F0",
    "fmt": "plain",
    "jp": "この星は占領した!   戦運は我にあり!{end}",
-   "en": "",
+   "en": "This planet is ours!{n}Fortune is on our side!{end}",
    "max": 42,
    "ptr": [
     "p16 012124",
@@ -327,7 +327,7 @@
    "id": "01261A",
    "fmt": "plain",
    "jp": "よ〜し、{FFFD}は沈黙したぞ!{end}",
-   "en": "",
+   "en": "All right! Silence has{n}fallen on {FFFD}!{end}",
    "max": 26,
    "ptr": [
     "p16 012126"
@@ -337,7 +337,7 @@
    "id": "012634",
    "fmt": "plain",
    "jp": "{FFFD}は頂きだっ!{end}",
-   "en": "",
+   "en": "{FFFD} is mine!{end}",
    "max": 16,
    "ptr": [
     "p16 012128"
@@ -347,7 +347,7 @@
    "id": "012644",
    "fmt": "plain",
    "jp": "惑星を占領するのは   得意中の得意だっ!{end}",
-   "en": "",
+   "en": "Taking planets is my{n}specialty!{end}",
    "max": 44,
    "ptr": [
     "p16 01212A"
@@ -357,7 +357,7 @@
    "id": "012670",
    "fmt": "plain",
    "jp": "こんな星の一つや二つ占領するなどたあいもないわ{end}",
-   "en": "",
+   "en": "Taking a planet or two{n}like this is nothing!{end}",
    "max": 48,
    "ptr": [
     "p16 01212C"
@@ -367,7 +367,7 @@
    "id": "0126A0",
    "fmt": "plain",
    "jp": "わっはっはっ!これで  また一つ拠点が増えたな{end}",
-   "en": "",
+   "en": "Wahaha! One more base for{n}us!{end}",
    "max": 48,
    "ptr": [
     "p16 01212E"
@@ -377,7 +377,7 @@
    "id": "0126D0",
    "fmt": "plain",
    "jp": "こんなもんじゃ、    まだ足りん!{end}",
-   "en": "",
+   "en": "This isn't nearly enough!{end}",
    "max": 38,
    "ptr": [
     "p16 012130"
@@ -387,7 +387,7 @@
    "id": "0126F6",
    "fmt": "plain",
    "jp": "拠点は一つでも多いほうがいい。{end}",
-   "en": "",
+   "en": "The more bases, the{n}better.{end}",
    "max": 32,
    "ptr": [
     "p16 012132"
@@ -397,7 +397,7 @@
    "id": "012716",
    "fmt": "plain",
    "jp": "みんなよくやった!   これで国庫も潤うだろう{end}",
-   "en": "",
+   "en": "Well done, everyone! This{n}should fill the treasury.{end}",
    "max": 48,
    "ptr": [
     "p16 012134"
@@ -407,7 +407,7 @@
    "id": "012746",
    "fmt": "plain",
    "jp": "この占領は貴重ですな。{end}",
-   "en": "",
+   "en": "This capture is valuable.{end}",
    "max": 24,
    "ptr": [
     "p16 012136"
@@ -417,7 +417,7 @@
    "id": "01275E",
    "fmt": "plain",
    "jp": "この星は、五虎将軍   白鬼様が占領した!{end}",
-   "en": "",
+   "en": "This planet was taken by{n}Hakki of the Five Tiger{n}Generals!{end}",
    "max": 44,
    "ptr": [
     "p16 012138"
@@ -427,7 +427,7 @@
    "id": "01278A",
    "fmt": "plain",
    "jp": "この五虎将軍王政に   占領されたことを    光栄に思うのだな!{end}",
-   "en": "",
+   "en": "Be honored to be conquered{n}by Osei of the Five Tiger{n}Generals!{end}",
    "max": 68,
    "ptr": [
     "p16 01213A"
@@ -437,7 +437,7 @@
    "id": "0127CE",
    "fmt": "plain",
    "jp": "がっはっはっ!占領など ちょろいちょろい!{end}",
-   "en": "",
+   "en": "Gahaha! Occupying's a{n}piece of cake!{end}",
    "max": 44,
    "ptr": [
     "p16 01213C"
@@ -447,7 +447,7 @@
    "id": "0127FA",
    "fmt": "plain",
    "jp": "この星は、五虎将軍   武庸が占領した!{end}",
-   "en": "",
+   "en": "This planet was taken by{n}Buyo of the Five Tiger{n}Generals!{end}",
    "max": 42,
    "ptr": [
     "p16 01213E"
@@ -457,7 +457,7 @@
    "id": "012824",
    "fmt": "plain",
    "jp": "やったぜっ!{FFFD}は頂いた!{end}",
-   "en": "",
+   "en": "Yeah! {FFFD} is mine!{end}",
    "max": 26,
    "ptr": [
     "p16 012140"
@@ -467,7 +467,7 @@
    "id": "01283E",
    "fmt": "plain",
    "jp": "ははは、やったぞ!   この星を占領した!{end}",
-   "en": "",
+   "en": "Hahaha, we did it! This{n}planet is ours!{end}",
    "max": 44,
    "ptr": [
     "p16 012142"
@@ -477,7 +477,7 @@
    "id": "01286A",
    "fmt": "plain",
    "jp": "なんとか占領できたか…{end}",
-   "en": "",
+   "en": "Managed to take it,{n}somehow...{end}",
    "max": 24,
    "ptr": [
     "p16 012144"
@@ -487,7 +487,7 @@
    "id": "012882",
    "fmt": "plain",
    "jp": "この星は、それがしが  頂いた!{end}",
-   "en": "",
+   "en": "I have claimed this{n}planet!{end}",
    "max": 34,
    "ptr": [
     "p16 012146"
@@ -497,7 +497,7 @@
    "id": "0128A4",
    "fmt": "plain",
    "jp": "{FFFD}は、我が軍が頂いたぞ!{end}",
-   "en": "",
+   "en": "Our army has claimed{n}{FFFD}!{end}",
    "max": 26,
    "ptr": [
     "p16 012148"
@@ -507,7 +507,7 @@
    "id": "0128BE",
    "fmt": "plain",
    "jp": "この星は、これからは  わが軍が統治する!{end}",
-   "en": "",
+   "en": "From now on, our army{n}rules this planet!{end}",
    "max": 44,
    "ptr": [
     "p16 01214A"
@@ -517,7 +517,7 @@
    "id": "0128EA",
    "fmt": "plain",
    "jp": "艦隊の移動先を指定して下さい{end}",
-   "en": "",
+   "en": "Select the fleet's{n}destination.{end}",
    "max": 30,
    "read_on": true
   },
@@ -525,7 +525,7 @@
    "id": "012908",
    "fmt": "plain",
    "jp": "     駐屯艦隊はありません{end}",
-   "en": "",
+   "en": "No fleets stationed.{end}",
    "max": 32,
    "ptr": [
     "fixed 0181CD",
@@ -537,7 +537,7 @@
    "id": "012928",
    "fmt": "plain",
    "jp": "     占領惑星はありません{end}",
-   "en": "",
+   "en": "No planets occupied.{end}",
    "max": 32,
    "ptr": [
     "fixed 0582C2"

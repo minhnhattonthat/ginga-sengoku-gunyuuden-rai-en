@@ -6,7 +6,7 @@
    "id": "10EC1C",
    "fmt": "msg",
    "jp": "{spd:09000000} 比紀弾正は五丈軍を名乗り{br}{skip:0100}北天を席捲した{end}",
-   "en": "",
+   "en": "{spd:09000000} Danjo Hiki named his army Gojo{br}{skip:0100}and swept across the northern heavens.{end}",
    "max": 62,
    "ptr": [
     "p24 06B0EC"
@@ -16,7 +16,7 @@
    "id": "10EC5A",
    "fmt": "msg",
    "jp": "{skip:0100}鳳鳴、{end}",
-   "en": "",
+   "en": "{skip:0100}Homei,{end}",
    "max": 16,
    "read_on": true
   },
@@ -24,7 +24,7 @@
    "id": "10EC6A",
    "fmt": "msg",
    "jp": "玄偉、{end}",
-   "en": "",
+   "en": "Geni,{end}",
    "max": 10,
    "read_on": true
   },
@@ -32,7 +32,7 @@
    "id": "10EC74",
    "fmt": "msg",
    "jp": "骸羅、{end}",
-   "en": "",
+   "en": "Gaira,{end}",
    "max": 10,
    "read_on": true
   },
@@ -40,7 +40,7 @@
    "id": "10EC7E",
    "fmt": "msg",
    "jp": "狼刃の四軍団は{br}{skip:0100}無敵を誇り もはや銀河統一も目前と{br}{skip:0100}噂されるところであった{end}",
-   "en": "",
+   "en": "and Roha, the four{br}{skip:0100}legions, were invincible; unifying the{br}{skip:0100}galaxy was said to be close at hand.{end}",
    "max": 94,
    "read_on": true
   },
@@ -48,7 +48,7 @@
    "id": "10ECDC",
    "fmt": "msg",
    "jp": "{skip:0400}しかし 隆盛を誇った弾正も{br}{skip:0400}老いには勝てず{br}{skip:0400}病に倒れる事一ケ月{br}{skip:0400}享年七十四才にて逝去{br}{skip:0400}これにより 銀河は今一度{br}{skip:0400}麻のように乱れる事は{br}{skip:0400}誰の目にも明らかであった{end}",
-   "en": "",
+   "en": "{skip:0400}But even Danjo in all his glory{br}{skip:0400}could not overcome old age.{br}{skip:0400}A month after falling ill,{br}{skip:0400}he passed away at seventy-four.{br}{skip:0400}And so it was plain to all{br}{skip:0400}that the galaxy would once more{br}{skip:0400}fall into utter chaos.{end}",
    "max": 216,
    "read_on": true
   },
@@ -56,7 +56,7 @@
    "id": "10EDB4",
    "fmt": "msg",
    "jp": "{skip:0100}弾正の死後{spd:01000800} 最初に動いたのは{br}{skip:0100}車騎元帥・骸羅であった{end}",
-   "en": "",
+   "en": "{skip:0100}After Danjo's death,{spd:01000800} the first to move{br}{skip:0100}was Gaira, the Chariot Marshal.{end}",
    "max": 78,
    "read_on": true
   },
@@ -64,7 +64,7 @@
    "id": "10EE02",
    "fmt": "msg",
    "jp": "{skip:0100}電撃作戦により 武王都を占{spd:03000000}拠{br}{skip:0100}大元帥・鳳鳴{spd:02000000}、驃騎元帥・玄偉を葬{spd:02000000}り{br}{skip:0100}衛元帥・狼刃と共謀{end}",
-   "en": "",
+   "en": "{skip:0100}Seizing Buoto in a lightning war,{br}{skip:0100}he slew Marshals Homei and Geni{br}{skip:0100}and joined forces with Marshal Roha.{end}",
    "max": 134,
    "read_on": true
   },
@@ -72,7 +72,7 @@
    "id": "10EE88",
    "fmt": "msg",
    "jp": "{skip:0100}都を斎王都へと移し{br}{skip:0100}国名を大五丈と号した{end}",
-   "en": "",
+   "en": "{skip:0100}He moved the capital to Seioto{br}{skip:0100}and named his nation Great Gojo.{end}",
    "max": 58,
    "read_on": true
   },
@@ -80,7 +80,7 @@
    "id": "10EEC2",
    "fmt": "msg",
    "jp": "骸羅「わはははは{spd:02000000} 天よわめけ{spd:02000000}!{br}{skip:0300}泣き叫ぶがよい!」{end}",
-   "en": "",
+   "en": "Gaira \"Wahahaha!{spd:02000000} Howl, O heaven!{spd:02000000}{br}{skip:0300} Weep and wail!\"{end}",
    "max": 78,
    "read_on": true
   },
@@ -88,7 +88,7 @@
    "id": "10EF10",
    "fmt": "msg",
    "jp": "骸羅「お前がどうあがこうと{br}{skip:0300}この世はわしのものだ!」{end}",
-   "en": "",
+   "en": "Gaira \"No matter how you struggle,{br}{skip:0300} this world is mine!\"{end}",
    "max": 64,
    "read_on": true
   },
@@ -96,7 +96,7 @@
    "id": "10EF50",
    "fmt": "msg",
    "jp": "骸羅「やがて天をも{br}{skip:0300}わしが支配してやる!」{end}",
-   "en": "",
+   "en": "Gaira \"In time I'll rule{br}{skip:0300} even the heavens!\"{end}",
    "max": 54,
    "read_on": true
   },
@@ -104,7 +104,7 @@
    "id": "10EF86",
    "fmt": "msg",
    "jp": "骸羅「わしは大銀河の皇帝なのだ!」{end}",
-   "en": "",
+   "en": "Gaira \"I am Emperor of the great{br}galaxy!\"{end}",
    "max": 38,
    "read_on": true
   }

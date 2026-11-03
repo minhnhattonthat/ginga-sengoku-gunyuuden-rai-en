@@ -6,7 +6,7 @@
    "id": "011BE4",
    "fmt": "plain",
    "jp": "今度会うときまで、   てめぇらの命預けたぜっ!{end}",
-   "en": "",
+   "en": "Till next time, I'll let{n}you keep your lives!{end}",
    "max": 50,
    "ptr": [
     "p16 011B80"
@@ -16,7 +16,7 @@
    "id": "011C16",
    "fmt": "plain",
    "jp": "今度会うときはおぬし達の命は、ないと思え!{end}",
-   "en": "",
+   "en": "Next time we meet,{n}consider yourselves dead!{end}",
    "max": 44,
    "ptr": [
     "p16 011BC4",
@@ -27,7 +27,7 @@
    "id": "011C42",
    "fmt": "plain",
    "jp": "ここらへんが、引きどきだな……{end}",
-   "en": "",
+   "en": "Guess it's about time to{n}pull back...{end}",
    "max": 32,
    "ptr": [
     "p16 011B84",
@@ -39,7 +39,7 @@
    "id": "011C62",
    "fmt": "plain",
    "jp": "くそっ!今度会ったときはズタズタにしてやる!{end}",
-   "en": "",
+   "en": "Damn! Next time I'll tear{n}you to shreds!{end}",
    "max": 46,
    "ptr": [
     "p16 011B86",
@@ -51,7 +51,7 @@
    "id": "011C90",
    "fmt": "plain",
    "jp": "やむを得ん!撤退だっ!{end}",
-   "en": "",
+   "en": "No choice! Retreat!{end}",
    "max": 24,
    "ptr": [
     "p16 011B8E",
@@ -64,7 +64,7 @@
    "id": "011CA8",
    "fmt": "plain",
    "jp": "もうこれ以上は無理だっ!引き上げろ!{end}",
-   "en": "",
+   "en": "We can't take any more!{n}Pull back!{end}",
    "max": 38,
    "ptr": [
     "p16 011B9C"
@@ -74,7 +74,7 @@
    "id": "011CCE",
    "fmt": "plain",
    "jp": "畜生!しかたねぇ、   撤退するぞっ!{end}",
-   "en": "",
+   "en": "Damn it! No help for it,{n}we're retreating!{end}",
    "max": 40,
    "ptr": [
     "p16 011B82",
@@ -85,7 +85,7 @@
    "id": "011CF6",
    "fmt": "plain",
    "jp": "ここは、ひとまず退却だ!{end}",
-   "en": "",
+   "en": "We fall back for now!{end}",
    "max": 26,
    "ptr": [
     "p16 011BB2"
@@ -95,7 +95,7 @@
    "id": "011D10",
    "fmt": "plain",
    "jp": "いつまでも、貴様らと  遊んではおられん!{end}",
-   "en": "",
+   "en": "I can't keep playing with{n}you lot forever!{end}",
    "max": 44,
    "ptr": [
     "p16 011B9E",
@@ -107,7 +107,7 @@
    "id": "011D3C",
    "fmt": "plain",
    "jp": "こうまで損害が出ては……撤退します{end}",
-   "en": "",
+   "en": "With losses like these...{n}We're withdrawing.{end}",
    "max": 36,
    "ptr": [
     "p16 011B90",
@@ -122,7 +122,7 @@
    "id": "011D60",
    "fmt": "plain",
    "jp": "ぬううっ!これまでか……ひとまず引くぞ!{end}",
-   "en": "",
+   "en": "Nngh! Is this it...? Fall{n}back for now!{end}",
    "max": 42,
    "ptr": [
     "p16 011B88",
@@ -137,7 +137,7 @@
    "id": "011D8A",
    "fmt": "plain",
    "jp": "わはははっ!貴様らなどにかまっておれんわ!{end}",
-   "en": "",
+   "en": "Wahahaha! I've no time to{n}waste on the likes of you!{end}",
    "max": 44,
    "ptr": [
     "p16 011BC6"
@@ -147,7 +147,7 @@
    "id": "011DB6",
    "fmt": "plain",
    "jp": "う、うちは負けん……  負けてへんでぇ!!{end}",
-   "en": "",
+   "en": "I-I ain't lost... I ain't{n}lost, y'hear!!{end}",
    "max": 44,
    "ptr": [
     "p16 011B94"
@@ -157,7 +157,7 @@
    "id": "011DE2",
    "fmt": "plain",
    "jp": "兵を引くのも策の内。  撤退するぞっ!{end}",
-   "en": "",
+   "en": "Pulling back is part of{n}strategy too. Retreat!{end}",
    "max": 40,
    "ptr": [
     "p16 011B96",
@@ -169,7 +169,7 @@
    "id": "011E0A",
    "fmt": "plain",
    "jp": "まだこんな所で死ぬ訳にはいかん!撤退だっ!{end}",
-   "en": "",
+   "en": "I can't die in a place{n}like this yet! Retreat!{end}",
    "max": 44,
    "ptr": [
     "p16 011B98",
@@ -180,7 +180,7 @@
    "id": "011E36",
    "fmt": "plain",
    "jp": "今回は武運がなかったと いうことか…{end}",
-   "en": "",
+   "en": "So fortune wasn't with me{n}this time...{end}",
    "max": 38,
    "ptr": [
     "p16 011BA8"
@@ -190,7 +190,7 @@
    "id": "011E5C",
    "fmt": "plain",
    "jp": "これ以上、兵を無駄にする訳にはいかん!{end}",
-   "en": "",
+   "en": "I can't waste any more{n}soldiers!{end}",
    "max": 40,
    "ptr": [
     "p16 011BAC",
@@ -201,7 +201,7 @@
    "id": "011E84",
    "fmt": "plain",
    "jp": "ええぃ!ここはひとまず 引き上げだっ!{end}",
-   "en": "",
+   "en": "Blast! We pull back for{n}now!{end}",
    "max": 40,
    "ptr": [
     "p16 011B8A",
@@ -216,7 +216,7 @@
    "id": "011EAC",
    "fmt": "plain",
    "jp": "覚えておけっ!次こそは 必ず落してくれる!{end}",
-   "en": "",
+   "en": "Remember this! Next time{n}you fall for sure!{end}",
    "max": 44,
    "ptr": [
     "p16 011BC2",
@@ -227,7 +227,7 @@
    "id": "011ED8",
    "fmt": "plain",
    "jp": "も、もう駄目だっ!   撤退だ〜っ!{end}",
-   "en": "",
+   "en": "Th-this is hopeless!{n}Retreeeat!{end}",
    "max": 38,
    "ptr": [
     "p16 011BC0",
@@ -239,7 +239,7 @@
    "id": "011EFE",
    "fmt": "plain",
    "jp": "                     武将には、撤退を命ずる 勇気も必要といことだな。{end}",
-   "en": "",
+   "en": "An officer also needs the{n}courage to order a{n}retreat, eh?{end}",
    "max": 92,
    "ptr": [
     "p16 011B8C"
@@ -249,7 +249,7 @@
    "id": "011F5A",
    "fmt": "plain",
    "jp": "は、{end}",
-   "en": "",
+   "en": ":{end}",
    "max": 6,
    "ptr": [
     "fixed 049EB7"
@@ -259,7 +259,7 @@
    "id": "011F60",
    "fmt": "plain",
    "jp": "レベル{end}",
-   "en": "",
+   "en": "Level{end}",
    "max": 8,
    "ptr": [
     "fixed 049EC4"
@@ -269,7 +269,7 @@
    "id": "011F68",
    "fmt": "plain",
    "jp": "になりました{end}",
-   "en": "",
+   "en": "reached!{end}",
    "max": 14,
    "ptr": [
     "fixed 049EE3"
@@ -279,7 +279,7 @@
    "id": "011F76",
    "fmt": "plain",
    "jp": "体力が{end}",
-   "en": "",
+   "en": "Stamina{end}",
    "max": 8,
    "ptr": [
     "fixed 049F06"
@@ -289,7 +289,7 @@
    "id": "011F7E",
    "fmt": "plain",
    "jp": "上がりました{end}",
-   "en": "",
+   "en": "up!{end}",
    "max": 14,
    "ptr": [
     "fixed 049F12",
@@ -303,7 +303,7 @@
    "id": "011F8C",
    "fmt": "plain",
    "jp": "攻撃力が{end}",
-   "en": "",
+   "en": "Attack{end}",
    "max": 10,
    "ptr": [
     "fixed 049F32"
@@ -313,7 +313,7 @@
    "id": "011F96",
    "fmt": "plain",
    "jp": "防御力が{end}",
-   "en": "",
+   "en": "Defense{end}",
    "max": 10,
    "ptr": [
     "fixed 049F5E"
@@ -323,7 +323,7 @@
    "id": "011FA0",
    "fmt": "plain",
    "jp": "回避率が{end}",
-   "en": "",
+   "en": "Evasion{end}",
    "max": 10,
    "ptr": [
     "fixed 049F8A"
@@ -333,7 +333,7 @@
    "id": "011FAA",
    "fmt": "plain",
    "jp": "指揮力が{end}",
-   "en": "",
+   "en": "Command{end}",
    "max": 10,
    "ptr": [
     "fixed 049FBE"

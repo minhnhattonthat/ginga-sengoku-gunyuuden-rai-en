@@ -6,7 +6,7 @@
    "id": "08F1DB",
    "fmt": "plain",
    "jp": "陛下!! なんとこの武王都には 今亡き 比紀弾正の艦であった  『威海洋』がございました!!  威海洋は まさに王者のための艦でございます!! そうであれば  弾正にではなく陛下にこそこの艦がふさわしいことと 存じあげます さらにこの威海洋は当時のものより性能を上げてございます!!   さあ陛下! お乗り下さい!!  鎮遠よりも強く 王者にふさわしい威海洋に!!!{end}",
-   "en": "",
+   "en": "Your Majesty!! Here in Buoto we{n}found the Ikaiyo, the ship of{n}the late Danjo Hiki!! The Ikaiyo{n}is truly a ship for a king!!{n}Then surely she belongs not to{n}Danjo but to Your Majesty! What{n}is more, this Ikaiyo now{n}outperforms her old self!! Now,{n}Your Majesty! Please board her!!{n}The Ikaiyo, stronger than the{n}Chinen and worthy of a king!!!{end}",
    "max": 368,
    "ptr": [
     "p24 00241B"
@@ -16,7 +16,7 @@
    "id": "08F34B",
    "fmt": "plain",
    "jp": "殿!!ご覧下さいこの艦を!!  今亡き南蛮王様が羅候様のためにと造られた艦『帝虎』でございます!その大きさのため三隻完成するのにここまでの時間が かかってしまいました…            しかし 時をかけただけありまして帝虎の『艦首砲』の威力は    命中した艦のみならず その周囲の艦までもまき込むほど強力なものでございます!!         殿!! 座乗なさって下さい!! そしてこの練と南蛮による全銀河の統一を!!{end}",
-   "en": "",
+   "en": "My lord!! Behold this ship!! It{n}is the Teiko, built for{n}Rako-sama by the late Nanban{n}King! Being so large, it took{n}this long to finish three of{n}them... But the time was well{n}spent: the Teiko's bow cannon is{n}so powerful it engulfs not only{n}the ship it hits but the ships{n}around it too!! My lord!! Please{n}take command of her!! And unify{n}the whole galaxy under Ren and{n}Nanban!!{end}",
    "max": 428,
    "ptr": [
     "p24 00241E"
@@ -26,7 +26,7 @@
    "id": "08F4F7",
    "fmt": "plain",
    "jp": "殿! その大帝山よりご退艦なさりこの 『大帝山 弐型』に    ご乗艦下さい!!        旧大帝山はすでに 損傷がひどく これから先の戦いを戦い抜くことは不可能な状態となっております!!今こそ 旧大帝山より大帝山の弐型へと 乗り換え 天下統一への一歩と致しましょう!!{end}",
-   "en": "",
+   "en": "My lord! Please leave the{n}Taiteizan and board this{n}Taiteizan Type 2!! The old{n}Taiteizan is badly damaged and{n}can no longer fight the battles{n}ahead!! Now is the time to move{n}from the old Taiteizan to the{n}Type 2, one step closer to{n}unifying the realm!!{end}",
    "max": 276,
    "ptr": [
     "p24 002421"
@@ -36,7 +36,7 @@
    "id": "08F60B",
    "fmt": "plain",
    "jp": "ついに完成したぞ!!      金剛に代わる新型戦艦じゃ!!  その名も『新金剛』じゃ!!   この新金剛は 今までの金剛よりも主に攻撃力と防御力を上げた艦なのじゃが こいつには特別に    『轟雷砲』というのがついていてなこいつは一直線上の敵を倒すことができるのじゃ!!        どうじゃ 気に入ったか?    これからは金剛ではなくて この 新金剛で銀河を駆けるのじゃ!!{end}",
-   "en": "",
+   "en": "It's finally done!! A new{n}battleship to replace the{n}Kongo!! Her name: the New{n}Kongo!! She's got better attack{n}and defense than the old Kongo,{n}but she's also fitted with a{n}special Thunder Cannon that can{n}wipe out every enemy in a{n}straight line!! Well? Like her?{n}From now on you'll ride across{n}the galaxy in this New Kongo,{n}not the Kongo!!{end}",
    "max": 384,
    "ptr": [
     "p24 002424"
@@ -46,7 +46,7 @@
    "id": "08F78B",
    "fmt": "plain",
    "jp": "竜我様!! 新型戦艦『比叡』が 南京楼の 商人達の財によって  ようやく完成致しました!!   比叡は今までの戦艦の能力を   すべてにおいて上回るほどの   完成度となっております     今ごろは 各武将の所にも 比叡が届いているはずです!!     比叡を旗艦として使ってください!そしてこの銀河を 一日も早く  平和なものにして下さい!!{end}",
-   "en": "",
+   "en": "Ryuga-sama!! The new battleship{n}Hiei is finally complete, paid{n}for by the merchants of{n}Nankinro!! The Hiei surpasses{n}every earlier battleship in{n}every respect. By now a Hiei{n}should have reached each of your{n}officers too!! Please use the{n}Hiei as your flagship! And bring{n}peace to this galaxy as soon as{n}you can!!{end}",
    "max": 348,
    "ptr": [
     "p24 002427"
@@ -56,7 +56,7 @@
    "id": "08F8E7",
    "fmt": "plain",
    "jp": "皆の者! 我らの銀河統一に力強い味方が来たぞ! その名も新型戦艦『猛虎』だ!!         猛虎は旧戦艦の 弱点をおぎなった特別艦だ!! そろそろお前たちのもとへ 届いているはずだ!!  この銀河を我らの手に!!    そして 練と南蛮に勝利を!!!{end}",
-   "en": "",
+   "en": "Everyone! A mighty ally has come{n}for our unification of the{n}galaxy! Her name: the new{n}battleship Moko!! The Moko is a{n}special ship free of the old{n}battleships' weaknesses!! She{n}should be reaching you soon!!{n}This galaxy into our hands!! And{n}victory to Ren and Nanban!!!{end}",
    "max": 256,
    "ptr": [
     "p24 00242A"
@@ -66,7 +66,7 @@
    "id": "08F9E7",
    "fmt": "plain",
    "jp": "諸将よ!! 我らの進撃する速度は今一つだった! しかしそれはこの『富嶽』によって解決する!!  富嶽は今までの戦艦より速度において勝る!! ゆえに我らの進撃速度は大幅に上がるだろう!!    お前達の所へも もう届いている はずだ!! 富嶽で艦隊を指揮し 好きに戦果をあげよ!!{end}",
-   "en": "",
+   "en": "Generals!! Our advance has been{n}too slow! But this Fugaku will{n}fix that!! The Fugaku is faster{n}than any battleship before her!!{n}Our advance will speed up{n}greatly!! She should already{n}have reached you!! Command your{n}fleets from the Fugaku and win{n}all the glory you like!!{end}",
    "max": 280,
    "ptr": [
     "p24 00242D"

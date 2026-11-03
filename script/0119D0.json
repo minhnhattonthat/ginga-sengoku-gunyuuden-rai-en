@@ -7,7 +7,7 @@
    "fmt": "plain@4",
    "pre": "00033083",
    "jp": "HEX表示{end}",
-   "en": "",
+   "en": "Hex grid{end}",
    "max": 16,
    "ptr": [
     "p16 0119C6"
@@ -18,7 +18,7 @@
    "fmt": "plain@4",
    "pre": "00033089",
    "jp": "艦移動速度{end}",
-   "en": "",
+   "en": "Ship speed{end}",
    "max": 16,
    "ptr": [
     "p16 0119C8"
@@ -29,7 +29,7 @@
    "fmt": "plain@4",
    "pre": "0003308F",
    "jp": "艦隊戦アニメ{end}",
-   "en": "",
+   "en": "Battle animation{end}",
    "max": 18,
    "ptr": [
     "p16 0119CA"
@@ -40,7 +40,7 @@
    "fmt": "plain@4",
    "pre": "00033095",
    "jp": "カ〜ソル艦数表示{end}",
-   "en": "",
+   "en": "Cursor ship count{end}",
    "max": 22,
    "ptr": [
     "p16 0119CC"
@@ -51,7 +51,7 @@
    "fmt": "plain@4",
    "pre": "0009909B",
    "jp": "EXIT{end}",
-   "en": "",
+   "en": "EXIT{end}",
    "max": 14,
    "ptr": [
     "p16 0119CE"
@@ -61,7 +61,7 @@
    "id": "011A26",
    "fmt": "plain",
    "jp": "あり{end}",
-   "en": "",
+   "en": "On{end}",
    "max": 6,
    "ptr": [
     "fixed 052177",
@@ -73,7 +73,7 @@
    "id": "011A2C",
    "fmt": "plain",
    "jp": "なし{end}",
-   "en": "",
+   "en": "Off{end}",
    "max": 6,
    "ptr": [
     "fixed 05217F",
@@ -85,7 +85,7 @@
    "id": "011A32",
    "fmt": "plain",
    "jp": "遅い{end}",
-   "en": "",
+   "en": "Slow{end}",
    "max": 6,
    "ptr": [
     "fixed 052192"
@@ -95,7 +95,7 @@
    "id": "011A38",
    "fmt": "plain",
    "jp": "速い{end}",
-   "en": "",
+   "en": "Fast{end}",
    "max": 6,
    "ptr": [
     "fixed 05219A"

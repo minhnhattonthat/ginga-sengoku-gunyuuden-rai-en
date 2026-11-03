@@ -6,7 +6,7 @@
    "id": "040138",
    "fmt": "plain",
    "jp": "惑星は 統治能力の高い 武将を駐屯させることで より早く成長する{end}",
-   "en": "",
+   "en": "Posting officers good at{n}governing makes a planet{n}grow faster.{end}",
    "max": 66,
    "ptr": [
     "p16 04012A"
@@ -16,7 +16,7 @@
    "id": "04017A",
    "fmt": "plain",
    "jp": "惑星は 放っておいても 成長しますが 武将が  いると早く成長します{end}",
-   "en": "",
+   "en": "Planets grow even if left{n}alone, but faster with an{n}officer there.{end}",
    "max": 70,
    "ptr": [
     "p16 04012C"
@@ -26,7 +26,7 @@
    "id": "0401C0",
    "fmt": "plain",
    "jp": "惑星は 統治能力の高い 武将を駐屯させることで より早く成長致します{end}",
-   "en": "",
+   "en": "Planets grow faster with{n}officers of high governing{n}skill posted there.{end}",
    "max": 70,
    "ptr": [
     "p16 04012E",
@@ -37,7 +37,7 @@
    "id": "040206",
    "fmt": "plain",
    "jp": "惑星を早く成長させたい ときは 統治能力の高い 武将を置いて下され{end}",
-   "en": "",
+   "en": "To make a planet grow{n}fast, post an officer with{n}high governing skill.{end}",
    "max": 68,
    "ptr": [
     "p16 040130"
@@ -47,7 +47,7 @@
    "id": "04024A",
    "fmt": "plain",
    "jp": "統治能力の高い武将を駐屯させることで惑星の成長が早まります{end}",
-   "en": "",
+   "en": "Posting officers with high{n}governing skill speeds a{n}planet's growth.{end}",
    "max": 60,
    "ptr": [
     "p16 040134"
@@ -57,7 +57,7 @@
    "id": "040286",
    "fmt": "plain",
    "jp": "陛下! 自惑星は、放って置くより武将を置くことでより早く成長致します{end}",
-   "en": "",
+   "en": "Your Majesty! Our planets{n}grow faster with an{n}officer than left alone.{end}",
    "max": 70,
    "ptr": [
     "p16 040136"

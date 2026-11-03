@@ -6,7 +6,7 @@
    "id": "0402DA",
    "fmt": "plain",
    "jp": "雷!惑星を占領したければ出てくる敵艦隊と要塞を すべて たたくんだ!{end}",
-   "en": "",
+   "en": "Rai! To take a planet,{n}smash every enemy fleet{n}and fortress there!{end}",
    "max": 70,
    "ptr": [
     "p16 0402CC"
@@ -16,7 +16,7 @@
    "id": "040320",
    "fmt": "plain",
    "jp": "惑星を占領するには   敵艦隊と要塞のすべてを 倒さなければいけません{end}",
-   "en": "",
+   "en": "To occupy a planet, you{n}must defeat every enemy{n}fleet and fortress.{end}",
    "max": 72,
    "ptr": [
     "p16 0402CE"
@@ -26,7 +26,7 @@
    "id": "040368",
    "fmt": "plain",
    "jp": "殿! 惑星を占領するには空域内のすべての敵を一掃しなければなりません{end}",
-   "en": "",
+   "en": "My lord! To occupy a{n}planet, sweep away every{n}enemy in its space.{end}",
    "max": 70,
    "ptr": [
     "p16 0402D0"
@@ -36,7 +36,7 @@
    "id": "0403AE",
    "fmt": "plain",
    "jp": "殿! 惑星を占領するには敵艦隊と要塞のすべてを 倒さねばいけませんぞ{end}",
-   "en": "",
+   "en": "My lord! To take a planet,{n}defeat all enemy fleets{n}and fortresses.{end}",
    "max": 70,
    "ptr": [
     "p16 0402D2"
@@ -46,7 +46,7 @@
    "id": "0403F4",
    "fmt": "plain",
    "jp": "お館様! 惑星を占領するには敵艦隊と要塞の全てを倒さなければなりません{end}",
-   "en": "",
+   "en": "My lord! To occupy a{n}planet, all enemy fleets{n}and fortresses must fall.{end}",
    "max": 72,
    "ptr": [
     "p16 0402D4",
@@ -57,7 +57,7 @@
    "id": "04043C",
    "fmt": "plain",
    "jp": "陛下!惑星を占領するには敵艦隊と さらに要塞をも倒さなければいけません{end}",
-   "en": "",
+   "en": "Your Majesty! To take a{n}planet, defeat its fleets{n}and its fortress too.{end}",
    "max": 72,
    "ptr": [
     "p16 0402D8"

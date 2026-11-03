@@ -6,7 +6,7 @@
    "id": "011A46",
    "fmt": "plain",
    "jp": "南京楼軍 竜我雷            物資豊かな南京楼を拠点に銀河を駆け巡る{end}",
-   "en": "",
+   "en": "Nankinro Army - Rai Ryuga{n}From rich Nankinro, he roams the galaxy.{end}",
    "max": 80,
    "ptr": [
     "p16 011A3E"
@@ -16,7 +16,7 @@
    "id": "011A96",
    "fmt": "plain",
    "jp": "練軍 羅候               南蛮と手を組み銀河統一の野望に燃える{end}",
-   "en": "",
+   "en": "Ren Army - Rako{n}With Nanban's aid he seeks the galaxy.{end}",
    "max": 78,
    "ptr": [
     "p16 011A40"
@@ -26,7 +26,7 @@
    "id": "011AE4",
    "fmt": "plain",
    "jp": "南天連合軍 独眼竜正宗         女将ながら知勇に長け、南天諸国を従える{end}",
-   "en": "",
+   "en": "Nanten Alliance - Masamune{n}A wise, brave woman who leads Nanten.{end}",
    "max": 80,
    "ptr": [
     "p16 011A42"
@@ -36,7 +36,7 @@
    "id": "011B34",
    "fmt": "plain",
    "jp": "大五丈軍 骸羅             強大な武力をもって、領土拡大を狙う{end}",
-   "en": "",
+   "en": "Great Gojo Army - Gaira{n}He seeks a wider realm by sheer force.{end}",
    "max": 76,
    "ptr": [
     "p16 011A44"

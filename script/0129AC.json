@@ -6,7 +6,7 @@
    "id": "0129AC",
    "fmt": "plain",
    "jp": "全将兵よ!みんなのおかげで敵を撃退することができた!礼を言わせてくれ!{end}",
-   "en": "",
+   "en": "Everyone! Thanks to you{n}all, we drove 'em off!{n}Thank you!{end}",
    "max": 72,
    "ptr": [
     "p16 012948"
@@ -16,7 +16,7 @@
    "id": "0129F4",
    "fmt": "plain",
    "jp": "その程度で 我が軍団を 退けることができるとでも思ったか?{end}",
-   "en": "",
+   "en": "Did you think that'd be{n}enough to repel my{n}legions?{end}",
    "max": 60,
    "ptr": [
     "p16 01294A"
@@ -26,7 +26,7 @@
    "id": "012A30",
    "fmt": "plain",
    "jp": "俺は攻めることしかできないとでも思ったかい?{end}",
-   "en": "",
+   "en": "Thought all I could do was{n}attack, did ya?{end}",
    "max": 46,
    "ptr": [
     "p16 012952"
@@ -36,7 +36,7 @@
    "id": "012A5E",
    "fmt": "plain",
    "jp": "退き際を 見定められないことが あんたらの敗因 なのだ!{end}",
-   "en": "",
+   "en": "Not knowing when to pull{n}back is why you lost!{end}",
    "max": 58,
    "ptr": [
     "p16 012954"
@@ -46,7 +46,7 @@
    "id": "012A98",
    "fmt": "plain",
    "jp": "ふう… なんとか防衛に 成功しましたね{end}",
-   "en": "",
+   "en": "Phew... We managed to hold{n}our ground.{end}",
    "max": 40,
    "ptr": [
     "p16 012958"
@@ -56,7 +56,7 @@
    "id": "012AC0",
    "fmt": "plain",
    "jp": "何回攻め込まれても私達はそれを撃退します!!{end}",
-   "en": "",
+   "en": "No matter how often they{n}attack, we'll drive them{n}back!!{end}",
    "max": 46,
    "ptr": [
     "p16 01295A"
@@ -66,7 +66,7 @@
    "id": "012AEE",
    "fmt": "plain",
    "jp": "うちはちゃんと守ったで!女だと思って油断するからこうなるんや!!{end}",
-   "en": "",
+   "en": "I held it fine! That's{n}what ya get for{n}underestimatin' a girl!!{end}",
    "max": 66,
    "ptr": [
     "p16 01295C"
@@ -76,7 +76,7 @@
    "id": "012B30",
    "fmt": "plain",
    "jp": "はっ!! 甘い甘い!! 大甘だぜ!この俺から星を取ろうなんてな!!!{end}",
-   "en": "",
+   "en": "Ha!! Sweet, sweet!! Way{n}too sweet! Thinkin' you{n}could take my planet!!!{end}",
    "max": 70,
    "ptr": [
     "p16 01295E"
@@ -86,7 +86,7 @@
    "id": "012B76",
    "fmt": "plain",
    "jp": "…防衛戦だしな… 勝っただけでもよしとするか{end}",
-   "en": "",
+   "en": "...It was a defensive{n}fight... I'll settle for{n}just winning.{end}",
    "max": 46,
    "ptr": [
     "p16 012960"
@@ -96,7 +96,7 @@
    "id": "012BA4",
    "fmt": "plain",
    "jp": "ふははははははははははははははははははははははははははははははははは…{end}",
-   "en": "",
+   "en": "Fuhahahahahahahahahahaha{n}hahahahahahahahahahahaha{n}hahahahahaha...{end}",
    "max": 72,
    "ptr": [
     "p16 012962"
@@ -106,7 +106,7 @@
    "id": "012BEC",
    "fmt": "plain",
    "jp": "全将兵諸君!よく戦ってくれた! これでこの星も しばらく安心だろう!{end}",
-   "en": "",
+   "en": "Officers and men! Well{n}fought! This planet will{n}be safe for a while!{end}",
    "max": 70,
    "ptr": [
     "p16 012966"
@@ -116,7 +116,7 @@
    "id": "012C32",
    "fmt": "plain",
    "jp": "どうも防衛戦は性に合わんだが それでも勝ち続けることには違いないが{end}",
-   "en": "",
+   "en": "Defense ain't my style...{n}but a win's still a win.{end}",
    "max": 68,
    "ptr": [
     "p16 012968"
@@ -126,7 +126,7 @@
    "id": "012C76",
    "fmt": "plain",
    "jp": "暇な所と気を抜いていたらやられていたかもな…{end}",
-   "en": "",
+   "en": "If I'd let my guard down{n}here, I might've been{n}beaten...{end}",
    "max": 46,
    "ptr": [
     "p16 01296A"
@@ -136,7 +136,7 @@
    "id": "012CA4",
    "fmt": "plain",
    "jp": "俺から 星を取ろうなんて無理だぜ!俺は銀河の覇者になる男だからな!!{end}",
-   "en": "",
+   "en": "Nobody takes a planet from{n}me! I'm the man who'll{n}rule the galaxy!!{end}",
    "max": 70,
    "ptr": [
     "p16 01296C"
@@ -146,7 +146,7 @@
    "id": "012CEA",
    "fmt": "plain",
    "jp": "あたしの守りってば…  か・ん・ぺ・き!{end}",
-   "en": "",
+   "en": "My defense is...{n}p-e-r-f-e-c-t!{end}",
    "max": 42,
    "ptr": [
     "p16 01296E"
@@ -156,7 +156,7 @@
    "id": "012D14",
    "fmt": "plain",
    "jp": "ふん!私を独眼竜と知って攻めたのか? 身の程を 知らぬやつだ!{end}",
-   "en": "",
+   "en": "Hmph! You attacked the{n}One-Eyed Dragon? Know your{n}place!{end}",
    "max": 64,
    "ptr": [
     "p16 012970",
@@ -168,7 +168,7 @@
    "id": "012D54",
    "fmt": "plain",
    "jp": "私は攻めても 守っても 勝利してみせる!!{end}",
-   "en": "",
+   "en": "Attacking or defending,{n}I'll be victorious!!{end}",
    "max": 44,
    "ptr": [
     "p16 012972"
@@ -178,7 +178,7 @@
    "id": "012D80",
    "fmt": "plain",
    "jp": "ふむ…どうやら私の防衛戦の能力を みくびっていたようですな{end}",
-   "en": "",
+   "en": "Hmm... It seems you{n}underestimated my skill at{n}defense.{end}",
    "max": 60,
    "ptr": [
     "p16 01297E"
@@ -188,7 +188,7 @@
    "id": "012DBC",
    "fmt": "plain",
    "jp": "僕にもっと能力があれば…もっと簡単に 撃退できたものを…{end}",
-   "en": "",
+   "en": "If only I were more{n}capable... I'd have driven{n}them off more easily...{end}",
    "max": 58,
    "ptr": [
     "p16 012980"
@@ -198,7 +198,7 @@
    "id": "012DF6",
    "fmt": "plain",
    "jp": "ぐふふふふ…      どうじゃ?わしの手腕は?防衛戦など軽いもんじゃ{end}",
-   "en": "",
+   "en": "Guhuhuhu... How's that for{n}skill? Defense is child's{n}play!{end}",
    "max": 72,
    "ptr": [
     "p16 012982"
@@ -208,7 +208,7 @@
    "id": "012E3E",
    "fmt": "plain",
    "jp": "けっ!!うじ虫どもが!!わしの銀河を 汚すんじゃねえ!!!{end}",
-   "en": "",
+   "en": "Bah!! Maggots!! Don't you{n}dirty my galaxy!!!{end}",
    "max": 60,
    "ptr": [
     "p16 01298E"
@@ -218,7 +218,7 @@
    "id": "012E7A",
    "fmt": "plain",
    "jp": "俺から 星を取ろうなんて虫が良すぎると思わんか{end}",
-   "en": "",
+   "en": "Take a planet from me?{n}Aren't you asking a bit{n}much?{end}",
    "max": 48,
    "ptr": [
     "p16 012990"
@@ -228,7 +228,7 @@
    "id": "012EAA",
    "fmt": "plain",
    "jp": "私の才を持ってすれば  どんな攻めにも対応し撃退することができる!{end}",
-   "en": "",
+   "en": "With my talent, I can{n}counter and repel any{n}attack!{end}",
    "max": 68,
    "ptr": [
     "p16 012992"
@@ -238,7 +238,7 @@
    "id": "012EEE",
    "fmt": "plain",
    "jp": "まったくぶざまだね!! そんなんじゃ いつまで たっても占領できないよ{end}",
-   "en": "",
+   "en": "How pathetic!! At that{n}rate you'll never take{n}anything!{end}",
    "max": 72,
    "ptr": [
     "p16 012994"
@@ -248,7 +248,7 @@
    "id": "012F36",
    "fmt": "plain",
    "jp": "白鬼の強さ分かったか!!これこそ鬼の強さなり!{end}",
-   "en": "",
+   "en": "Now you know Hakki's{n}power!! The power of a{n}true demon!{end}",
    "max": 48,
    "ptr": [
     "p16 012998"
@@ -258,7 +258,7 @@
    "id": "012F66",
    "fmt": "plain",
    "jp": "……それがしの勝ちだ{end}",
-   "en": "",
+   "en": "......The victory is mine.{end}",
    "max": 22,
    "ptr": [
     "p16 01299A"
@@ -268,7 +268,7 @@
    "id": "012F7C",
    "fmt": "plain",
    "jp": "がははははは!     その程度で星を手にしようとは…がっはっはっは!{end}",
-   "en": "",
+   "en": "Gahahahaha! Thinking you{n}could take a planet with{n}that... Gahahaha!{end}",
    "max": 72,
    "ptr": [
     "p16 01299C"
@@ -278,7 +278,7 @@
    "id": "012FC4",
    "fmt": "plain",
    "jp": "これぞ男の生き様!!  鉄壁の守りを見たか!!{end}",
-   "en": "",
+   "en": "This is how a man lives!!{n}Behold my iron wall!!{end}",
    "max": 48,
    "ptr": [
     "p16 01299E"
@@ -288,7 +288,7 @@
    "id": "012FF4",
    "fmt": "plain",
    "jp": "己の信じる道を歩むのみ…守備 あればこその   攻めなのだ!!{end}",
-   "en": "",
+   "en": "I walk only my own path...{n}Without defense, there is{n}no attack!!{end}",
    "max": 64,
    "ptr": [
     "p16 0129A0"
@@ -298,7 +298,7 @@
    "id": "013034",
    "fmt": "plain",
    "jp": "拠点の防衛なら     それがしに おまかせを!わはははは!{end}",
-   "en": "",
+   "en": "Leave base defense to me!{n}Wahahaha!{end}",
    "max": 62,
    "ptr": [
     "p16 0129A6"
@@ -308,7 +308,7 @@
    "id": "013072",
    "fmt": "plain",
    "jp": "なんとか敵から 星を防衛しましたな!{end}",
-   "en": "",
+   "en": "We managed to defend the{n}planet from the enemy!{end}",
    "max": 38,
    "ptr": [
     "p16 01294C",
