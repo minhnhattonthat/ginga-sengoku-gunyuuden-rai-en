@@ -117,7 +117,7 @@
    "id": "1D8264",
    "fmt": "msg",
    "jp": "勝負ありましたね{br}共に来るのなら武将として迎える準備があります{end}",
-   "en": "The match is decided. Come{br}with us, and we'll welcome{br}you as an officer.{end}",
+   "en": "It's over. Come with us,{br}and we'll welcome you as{br}an officer.{end}",
    "max": 68,
    "ptr": [
     "rel16 1D1A92 base 1D8000"
@@ -127,7 +127,7 @@
    "id": "1D82A8",
    "fmt": "msg",
    "jp": "師真様、勝負ありましたね{br}私と共に行きますか?{end}",
-   "en": "Shishin-sama, the match is{br}decided. Will you come{br}with me?{end}",
+   "en": "Shishin-sama, it's over.{br}Will you come with me?{end}",
    "max": 52,
    "ptr": [
     "rel16 1D1A94 base 1D8000"
@@ -347,7 +347,7 @@
    "id": "1D8766",
    "fmt": "msg",
    "jp": "邑峻様… 願わくばそれがしと共に来てくだされ{end}",
-   "en": "Yushun-sama... I beg you,{br}please come with me.{end}",
+   "en": "Yushun-sama... I humbly{br}beg you, come with me.{end}",
    "max": 48,
    "ptr": [
     "rel16 1D1AC0 base 1D8000"
@@ -387,7 +387,7 @@
    "id": "1D8844",
    "fmt": "msg",
    "jp": "覇王に必要なものが分かれば{br}兄上にも進むべき道が分かるはずです!{end}",
-   "en": "Know what a supreme king{br}needs, brother, and you'll{br}know your path!{end}",
+   "en": "Grasp what a supreme king{br}needs, brother, and you'll{br}find your path!{end}",
    "max": 70,
    "ptr": [
     "rel16 1D1AC8 base 1D8000"
@@ -537,7 +537,7 @@
    "id": "1D8BDA",
    "fmt": "msg",
    "jp": "勝負ありましたな どうです{br}私と共に来ませんか?{end}",
-   "en": "The match is decided.{br}Well? Won't you come with{br}me?{end}",
+   "en": "It's over. Well? Won't you{br}come with me?{end}",
    "max": 54,
    "ptr": [
     "rel16 1D1AE6 base 1D8000"
@@ -737,7 +737,7 @@
    "id": "1D906E",
    "fmt": "msg",
    "jp": "………そなたの力… それがしと共に来てこの国に役立てないか…?{end}",
-   "en": "......Your strength...{br}Won't you come with me and{br}serve this nation...?{end}",
+   "en": "...Your strength... Won't{br}you come with me and serve{br}this nation...?{end}",
    "max": 66,
    "ptr": [
     "rel16 1D1B0E base 1D8000"
@@ -1018,7 +1018,7 @@
    "id": "1D946E",
    "fmt": "msg",
    "jp": "姜子昌… 俺は今でもお前を友と… 親友だと思っている…{br}これからも…{end}",
-   "en": "Kyo Shisho... To me you're{br}still my friend... my best{br}friend...{end}",
+   "en": "Kyo Shisho... To me you're{br}still my friend... my best{br}friend... always...{end}",
    "max": 74,
    "ptr": [
     "rel16 1D1C7D base 1D9236"
@@ -1088,7 +1088,7 @@
    "id": "1D9572",
    "fmt": "msg",
    "jp": "専に破れ専に散る…か{end}",
-   "en": "Beaten by a dream, fallen{br}with a dream, huh...{end}",
+   "en": "Broken by a dream,{br}scattered by a dream...{br}huh.{end}",
    "max": 24,
    "ptr": [
     "rel16 1D1C8B base 1D9236"
@@ -1880,7 +1880,7 @@
    "id": "1D9F34",
    "fmt": "msg",
    "jp": "わしの助けが必要とな?{br}ふふ…!{br}とんだ甘えん坊だな!!{end}",
-   "en": "You need my help? Heh...!{br}What a big baby!!{end}",
+   "en": "You need my help, eh?{br}Heh...! What a big baby!!{end}",
    "max": 64,
    "ptr": [
     "rel16 1D2025 base 1D9BAE"
@@ -2431,7 +2431,7 @@
    "id": "1DA988",
    "fmt": "msg",
    "jp": "おぬしには私の才を買うに値する能力がある{br}おぬしと共に行こう…{end}",
-   "en": "You have the ability to{br}make use of my talent.{br}I'll go with you...{end}",
+   "en": "You have what it takes to{br}merit my talent. I'll go{br}with you...{end}",
    "max": 68,
    "ptr": [
     "rel16 1D2081 base 1D9BAE"
@@ -2501,7 +2501,7 @@
    "id": "1DAB08",
    "fmt": "msg",
    "jp": "ぬおおお! わしは生きる!{br}おぬしと共に行っても良いぞ!{end}",
-   "en": "Nuooo! I'll live! I'll go{br}with you!{end}",
+   "en": "Nuooo! I shall live! Very{br}well, I'll go with you!{end}",
    "max": 62,
    "ptr": [
     "rel16 1D208F base 1D9BAE"
@@ -2642,7 +2642,7 @@
    "id": "1DADF0",
    "fmt": "msg",
    "jp": "その言葉だけで充分だ…{br}国難の際に命乞いをして{br}恥を後世に残したくはない…!{end}",
-   "en": "Your words are enough... I{br}won't beg for my life and{br}live in shame!{end}",
+   "en": "Enough... I won't beg for{br}my life in a crisis and{br}shame my name forever!{end}",
    "max": 84,
    "ptr": [
     "rel16 1D21E0 base 1DACC4"
@@ -2722,7 +2722,7 @@
    "id": "1DAFBC",
    "fmt": "msg",
    "jp": "ごめんな紫紋… うちはこの国を捨てられんのや…{end}",
-   "en": "Sorry, Shimon... I can't{br}abandon this nation...{end}",
+   "en": "Sorry, Shimon... I just{br}can't abandon this nation,{br}y'know...{end}",
    "max": 50,
    "ptr": [
     "rel16 1D21F0 base 1DACC4"
@@ -2742,7 +2742,7 @@
    "id": "1DB022",
    "fmt": "msg",
    "jp": "うちにはこの国を離れることができないんや…{end}",
-   "en": "I just can't leave this{br}nation...{end}",
+   "en": "I just can't leave this{br}nation, y'know...{end}",
    "max": 46,
    "ptr": [
     "rel16 1D21F4 base 1DACC4"
@@ -2792,7 +2792,7 @@
    "id": "1DB11E",
    "fmt": "msg",
    "jp": "王よ せっかくですが私はこれ以上生き恥をさらしたくないのです{end}",
-   "en": "My king, kind as it is, I{br}don't wish to live on in{br}shame.{end}",
+   "en": "My king, thank you, but I{br}won't live on in shame any{br}longer.{end}",
    "max": 64,
    "ptr": [
     "rel16 1D21FE base 1DACC4"
@@ -2822,7 +2822,7 @@
    "id": "1DB1E0",
    "fmt": "msg",
    "jp": "あんたじゃまだ役不足だね{br}私はそんな奴の所に行きたくないね{end}",
-   "en": "You're not good enough{br}yet. I don't want to go to{br}the likes of you.{end}",
+   "en": "Hmph, you're not good{br}enough yet. I don't want{br}to go to the likes of you.{end}",
    "max": 64,
    "ptr": [
     "rel16 1D2204 base 1DACC4"
@@ -3032,7 +3032,7 @@
    "id": "1DB6AE",
    "fmt": "msg",
    "jp": "南天連合? 実際は智の国で、名を偽っているうちは天下など取れませぬ{end}",
-   "en": "Nanten Alliance? It's just{br}Chi in disguise. You'll{br}never take the realm.{end}",
+   "en": "Nanten Alliance? It's Chi.{br}Under a false name, you'll{br}never take the realm.{end}",
    "max": 70,
    "ptr": [
     "rel16 1D222E base 1DACC4"
@@ -3152,7 +3152,7 @@
    "id": "1DB92C",
    "fmt": "msg",
    "jp": "あなたには器量がなさすぎる…{end}",
-   "en": "You have far too little{br}caliber...{end}",
+   "en": "You have far too little{br}stature...{end}",
    "max": 32,
    "ptr": [
     "rel16 1D2246 base 1DACC4"
@@ -4023,7 +4023,7 @@
    "id": "1DC4FA",
    "fmt": "msg",
    "jp": "惜しまれつつ散るのも一興よ!{end}",
-   "en": "To fall while still missed{br}is a fine thing!{end}",
+   "en": "To fall mourned is its own{br}pleasure!{end}",
    "max": 32,
    "ptr": [
     "rel16 1D2429 base 1DBD4C"
@@ -4053,7 +4053,7 @@
    "id": "1DC54E",
    "fmt": "msg",
    "jp": "これも運命なのです… 兄上{end}",
-   "en": "This too is fate...{br}brother.{end}",
+   "en": "This too is fate...{br}Brother.{end}",
    "max": 30,
    "ptr": [
     "rel16 1D242F base 1DBD4C"
@@ -4063,7 +4063,7 @@
    "id": "1DC56C",
    "fmt": "msg",
    "jp": "私の命数が尽きたのか…{end}",
-   "en": "So my days are numbered...{end}",
+   "en": "So my time has run out...{end}",
    "max": 26,
    "ptr": [
     "rel16 1D2431 base 1DBD4C"
@@ -4294,7 +4294,7 @@
    "id": "1DC9A4",
    "fmt": "msg",
    "jp": "我々が銀河統一を成すために{br}あなたにはここで逃げてもらいます!{end}",
-   "en": "So that we may unify the{br}galaxy, you'll flee from{br}here!{end}",
+   "en": "To unify the galaxy, I'll{br}have you flee from here!{end}",
    "max": 68,
    "ptr": [
     "rel16 1D2596 base 1DC710"
@@ -4364,7 +4364,7 @@
    "id": "1DCB48",
    "fmt": "msg",
    "jp": "馬鹿息子よ!{br}今日はここまでじゃ早くわしを倒せるようになるんだな!{end}",
-   "en": "You stupid boy! That's all{br}for today. Get strong{br}enough to beat me!{end}",
+   "en": "Stupid boy! That's all for{br}today. Hurry and get{br}strong enough to beat me!{end}",
    "max": 72,
    "ptr": [
     "rel16 1D25A4 base 1DC710"
@@ -4414,7 +4414,7 @@
    "id": "1DCC8A",
    "fmt": "msg",
    "jp": "老将軍よ!{br}今一度外から俺の覇者としての器を計る機会をやろう!{end}",
-   "en": "Old general! I'll give you{br}another chance to judge my{br}worth from outside!{end}",
+   "en": "Old general! Once more,{br}judge my worth as a{br}conqueror from outside!{end}",
    "max": 68,
    "ptr": [
     "rel16 1D25AE base 1DC710"
@@ -4484,7 +4484,7 @@
    "id": "1DCE32",
    "fmt": "msg",
    "jp": "あたし姜子昌にはあまり興味ないの!{br}さっさと消えてちょうだい!!{end}",
-   "en": "I'm not that into Kyo{br}Shisho! Just get lost!!{end}",
+   "en": "Kyo Shisho barely{br}interests me! Just get{br}lost!!{end}",
    "max": 70,
    "ptr": [
     "rel16 1D25BC base 1DC710"
@@ -4504,7 +4504,7 @@
    "id": "1DCEBC",
    "fmt": "msg",
    "jp": "わしはお前の信じる道の行き先を見たくなった…!{end}",
-   "en": "I've come to want to see{br}where your path leads...!{end}",
+   "en": "I want to see where the{br}path you believe in{br}leads...!{end}",
    "max": 50,
    "ptr": [
     "rel16 1D25C0 base 1DC710"
@@ -4854,7 +4854,7 @@
    "id": "1DD6FA",
    "fmt": "msg",
    "jp": "骸延!{br}今はお前の命預けておく!!{end}",
-   "en": "Gaien! I'll leave your{br}life in your keeping for{br}now!!{end}",
+   "en": "Gaien! I'll let you keep{br}your life for now!!{end}",
    "max": 40,
    "ptr": [
     "rel16 1D2606 base 1DC710"
@@ -4934,7 +4934,7 @@
    "id": "1DD880",
    "fmt": "msg",
    "jp": "この白鬼、{br}敵を逃がすは情けにあらず!!{end}",
-   "en": "Hakki letting a foe go is{br}no act of mercy!!{end}",
+   "en": "I, Hakki, know that{br}sparing a foe is no{br}mercy!!{end}",
    "max": 46,
    "ptr": [
     "rel16 1D2616 base 1DC710"
@@ -5105,7 +5105,7 @@
    "id": "1DDB7A",
    "fmt": "msg",
    "jp": "この次も負けるほど俺は甘くないぞ!!{end}",
-   "en": "I'm not soft enough to{br}lose next time too!!{end}",
+   "en": "I'm not fool enough to{br}lose again next time!!{end}",
    "max": 40,
    "ptr": [
     "rel16 1D276D base 1DD98C"
@@ -5205,7 +5205,7 @@
    "id": "1DDD2A",
    "fmt": "msg",
    "jp": "言われなくたって{br}もう来ないわっ!!{end}",
-   "en": "I won't come back, even if{br}you don't tell me!!{end}",
+   "en": "You needn't tell me! I'm{br}not coming back!!{end}",
    "max": 42,
    "ptr": [
     "rel16 1D2781 base 1DD98C"
@@ -5255,7 +5255,7 @@
    "id": "1DDDEE",
    "fmt": "msg",
    "jp": "ふははははは…無駄なことを…{end}",
-   "en": "Fuhahahaha... Such a{br}waste...{end}",
+   "en": "Fuhahahaha... How{br}futile...{end}",
    "max": 32,
    "ptr": [
     "rel16 1D278B base 1DD98C"
@@ -5455,7 +5455,7 @@
    "id": "1DE24A",
    "fmt": "msg",
    "jp": "そんなに余裕でいられるのも{br}今の内だぞ…!{end}",
-   "en": "You can only stay so smug{br}for now...!{end}",
+   "en": "Enjoy that smugness while{br}it lasts...!{end}",
    "max": 48,
    "ptr": [
     "rel16 1D27B3 base 1DD98C"
@@ -5545,7 +5545,7 @@
    "id": "1DE432",
    "fmt": "msg",
    "jp": "わしは{br}わしは必ずお前を…!{end}",
-   "en": "I... I'll surely make{br}you...!{end}",
+   "en": "I... I'll surely get{br}you...!{end}",
    "max": 34,
    "ptr": [
     "rel16 1D27C5 base 1DD98C"
@@ -5585,7 +5585,7 @@
    "id": "1DE4CE",
    "fmt": "msg",
    "jp": "兄者…!{br}私は兄者のそのような所が…{end}",
-   "en": "Brother...! That side of{br}you is just what I...{end}",
+   "en": "Brother...! That side of{br}you is what I...{end}",
    "max": 42,
    "ptr": [
     "rel16 1D27CD base 1DD98C"
@@ -5625,7 +5625,7 @@
    "id": "1DE56E",
    "fmt": "msg",
    "jp": "狼刃め{br}俺を生かしておいたこと{br}いつか後悔させてくれる…!{end}",
-   "en": "Roha... I'll make you{br}regret letting me live{br}someday...!{end}",
+   "en": "Damn you, Roha... Someday{br}I'll make you regret{br}letting me live...!{end}",
    "max": 66,
    "ptr": [
     "rel16 1D27D5 base 1DD98C"
@@ -5635,7 +5635,7 @@
    "id": "1DE5B0",
    "fmt": "msg",
    "jp": "私を逃がすだと?{br}狼刃め、{br}一体何を企んでいるのだ…?{end}",
-   "en": "You're letting me go?{br}Roha, what are you{br}plotting...?{end}",
+   "en": "You're letting me go? Damn{br}you, Roha, what are you{br}plotting...?{end}",
    "max": 62,
    "ptr": [
     "rel16 1D27D7 base 1DD98C"
@@ -5755,7 +5755,7 @@
    "id": "1DE806",
    "fmt": "msg",
    "jp": "覚えていやがれ!!{end}",
-   "en": "You'll pay for this!!{end}",
+   "en": "Remember this!!{end}",
    "max": 22,
    "ptr": [
     "rel16 1D27EF base 1DD98C"
@@ -5775,7 +5775,7 @@
    "id": "1DE846",
    "fmt": "msg",
    "jp": "くっ…{br}覚えていやがれ!!{end}",
-   "en": "Ngh... You'll pay for{br}this!!{end}",
+   "en": "Ngh... You haven't seen{br}the last of me!!{end}",
    "max": 32,
    "ptr": [
     "rel16 1D27F3 base 1DD98C"

@@ -40,7 +40,7 @@
    "id": "11FDC0",
    "fmt": "msg",
    "jp": "飛竜{c5}「はい{c6}{spd:02000000} {c5}あの男一軍の将には飽き足らず{br}{skip:0300}南蛮諸国と通じて{br}{skip:0300}日に日に勢力を拡大しつつあります{c6}」{end}",
-   "en": "Hiryu{c5}\"Yes. Not content with one army,{br}{skip:0300} he's allied with Nanban and grows{br}{skip:0300} stronger daily.{c6}\"{end}",
+   "en": "Hiryu{c5}\"Yes. Not content to be a mere{br}{skip:0300} general, he's in league with{br}{skip:0300} Nanban and grows stronger daily.{c6}\"{end}",
    "max": 138,
    "read_on": true
   },
@@ -48,7 +48,7 @@
    "id": "11FE4A",
    "fmt": "msg",
    "jp": "正宗「{c5}むうう・・・{c6}{end}",
-   "en": "Masamune \"{c5}Grrr...{c6}{end}",
+   "en": "Masamune \"{c5}Mmgh...{c6}{end}",
    "max": 30,
    "read_on": true
   },

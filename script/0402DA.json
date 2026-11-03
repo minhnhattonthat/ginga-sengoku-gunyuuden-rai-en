@@ -36,7 +36,7 @@
    "id": "0403AE",
    "fmt": "plain",
    "jp": "殿! 惑星を占領するには敵艦隊と要塞のすべてを 倒さねばいけませんぞ{end}",
-   "en": "My lord! To take a{n}planet, defeat all enemy{n}fleets and fortresses.{end}",
+   "en": "My lord! You must beat{n}every fleet and fortress{n}to take a planet, mind!{end}",
    "max": 70,
    "ptr": [
     "p16 0402D2"

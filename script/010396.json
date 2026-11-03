@@ -46,7 +46,7 @@
    "id": "010466",
    "fmt": "plain",
    "jp": "敵は近けぇぜ、野郎ども ぬかるんじゃあねえぞ!{end}",
-   "en": "Enemy's close, ya dogs!{n}Don't get sloppy!{end}",
+   "en": "Enemy's close, you lot!{n}Don't get sloppy!{end}",
    "max": 48,
    "ptr": [
     "p16 01033A"
@@ -76,7 +76,7 @@
    "id": "01050A",
    "fmt": "plain",
    "jp": "えぇ～、コホン…。どなたかこの三楽斎をお呼びですかな?{end}",
-   "en": "Ahem... Did someone call{n}for Sanrakusai?{end}",
+   "en": "Ahem... Might someone{n}have called for{n}Sanrakusai?{end}",
    "max": 56,
    "ptr": [
     "p16 010340"
@@ -196,7 +196,7 @@
    "id": "010704",
    "fmt": "plain",
    "jp": "ウォ〜ッ!腕がなるぜぇっ!{end}",
-   "en": "Whoa! I'm itching for a{n}fight!{end}",
+   "en": "Rrraah! I'm itching for{n}a fight!{end}",
    "max": 28,
    "ptr": [
     "p16 010354"
@@ -229,7 +229,7 @@
    "id": "01079A",
    "fmt": "plain",
    "jp": "{FFFE}!これより大帝山も攻撃に加わる。ぶざまな戦いはするなよ。{end}",
-   "en": "The Taiteizan joins the{n}attack. No sorry{n}fighting, {FFFE}!{end}",
+   "en": "The Taiteizan joins in.{n}Don't fight shamefully,{n}{FFFE}!{end}",
    "max": 60,
    "ptr": [
     "p16 01035A"
@@ -381,7 +381,7 @@
    "id": "010A60",
    "fmt": "plain",
    "jp": "ええい!そんなこわっぱ共にいつまでかかっとる! とっとと片づけろ!{end}",
-   "en": "Blast! How long will{n}these brats take you?!{n}Finish them off!{end}",
+   "en": "Blast! How long are you{n}taking on these brats?!{n}Finish them off!{end}",
    "max": 68,
    "ptr": [
     "p16 010378"
@@ -484,7 +484,7 @@
    "id": "010CB6",
    "fmt": "plain",
    "jp": "わしが法権じゃ!お主達なら、わしなど呼ばずとも戦えようものを。{end}",
-   "en": "I am Hoken! You could've{n}fought fine without{n}calling on an old man.{end}",
+   "en": "Old Hoken's here! You{n}could've fought fine{n}without me.{end}",
    "max": 64,
    "ptr": [
     "p16 01038C"
@@ -504,7 +504,7 @@
    "id": "010D3C",
    "fmt": "plain",
    "jp": "それがしっ!それがしにすべてお任せをっ!{end}",
-   "en": "I, sir! Leave it all to{n}me, sir!{end}",
+   "en": "Me! Leave it all to me!{end}",
    "max": 42,
    "ptr": [
     "p16 010390"

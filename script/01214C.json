@@ -16,7 +16,7 @@
    "id": "01215E",
    "fmt": "plain",
    "jp": "でかしたぞ、野郎ども! {FFFD}は、陥落した!{end}",
-   "en": "Nice work, ya dogs!{n}{FFFD} has fallen!{end}",
+   "en": "Nice work, you lot!{n}{FFFD} has fallen!{end}",
    "max": 42,
    "ptr": [
     "p16 0120EA"
@@ -306,7 +306,7 @@
    "id": "0125BE",
    "fmt": "plain",
    "jp": "こんな星を占領するのに わしの艦隊を使いおって!{end}",
-   "en": "Using my fleet to take a{n}planet like this!{end}",
+   "en": "Wasting my fleet on a{n}planet like this!{end}",
    "max": 50,
    "ptr": [
     "p16 012122"

@@ -6,7 +6,7 @@
    "id": "01348C",
    "fmt": "plain",
    "jp": "銀河一のお前の才 今こそその全てを見せてもらう 大覚屋師真!!{end}",
-   "en": "Show me all, finest{n}talent of the galaxy...{n}Shishin Daigakuya!!{end}",
+   "en": "Show me it all, galaxy's{n}finest talent... Shishin{n}Daigakuya!!{end}",
    "max": 64,
    "ptr": [
     "p16 0130FD"
@@ -120,7 +120,7 @@
    "id": "013774",
    "fmt": "plain",
    "jp": "いいか野郎ども!!   気ィ締めていけ!!!{end}",
-   "en": "Listen up, ya dogs!!{n}Stay sharp!!!{end}",
+   "en": "Listen up, you lot!!{n}Stay sharp!!!{end}",
    "max": 46,
    "ptr": [
     "p16 01311E",
@@ -248,7 +248,7 @@
    "id": "013924",
    "fmt": "plain",
    "jp": "紫紋ちゃん…      …?! しっかりしろ師真もう忘れたはずだろ?{end}",
-   "en": "Shimon-chan... ?! Get a{n}grip, Shishin, you put{n}that behind you!{end}",
+   "en": "Shimon-chan...?! Get a{n}grip, Shishin, you put{n}that behind you!{end}",
    "max": 70,
    "ptr": [
     "p16 013133",
@@ -818,7 +818,7 @@
    "id": "013F2A",
    "fmt": "plain",
    "jp": "ほう…偽帝のおでましか…このような小物に敗れる俺ではないわ!!{end}",
-   "en": "Oh... the false emperor{n}shows up... I'd never{n}lose to small fry!!{end}",
+   "en": "Hoh... the false emperor{n}shows up... I'd never{n}lose to small fry!!{end}",
    "max": 64,
    "ptr": [
     "p16 013175",
@@ -1115,7 +1115,7 @@
    "id": "0142F4",
    "fmt": "plain",
    "jp": "羅候様に盾突く とは……この親不孝者めが!!{end}",
-   "en": "Defying Rako-sama......{n}You unfilial child!!{end}",
+   "en": "Defying Rako-sama... You{n}unfilial child!!{end}",
    "max": 46,
    "ptr": [
     "p16 013196",
@@ -1353,7 +1353,7 @@
    "id": "014532",
    "fmt": "plain",
    "jp": "天下を 取ることのできる器量とやらを 見せてもらうぞ!!{end}",
-   "en": "Show me this caliber{n}that can take the{n}realm!!{end}",
+   "en": "Show me this so-called{n}caliber to take the{n}realm!!{end}",
    "max": 58,
    "ptr": [
     "p16 0131AE",
@@ -1540,7 +1540,7 @@
    "id": "0146C8",
    "fmt": "plain",
    "jp": "美人と噂の紫紋ちゃんね?あたしとどっちが    美人なのかしら?{end}",
-   "en": "So you're Shimon-chan,{n}the rumored beauty?{n}Which of us is prettier?{end}",
+   "en": "The famed beauty{n}Shimon-chan? Which of us{n}is prettier, I wonder?{end}",
    "max": 66,
    "ptr": [
     "p16 0131C1"
@@ -1814,7 +1814,7 @@
    "id": "014C54",
    "fmt": "plain",
    "jp": "我が策の前では大覚屋とて赤子同然! 全軍安心して戦うがよい!!{end}",
-   "en": "Before my schemes, even{n}Daigakuya is a babe! All{n}troops, fight on!!{end}",
+   "en": "Before my plans, even{n}Daigakuya is a babe! All{n}troops, fear nothing!!{end}",
    "max": 64,
    "ptr": [
     "p16 0131FE",
@@ -1918,7 +1918,7 @@
    "id": "014DA8",
    "fmt": "plain",
    "jp": "全力で義兄上を倒すことで僕の義兄上への 恩返しとさせていただきます!!{end}",
-   "en": "Beating you with all my{n}might is how I'll repay{n}you, brother!!{end}",
+   "en": "Beating you with all my{n}might is how I'll repay{n}you, brother-in-law!!{end}",
    "max": 72,
    "ptr": [
     "p16 013210",
@@ -1996,7 +1996,7 @@
    "id": "014EB0",
    "fmt": "plain",
    "jp": "目障りな敗北主義者め! またわしの前に現れるとはいまいましい奴め!!{end}",
-   "en": "Defeatist eyesore!{n}Showing yourself to me{n}again, you wretch!!{end}",
+   "en": "Defeatist eyesore! Back{n}before me again?{n}Infuriating wretch!!{end}",
    "max": 70,
    "ptr": [
     "p16 01321C",

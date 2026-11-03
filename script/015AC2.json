@@ -26,7 +26,7 @@
    "id": "015B42",
    "fmt": "plain",
    "jp": "私の手にかかれば星の一つくらい 簡単に攻略する ことができる!!{end}",
-   "en": "In my hands, taking a{n}planet or two is easy!!{end}",
+   "en": "In my hands, taking a{n}single planet is easy!!{end}",
    "max": 66,
    "ptr": [
     "p16 015A6A"
@@ -56,7 +56,7 @@
    "id": "015BE0",
    "fmt": "plain",
    "jp": "うちだったら すぐにでも占領できるはずや!!{end}",
-   "en": "If it was me, I'd take{n}it in no time!!{end}",
+   "en": "If it was me, I'd take{n}it in no time, y'know!!{end}",
    "max": 46,
    "ptr": [
     "p16 015A72"

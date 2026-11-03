@@ -24,7 +24,7 @@
    "id": "116AED",
    "fmt": "msg",
    "jp": "南蛮王{c5}「いや{c6}{spd:02000000} {c5}自分の体じ{c6}{spd:02000000}ゃ{br}{skip:0400}{c5}わしにはようわかる{c6}・・・」{end}",
-   "en": "Nanban King{c5}\"No...{c6}{spd:02000000}{c5} It's my own body. I{br}{skip:0600} know it well...{c6}\"{end}",
+   "en": "Nanban King{c5}\"No...{c6}{spd:02000000}{c5} It's my own body, I{br}{skip:0600} tell you. I know it{br}{skip:0600} well...{c6}\"{end}",
    "max": 106,
    "read_on": true
   },

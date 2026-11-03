@@ -17,7 +17,7 @@
    "id": "0623E0",
    "fmt": "plain",
    "jp": "艦種艦数{end}",
-   "en": "Type{n}Size{end}",
+   "en": "Type{n}Qty{end}",
    "max": 10,
    "ptr": [
     "fixed 062367"

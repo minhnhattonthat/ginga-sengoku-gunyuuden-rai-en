@@ -236,7 +236,7 @@
    "id": "18F57B",
    "fmt": "msg",
    "jp": "骸羅{c5}「わっはっはっは{c6}{spd:03000000} {br}{skip:0300}{c5}実に気分がいいぞ{c6}{spd:02000000} {c5}わしはこの大銀河{br}{skip:0300}{c5}帝国の皇帝なのだ{c6}!!」{c6}狼刃{c5}「ふふっ{c6}{end}",
-   "en": "Gaira{c5}\"Wahahahaha! I feel great!{c6}{spd:03000000}{br}{skip:0300}{c5} I am Emperor of the galaxy!!\"{c6}{br}Roha{c5}\"Heh heh.{c6}{end}",
+   "en": "Gaira{c5}\"Wahahahaha! I feel great!{c6}{spd:03000000}{br}{skip:0300}{c5} I'm the great galaxy's Emperor!!\"{c6}{br}Roha{c5}\"Heh heh.{c6}{end}",
    "max": 170,
    "read_on": true
   },
@@ -360,7 +360,7 @@
    "id": "18FACB",
    "fmt": "msg",
    "jp": "骸羅{c5}「そうか!{c6}{spd:03000000} {br}{skip:0300}{c5}よし{c6}{spd:02000000}!{c5}今すぐ戦いの準備をしろ{c6}!!」{end}",
-   "en": "Gaira{c5}\"Is there!{c6}{spd:03000000}{c5} Right! {c6}{spd:02000000}{c5}Prepare for{br}{skip:0300} battle at once!!\"{c6}{end}",
+   "en": "Gaira{c5}\"Is that so!{c6}{spd:03000000}{c5} Right! {c6}{spd:02000000}{c5}Prepare for{br}{skip:0300} battle at once!!\"{c6}{end}",
    "max": 104,
    "read_on": true
   },

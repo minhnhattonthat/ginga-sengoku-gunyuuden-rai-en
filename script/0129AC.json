@@ -126,7 +126,7 @@
    "id": "012C76",
    "fmt": "plain",
    "jp": "暇な所と気を抜いていたらやられていたかもな…{end}",
-   "en": "If I'd let my guard down{n}here, I might've been{n}beaten...{end}",
+   "en": "If I'd slacked off at a{n}dull post like this, I{n}might've been beaten...{end}",
    "max": 46,
    "ptr": [
     "p16 01296A"
@@ -198,7 +198,7 @@
    "id": "012DF6",
    "fmt": "plain",
    "jp": "ぐふふふふ…      どうじゃ?わしの手腕は?防衛戦など軽いもんじゃ{end}",
-   "en": "Guhuhuhu... How's that{n}for skill? Defense is{n}child's play!{end}",
+   "en": "Guhuhuhu... How's that{n}for skill, eh? Defense{n}is child's play!{end}",
    "max": 72,
    "ptr": [
     "p16 012982"
@@ -258,7 +258,7 @@
    "id": "012F66",
    "fmt": "plain",
    "jp": "……それがしの勝ちだ{end}",
-   "en": "......The victory is{n}mine.{end}",
+   "en": "...Victory is mine.{end}",
    "max": 22,
    "ptr": [
     "p16 01299A"

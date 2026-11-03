@@ -82,7 +82,7 @@
    "id": "187D7B",
    "fmt": "msg",
    "jp": "羅候{c5}「最高だ{c6}{spd:02000000} {c5}だがオレはこのままですます{br}{skip:0300}つもりはねえ{c6}」{end}",
-   "en": "Rako \"{c5}The best! {c6}{spd:02000000}{c5}But I don't mean to{br}{skip:0300}stop here.{c6}\"{end}",
+   "en": "Rako \"{c5}Couldn't be better! {c6}{spd:02000000}{c5}But I don't{br}{skip:0300}mean to stop here.{c6}\"{end}",
    "max": 92,
    "read_on": true
   },

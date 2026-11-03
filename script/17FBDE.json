@@ -80,7 +80,7 @@
    "id": "17FE98",
    "fmt": "msg",
    "jp": "羅候{c5}「やったぞ{c6}{spd:02000000}! {c5}ついにオレが銀河の統一{br}{skip:0300}を果たしたぜ!{c6}」{end}",
-   "en": "Rako \"{c5}We did it!{c6}{spd:02000000}{c5} I've finally united{br}{skip:0300}the galaxy!{c6}\"{end}",
+   "en": "Rako \"{c5}I did it! {c6}{spd:02000000}{c5}I've finally united{br}{skip:0300}the galaxy!{c6}\"{end}",
    "max": 94,
    "ptr": [
     "p24 06B1BF"
@@ -98,7 +98,7 @@
    "id": "17FF4C",
    "fmt": "msg",
    "jp": "羅候{c5}「しかしその者達のためにもオレはこの{br}{skip:0300}銀河を平和な国にしてみせる{c6}」{end}",
-   "en": "Rako \"{c5}But for their sake too, I'll make{br}{skip:0300}this galaxy a land of peace.{c6}\"{end}",
+   "en": "Rako \"{c5}But for those who fell, I'll make{br}{skip:0300}this galaxy a land of peace.{c6}\"{end}",
    "max": 90,
    "read_on": true
   }

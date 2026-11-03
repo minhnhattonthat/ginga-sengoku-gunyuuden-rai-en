@@ -36,7 +36,7 @@
    "id": "016EE8",
    "fmt": "plain",
    "jp": "夏候獣『生き残った 敵将の生死を    決め 銀河の統一を進めて    くだされ!!』{end}",
-   "en": "Kako Ju: \"Judge the surviving{n}enemy generals, and press on to{n}unify the galaxy!!\"{end}",
+   "en": "Kako Ju: \"Decide the survivors'{n}fate, and press on to unify the{n}galaxy!!\"{end}",
    "max": 88,
    "ptr": [
     "p16 016DCA"

@@ -17,7 +17,7 @@
    "id": "148050",
    "fmt": "msg",
    "jp": "南京楼軍総大将 この竜我雷様が相手だ!{end}",
-   "en": "I, Rai Ryuga, lead Nankinro! Face me!{end}",
+   "en": "Face the great Rai Ryuga of Nankinro!{end}",
    "max": 42,
    "ptr": [
     "fixed 071B99",
@@ -109,7 +109,7 @@
    "id": "1481A0",
    "fmt": "msg",
    "jp": "私とて阿曽主弾の娘、簡単には討たれません{end}",
-   "en": "I'm Aso Shuzen's daughter. I won't fall!{end}",
+   "en": "Aso Shuzen's daughter won't fall easily!{end}",
    "max": 44,
    "ptr": [
     "rel16 074ED9 base 148050"
@@ -139,7 +139,7 @@
    "id": "14821C",
    "fmt": "msg",
    "jp": "我が殿の覇道を邪魔するものはこの姜子昌が許さん!{end}",
-   "en": "Kyo Shisho strikes down all who bar my lord!{end}",
+   "en": "Kyo Shisho lets none block my lord's conquest!{end}",
    "max": 52,
    "ptr": [
     "rel16 074EDF base 148050"
@@ -259,7 +259,7 @@
    "id": "1483C2",
    "fmt": "msg",
    "jp": "ノコノコとでてきおったな、だがここまでだ{end}",
-   "en": "You came blithely out, but it ends here!{end}",
+   "en": "You just strolled out, but it ends here!{end}",
    "max": 44,
    "ptr": [
     "rel16 074EF7 base 148050"
@@ -369,7 +369,7 @@
    "id": "14858E",
    "fmt": "msg",
    "jp": "大銀河の皇帝は{br}このオレ様なのだ!{end}",
-   "en": "I am the Emperor{br}of the galaxy!{end}",
+   "en": "I'm the Emperor of{br}the great galaxy!{end}",
    "max": 40,
    "ptr": [
     "rel16 074F0D base 148050"
@@ -399,7 +399,7 @@
    "id": "1485FA",
    "fmt": "msg",
    "jp": "よくここまでやって来た ほめてやるぞ!{end}",
-   "en": "Well done, coming this far!{end}",
+   "en": "You made it this far! I commend you!{end}",
    "max": 42,
    "ptr": [
     "rel16 074F13 base 148050"
@@ -620,7 +620,7 @@
    "id": "148A6C",
    "fmt": "msg",
    "jp": "私にはこれ以上戦うことなんて出来ません{end}",
-   "en": "I can't fight any more than this.{end}",
+   "en": "I can't fight any further.{end}",
    "max": 42,
    "ptr": [
     "rel16 074F3F base 14889A"
@@ -980,7 +980,7 @@
    "id": "149118",
    "fmt": "msg",
    "jp": "なかなかやるな!だが次はこうはいかんぞ!{end}",
-   "en": "Not bad! It won't be so next time!{end}",
+   "en": "Not bad! Next time will be different!{end}",
    "max": 44,
    "ptr": [
     "rel16 074F87 base 14889A"

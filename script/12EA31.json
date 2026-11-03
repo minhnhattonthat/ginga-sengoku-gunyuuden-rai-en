@@ -24,7 +24,7 @@
    "id": "12EAF7",
    "fmt": "msg",
    "jp": "師真{c5}「いいだろ{c6}{spd:02000000}う{c5} 時がきた!{c6}!」{end}",
-   "en": "Shishin{c5}\"Very well. {c6}{spd:02000000}{c5}The time has{br}{skip:0400} come!!{c6}\"{end}",
+   "en": "Shishin{c5}\"All right. {c6}{spd:02000000}{c5}The time has{br}{skip:0400} come!!{c6}\"{end}",
    "max": 60,
    "read_on": true
   },

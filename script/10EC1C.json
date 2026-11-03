@@ -40,7 +40,7 @@
    "id": "10EC7E",
    "fmt": "msg",
    "jp": "狼刃の四軍団は{br}{skip:0100}無敵を誇り もはや銀河統一も目前と{br}{skip:0100}噂されるところであった{end}",
-   "en": "and Roha, the four{br}{skip:0100}legions, were invincible; unifying the{br}{skip:0100}galaxy was said to be close at hand.{end}",
+   "en": "and Roha led four{br}{skip:0100}invincible legions, and the galaxy's{br}{skip:0100}unification was said to be at hand.{end}",
    "max": 94,
    "read_on": true
   },
@@ -64,7 +64,7 @@
    "id": "10EE02",
    "fmt": "msg",
    "jp": "{skip:0100}電撃作戦により 武王都を占{spd:03000000}拠{br}{skip:0100}大元帥・鳳鳴{spd:02000000}、驃騎元帥・玄偉を葬{spd:02000000}り{br}{skip:0100}衛元帥・狼刃と共謀{end}",
-   "en": "{skip:0100}Seizing Buoto in a lightning war,{br}{skip:0100}he slew Marshals Homei and Geni{br}{skip:0100}and joined forces with Marshal Roha.{end}",
+   "en": "{skip:0100}Seizing Buoto in a lightning war,{br}{skip:0100}he slew Marshals Homei and Geni{br}{skip:0100}and conspired with Marshal Roha.{end}",
    "max": 134,
    "read_on": true
   },

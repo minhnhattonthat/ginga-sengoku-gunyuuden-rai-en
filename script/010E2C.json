@@ -6,7 +6,7 @@
    "id": "010E2C",
    "fmt": "plain",
    "jp": "竜我雷!ただいま参上!{FFFE}、待たせたな!俺も一暴れさせてもらうぜ!{end}",
-   "en": "Rai Ryuga's here! Kept{n}ya waitin'! Lemme cut{n}loose, {FFFE}!{end}",
+   "en": "Rai Ryuga's here! Lemme{n}cut loose too! Kept ya{n}waitin', {FFFE}!{end}",
    "max": 66,
    "ptr": [
     "p16 010DC8"
@@ -106,7 +106,7 @@
    "id": "011076",
    "fmt": "plain",
    "jp": "来たったでぇ～!やっぱうちがおらんとアカンなぁ。派手に暴れたるでぇっ!{end}",
-   "en": "Here I am! Y'all can't{n}do without me, huh?{n}Let's raise some hell!{end}",
+   "en": "Here I am! Ya can't do{n}without me, huh? I'll{n}raise some hell!{end}",
    "max": 72,
    "ptr": [
     "p16 010DDC"
@@ -116,7 +116,7 @@
    "id": "0110BE",
    "fmt": "plain",
    "jp": "俺の天下統一を邪魔するヤツは、誰であろうが叩きつぶしてやるぜ!{end}",
-   "en": "Anyone who gets in the{n}way of my unification,{n}I'll crush 'em!{end}",
+   "en": "Whoever blocks me from{n}unifying the realm, I'll{n}crush 'em flat!{end}",
    "max": 64,
    "ptr": [
     "p16 010DDE"
@@ -176,7 +176,7 @@
    "id": "01121C",
    "fmt": "plain",
    "jp": "南蛮王様!この私の戦いぶりを見ていて下さい!{end}",
-   "en": "Your Majesty, Nanban{n}King! Please watch how I{n}fight!{end}",
+   "en": "Nanban King! Please{n}watch how I fight!{end}",
    "max": 46,
    "ptr": [
     "p16 010DEA"
