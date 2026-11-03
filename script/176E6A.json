@@ -16,7 +16,7 @@
    "id": "176EF0",
    "fmt": "msg",
    "jp": "太助{c5}「やったねアニキ{c6}{spd:02000000}!{c5} これで戦乱の世が{br}{skip:0300}終わったんだね!!{c6}」{end}",
-   "en": "Tasuke \"{c5}You did it, bro!{c6}{spd:02000000}{c5} The age of war{br}{skip:0400}is finally over!!{c6}\"{end}",
+   "en": "Tasuke \"{c5}You did it, big bro!{c6}{spd:02000000}{c5} The age of{br}{skip:0400}war is finally over!!{c6}\"{end}",
    "max": 98,
    "read_on": true
   },

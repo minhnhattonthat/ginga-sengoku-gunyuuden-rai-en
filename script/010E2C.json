@@ -16,7 +16,7 @@
    "id": "010E6E",
    "fmt": "plain",
    "jp": "大丈夫ですかい? このあっしが来たからにゃあ、もう安心ですぜ!{end}",
-   "en": "You all right? Now yours{n}truly is here, ya got{n}nothin' to worry about!{end}",
+   "en": "You all right? Now yours{n}truly's here, ya got{n}nothin' to fear!{end}",
    "max": 64,
    "ptr": [
     "p16 010DCA"
@@ -116,7 +116,7 @@
    "id": "0110BE",
    "fmt": "plain",
    "jp": "俺の天下統一を邪魔するヤツは、誰であろうが叩きつぶしてやるぜ!{end}",
-   "en": "Whoever blocks me from{n}unifying the realm, I'll{n}crush 'em flat!{end}",
+   "en": "Anyone who blocks my{n}conquest of the realm{n}will be crushed!{end}",
    "max": 64,
    "ptr": [
     "p16 010DDE"
@@ -296,7 +296,7 @@
    "id": "01147E",
    "fmt": "plain",
    "jp": "おやおや、{FFFE}殿ともあろうお方が、この連中相手に苦戦とは情けない!{end}",
-   "en": "My, my! Struggling with{n}this lot? Pitiful,{n}{FFFE}-dono!{end}",
+   "en": "My, my! Beset by this{n}lot? Pitiful, for one{n}like {FFFE}-dono!{end}",
    "max": 66,
    "ptr": [
     "p16 010E02"

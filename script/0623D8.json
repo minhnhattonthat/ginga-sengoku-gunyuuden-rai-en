@@ -6,7 +6,7 @@
    "id": "0623D8",
    "fmt": "fixed:8",
    "jp": "部隊旗艦",
-   "en": "Unit{n}Flag",
+   "en": "Flag{n}ship",
    "max": 8,
    "ptr": [
     "fixed 062339",

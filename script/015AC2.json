@@ -137,7 +137,7 @@
    "id": "015DD8",
    "fmt": "plain",
    "jp": "この程度の 防衛力なら 何とか 占領が可能でありましょう!{end}",
-   "en": "With defenses this weak,{n}we can surely take it!{end}",
+   "en": "With defenses this weak,{n}we can manage it!{end}",
    "max": 60,
    "ptr": [
     "p16 015A94"
@@ -248,7 +248,7 @@
    "id": "01604C",
    "fmt": "plain",
    "jp": "この星落とせば銀河の地図もまた変わる!しかし武将の道は決して変わらぬ!{end}",
-   "en": "Planets change hands; an{n}officer's way never{n}changes!{end}",
+   "en": "Take it, and the map{n}changes! An officer's{n}way never will!{end}",
    "max": 72,
    "ptr": [
     "p16 015AB6"

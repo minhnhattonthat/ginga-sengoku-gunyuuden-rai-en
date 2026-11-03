@@ -60,7 +60,7 @@
    "id": "18EEF1",
    "fmt": "msg",
    "jp": "虎丸{c5}「は{spd:02000000}い姉上{spd:02000000}!{c6}{end}",
-   "en": "Toramaru \"{c5}Yes,{spd:02000000} sister!{c6}{end}",
+   "en": "Toramaru \"{c5}Yes,{spd:02000000} Sister!{c6}{end}",
    "max": 44,
    "read_on": true
   },
@@ -170,7 +170,7 @@
    "id": "18F269",
    "fmt": "msg",
    "jp": "骸{c5}羅「まったくだ{c6}{spd:04000000} {br}{skip:0300}{c5}狼刃{c6}{spd:02000000},{c5}これからもオレを助けていって{br}{skip:0300}くれるな?{c6}」{end}",
-   "en": "Gaira{c5}\"Sure have. {c6}{spd:04000000}{c5}Roha, {c6}{spd:02000000}{c5}you'll keep{br}{skip:0300} helping me from here on, won't{br}{skip:0300} you?{c6}\"{end}",
+   "en": "Gaira{c5}\"Indeed I have. {c6}{spd:04000000}{c5}Roha, {c6}{spd:02000000}{c5}you'll{br}{skip:0300} keep helping me from here on,{br}{skip:0300} won't you?{c6}\"{end}",
    "max": 128,
    "read_on": true
   },
@@ -252,7 +252,7 @@
    "id": "18F657",
    "fmt": "msg",
    "jp": "骸羅{c5}「まったく{c6}{spd:04000000}だ{br}{skip:0300}{c5}狼刃{c6}{spd:02000000},{c5}これからもオレを助けていって{br}{skip:0300}くれるな?{c6}」{end}",
-   "en": "Gaira{c5}\"Sure have. {c6}{spd:04000000}{c5}Roha, {c6}{spd:02000000}{c5}you'll keep{br}{skip:0300} helping me from here on, won't{br}{skip:0300} you?{c6}\"{end}",
+   "en": "Gaira{c5}\"Indeed I have. {c6}{spd:04000000}{c5}Roha, {c6}{spd:02000000}{c5}you'll{br}{skip:0300} keep helping me from here on,{br}{skip:0300} won't you?{c6}\"{end}",
    "max": 126,
    "read_on": true
   },

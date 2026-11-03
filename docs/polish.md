@@ -139,3 +139,61 @@ Tick each `[x]`: fixed, or `waived: reason`.
 ## Phase 8 tour
 - [ ] 0118DA-011900 - battle_result left labels (7 letters) touch the count digits; abbreviations Flagshp/Btlship/Destryr (engine: move the count right)
 - [ ] fleet_list, planet_list - cursor box covers the first letter of the selected name
+
+## Story pass (b010-b013)
+- [x] 176EF0 - Tasuke アニキ: "You did it, big bro!" -> fixed
+- [x] 12EC6F - Rai 時間だな: "Time, then." -> waived: "Time, huh?" answers Shishin's "If there's a problem..." in Rai's voice; "Time, then." reads as "let's go"
+- [x] 17FE7E - Kyo Shisho はっ after "My lord" line: "At once." -> waived: Rako gives no order there ("I'm counting on you"); "My lord." is the acknowledgment
+- [x] 18F269, 18F657 - Gaira まったくだ "Sure have." too casual: "Indeed." (keep the echo of Roha if it fits) -> fixed ("Indeed I have.")
+- [x] 18EEF1 - Toramaru 姉上: "Sister" capitalised as 18F08F -> fixed
+- [x] 18F57B - Gaira: "I'm the Emperor of this great galactic empire!!" (as 18F42F) -> waived: line 2 holds ~34 letters; 18F42F's wording needs two lines there
+- [x] 18FA3F-18FB85 - 西羌 = Seikyo: add to glossary -> fixed (Places table)
+- [x] 19E56A - "each cast away all he had": "each threw away everything for what they believed in"; title wording vs 戦国 -> fixed; title kept ("Warlords" = 群雄, the age of war already said)
+- [x] 1D8C92, 1D8CC4 - old man わし/じゃ: add "eh"/"ye see" markers -> fixed
+- [x] 1D9418 - Ranran ええか: "Shimon! Ready, y'know?!" -> fixed ("Shimon! Ya ready?!": "y'know" on a question reads odd)
+- [x] 1D8114 - Rai too stiff: "Let's make the dream of a united realm come true together!" -> fixed
+- [x] 1D8B2A - 私の勝ちだ: "The victory is mine..." -> fixed
+
+## Story pass (b002-b005)
+- [x] 010600 - "What's wrong, {FFFE}?! Quit fumblin' with this rabble!" -> fixed (name moved last: pad boxes need the name on the last line)
+- [x] 01094E - vary "Blast it! You lot!": "Damn it all! Is this the best you can do? Spineless cowards!" -> fixed
+- [x] 010BFC - "Why fear men like these? Shame on you, {FFFE}! Shame!" -> fixed
+- [x] 0110BE - Rako colder: "Anyone who stands in the way of my conquest of the realm will be crushed!" -> fixed ("Anyone who blocks my conquest of the realm will be crushed!")
+- [x] 011702 - order: "Are you safe, {FFFE}-dono? Moving to support! All guns, stand ready!" -> waived: pad boxes need the name on the last line, so the question stays last
+- [x] 01147E - 殿ともあろうお方が: "...How pitiful for one of your standing!" -> fixed ("My, my! Beset by this lot? Pitiful, for one like {FFFE}-dono!": name must end the box)
+- [x] 011EAC - "Remember this! Next time I'll bring you down for sure!" -> fixed
+- [x] 010E6E - "Now that yours truly's here, ya got nothin' to worry about!" -> fixed ("...ya got nothin' to fear!" for 3 lines)
+- [x] 012070 - "the mighty Gairas' ambition": "the Gaira brothers'" if it fits -> fixed ("The mighty Gaira brothers' dream": "ambition" does not fit 32)
+- [x] 01261A - 沈黙した: "{FFFD} has been silenced!" -> fixed ("All right! We've silenced {FFFD}!": name must end the box)
+- [x] 01459A - 覇王: "the makings of an overlord" -> fixed ("overlord material")
+- [x] 0142B8 - "Late Nanban King... forgive my disloyalty..." -> fixed
+- [x] 013924 - もう忘れたはずだろ: "you'd forgotten her!" -> fixed ("You were supposed to forget her!")
+
+## Story pass (b006-b009)
+- [x] 0158F4 - gag form: "My way is a man's way!! Behold my way!" -> fixed
+- [x] 015DD8 - 何とか: "we can manage to take it!" -> fixed ("we can manage it!")
+- [x] 01604C - map image: "Take this place and the galaxy's map changes; an officer's way never will!" -> fixed ("Take it, and the map changes! An officer's way never will!": "galaxy's" does not fit 3 lines)
+- [x] 015D1E - "in a jiffy" too light if the speaker is Masamune (check speaker) -> waived: あたし/こ～んな is a playful speaker, not Masamune (私)
+- [x] 0165D0 - Hakki 虫が良い: "Such presumption!!" -> fixed ("Take a demon's planet? Such presumption!!...")
+- [x] 01695E - "I'm dying, I'm dying... ME!!" -> fixed
+- [x] 016EE8 - Kako Ju くだされ: optional old-man marker -> waived: くだされ is formal-archaic, no わし/じゃ; the formal line fits the old-general voice
+- [x] 016F40, 016F9E - お館様 to Masamune: "my lord" (glossary) vs style row "My lady": decide, update style-reference -> fixed (glossary "my lord" kept; style-reference Hiryu row now "My lord!")
+- [x] 0623D8 - "Unit{n}Flag": "Flagship" if the field allows -> fixed ("Flag{n}ship")
+- [x] 08F8E7 - Rako 皆の者: "Hear me!" -> fixed
+- [x] 0FC029 - spacing ("away,   ending", "destiny.One"); thirteen generations / 270 years, Left General if room -> waived: the gaps are per-line padding to the JP line cells (data/boxes.tsv), each piece shows on its own line; no room for 13 reigns or Left General
+- [x] 116ED1 - "that is..." lowercase at box start: "That is..." -> fixed
+- [x] 116FB1 - "I swear I'll unify the galaxy with my own hands!" -> fixed ("I'll unify the galaxy by my hand!": the line holds ~34 letters)
+
+## Story pass (b014-b018)
+- [x] 1D9F92 - 感謝: "I'm grateful for my king's greatness." -> fixed ("Leaving for another nation was folly." to fit 3 lines)
+- [x] 1DA390 - 才: name (Sai) or "talent"? check -> waived: 才 = Kako Sai (glossary 夏候才) addressed by name ("Let's go, Sai!"), as it stands
+- [x] 1D9758, 1D97B8, 1D9804, 1D99EA, 1D9B42 - vary "Are you prepared...?" by register -> fixed ("Prepare yourself..." / "Are you prepared?" / "Are you quite prepared...?" / "Ready to die...?" / "Are you... quite prepared?")
+- [x] 1DAC7E - あっし: "Ya got me beat... I'll put my life in your hands!" -> fixed
+- [x] 1DC070 - "Hurry... Kyo Shi... sho-sa... ma...!" -> fixed ("Kyo Shisho-sa... ma...!": the JP breaks only さ…ま)
+- [x] 1DC800 - "If I kill you, I can't face Lord Danjo... But never show yourself to me again." -> fixed ("Kill you, and..." for 3 lines)
+- [x] 1DCCCE - "Go live in shame...! You're my father's enemy!!" -> fixed
+- [x] 1DDB7A - "I'm not so naive that I'll lose again next time!!" -> fixed
+- [x] 148286 - 刀のサビ: "You'll be rust on my blade!" -> waived: needs a second line the 10-letter JP line does not have; "Taste my sword!" is the idiom
+- [x] 148050 - 総大将: "Nankinro's commander, Rai Ryuga, is your opponent!" if width allows -> fixed ("Face Nankinro's commander, Rai Ryuga!", one line)
+- [x] 14858E - Gaira: "The Emperor of the great galaxy is ME!" -> fixed ("The great galaxy's{br}Emperor is ME!", the JP's 2 lines)
+- [x] 14829E - "Justice is on my side!" if width allows (was waived at 16 letters) -> waived: still 16 letters; would need a second line

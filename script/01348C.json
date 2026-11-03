@@ -248,7 +248,7 @@
    "id": "013924",
    "fmt": "plain",
    "jp": "紫紋ちゃん…      …?! しっかりしろ師真もう忘れたはずだろ?{end}",
-   "en": "Shimon-chan...?! Get a{n}grip, Shishin, you put{n}that behind you!{end}",
+   "en": "Shimon-chan...?! Get a{n}grip, Shishin! You were{n}supposed to forget her!{end}",
    "max": 70,
    "ptr": [
     "p16 013133",
@@ -1086,7 +1086,7 @@
    "id": "0142B8",
    "fmt": "plain",
    "jp": "今は亡き 南蛮王様…  それがしの 不忠をお許しください…{end}",
-   "en": "O late Nanban King...{n}Forgive my disloyalty...{end}",
+   "en": "Late Nanban King...{n}forgive my disloyalty...{end}",
    "max": 60,
    "ptr": [
     "p16 013193",
@@ -1411,7 +1411,7 @@
    "id": "01459A",
    "fmt": "plain",
    "jp": "…兄上! 羅候様には覇王としての器がございます 早く帰ってきて下さい…{end}",
-   "en": "...Brother! Rako-sama is{n}a true king. Please come{n}back soon...{end}",
+   "en": "...Brother! Rako-sama is{n}overlord material. Come{n}back soon...{end}",
    "max": 72,
    "ptr": [
     "p16 0131B4",
@@ -1775,7 +1775,7 @@
    "id": "014B9A",
    "fmt": "plain",
    "jp": "わしに 勝つつもりでいるのか?この斎遠の刃で  専から覚めるがよいわ!{end}",
-   "en": "You think you can beat{n}me? Seien's blade will{n}end your dream!{end}",
+   "en": "Think ye can best me,{n}eh? Seien's blade will{n}wake ye from that dream!{end}",
    "max": 72,
    "ptr": [
     "p16 0131F5",
@@ -2829,7 +2829,7 @@
    "id": "0158F4",
    "fmt": "plain",
    "jp": "我の生き様 これすなわち男の生き様!!我の生き様見るがよい!{end}",
-   "en": "My way of life is the{n}way of a man!! Behold my{n}way of life!{end}",
+   "en": "My way is a man's way!!{n}Behold my way!{end}",
    "max": 62,
    "ptr": [
     "p16 0132AC",

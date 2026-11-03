@@ -116,7 +116,7 @@
    "id": "010600",
    "fmt": "plain",
    "jp": "ど〜した{FFFE}!こんな連中にいつまでももたついてんじゃねぇっ!{end}",
-   "en": "Hey! Quit fumblin' with{n}this rabble,{n}{FFFE}!{end}",
+   "en": "What's wrong?! Quit{n}fumblin' with this{n}rabble, {FFFE}!{end}",
    "max": 60,
    "ptr": [
     "p16 010348",
@@ -321,7 +321,7 @@
    "id": "01094E",
    "fmt": "plain",
    "jp": "ええい! きさまらっ!なんだそのザマはっ!この腰ぬけどもがっ!{end}",
-   "en": "Blast it! You lot! What{n}a disgrace! You{n}spineless cowards!{end}",
+   "en": "Damn it all! Is this the{n}best you can do?{n}Spineless cowards!{end}",
    "max": 64,
    "ptr": [
     "p16 01036C"
@@ -454,7 +454,7 @@
    "id": "010BFC",
    "fmt": "plain",
    "jp": "{FFFE}!そのような奴ら,何を恐れるか!恥を知れ!恥を!{end}",
-   "en": "What do you fear from{n}such men? Shame on you,{n}{FFFE}! Shame!{end}",
+   "en": "Why fear men like these?{n}Shame on you,{n}{FFFE}! Shame!{end}",
    "max": 52,
    "ptr": [
     "p16 010386"

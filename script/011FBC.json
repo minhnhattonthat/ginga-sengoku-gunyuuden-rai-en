@@ -36,7 +36,7 @@
    "id": "012070",
    "fmt": "plain",
    "jp": "武勇を誇った骸羅兄弟の野望も  ついに戦国の世に消えていった{end}",
-   "en": "Even the mighty Gairas' ambition{n}vanished into the age of war.{end}",
+   "en": "The mighty Gaira brothers' dream{n}vanished into the age of war.{end}",
    "max": 62,
    "ptr": [
     "p16 011FBA"

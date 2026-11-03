@@ -86,7 +86,7 @@
    "id": "01695E",
    "fmt": "plain",
    "jp": "ふはははははは…!!  ふはっふはっふはははは…死ぬぞ死ぬぞ…俺が!!{end}",
-   "en": "Fuhahahahaha...!! Fuha,{n}fuha, fuhahaha... I die,{n}I die... me!!{end}",
+   "en": "Fuhahahahaha...!! Fuha,{n}fuha, fuhahaha... I'm{n}dying, I'm dying... ME!!{end}",
    "max": 72,
    "ptr": [
     "p16 016720"
@@ -156,7 +156,7 @@
    "id": "016B00",
    "fmt": "plain",
    "jp": "ば…ばかな!!わっわっしがっ…!!いっいっやっ…じゃ～!!{end}",
-   "en": "N-no way!! M-m-me...!!{n}N-n-no...!! Nooo!!{end}",
+   "en": "N-no... it can't be!!{n}M-m-me...!! I-I won't{n}have it, I tell ye!!{end}",
    "max": 60,
    "ptr": [
     "p16 016740",

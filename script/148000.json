@@ -17,7 +17,7 @@
    "id": "148050",
    "fmt": "msg",
    "jp": "南京楼軍総大将 この竜我雷様が相手だ!{end}",
-   "en": "Face the great Rai Ryuga of Nankinro!{end}",
+   "en": "Face Nankinro's commander, Rai Ryuga!{end}",
    "max": 42,
    "ptr": [
     "fixed 071B99",
@@ -369,7 +369,7 @@
    "id": "14858E",
    "fmt": "msg",
    "jp": "大銀河の皇帝は{br}このオレ様なのだ!{end}",
-   "en": "I'm the Emperor of{br}the great galaxy!{end}",
+   "en": "The great galaxy's{br}Emperor is ME!{end}",
    "max": 40,
    "ptr": [
     "rel16 074F0D base 148050"

@@ -120,7 +120,7 @@
    "id": "116ED1",
    "fmt": "msg",
    "jp": "{c5} それは{c6}・・・」{end}",
-   "en": "{c5} that is...{c6}\"{end}",
+   "en": "{c5} That is...{c6}\"{end}",
    "max": 28,
    "read_on": true
   },
@@ -152,7 +152,7 @@
    "id": "116FB1",
    "fmt": "msg",
    "jp": "{br}{skip:0300}{c5}未熟者ですがお引き受けいたしま{c6}{spd:03000000}す{br}{skip:0300}{c5}必ずやこの手で銀河統一を{c6}」{end}",
-   "en": "{br}{skip:0300}{c5}Inexperienced as I am, I accept.{c6}{spd:03000000}{br}{skip:0300}{c5}I swear I'll unify the galaxy!{c6}\"{end}",
+   "en": "{br}{skip:0300}{c5}Inexperienced as I am, I accept.{c6}{spd:03000000}{br}{skip:0300}{c5}I'll unify the galaxy by my hand!{c6}\"{end}",
    "max": 106,
    "read_on": true
   }

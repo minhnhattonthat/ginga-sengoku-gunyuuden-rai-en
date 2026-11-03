@@ -306,7 +306,7 @@
    "id": "0125BE",
    "fmt": "plain",
    "jp": "こんな星を占領するのに わしの艦隊を使いおって!{end}",
-   "en": "Wasting my fleet on a{n}planet like this!{end}",
+   "en": "Using my fleet on a{n}worthless planet like{n}this, I say! Hmph!{end}",
    "max": 50,
    "ptr": [
     "p16 012122"
@@ -327,7 +327,7 @@
    "id": "01261A",
    "fmt": "plain",
    "jp": "よ〜し、{FFFD}は沈黙したぞ!{end}",
-   "en": "All right! Silence has{n}fallen on {FFFD}!{end}",
+   "en": "All right! We've{n}silenced {FFFD}!{end}",
    "max": 26,
    "ptr": [
     "p16 012126"

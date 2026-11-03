@@ -148,6 +148,7 @@ are set in condensed letters there. The box has no quote marks in English.
 | 孫家塞 | Sonkasai | 10 | | |
 | 藍家屯 | Rankaton | 10 | | |
 | 延高城 | Enkojo | 10 | | |
+| 西羌 | Seikyo | | place | |
 
 ## Ships and units
 | JP | EN | max | notes | Avoid |

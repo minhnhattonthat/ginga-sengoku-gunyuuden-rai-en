@@ -315,6 +315,8 @@ SCENES = {
                        steps = (function() local s = battle_bar(0); s[#s + 1] = { press = "a", frames = 6, gap = 60 }; return s end)() },
   battle_officer_data = { desc = "Battle bar icon 2: officer data", settle = 60,
                           steps = (function() local s = battle_bar(1); s[#s + 1] = { press = "a", frames = 6, gap = 60 }; return s end)() },
+  battle_reinforce = { desc = "Battle bar icon 3: reinforcements (RLE 16B01B message art)", settle = 60,
+                       steps = battle_bar(2) },
   battle_config = { desc = "Battle bar icon 6: settings (ship speed / battle animation / cursor ship count)",
                     settle = 60, steps = battle_bar(5) },
   battle_result = { desc = "Battle report after 紅沙嶺 falls ($8A:8456)", settle = 20, steps = to_battle_end("battle_report") },

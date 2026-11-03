@@ -57,7 +57,7 @@
    "id": "1D8114",
    "fmt": "msg",
    "jp": "狼刃様… 俺と共に専を…{br}天下統一の専を成しましょう!{end}",
-   "en": "Roha-sama... Let us make{br}the dream of a united{br}realm come true together!{end}",
+   "en": "Roha-sama... Let's make{br}the dream of a united{br}realm come true together!{end}",
    "max": 60,
    "ptr": [
     "rel16 1D1A86 base 1D8000"
@@ -507,7 +507,7 @@
    "id": "1D8B2A",
    "fmt": "msg",
    "jp": "姜子昌、私の勝ちだ…{br}私と共に銀河統一を実現させないか?{end}",
-   "en": "Kyo Shisho, I win... Won't{br}you unify the galaxy with{br}me?{end}",
+   "en": "Kyo Shisho, the victory is{br}mine... Won't you unify{br}the galaxy with me?{end}",
    "max": 62,
    "ptr": [
     "rel16 1D1AE0 base 1D8000"
@@ -567,7 +567,7 @@
    "id": "1D8C92",
    "fmt": "msg",
    "jp": "ぐふふっ! どうじゃ?{br}わしの下で働かんか?{end}",
-   "en": "Guhuhu! Well? Why not work{br}under me?{end}",
+   "en": "Guhuhu! Well, eh? Why not{br}work under me?{end}",
    "max": 50,
    "ptr": [
     "rel16 1D1AEC base 1D8000"
@@ -577,7 +577,7 @@
    "id": "1D8CC4",
    "fmt": "msg",
    "jp": "ぐふふっ どうじゃ{br}わしは器が大きいからの{br}またわしの部下になるか?{end}",
-   "en": "Guhuhu, well? I'm a{br}big-hearted man. Will you{br}be my man again?{end}",
+   "en": "Guhuhu, well? I'm a{br}big-hearted man, ye see.{br}Will ye be my man again?{end}",
    "max": 76,
    "ptr": [
     "rel16 1D1AEE base 1D8000"
@@ -978,7 +978,7 @@
    "id": "1D9418",
    "fmt": "msg",
    "jp": "紫紋! ええか!!{end}",
-   "en": "Shimon! Ready?!{end}",
+   "en": "Shimon! Ya ready?!{end}",
    "max": 22,
    "ptr": [
     "rel16 1D1C75 base 1D9236"
@@ -1288,7 +1288,7 @@
    "id": "1D9758",
    "fmt": "msg",
    "jp": "覚悟はよろしいか…{end}",
-   "en": "Are you prepared...?{end}",
+   "en": "Prepare yourself...{end}",
    "max": 22,
    "ptr": [
     "rel16 1D1CB3 base 1D9236"
@@ -1348,7 +1348,7 @@
    "id": "1D9804",
    "fmt": "msg",
    "jp": "覚悟は良いですかな…{end}",
-   "en": "Are you prepared...?{end}",
+   "en": "Are you quite prepared...?{end}",
    "max": 24,
    "ptr": [
     "rel16 1D1CBF base 1D9236"
@@ -1488,7 +1488,7 @@
    "id": "1D99EA",
    "fmt": "msg",
    "jp": "覚悟は良いか…?{end}",
-   "en": "Are you prepared...?{end}",
+   "en": "Ready to die...?{end}",
    "max": 20,
    "ptr": [
     "rel16 1D1CDB base 1D9236"
@@ -1578,7 +1578,7 @@
    "id": "1D9B42",
    "fmt": "msg",
    "jp": "覚悟は… よろしいですかな?{end}",
-   "en": "Are you... prepared?{end}",
+   "en": "Are you... quite prepared?{end}",
    "max": 32,
    "ptr": [
     "rel16 1D1CED base 1D9236"
@@ -1910,7 +1910,7 @@
    "id": "1D9F92",
    "fmt": "msg",
    "jp": "他の国へ行った私が愚かでございました{br}王の偉大さに感謝致します{end}",
-   "en": "I was a fool to leave for{br}another nation. I honor my{br}king's greatness.{end}",
+   "en": "Leaving for another nation{br}was folly. I'm grateful{br}for my king's greatness.{end}",
    "max": 68,
    "ptr": [
     "rel16 1D2029 base 1D9BAE"
@@ -2571,7 +2571,7 @@
    "id": "1DAC7E",
    "fmt": "msg",
    "jp": "…あんたにゃまいったぜ…{br}あっしの命、あんたにあずけるとしよう!{end}",
-   "en": "...You've got me beat...{br}I'll put my life in your{br}hands!{end}",
+   "en": "...Ya got me beat... I'll{br}put my life in your hands!{end}",
    "max": 70,
    "ptr": [
     "rel16 1D209D base 1D9BAE"
@@ -3653,7 +3653,7 @@
    "id": "1DC070",
    "fmt": "msg",
    "jp": "早く…姜子昌さ…ま…!{end}",
-   "en": "Hurry... Kyo{br}Shisho...sa...ma...!{end}",
+   "en": "Hurry... Kyo Shisho-sa...{br}ma...!{end}",
    "max": 26,
    "ptr": [
     "rel16 1D23DF base 1DBD4C"
@@ -4224,7 +4224,7 @@
    "id": "1DC800",
    "fmt": "msg",
    "jp": "お前を殺すと弾正公と合わす顔が亡くなる… でももう俺の前に現れないでくれ{end}",
-   "en": "Kill you, and I can't face{br}Lord Danjo... Just never{br}come back.{end}",
+   "en": "Kill you, and I can't face{br}Lord Danjo... But never{br}show yourself to me again.{end}",
    "max": 76,
    "ptr": [
     "rel16 1D2588 base 1DC710"
@@ -4424,7 +4424,7 @@
    "id": "1DCCCE",
    "fmt": "msg",
    "jp": "生き恥をさらすがいい…!{br}父上のかたきだ!!{end}",
-   "en": "Go and live in shame...!{br}That's for my father!!{end}",
+   "en": "Go live in shame...!{br}You're my father's enemy!!{end}",
    "max": 50,
    "ptr": [
     "rel16 1D25B0 base 1DC710"
@@ -5105,7 +5105,7 @@
    "id": "1DDB7A",
    "fmt": "msg",
    "jp": "この次も負けるほど俺は甘くないぞ!!{end}",
-   "en": "I'm not fool enough to{br}lose again next time!!{end}",
+   "en": "I'm not so naive that I'll{br}lose again next time!!{end}",
    "max": 40,
    "ptr": [
     "rel16 1D276D base 1DD98C"

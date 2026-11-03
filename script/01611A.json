@@ -207,7 +207,7 @@
    "id": "0165D0",
    "fmt": "plain",
    "jp": "鬼の守りし星を取ろうとは虫が良いとは思わんか!!白鬼の力とくと見よ!!{end}",
-   "en": "Take a planet a demon{n}guards? Too much!!{n}Behold Hakki's might!!{end}",
+   "en": "Take a demon's planet?{n}Such presumption!!{n}Behold Hakki's might!!{end}",
    "max": 72,
    "ptr": [
     "p16 016106"

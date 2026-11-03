@@ -12,7 +12,7 @@ Register rulings are in `glossary.md` (Rulings, D8). One row per voice the scrip
 | Rako | cold, proud, scheming; clipped, superior |
 | Kyo Shisho | loyal, proud warrior of Ren; formal, devoted to his lord's conquest |
 | Masamune | commanding heroine, direct, bold |
-| Hiryu | loyal aide, urgent reports ("My lady!") |
+| Hiryu | loyal aide, urgent reports ("My lord!") |
 | Gaira | tyrant emperor: arrogant, contemptuous ("Insolent!") |
 | Roha | proud woman general, sharp, scornful |
 | Battle-quote officers | short taunts and boasts; villains sneer, heroes rally |
