@@ -49,6 +49,12 @@ for table, five, fetch, cpy in FAMILIES:
         PATCHES.append((table + 3 * n, 'table', ptr24(five), f'label layout: {n} cells packed'))
     if cpy:
         PATCHES.append((cpy, bytes.fromhex('C00400'), bytes.fromhex('C00200'), 'label: draw 1-cell strings too'))
+    # The 5-cell routine puts cells at x = 0, 12, 24, 40, 52 (4 px gap after the 3rd, hidden by kanji):
+    # cell 3 -> shift 4, OR into tile 4 (x = 36); cell 4 -> shift 0, store into tile 6 (x = 48).
+    jsl = {k: b'\x22' + ptr24(fetch + d) for k, d in (('s0', 0x20), ('s4', 0x51), ('st', 0x76), ('or', 0x8F))}
+    for d, old, new in ((0x76, jsl['s0'], jsl['s4']), (0x81, b'\xA0', b'\x80'), (0x86, jsl['st'], jsl['or']),
+                        (0x99, jsl['s4'], jsl['s0']), (0xA9, jsl['or'], jsl['st'])):
+        PATCHES.append((five + d, old, new, 'label: 12-px pitch for cells 4-5'))
 
 
 # Fleet-command name tag ($8B:C8E0): the game copies the first 2-3 cells of the officer name into $0E00 with

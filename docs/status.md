@@ -19,7 +19,11 @@ Updated at the end of every session. Keep it to what the next session needs; his
   planet_list/data, credits, save_game); cursor box over first letter in fleet lists; fleet_command tag clipped;
   battle_result count table labels overflow; battle_enemy_attack unit tabs overflow; 第5要塞 font text JP in
   battle_unit_data; 南京楼軍本陣 HQ header JP; 登用する/処刑する buttons JP; double spaces in attack_notice.
-  Save-panel labels fixed (build.CODE_LABELS), not yet re-shot.
+  FIXED since: battle_aftermath (imm16 rows 05AB8C/05ABC9/062305 were 8-bit LDA, now n; build rewrites only
+  LDX/LDY), save-panel labels (build.CODE_LABELS), advisor/battle_quote (24 letters; 『』 cells 4F/50 reserved
+  as quote glyphs, en.QUOTES), names split after 3 cells (5-cell label routine pitch, patches.py). Still open:
+  cursor box over first letter in fleet/planet lists, fleet_command tag, battle_result + battle_enemy_attack
+  overflow, 第5要塞, double spaces in attack_notice, graphics. Re-run the full tour + qa_gate after fixes.
 - **Next (phase 8):**
   1. `python -X utf8 tools/debug/regen.py --rom build/rai_en.sfc` -> shots per scene; contact sheets; visual-qa
      subagent verdicts (`qa_gate.py`). Watch: relocated text (talk/recruit, battle quotes bank $82, names
