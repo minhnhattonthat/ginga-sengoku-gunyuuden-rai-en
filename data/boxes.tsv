@@ -3,7 +3,8 @@ dialogue	40	3	br	measured	work/qa/stress/dlg (cell 21 overflows the tile row; {s
 narration	40	7	br	guess	JP has 7-line pages (10EC1C, 19E244); not stressed	10EC1C 19E244
 talk	28	3	br	guess	marker prisoner_recruit: 28 letters fill the line	1D8000
 faction_desc	40	2	pad	measured	work/qa/marker/faction_select (40 letters fill each line)	011A46
-label	10	1	one	measured	work/qa/stress/lbl2 (5 cells packed after the label patch)	000C60 000CEC 00109E 00114C 001C64
+label	10	1	one	measured	work/qa/stress/lbl2 (5 cells packed after the label patch)	000C60 000CEC 001C64
+officer_name	8	1	one	measured	work/qa/stress/fcname: fleet-command name tag shows 4 cells; widen it in phase 7 for 10	00109E 00114C
 vertical_name	10	1	one	guess	map side panel shows these horizontally; drop {FFFE}	005E17 005E61 006375
 unit_label	8	1	one	guess	fixed 8-byte fields	002C91 0623D8
 advisor	26	3	pad	guess	marker map_ren advisor box: 26 letters per line	040016 040138 0402DA 040492

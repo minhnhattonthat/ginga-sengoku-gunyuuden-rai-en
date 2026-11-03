@@ -13,7 +13,6 @@ local function hook(addr, value)
   end
 end
 emu.addMemoryCallback(L.safe(hook), emu.callbackType.read, LO, HI, emu.cpuType.snes, emu.memType.snesMemory)
-if (LO & 0x800000) == 0 then  -- also the $80+ mirror
-  emu.addMemoryCallback(L.safe(hook), emu.callbackType.read, LO | 0x800000, HI | 0x800000, emu.cpuType.snes,
-    emu.memType.snesMemory)
-end
+-- also the other LoROM mirror ($00-$3F <-> $80-$BF)
+emu.addMemoryCallback(L.safe(hook), emu.callbackType.read, LO ~ 0x800000, HI ~ 0x800000, emu.cpuType.snes,
+  emu.memType.snesMemory)

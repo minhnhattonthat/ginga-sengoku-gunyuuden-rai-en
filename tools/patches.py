@@ -51,6 +51,29 @@ for table, five, fetch, cpy in FAMILIES:
         PATCHES.append((cpy, bytes.fromhex('C00400'), bytes.fromhex('C00200'), 'label: draw 1-cell strings too'))
 
 
+# Fleet-command name tag ($8B:C8E0): the game copies the first 2-3 cells of the officer name into $0E00 with
+# {FFFE} skips for spacing. English: copy up to 5 cells as they are (X = name pointer, A/X 16-bit, DB maps $0E00
+# to WRAM as in the original stores), then continue at the draw ($8B:C938).
+NAMECOPY = FETCH + len(FETCH_CODE)
+NAMECOPY_CODE = bytes.fromhex(
+    'A00000'     # LDY #$0000
+    'BF000000'   # loop: LDA $000000,x
+    '99000E'     # STA $0E00,y
+    'C9FFFF'     # CMP #$FFFF
+    'F00F'       # BEQ done
+    'E8E8C8C8'   # INX INX INY INY
+    'C00A00'     # CPY #$000A (5 cells)
+    'D0EB'       # BNE loop
+    'A9FFFF'     # LDA #$FFFF
+    '99000E'     # STA $0E00,y
+    '6B')        # done: RTL
+PATCHES += [
+    (NAMECOPY, None, NAMECOPY_CODE, 'fleet-command name tag: copy up to 5 cells'),
+    (0x8BC8ED, bytes.fromhex('BF040000C9FFFF'), b'\x22' + ptr24(NAMECOPY) + bytes.fromhex('8045EA'),
+     'fleet-command name tag: JSL namecopy / BRA $C938'),
+]
+
+
 def apply(rom):
     """rom: build.Rom. Checks the original bytes of every patch site before writing."""
     for addr, old, new, why in PATCHES:
