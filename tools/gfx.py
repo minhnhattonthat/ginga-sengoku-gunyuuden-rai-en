@@ -13,35 +13,32 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 
-def tiles_to_px(raw, cols=16):
-    """4bpp planar SNES tiles -> rows of colour indices (list of bytearrays), `cols` tiles per row."""
-    n = len(raw) // 32
+def tiles_to_px(raw, cols=16, bpp=4):
+    """Planar SNES tiles (2 or 4 bpp) -> rows of colour indices (list of bytearrays), `cols` tiles per row."""
+    size = 8 * bpp
+    n = len(raw) // size
     h = (n + cols - 1) // cols * 8
     img = [bytearray(cols * 8) for _ in range(h)]
     for t in range(n):
         tx, ty = t % cols * 8, t // cols * 8
-        b = raw[t * 32:t * 32 + 32]
+        b = raw[t * size:t * size + size]
         for y in range(8):
-            p0, p1, p2, p3 = b[2 * y], b[2 * y + 1], b[16 + 2 * y], b[17 + 2 * y]
+            planes = [b[16 * (k // 2) + 2 * y + k % 2] for k in range(bpp)]
             for x in range(8):
-                s = 7 - x
-                img[ty + y][tx + x] = (p0 >> s & 1) | (p1 >> s & 1) << 1 | (p2 >> s & 1) << 2 | (p3 >> s & 1) << 3
+                img[ty + y][tx + x] = sum((p >> (7 - x) & 1) << k for k, p in enumerate(planes))
     return img
 
 
-def px_to_tiles(img, n, cols=16):
+def px_to_tiles(img, n, cols=16, bpp=4):
     """Inverse of tiles_to_px for the first n tiles."""
-    out = bytearray(32 * n)
+    size = 8 * bpp
+    out = bytearray(size * n)
     for t in range(n):
         tx, ty = t % cols * 8, t // cols * 8
         for y in range(8):
-            p = [0, 0, 0, 0]
-            for x in range(8):
-                v = img[ty + y][tx + x]
-                for k in range(4):
-                    p[k] |= (v >> k & 1) << (7 - x)
-            out[t * 32 + 2 * y], out[t * 32 + 2 * y + 1] = p[0], p[1]
-            out[t * 32 + 16 + 2 * y], out[t * 32 + 17 + 2 * y] = p[2], p[3]
+            for k in range(bpp):
+                out[t * size + 16 * (k // 2) + 2 * y + k % 2] = sum(
+                    (img[ty + y][tx + x] >> k & 1) << (7 - x) for x in range(8))
     return bytes(out)
 
 
@@ -51,7 +48,14 @@ def rows_of(path=ROOT / 'data' / 'gfx.tsv'):
     for line in Path(path).read_text(encoding='utf-8').splitlines():
         if line.strip() and not line.startswith('#'):
             f = line.split('\t')
-            out.append({'block': int(f[0], 16), 'rect': tuple(int(v) for v in f[1:5]), 'style': f[5],
+            blk, _, bpp = f[0].partition('/')  # OFFSET or OFFSET/2 for a 2bpp block
+            grid = None
+            if f[1].startswith('t'):  # tile canvas "tAA.BB.CC/DD.EE.FF" (rows of block tiles); rect inside it
+                grid = [[int(t, 16) for t in row.split('.')] for row in f[1][1:].split('/')]
+                f[1] = '0'
+            out.append({'block': int(blk, 16), 'bpp': int(bpp or 4), 'grid': grid,
+                        'rect': tuple(int(v) for v in f[1:5]),
+                        'style': f[5],
                         'colours': [int(v, 16) for v in f[6].split(',')], 'text': f[7]})
     return out
 
@@ -112,16 +116,32 @@ def draw(img, rect, style, colours, text):
 
 def edits(rom_orig, lz):
     """{block offset: new raw bytes} for every block named in data/gfx.tsv. lz: tools/lz.py module."""
-    out = {}
+    out, bpp = {}, {}
     for r in rows_of():
         b = r['block']
+        bpp[b] = r['bpp']
         if b not in out:
             out[b] = (bytearray(lz.decompress(rom_orig, b)[0]), None)
         raw, img = out[b]
-        img = img or tiles_to_px(raw)
-        draw(img, r['rect'], r['style'], r['colours'], r['text'])
+        img = img or tiles_to_px(raw, bpp=bpp[b])
+        if r['grid']:
+            cells = [(gx, gy, t) for gy, row in enumerate(r['grid']) for gx, t in enumerate(row)]
+            canvas = [bytearray(8 * len(r['grid'][0])) for _ in range(8 * len(r['grid']))]
+            for gx, gy, t in cells:
+                for y in range(8):
+                    canvas[gy * 8 + y][gx * 8:gx * 8 + 8] = img[t // 16 * 8 + y][t % 16 * 8:t % 16 * 8 + 8]
+            draw(canvas, r['rect'], r['style'], r['colours'], r['text'])
+            for gx, gy, t in cells:
+                for y in range(8):
+                    img[t // 16 * 8 + y][t % 16 * 8:t % 16 * 8 + 8] = canvas[gy * 8 + y][gx * 8:gx * 8 + 8]
+        else:
+            draw(img, r['rect'], r['style'], r['colours'], r['text'])
         out[b] = (raw, img)
-    return {b: px_to_tiles(img, len(raw) // 32) + bytes(raw[len(raw) // 32 * 32:]) for b, (raw, img) in out.items()}
+    res = {}
+    for b, (raw, img) in out.items():
+        size = 8 * bpp[b]
+        res[b] = px_to_tiles(img, len(raw) // size, bpp=bpp[b]) + bytes(raw[len(raw) // size * size:])
+    return res
 
 
 def preview(rom_orig, lz, out_dir, zoom=4):
