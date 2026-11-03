@@ -197,6 +197,24 @@ SCENES = {
       { wait = "demo", hits = 30, timeout = 6000 },
     },
   },
+  attract_map = {
+    desc = "Attract demo: region map with labels (RLE 0F8000 kanji), ~2400 frames into the demo",
+    settle = 300,
+    steps = {
+      { wait = "title_ready", hits = 40, timeout = 2500 },
+      { wait = "demo", hits = 30, timeout = 6000 },
+      { sleep = 2100 },
+    },
+  },
+  attract_card = {
+    desc = "Attract demo: Danjo Hiki name card (RLE 0F8000 kanji), ~4060 frames into the demo",
+    settle = 300,
+    steps = {
+      { wait = "title_ready", hits = 40, timeout = 2500 },
+      { wait = "demo", hits = 30, timeout = 6000 },
+      { sleep = 3760 },
+    },
+  },
   faction_select = {
     desc = "Faction select (press Start on the title)",
     settle = 30,

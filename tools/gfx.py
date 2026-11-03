@@ -95,8 +95,8 @@ def draw(img, rect, style, colours, text):
     gh = 7 - top if max(rows_used, default=0) <= 6 else max(rows_used) + 1 - top  # descenders count only if used
     ox, oy = x0 + (w - len(cols)) // 2, y0 + (h - gh) // 2 - top
     for y in range(y0, y0 + h):
-        for x in range(x0, x0 + w):
-            img[y][x] = bg
+        for x in range(x0, x0 + w):  # checker: bg dithered with colours[2] (the attract demo's sprite labels)
+            img[y][x] = bg if style != 'checker' or (x + y) % 2 == 0 else colours[2]
     ink = {(ox + x, oy + y) for x, c in enumerate(cols) for y in range(9) if c >> y & 1}
     if style == 'outline':
         line, shadow = colours[2], colours[3]
