@@ -14,6 +14,8 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 |---|---|---|
 | [text.md](text.md) | header/map, encoding + font, both string formats, control codes, event-script format, every pointer form, extraction + coverage | verified (disassembly, every ref lands on a string start, roundtrip + coverage tests); `data/imm16.tsv` rows with `verified=n` are candidates |
 | [ram.md](ram.md) | game-state RAM (faction, map modes, battle phase/outcome, characters, planets, script pointer), main loop, map/battle controls, warp recipes | mostly verified (disassembly + warps); fleet-unit HP layout guessed |
+| [font.md](font.md) | English digraph font decision, cell allocation, limits | verified (torture line, marker tour) |
+| [hooks.md](hooks.md) | every code patch of the English build | verified per row |
 | [graphics.md](graphics.md) | LZ codec, block list, RLE tilemaps, graphics-text survey, free space | LZ + RLE verified; runtime-only LZ blocks found (lzlog.lua); survey complete for title→map, still needs phase-2 screens |
 
 No earlier fan translation was found (web search 2026-11-03: romhacking.net listings, general search).
