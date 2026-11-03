@@ -21,6 +21,7 @@ import en  # noqa: E402
 import extract  # noqa: E402
 import font_en  # noqa: E402
 import lz  # noqa: E402
+import patches  # noqa: E402
 import rle  # noqa: E402
 import text  # noqa: E402
 import romdiff  # noqa: E402
@@ -182,6 +183,7 @@ def build(repack_all=False, edits=None, mode=None, qa=None):
     rom = Rom(ORIG.read_bytes())
     edits = dict(edits or {})
     if mode:
+        patches.apply(rom)
         edits['text'], cells = english_edits(rom.orig, mode, qa)
         for c, glyph in sorted(cells.items()):
             rom.write(en.FONT + c * 24, glyph, f'font:{c:03X}')

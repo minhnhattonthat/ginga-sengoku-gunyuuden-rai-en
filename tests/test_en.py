@@ -26,7 +26,7 @@ def test_marker_build_keeps_layout_and_shows_ids():
     new = bytes(rom.buf)
     font_end = en.FONT + en.CELLS * 24
     for off, _old, data, who in rom.writes:
-        assert who.startswith(('text:', 'font:', 'checksum')), who  # same lengths: no pointer moves
+        assert who.startswith(('text:', 'font:', 'patch:', 'checksum')), who  # same lengths: no pointer moves
         if who.startswith('font:'):
             assert en.FONT <= off and off + len(data) <= font_end
     edits, cells = build.english_edits(rom.orig, 'marker')
