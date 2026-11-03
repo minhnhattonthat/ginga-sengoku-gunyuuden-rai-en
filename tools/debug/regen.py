@@ -114,10 +114,15 @@ def main() -> int:
     ap.add_argument("--keep", action="store_true", help="do not delete an existing run folder first")
     ap.add_argument("--rom", help="ROM to warp on (default: the original); e.g. build/rai_en.sfc")
     ap.add_argument("--probe", action="append", default=[], help="extra --script for every run (repeatable)")
+    ap.add_argument("--out", help="shots in OUT/<scene>/, states in OUT/states/ (default work/qa/warp, work/states)")
     args = ap.parse_args()
     PROBES.extend(str(Path(p).resolve()) for p in args.probe)
 
-    global ROM
+    global ROM, OUT, STATES
+    if args.out:
+        OUT = Path(args.out).resolve()
+        STATES = OUT / "states"
+        STATES.mkdir(parents=True, exist_ok=True)
     if args.rom:
         ROM = Path(args.rom).resolve()
     if not ROM.exists():

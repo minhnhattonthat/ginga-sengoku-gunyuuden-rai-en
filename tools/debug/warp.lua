@@ -170,7 +170,7 @@ L.on_frame(function(f)
   t = t + 1
   if not st then
     -- Steps are done: let the screen settle, then shoot and save.
-    if t > (scene.settle or 40) then finish() end
+    if t > (SETTLE or scene.settle or 40) then finish() end  -- --var SETTLE=N: hold longer (typewriter text)
     return
   end
 

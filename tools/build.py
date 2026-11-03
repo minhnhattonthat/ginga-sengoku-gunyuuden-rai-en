@@ -17,9 +17,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'tools'))
 import check_rom  # noqa: E402
+import en  # noqa: E402
 import extract  # noqa: E402
+import font_en  # noqa: E402
 import lz  # noqa: E402
 import rle  # noqa: E402
+import text  # noqa: E402
 import romdiff  # noqa: E402
 from bps import snes_checksum  # noqa: E402
 
@@ -74,9 +77,10 @@ def repack_rle(rom, edits=None):
         rom.write(off, packed, f'rle:{off:06X}')
 
 
-def repack_text(rom, edits=None):
+def repack_text(rom, edits=None, tails_ok=False):
     """Rewrite text blocks (tools/extract.py): each block's strings back to back from its start, then every ref.
-    edits: {string offset: new jp-style text}; None = repack every block unchanged. Returns the blocks repacked.
+    edits: {string offset: new jp-style text, or encoded bytes}; None = repack every block unchanged. Returns the
+    blocks repacked. tails_ok (marker build): a string with tails may change if its length stays the same.
 
     Refs: p16/p24 get the string's new address, rel16 the new distance from its (moved) base string, tails the
     host's new address + offset (host must be unchanged). Fixed refs (code immediates, base + index forms) can't
@@ -89,11 +93,14 @@ def repack_text(rom, edits=None):
         for e in b['entries']:
             new[e['off']] = b['start'] + len(blob)
             text = (edits or {}).get(e['off'])
-            data = extract.encode(e['jp'] if text is None else text, e['pre'], e['fmt'])
+            if isinstance(text, bytes):  # already encoded (English, marker), prefix included
+                data = text
+            else:
+                data = extract.encode(e['jp'] if text is None else text, e['pre'], e['fmt'])
             fixed = extract.parse_fmt(e['fmt'])[2]
             if fixed and len(data) != fixed:
                 raise ValueError(f'text {e["off"]:06X}: fixed field is {fixed} bytes, got {len(data)}')
-            if text is not None and e['tails'] and text != e['jp']:
+            if text is not None and e['tails'] and text != e['jp'] and not (tails_ok and len(data) == e['len']):
                 raise ValueError(f'text {e["off"]:06X}: edited string has refs into its middle (tails)')
             blob += data
         if len(blob) > b['end'] - b['start']:
@@ -118,14 +125,66 @@ def repack_text(rom, edits=None):
     return blocks
 
 
-def build(repack_all=False, edits=None):
-    """edits: {'lz': {off: raw}, 'rle': {off: words}, 'text': {off: text}} (tests; phases 5-7 fill these)."""
+FILL = 'The quick brown fox jumps over the lazy dog. '
+
+
+def marker(e, codec, short=False):
+    """'[id] The quick...' with the cell count of every Japanese text run kept, so the layout (box padding,
+    vertical {FFFE} skips, fixed fields) and the byte length stay those of the original. short: each run at
+    most 4 cells (frees room in a block for a --qa stress line)."""
+    tab = text.table(codec)
+    cells = lambda t: min(len(tab.encode(t)) // 2, 4 if short else 9999)  # noqa: E731
+    n = 2 * sum(cells(t) for is_code, t in en.runs(e['jp']) if not is_code)
+    tag = f'{e["off"]:06X}'
+    tag = tag if n >= 8 else tag[-n:]
+    stream = iter(tag + ' ' + FILL * (n // len(FILL) + 1))
+    return ''.join(t if is_code else ''.join(next(stream) for _ in range(2 * cells(t)))
+                   for is_code, t in en.runs(e['jp']))
+
+
+def english_edits(rom_orig, mode='en', qa=None):
+    """-> ({off: encoded bytes}, {font cell: glyph}). mode 'en': strings with an 'en' field (others stay
+    Japanese and keep their cells); 'marker': every string as its marker. qa: {off: text} overrides."""
+    script = extract.load_script()
+    texts = {}
+    for b in extract.blocks(rom_orig):
+        short = any(e['off'] in (qa or {}) for e in b['entries'])  # room for the stress line
+        for e in b['entries']:
+            s = script.get(e['off'], {})
+            codec, _, fixed = extract.parse_fmt(e['fmt'])
+            t = (qa or {}).get(e['off']) or (
+                marker(e, codec, short and not fixed and not e['tails']) if mode == 'marker' else s.get('en'))
+            if t:
+                texts[e['off']] = (e, t)
+    jp_left = [e for b in extract.blocks(rom_orig) for e in b['entries'] if e['off'] not in texts]
+    alloc = en.Alloc([t for _, t in texts.values()], en.jp_cells(rom_orig, jp_left))
+    out = {}
+    for off, (e, t) in texts.items():
+        codec = extract.parse_fmt(e['fmt'])[0]
+        data = e['pre'] + alloc.encode(t, codec)
+        fixed = extract.parse_fmt(e['fmt'])[2]
+        if fixed and len(data) < fixed:  # fixed fields: pad with blank cells
+            data += en.SPACE.to_bytes(2, 'little') * ((fixed - len(data)) // 2)
+        out[off] = data
+    cells = alloc.cells()
+    if mode == 'marker':  # every other cell shows '##': font text the extractor missed can't hide as Japanese
+        cells.update({c: font_en.cell('##') for c in range(en.CELLS) if c not in cells and c not in en.RESERVED})
+    return out, cells
+
+
+def build(repack_all=False, edits=None, mode=None, qa=None):
+    """edits: {'lz': {off: raw}, 'rle': {off: words}, 'text': {off: text}} (tests). mode: None (Japanese
+    text), 'en' (script en fields) or 'marker'; qa: {off: text} single-line overrides (width gate, torture)."""
     check_rom.check()
     rom = Rom(ORIG.read_bytes())
-    edits = edits or {}
+    edits = dict(edits or {})
+    if mode:
+        edits['text'], cells = english_edits(rom.orig, mode, qa)
+        for c, glyph in sorted(cells.items()):
+            rom.write(en.FONT + c * 24, glyph, f'font:{c:03X}')
     repack_lz(rom, None if repack_all else edits.get('lz', {}))
     repack_rle(rom, None if repack_all else edits.get('rle', {}))
-    blocks = repack_text(rom, None if repack_all else edits.get('text', {}))
+    blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker')
     fixed, _ = snes_checksum(rom.buf)
     for off in range(0x7FDC, 0x7FE0):
         rom.write(off, fixed[off:off + 1], 'checksum')
@@ -135,22 +194,30 @@ def build(repack_all=False, edits=None):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--repack-all', action='store_true')
+    ap.add_argument('--marker', action='store_true', help='every string as "[id] marker text" (phase 5)')
+    ap.add_argument('--jp', action='store_true', help='ignore en fields (Japanese text)')
+    ap.add_argument('--qa', action='append', default=[], metavar='ID=TEXT', help='override one string')
+    ap.add_argument('--out', type=Path, default=OUT)
     a = ap.parse_args()
-    rom, blocks = build(a.repack_all)
-    OUT.parent.mkdir(exist_ok=True)
-    OUT.write_bytes(rom.buf)
-    log = OUT.with_name('writes.log')
+    qa = {int(k, 16): v if v.endswith('{end}') else v + '{end}' for k, v in (s.split('=', 1) for s in a.qa)}
+    out = a.out
+    out.parent.mkdir(exist_ok=True)
+    out.unlink(missing_ok=True)  # a failed build must not leave a stale ROM to test
+    mode = 'marker' if a.marker else None if a.jp and not qa else 'en'
+    rom, blocks = build(a.repack_all, mode=mode, qa=qa)
+    log = out.with_name(out.stem + '.writes.log' if out != OUT else 'writes.log')
     log.write_text(''.join(f'{o:06X} {old.hex()} {new.hex()} {who}\n' for o, old, new, who in rom.writes),
                    encoding='utf-8')
     errs, _ = romdiff.check(rom.orig, bytes(rom.buf), set(), romdiff.load_writes(log))
     if errs:
         sys.exit('romdiff:\n' + '\n'.join(errs))
+    out.write_bytes(rom.buf)
     if a.repack_all:
         print(f'repacked {sum(1 for _ in rows("lz_blocks.tsv"))} LZ blocks, '
               f'{sum(1 for _ in rows("rle_streams.tsv"))} RLE streams, {len(blocks)} text blocks '
               f'({sum(len(b["entries"]) for b in blocks)} strings, '
               f'{sum(len(e["refs"]) + len(e["tails"]) for b in blocks for e in b["entries"])} refs)')
-    print(f'{OUT.relative_to(ROOT)}  {len(rom.writes)} writes  sha1 {hashlib.sha1(rom.buf).hexdigest()}'
+    print(f'{out}  {len(rom.writes)} writes  sha1 {hashlib.sha1(rom.buf).hexdigest()}'
           f'  {"identical to original" if rom.buf == rom.orig else "changed"}')
 
 
