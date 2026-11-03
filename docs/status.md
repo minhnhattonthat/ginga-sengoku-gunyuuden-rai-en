@@ -2,27 +2,30 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 1 (research and recon) done. Next: phase 2 (debug tool).
-- **Done (phase 1):** no earlier patch exists; encoding = 16-bit LE font-cell codes, 12x12 font at 0x0A8000
-  (1,320 cells), full `tbl/jp.tbl`; plain + dialogue string formats (`$BA:92CD` renderer disassembled); 16-bit
-  in-bank pointer tables (37) + 24-bit event-record pointers; text ranges mapped; LZ codec (`tools/lz.py`) and
-  block list; word-RLE tilemap codec decoded (`tools/rle.py`, 50 source streams, text-shaped maps identified);
-  graphics-text survey G1-G9 + RLE text maps; free space ~283 KB incl. 128 KB at 0x1E0000. Notes: `docs/re/text.md`,
-  `docs/re/graphics.md`. Tests: `tests/test_recon.py`.
-- **Graphics-text survey is complete for title → faction select → intro → strategy map.** Key late findings (this
-  session): (1) no raw/uncompressed tile data — every VRAM DMA is sourced from the LZ output buffer in WRAM
-  (`snes_dmalog.lua`); (2) `lz_blocks.py` misses blocks selected at runtime from WRAM (not `A2/A9` immediates):
-  banks $98 (0x0C0000, 31 portrait/panel blocks), $A0 (0x100000 chain), $AC (0x160000) — enumerate with
-  `tools/lua/lzlog.lua`; (3) the RLE tilemaps (bank $AD cluster + banks $9C/$9F/$A5/$A9/$B2/$BB) carry menu/battle
-  labels as tilemaps, identifiable by increment-runs of ~30 consecutive glyph tiles.
-- **Next (phase 2, debug tool):** the game is a real-time strategy map (faction select -> intro events -> map at
-  ~frame 12000 of mash-A from boot; state `work/states/map_start_nankyourou.mss`, regenerate from `work/qa/play1`).
-  Needs RAM for faction, turn/year, planets owned, event flags; scenes: each faction's intro, map menus, planet
-  data, fleet build, battle, capture/recruit, game over, each faction ending, credits. While warping there, re-run
-  `tools/lua/lzlog.lua` + `snes_dmalog.lua` to finish the block/raw-tile survey on the screens phase 1 could not
-  reach.
+- **Phase:** 2 (debug tool) done. Next: phase 3 (identity build).
+- **Phase 2 result:** `tools/debug/scenes.lua` lists 50 scenes; `python -X utf8 tools/debug/regen.py --jobs 6`
+  reaches every one from a cold boot (no save, no playthrough), saves `work/states/<scene>.mss` and a shot in
+  `work/qa/warp/<scene>/final.png`. Coverage: title (+ START…LOAD with a save), attract demo, faction select,
+  4 intros, 4 maps, map system bar / fleet list / planet list / save screen, planet menu / data / sortie /
+  production, fleet command bar / destination, invasion and attack notices, hex battle (move phase, attack bar,
+  target overlay, enemy attack animation, battle bar, unit/officer data cursor, battle settings), battle report,
+  post-battle notice, HQ screen, prisoner judge / recruit / execute / our officer captured, game save → load
+  screen → continued map, game over, 4 faction endings, staff roll. RAM map + main loop: `docs/re/ram.md`.
+- **Graphics survey extended** over all 50 scenes: 37 runtime LZ blocks the static scan misses
+  (`work/recon/lz_runtime.tsv`, `tools/lz_runtime.py`), one raw ROM DMA (4 icon tiles), and a list of Japanese
+  labels on the new screens that are not font strings (graphics or RLE tilemaps): `docs/re/graphics.md`
+  "Phase-2 tour". Phase 5 classifies them.
+- **Warp tricks worth knowing:** `exit_map` (patches the mode-1 jump-table entry in emulator ROM memory for one
+  dispatch so the map loop returns → game over / ending checks run), `force` (write `$0973` battle outcome at
+  `$8A:842B` → prisoner screens), `battle_auto` (AUTO / END on the battle bar), `cursor_to` (steer the map
+  cursor by RAM feedback), `text` (wait for N glyphs from the dialogue renderer `$BA:93FB`). Every run boots with
+  `work/saves/blank.srm` unless the scene names a fixture (`save_game` makes `nankyourou_start.srm`).
+- **Not covered yet (add when phase 8 needs them):** melee (白兵戦) and the attack-command target pick (needs the hex
+  cursor on an enemy), winning a battle by force of arms (fleet unit HP layout at `$7E5E70` unconfirmed), unit /
+  officer data pages (cursor must pick a unit), advisor tutorial pages (text 0x040016), planet/fleet sub-lists
+  (駐屯武将一覧 etc.), reinforcement messages, the other factions' battles. Each is one more scene entry.
 - **Phase 4 needs** an event-script parser for bank `$8D` (and others) to list every dialogue block pointer; the
-  blind 24-bit sweep (`tools/find_ptr24.py`) is noisy.
+  blind 24-bit sweep (`tools/find_ptr24.py`) is noisy. Intro/ending script starts are logged in `scenes.lua`.
 - **Open bugs:** none.
 - **Waiting on the user:** GUI keyboard input in `tools/mesen/Mesen.exe` not hand-tested (headless agent run);
   scripted input verified. Non-blocking: title logo has no known official English version, so per D5 it gets

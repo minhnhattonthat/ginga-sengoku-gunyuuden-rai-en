@@ -12,7 +12,11 @@
 --   { wait  = "title", stable = 30 }  or require them consecutively
 --   { wait  = 5 }                wait for strategy-map sub-mode $0A91 = 5 (the mode jump table at $8B8046)
 --   { wait  = { script = 0x8D9458, hi = 0x8D9470 } }  wait for the event-script pointer $1B21-23 in [script, hi)
---   { text  = 12 }               wait until the dialogue renderer has drawn 12 more glyphs (text is on screen)
+--   { wait  = { ram = { [0x0915] = 1, [0x0737] = 8 } } }  wait until every listed byte has that value
+--   { force = { pc = 0x8A842B, write = { [0x0973] = 2 } } }  write those bytes whenever the CPU reaches pc
+--   { cursor_to = { 0x118, 0x1F8 } }  steer the map cursor to that world position (planet hit boxes: $7E:E037)
+--   { battle_auto = true, goal = 0x0F }  play the hex battle (AUTO each player attack phase) until the goal
+--   { text  = 12 }             wait until the dialogue renderer has drawn 12 more glyphs (text is on screen)
 --   { exit_map = true, zero = { 0x7E7190 } }  zero these u16s (leader HP) and make the map loop return, so the
 --                                game runs its own game-over / victory check (see exit_map below)
 --   { press = "right", frames = 2 }   hold buttons `frames` frames, then release for `gap` (default 10)
@@ -62,6 +66,21 @@ local PREDS = {
   faction = function() return (pc() & 0xFFFF00) == 0x899300 end,  -- $89:937D faction select
   event   = function() return (pc() & 0xFF0000) == 0x8D0000 end,  -- $8D event interpreter
   map     = function() return (pc() & 0xFF0000) == 0x8B0000 and rd(0x0A91) == 1 end,
+  -- attract demo: the title returns 3 after its timeout ($0E32) and the main loop calls $8C:D0F0
+  demo = function() return (pc() & 0x7F0000) == 0x0C0000 end,
+  -- after-battle HQ screen ($8A:A79E, "<army> 本陣"), its wait loop $8A:A7F8-$A7FD
+  hq = function() return (pc() & 0x7FFFF0) == 0x0AA7F0 end,
+  -- prisoner screens (recruit / execute a captured officer) run in bank $8E (NMI wait $8E:F831-F836)
+  prisoner = function() return (pc() & 0x7F0000) == 0x0E0000 end,
+  -- advisor message box on the map (after loading a save), its wait loop $8B:D9A5
+  advisor = function() return (pc() & 0xFFFF00) == 0x8BD900 end,
+  -- load screen (title LOAD -> $BA:A7F5), its confirm loop $BA:A81A
+  load_screen = function() return (pc() & 0xFFFF00) == 0xBAA800 end,
+  -- battle report ($8A:8456) fully drawn: its wait-for-A loop $8A:8558-$856B
+  battle_report = function()
+    local p = pc()
+    return (p & 0x7F0000) == 0x0A0000 and (p & 0xFFFF) >= 0x8558 and (p & 0xFFFF) <= 0x856B
+  end,
   -- map mode 1 with $0A94 = 1: picking a fleet's destination (after the fleet bar's move icon)
   move_target = function() return rd(0x0A91) == 1 and rd(0x0A94) == 1 end,
 }
@@ -75,6 +94,12 @@ end
 -- Table {script = lo, hi = hi} = event-script pointer in [lo, hi) (hi defaults to lo + $100).
 local function pred(p)
   if type(p) == "number" then return function() return rd(0x0A91) == p end end
+  if type(p) == "table" and p.ram then  -- { ram = { [addr] = value, ... } }: every byte matches
+    return function()
+      for a, v in pairs(p.ram) do if rd(a) ~= v then return false end end
+      return true
+    end
+  end
   if type(p) == "table" then
     local lo, hi = p.script, p.hi or (p.script + 0x100)
     return function() local s = script_ptr(); return s >= lo and s < hi end
@@ -162,6 +187,52 @@ L.on_frame(function(f)
     holds = {}
     L.log(string.format("f%d release step %d", f, i))
     advance()
+  elseif st.force then
+    -- From now on, write these bytes each time the CPU reaches st.force.pc (just before the game reads them).
+    local f_pc, writes = st.force.pc, st.force.write
+    L.on_exec(f_pc, f_pc, function() for a, v in pairs(writes) do wr(a, v) end end)
+    L.log(string.format("f%d force at %06X", f, f_pc))
+    advance()
+  elseif st.cursor_to then
+    -- Map cursor world position = screen $0A95/$0A96 + scroll $0A98/$0A9A (16-bit); steer with the d-pad.
+    local cx = rd(0x0A95) + (rd(0x0A98) | (rd(0x0A99) << 8))
+    local cy = rd(0x0A96) + (rd(0x0A9A) | (rd(0x0A9B) << 8))
+    local tx, ty = st.cursor_to[1], st.cursor_to[2]
+    local b = {}
+    if cx < tx - 2 then b.right = true elseif cx > tx + 2 then b.left = true end
+    if cy < ty - 2 then b.down = true elseif cy > ty + 2 then b.up = true end
+    if next(b) == nil then
+      input = {}
+      advance()
+    elseif t > (st.timeout or 1200) then
+      L.fail(string.format("SCENE %s: cursor stuck at %X,%X (target %X,%X)", SCENE, cx, cy, tx, ty))
+    else
+      input = b
+    end
+  elseif st.battle_auto then
+    -- Player attack-phase wait ($0A91 = $17, $0915 = 1, $0737 = 2): Y, right x3, A = AUTO on the battle bar.
+    -- Player move-phase wait ($0915 = 0, $0737 = 2): Y, right x4, A = END (end the move phase). Otherwise A every
+    -- 90 frames (dialogue, reports). Stops when `goal` holds.
+    local SEQ = {
+      [1] = { "y", "-", "right", "-", "right", "-", "right", "-", "a", "-" },
+      [0] = { "y", "-", "right", "-", "right", "-", "right", "-", "right", "-", "a", "-" },
+    }
+    local seq = SEQ[st.phase or 1] or SEQ[1]
+    if pred(st.goal)() then
+      advance()
+    elseif t > (st.timeout or 20000) then
+      L.fail(string.format("SCENE %s: battle_auto until '%s' timed out (%s)", SCENE, tostring(st.goal), status()))
+    elseif (st.qi or 0) > 0 then
+      local k = seq[st.qi]
+      input = (k ~= "-") and buttons(k) or {}
+      st.qt = st.qt + 1
+      if st.qt >= (k == "-" and 40 or 6) then st.qi, st.qt = st.qi + 1, 0 end
+      if st.qi > #seq then st.qi = 0 end
+    elseif rd(0x0A91) == 0x17 and rd(0x0915) <= 1 and rd(0x0737) == 2 then
+      st.phase, st.qi, st.qt = rd(0x0915), 1, 0
+    else
+      input = ((t - 1) % 90 < 6) and buttons("a") or {}
+    end
   elseif st.text then
     if t == 1 then st.base = glyphs end
     if glyphs - st.base >= st.text then

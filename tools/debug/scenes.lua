@@ -103,6 +103,83 @@ local function fleet_command()
   return s
 end
 
+-- Battle: zero byte +0 of every planet record ($7F7571 + $30 * i; guess: garrison strength) and the AI invades
+-- 南京楼 within ~700 frames: invasion notice (map mode $14), then the hex battle (mode $17, bank $81). Battle
+-- state: $0915 = phase (0 player move, 1 player attack, 2 enemy move, 3 enemy attack), $0737 = step in it.
+local function to_invasion()
+  local s = to_map(0)
+  local poke = {}
+  for i = 0, 22 do poke[0x7F7571 + 0x30 * i] = 0 end
+  s[#s + 1] = { poke = poke }
+  s[#s + 1] = { wait = 0x14, timeout = 3000 }
+  return s
+end
+
+local function to_battle(phase, step)
+  local s = to_invasion()
+  s[#s + 1] = { mash = "a", goal = { ram = { [0x0915] = phase, [0x0737] = step, [0x0A91] = 0x17 } },
+                every = 90, len = 6, timeout = 6000 }
+  return s
+end
+
+-- Battle bar (Y in the player attack phase, $0737 = $10): unit data, officer data, retreat, AUTO, END, CONFIG.
+local function battle_bar(icon)
+  local s = to_battle(1, 2)
+  s[#s + 1] = { sleep = 20 }
+  s[#s + 1] = { press = "y", frames = 6, gap = 50 }
+  s[#s + 1] = { wait = { ram = { [0x0737] = 0x10 } }, timeout = 300 }
+  if icon then
+    if icon > 0 then s[#s + 1] = { press = "right", times = icon, frames = 6, gap = 44 } end
+    s[#s + 1] = { press = "a", frames = 6, gap = 60 }
+  end
+  return s
+end
+
+-- Lose the invasion battle fast: the six fortresses of 紅沙嶺 ($7E6B90 + $20 * i, HP u16) start at 1 HP.
+-- `outcome` forces the battle result byte $0973 where $8A:842B reads it (1 = what the lost defence really gives:
+-- report only; 2 = we captured enemy officers, 3 = they captured ours -> HQ screen + prisoner screens).
+local function to_battle_end(goal, outcome)
+  local s = to_battle(0, 0x19)  -- battle set up (fortress HP filled in); an earlier poke is overwritten
+  local poke = {}
+  for i = 0, 5 do poke[0x7E6B90 + 0x20 * i] = 1; poke[0x7E6B91 + 0x20 * i] = 0 end
+  s[#s + 1] = { poke = poke }
+  if outcome then s[#s + 1] = { force = { pc = 0x8A842B, write = { [0x0973] = outcome } } } end
+  s[#s + 1] = { battle_auto = true, goal = goal, timeout = 15000 }
+  return s
+end
+
+local function to_prisoner(outcome)
+  local s = to_battle_end("hq", outcome)
+  s[#s + 1] = { mash = "a", goal = "prisoner", every = 60, len = 6, timeout = 1500 } -- HQ waits for A ($8A:A828)
+  s[#s + 1] = { wait = "prisoner", hits = 150, timeout = 1500 }  -- "この武将をどう処分されますか?" prompt
+  return s
+end
+
+-- Offensive: 竜我雷's fleet sorties and is sent at planet 6 (owner 南天連合, hit box $0110,$01F0 in the $7E:E037
+-- table; planet records $7F7570 + $30 * i: +0 id, +1 owner).
+local function to_offensive()
+  local s = fleet_command()
+  s[#s + 1] = { sleep = 40 }
+  s[#s + 1] = { press = "a", frames = 8, gap = 20 }
+  s[#s + 1] = { wait = "move_target", timeout = 600 }
+  s[#s + 1] = { cursor_to = { 0x118, 0x1F8 } }
+  s[#s + 1] = { sleep = 20 }
+  s[#s + 1] = { press = "a", frames = 8, gap = 30 }
+  return s
+end
+
+-- The fleet arrives (~2300 frames): attack notice (mode $14), then the hex battle in the player move phase.
+local function to_offense_battle()
+  local s = to_offensive()
+  s[#s + 1] = { wait = 0x11, timeout = 300 }          -- back on the sortie list
+  s[#s + 1] = { press = "b", frames = 6, gap = 40 }
+  s[#s + 1] = { wait = 5, timeout = 300 }             -- planet menu
+  s[#s + 1] = { press = "b", frames = 6, gap = 40 }
+  s[#s + 1] = { wait = 0x14, timeout = 5000 }
+  s[#s + 1] = { mash = "a", goal = { ram = { [0x0A91] = 0x17, [0x0915] = 0 } }, every = 90, len = 6, timeout = 2000 }
+  return s
+end
+
 SCENES = {
   title = {
     desc = "Title screen with PRESS START (cold boot, no input)",
@@ -110,6 +187,14 @@ SCENES = {
     steps = {
       { wait = "title_ready", hits = 40, timeout = 2500 },
       { check = "title_ready" },
+    },
+  },
+  attract_demo = {
+    desc = "Attract demo after the title times out ($8C:D0F0)",
+    settle = 300,
+    steps = {
+      { wait = "title_ready", hits = 40, timeout = 2500 },
+      { wait = "demo", hits = 30, timeout = 6000 },
     },
   },
   faction_select = {
@@ -168,6 +253,95 @@ SCENES = {
       return s
     end)(),
   },
+  invasion = { desc = "Enemy fleet invades 紅沙嶺: notice on the map", settle = 60, steps = to_invasion() },
+  battle_move_phase = { desc = "Hex battle, player move phase", settle = 20, steps = to_battle(0, 0x19) },
+  battle_enemy_attack = { desc = "Enemy attack: side-view fleet battle animation", settle = 60, steps = to_battle(3, 8) },
+  battle_attack_menu = { desc = "Player attack phase: command bar", settle = 30, steps = to_battle(1, 8) },
+  battle_target = { desc = "Player attack phase: target / range overlay", settle = 30, steps = to_battle(1, 0x0A) },
+  battle_bar = { desc = "Battle command bar (Y in the attack phase)", settle = 30, steps = battle_bar() },
+  battle_unit_data = { desc = "Battle bar icon 1: unit data", settle = 60, steps = battle_bar(0) },
+  battle_officer_data = { desc = "Battle bar icon 2: officer data", settle = 60, steps = battle_bar(1) },
+  battle_config = { desc = "Battle bar icon 6: settings (ship speed / battle animation / cursor ship count)",
+                    settle = 60, steps = battle_bar(5) },
+  battle_result = { desc = "Battle report after 紅沙嶺 falls ($8A:8456)", settle = 20, steps = to_battle_end("battle_report") },
+  battle_aftermath = { desc = "Map notice: 紅沙嶺 taken by 大五丈 (mode $19)", settle = 60, steps = to_battle_end(0x19) },
+  -- Save fixture: regen.py copies this run's SRAM to work/saves/nankyourou_start.srm for the `sav` scenes below.
+  save_game = {
+    desc = "Game saved (save screen -> OK); its SRAM is the save fixture",
+    settle = 120,
+    steps = (function()
+      local s = system_bar(2, 0x08)
+      s[#s + 1] = { sleep = 40 }
+      s[#s + 1] = { press = "a", frames = 6, gap = 20 }
+      return s
+    end)(),
+  },
+  title_load = {
+    desc = "Title with a save: START ... LOAD, cursor on LOAD",
+    sav = "nankyourou_start",
+    settle = 30,
+    steps = {
+      { wait = "title_ready", hits = 40, timeout = 2500 },
+      { press = "right", frames = 6, gap = 40 },
+    },
+  },
+  load_screen = {
+    desc = "Load screen (title LOAD)",
+    sav = "nankyourou_start",
+    settle = 60,
+    steps = {
+      { wait = "title_ready", hits = 40, timeout = 2500 },
+      { press = "right", frames = 6, gap = 40 },
+      { press = "start", frames = 6, gap = 20 },
+      { wait = "load_screen", hits = 30, timeout = 600 },
+    },
+  },
+  continue_map = {
+    desc = "Map after loading the save (advisor message)",
+    sav = "nankyourou_start",
+    settle = 120,
+    steps = {
+      { wait = "title_ready", hits = 40, timeout = 2500 },
+      { press = "right", frames = 6, gap = 40 },
+      { press = "start", frames = 6, gap = 20 },
+      { wait = "load_screen", hits = 30, timeout = 600 },
+      { press = "a", frames = 6, gap = 20 },
+      { wait = "advisor", hits = 90, timeout = 1500 },
+    },
+  },
+  fleet_sent = { desc = "竜我雷's fleet ordered to planet 6 (南天連合)", settle = 60, steps = to_offensive() },
+  attack_notice = {
+    desc = "Map notice: 竜我雷's fleet attacks planet 6",
+    settle = 60,
+    steps = (function() local s = to_offense_battle(); s[#s] = nil; return s end)(),
+  },
+  offense_move_phase = { desc = "Offensive battle at planet 6: player move phase", settle = 200, steps = to_offense_battle() },
+  hq_screen = { desc = "After-battle HQ screen (南京楼軍本陣)", settle = 60, steps = to_battle_end("hq", 2) },
+  prisoner_judge = { desc = "Captured enemy officer (骸羅): recruit or execute?", settle = 20, steps = to_prisoner(2) },
+  prisoner_recruit = {
+    desc = "Recruit the prisoner: confirm, then his answer",
+    settle = 30,
+    steps = (function()
+      local s = to_prisoner(2)
+      s[#s + 1] = { press = "a", frames = 6, gap = 60 }   -- 登用する
+      s[#s + 1] = { press = "a", frames = 6, gap = 20 }   -- はい
+      s[#s + 1] = { sleep = 120 }
+      return s
+    end)(),
+  },
+  prisoner_execute = {
+    desc = "Execute the prisoner: confirm, then the result",
+    settle = 30,
+    steps = (function()
+      local s = to_prisoner(2)
+      s[#s + 1] = { press = "right", frames = 6, gap = 40 } -- 処刑する
+      s[#s + 1] = { press = "a", frames = 6, gap = 60 }
+      s[#s + 1] = { press = "a", frames = 6, gap = 20 }   -- はい
+      s[#s + 1] = { sleep = 120 }
+      return s
+    end)(),
+  },
+  prisoner_ours = { desc = "Our officer (竜我雷) captured: red prisoner screen", settle = 20, steps = to_prisoner(3) },
   game_over = {
     desc = "Game over (player leader 竜我雷 HP 0, map loop returns)",
     steps = (function()

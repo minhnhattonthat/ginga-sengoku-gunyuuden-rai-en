@@ -24,7 +24,7 @@ intro → map) found three extra chains the immediates miss (`work/qa/lztour/log
 | 0x100000 | $A0 | 0x3B20, 0x2600, then 0x800×3, 0x2C0 (joins the known 0x105339) | large art (diagonal strokes) |
 | 0x160000 | $AC | 0x2000 (immediately before the known 0x1617F1) | logo art |
 
-The full list needs a tour that reaches battle, planet data and menus (phase 2 debug tool), re-run with `lzlog.lua`.
+The phase-2 tour of every debug-tool scene added 34 more (see "Phase-2 tour" below).
 
 ## Word-RLE tilemap codec (verified: `tests/test_recon.py::test_rle_tilemap_streams_back_to_back`)
 
@@ -65,11 +65,27 @@ Font-drawn (not graphics, handled by the text pipeline): faction-select descript
 **Raw (uncompressed) tiles: none.** `snes_dmalog.lua` over a boot-to-map tour (`work/qa/dmatest/log.txt`) shows
 every VRAM DMA is sourced from WRAM `$7E:8000` (the LZ output buffer, via the NMI dispatcher `$8A:9AC8`/`$8A:9B4C`);
 the only CPU-bus DMAs are OAM (`$7E:0290`, 0x220 B, `$2104`) and CGRAM (`$7E:0090`, 0x200 B, `$2122`). So all tile
-graphics are LZ-compressed; there is no raw-tile region to sweep. (Confirm on battle/planet screens in phase 2.)
+graphics are LZ-compressed; there is no raw-tile region to sweep. Phase 2 re-check (`regen.py --probe
+snes_dmalog.lua` on battle_enemy_attack, production, prisoner_judge, credits, battle_config): VRAM DMAs come from
+`$7E/$7F` (LZ output) and low WRAM `$00:0E00-$1BE0` (tiles built at run time, e.g. `$83:9431`, `$83:940E`,
+`$83:9B19`, NMI `$00:8186`: likely the text renderer's glyph buffers), plus **one** raw ROM source: 0x80 bytes at
+file 0x0B65A0 (`$96:E5A0`, production screen) = 4 icon tiles, no text.
 
-**Screens not toured** (need a phase-2 debug-tool warp): planet data, fleet/ship build, diplomacy, battle, game
-over, each faction's ending, credits. Each of those may load more LZ blocks (log with `lzlog.lua`) and more RLE
-maps; the survey above is complete only for title → faction select → intro → strategy map.
+**Phase-2 tour (all 50 debug-tool scenes, `regen.py --probe tools/lua/lzlog.lua`, 2026-11-03):** 98 distinct LZ
+blocks decompressed, **37 not in `lz_blocks.tsv`** (`tools/lz_runtime.py work/qa/warp/*/log.txt` →
+`work/recon/lz_runtime.tsv`, with the scenes that load each): battle UI 0x07D460, 0x08D460-0x08D5A2, 0x09BAEA,
+0x09C87D, 0x0A587C, 0x0CBE0B, 0x0D0000/0x0D00AE, 0x1B0C5B, 0x1B5AA5; offensive battle backdrop 0x09A925,
+0x09C63D, 0x0A0000, 0x1AF7E3, 0x1B4F2A; portrait chain $98 (0x0C0000-0x0C9774, per faction / prisoner /
+credits); 0x0D0470 (HQ/prisoner screens); plus the three boot chains above. Phase 5 must classify the battle-UI
+blocks: G5/G6-style labels on these screens are candidates.
+
+Japanese labels on the newly reached screens that are **not** found as plain font strings (`scan_text.py --min 3`)
+and so are graphics or RLE tilemaps of font tiles (check with `rle_render.py` / the VRAM dump in phase 5):
+production (現保有数 生産率 隻/日 要塞 戦艦 巡洋艦 駆逐艦 海賊戦艦 残り工業力), planet data / lists (技術力 工業力
+要塞 武将 艦数 部隊), battle animation panel (攻撃 防御 回避 耐久, 戦艦/要塞), prisoner screens (体力 攻撃 指揮 防御
+忠誠 回避 レベル, 登用する/処刑する buttons), battle settings (艦隊戦画面環境設定, HEX表示 etc.), save/load
+(ゲームセーブ画面), HQ banner (…軍本陣), attract demo year card (元魔三年), game over and staff-roll cards.
+Shots of each: `work/qa/warp/<scene>/final.png`.
 
 ## Free space (candidates, **guess** until trap-tested)
 

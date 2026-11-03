@@ -6,7 +6,8 @@ Skill: translate-retro-game; `python tools/skill.py` prints its folder. Read its
 - Build:    `python -X utf8 tools/build.py`  -> build/rai_en.sfc (checks the dump against `rom.sha1` first; phase 3+)
 - Check:    `python -X utf8 tools/check.py`  (tests + lint; the pre-commit hook runs this)
 - Smoke:    `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/rai_en.sfc --out work/qa/smoke --route tools/routes/boot.txt --smoke`
-- Warp:     `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/rai_en.sfc --out work/qa/warp --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 900 --sheet` (scenes: `tools/debug/scenes.lua`; never ask the user to play to a scene)
+- Warp:     `python -X utf8 "$(python tools/skill.py)/scripts/emu.py" build/rai_en.sfc --sav work/saves/blank.srm --out work/qa/warp --script tools/debug/scenes.lua --script tools/debug/warp.lua --var "SCENE='<name>'" --frames 24000 --timeout 1800 --sheet` (scene list + step language: `tools/debug/scenes.lua`, `warp.lua`; never ask the user to play to a scene)
+- Regen:    `python -X utf8 tools/debug/regen.py [--rom build/rai_en.sfc] [--only a,b] [--jobs 6]` (every scene from a cold boot -> `work/states/<scene>.mss`, shots in `work/qa/warp/<scene>/`; save fixtures in `work/saves/`)
 - Release:  `python -X utf8 tools/release.py` (patch + verify; never publish without the user)
 - Clean:    `python -X utf8 tools/clean.py` (published projects: lists rebuildable/downloadable files; `--yes` deletes)
 - Hooks:    `git config core.hooksPath tools/hooks` once per clone.
