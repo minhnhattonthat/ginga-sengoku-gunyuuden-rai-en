@@ -305,11 +305,14 @@ def english_edits(rom_orig, mode='en', qa=None):
         for k, op in enumerate(ops):
             assert rom_orig[op - 1] in (0xA0, 0xA9), f'{op:06X}: not LDY # / LDA #'
             imms[op] = data[2 * k:2 * k + 2]
-    out, moves = {}, {}
+    out, moves, squeeze = {}, {}, []
     for off, (e, t) in texts.items():
         codec = extract.parse_fmt(e['fmt'])[0]
         data = e['pre'] + alloc.encode(t, codec)
         fixed = extract.parse_fmt(e['fmt'])[2]
+        if mode == 'en' and fixed and len(data) > fixed and t.endswith('{end}'):
+            squeeze.append((off, e, t[:-5], fixed))  # too long as pairs: condensed cells below
+            continue
         if fixed and len(data) < fixed:  # fixed fields: pad with blank cells
             data += en.SPACE.to_bytes(2, 'little') * ((fixed - len(data)) // 2)
         for d, tt in sorted(tails.get(off, {}).items()):  # a name tail other refs point into: its own string after
@@ -321,11 +324,12 @@ def english_edits(rom_orig, mode='en', qa=None):
         cells.update({c: font_en.cell(p) for c, p in en.QUOTES.items()})
         spare = iter(alloc.spare)
 
-        def fit(t, letters):  # pairs if it fits, else condensed glyph cells (4 cells)
+        def fit(t, letters, n=4):  # pairs if it fits, else n condensed glyph cells
             if len(t) <= letters:
                 return alloc.encode(t + '{end}', 'plain')
+            assert len(font_en.strip(t)) <= 12 * n, f'{t!r} too wide for {n} condensed cells'
             out = b''
-            for glyph in font_en.strip_cells(font_en.strip(t), 4):
+            for glyph in font_en.strip_cells(font_en.strip(t), n):
                 c = next(spare)
                 cells[c] = glyph
                 out += c.to_bytes(2, 'little')
@@ -340,6 +344,8 @@ def english_edits(rom_orig, mode='en', qa=None):
                 tab[2 * i:2 * i + 2] = (seen[t] & 0xFFFF).to_bytes(2, 'little')
             imms[patches.off(addr)] = bytes(tab + data)
 
+        for off, e, t, fixed in squeeze:  # fixed field + {end}: (fixed - prefix - end) / 2 condensed cells
+            out[off] = e['pre'] + fit(t, 0, (fixed - len(e['pre']) - 2) // 2)
         table(patches.TAG_TABLE, OFFICERS, [(i, fit(t, 7)) for i, t in tags])
         names = class_names(rom_orig, script)
         assert all(len(font_en.strip(t)) <= 48 for t in names if len(t) > 8), names

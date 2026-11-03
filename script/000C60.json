@@ -93,7 +93,7 @@
    "id": "000CA6",
    "fmt": "fixed:10",
    "jp": "大五丈軍{end}",
-   "en": "Gojo{end}",
+   "en": "Great Gojo{end}",
    "max": 10,
    "ptr": [
     "fixed 0704ED"
