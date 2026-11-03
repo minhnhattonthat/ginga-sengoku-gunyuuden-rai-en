@@ -6,7 +6,7 @@
    "id": "148000",
    "fmt": "fixed:80",
    "jp": "誰を配置しますか? どこに配置しますか?誰を戻しますか?  これでいいですか? ",
-   "en": "",
+   "en": "Deploy whom?        Deploy where?       Recall whom?        Is this all right?",
    "max": 80,
    "ptr": [
     "fixed 07061C"
@@ -16,7 +16,7 @@
    "id": "148050",
    "fmt": "msg",
    "jp": "南京楼軍総大将 この竜我雷様が相手だ!{end}",
-   "en": "",
+   "en": "I, Rai Ryuga, lead Nankinro! Face me!{end}",
    "max": 42,
    "ptr": [
     "fixed 071B99",
@@ -28,7 +28,7 @@
    "id": "14807A",
    "fmt": "msg",
    "jp": "命のおしくねェ奴からかかって来なっ!{end}",
-   "en": "",
+   "en": "Who wants to die first? Come on!{end}",
    "max": 40,
    "ptr": [
     "rel16 074EC9 base 148050"
@@ -38,7 +38,7 @@
    "id": "1480A2",
    "fmt": "msg",
    "jp": "死にたいのはお前か!{end}",
-   "en": "",
+   "en": "So you want to die?!{end}",
    "max": 24,
    "ptr": [
     "rel16 074ECB base 148050"
@@ -48,7 +48,7 @@
    "id": "1480BA",
    "fmt": "msg",
    "jp": "うおお いくぜぇ～!{end}",
-   "en": "",
+   "en": "Whoaa! Here I come!{end}",
    "max": 24,
    "ptr": [
     "rel16 074ECD base 148050"
@@ -58,7 +58,7 @@
    "id": "1480D2",
    "fmt": "msg",
    "jp": "者ども! 海賊魂{br}とくと見せてやれ!{end}",
-   "en": "",
+   "en": "Men! Show 'em our{br}pirate spirit!{end}",
    "max": 42,
    "ptr": [
     "rel16 074ECF base 148050"
@@ -68,7 +68,7 @@
    "id": "1480FC",
    "fmt": "msg",
    "jp": "この項武様に{br}斬られたいのは{br}どこのどいつだ?!{end}",
-   "en": "",
+   "en": "Who wants to be{br}cut down by the{br}great Kobu?!{end}",
    "max": 56,
    "ptr": [
     "rel16 074ED1 base 148050"
@@ -78,7 +78,7 @@
    "id": "148134",
    "fmt": "msg",
    "jp": "こんな連中{br}このオレで十分だぜ!{end}",
-   "en": "",
+   "en": "I alone am plenty{br}for this lot!{end}",
    "max": 38,
    "ptr": [
     "rel16 074ED3 base 148050"
@@ -88,7 +88,7 @@
    "id": "14815A",
    "fmt": "msg",
    "jp": "私だってやれるって所を見せてやる!{end}",
-   "en": "",
+   "en": "I'll show you I can do it too!{end}",
    "max": 38,
    "ptr": [
     "rel16 074ED5 base 148050"
@@ -98,7 +98,7 @@
    "id": "148180",
    "fmt": "msg",
    "jp": "ここから先へは行かせません!{end}",
-   "en": "",
+   "en": "You won't get past here!{end}",
    "max": 32,
    "ptr": [
     "rel16 074ED7 base 148050"
@@ -108,7 +108,7 @@
    "id": "1481A0",
    "fmt": "msg",
    "jp": "私とて阿曽主弾の娘、簡単には討たれません{end}",
-   "en": "",
+   "en": "I'm Aso Shuzen's daughter. I won't fall!{end}",
    "max": 44,
    "ptr": [
     "rel16 074ED9 base 148050"
@@ -118,7 +118,7 @@
    "id": "1481CC",
    "fmt": "msg",
    "jp": "ウチの雷にはキズ一つつけさせへんでェ!{end}",
-   "en": "",
+   "en": "Ain't lettin' ya scratch my Rai!{end}",
    "max": 42,
    "ptr": [
     "rel16 074EDB base 148050"
@@ -128,7 +128,7 @@
    "id": "1481F6",
    "fmt": "msg",
    "jp": "このオレに刃向かうとはいい度胸だ!{end}",
-   "en": "",
+   "en": "You've got guts to defy me!{end}",
    "max": 38,
    "ptr": [
     "rel16 074EDD base 148050"
@@ -138,7 +138,7 @@
    "id": "14821C",
    "fmt": "msg",
    "jp": "我が殿の覇道を邪魔するものはこの姜子昌が許さん!{end}",
-   "en": "",
+   "en": "Kyo Shisho strikes down all who bar my lord!{end}",
    "max": 52,
    "ptr": [
     "rel16 074EDF base 148050"
@@ -148,7 +148,7 @@
    "id": "148250",
    "fmt": "msg",
    "jp": "我が刃のツユと消えるがよい!{end}",
-   "en": "",
+   "en": "Vanish as dew on my blade!{end}",
    "max": 32,
    "ptr": [
     "rel16 074EE1 base 148050"
@@ -158,7 +158,7 @@
    "id": "148270",
    "fmt": "msg",
    "jp": "我が力、思い知れ!{end}",
-   "en": "",
+   "en": "Feel my power!{end}",
    "max": 22,
    "ptr": [
     "rel16 074EE3 base 148050"
@@ -168,7 +168,7 @@
    "id": "148286",
    "fmt": "msg",
    "jp": "刀のサビにしてくれる{end}",
-   "en": "",
+   "en": "My sword hungers!{end}",
    "max": 24,
    "ptr": [
     "rel16 074EE5 base 148050"
@@ -178,7 +178,7 @@
    "id": "14829E",
    "fmt": "msg",
    "jp": "正義は我にあり!{end}",
-   "en": "",
+   "en": "Justice is mine!{end}",
    "max": 20,
    "ptr": [
     "rel16 074EE7 base 148050"
@@ -188,7 +188,7 @@
    "id": "1482B2",
    "fmt": "msg",
    "jp": "生きて帰れると{br}思うなよ!{end}",
-   "en": "",
+   "en": "You won't{br}leave alive!{end}",
    "max": 32,
    "ptr": [
     "rel16 074EE9 base 148050"
@@ -198,7 +198,7 @@
    "id": "1482D2",
    "fmt": "msg",
    "jp": "その首もらったァ～!{end}",
-   "en": "",
+   "en": "Your head is mine!{end}",
    "max": 24,
    "ptr": [
     "rel16 074EEB base 148050"
@@ -208,7 +208,7 @@
    "id": "1482EA",
    "fmt": "msg",
    "jp": "女だと思って甘く見てるとケガするよっ!{end}",
-   "en": "",
+   "en": "Take me lightly and you'll get hurt!{end}",
    "max": 42,
    "ptr": [
     "rel16 074EED base 148050"
@@ -218,7 +218,7 @@
    "id": "148314",
    "fmt": "msg",
    "jp": "フン!智の国の通行税はとびきり高いゼ!{end}",
-   "en": "",
+   "en": "Hmph! Chi's toll is mighty steep!{end}",
    "max": 42,
    "ptr": [
     "rel16 074EEF base 148050"
@@ -228,7 +228,7 @@
    "id": "14833E",
    "fmt": "msg",
    "jp": "お館様には指一本触れさせん!{end}",
-   "en": "",
+   "en": "Not one finger on my lord!{end}",
    "max": 32,
    "ptr": [
     "rel16 074EF1 base 148050"
@@ -238,7 +238,7 @@
    "id": "14835E",
    "fmt": "msg",
    "jp": "その首、この王華が{br}もらいうける{end}",
-   "en": "",
+   "en": "Oka will take your{br}head!{end}",
    "max": 38,
    "ptr": [
     "rel16 074EF3 base 148050"
@@ -248,7 +248,7 @@
    "id": "148384",
    "fmt": "msg",
    "jp": "くっ…死んでいった{br}者達のうらみ…ここではらしてくれる!{end}",
-   "en": "",
+   "en": "Ngh... For the fallen, I'll have my{br}revenge here!{end}",
    "max": 62,
    "ptr": [
     "rel16 074EF5 base 148050"
@@ -258,7 +258,7 @@
    "id": "1483C2",
    "fmt": "msg",
    "jp": "ノコノコとでてきおったな、だがここまでだ{end}",
-   "en": "",
+   "en": "You came blithely out, but it ends here!{end}",
    "max": 44,
    "ptr": [
     "rel16 074EF7 base 148050"
@@ -268,7 +268,7 @@
    "id": "1483EE",
    "fmt": "msg",
    "jp": "お館様の前へその首、つき出してやるぜ{end}",
-   "en": "",
+   "en": "I'll lay your head before my lord!{end}",
    "max": 40,
    "ptr": [
     "rel16 074EF9 base 148050"
@@ -278,7 +278,7 @@
    "id": "148416",
    "fmt": "msg",
    "jp": "ムッ・・・そこにいたか…{end}",
-   "en": "",
+   "en": "Hm... There you are...{end}",
    "max": 28,
    "ptr": [
     "rel16 074EFB base 148050"
@@ -288,7 +288,7 @@
    "id": "148432",
    "fmt": "msg",
    "jp": "お館様のためならば{br}文官のこの私とて{br}戦いましょうぞ!{end}",
-   "en": "",
+   "en": "For my lord, even{br}a scholar like me{br}shall fight!{end}",
    "max": 62,
    "ptr": [
     "rel16 074EFD base 148050"
@@ -298,7 +298,7 @@
    "id": "148470",
    "fmt": "msg",
    "jp": "姉上をいじめるのは{br}おまえか?!{end}",
-   "en": "",
+   "en": "Are you picking on{br}my sister?!{end}",
    "max": 38,
    "ptr": [
     "rel16 074EFF base 148050"
@@ -308,7 +308,7 @@
    "id": "148496",
    "fmt": "msg",
    "jp": "フン!まぬけづらが{br}5人もそろいおったわ{end}",
-   "en": "",
+   "en": "Hmph! Five fools all{br}lined up!{end}",
    "max": 46,
    "ptr": [
     "rel16 074F01 base 148050"
@@ -318,7 +318,7 @@
    "id": "1484C4",
    "fmt": "msg",
    "jp": "いやぁっ! いざっ{br}いざいざぁ!!{end}",
-   "en": "",
+   "en": "Hyaah! Come on,{br}come on, come on!!{end}",
    "max": 40,
    "ptr": [
     "rel16 074F03 base 148050"
@@ -328,7 +328,7 @@
    "id": "1484EC",
    "fmt": "msg",
    "jp": "お前達では相手にならんが容赦はせん!!{end}",
-   "en": "",
+   "en": "You're no match, yet I show no mercy!!{end}",
    "max": 42,
    "ptr": [
     "rel16 074F05 base 148050"
@@ -338,7 +338,7 @@
    "id": "148516",
    "fmt": "msg",
    "jp": "貴様らにうらみはないが死んでもらおう{end}",
-   "en": "",
+   "en": "Nothing personal, but you must die.{end}",
    "max": 40,
    "ptr": [
     "rel16 074F07 base 148050"
@@ -348,7 +348,7 @@
    "id": "14853E",
    "fmt": "msg",
    "jp": "お、お前らのすきにはさせんぞっ!{end}",
-   "en": "",
+   "en": "I-I won't let you have your way!{end}",
    "max": 36,
    "ptr": [
     "rel16 074F09 base 148050"
@@ -358,7 +358,7 @@
    "id": "148562",
    "fmt": "msg",
    "jp": "オレの前にすがたを現すとは運のないヤツよ{end}",
-   "en": "",
+   "en": "Bad luck for you, showing up before me!{end}",
    "max": 44,
    "ptr": [
     "rel16 074F0B base 148050"
@@ -368,7 +368,7 @@
    "id": "14858E",
    "fmt": "msg",
    "jp": "大銀河の皇帝は{br}このオレ様なのだ!{end}",
-   "en": "",
+   "en": "I am the Emperor{br}of the galaxy!{end}",
    "max": 40,
    "ptr": [
     "rel16 074F0D base 148050"
@@ -378,7 +378,7 @@
    "id": "1485B6",
    "fmt": "msg",
    "jp": "このオレにかなうとでも思っているのか?!{end}",
-   "en": "",
+   "en": "You really think you can beat me?!{end}",
    "max": 44,
    "ptr": [
     "rel16 074F0F base 148050"
@@ -388,7 +388,7 @@
    "id": "1485E2",
    "fmt": "msg",
    "jp": "このろうぜき者めが!{end}",
-   "en": "",
+   "en": "You lawless dog!{end}",
    "max": 24,
    "ptr": [
     "rel16 074F11 base 148050"
@@ -398,7 +398,7 @@
    "id": "1485FA",
    "fmt": "msg",
    "jp": "よくここまでやって来た ほめてやるぞ!{end}",
-   "en": "",
+   "en": "Well done, coming this far!{end}",
    "max": 42,
    "ptr": [
     "rel16 074F13 base 148050"
@@ -408,7 +408,7 @@
    "id": "148624",
    "fmt": "msg",
    "jp": "年寄りと思ってなめるでないぞ{end}",
-   "en": "",
+   "en": "Don't scorn me for my age!{end}",
    "max": 32,
    "ptr": [
     "rel16 074F15 base 148050"
@@ -418,7 +418,7 @@
    "id": "148644",
    "fmt": "msg",
    "jp": "五虎将軍の中の白鬼とはこのオレ様よ!!{br}貴様らも、もう終りだ{end}",
-   "en": "",
+   "en": "I'm Hakki of the Five Tiger Generals!!{br}You're all finished!{end}",
    "max": 66,
    "ptr": [
     "rel16 074F17 base 148050"
@@ -428,7 +428,7 @@
    "id": "148686",
    "fmt": "msg",
    "jp": "五虎将軍の名はかざりではない事を思い知らせてくれる!!{end}",
-   "en": "",
+   "en": "Learn the Five Tiger Generals are no empty name!!{end}",
    "max": 58,
    "ptr": [
     "rel16 074F19 base 148050"
@@ -438,7 +438,7 @@
    "id": "1486C0",
    "fmt": "msg",
    "jp": "五虎将軍の亮厳格様が相手だ…どうした?{br}おじけづきおったか!{end}",
-   "en": "",
+   "en": "Ryogenkaku of the Five Tiger Generals{br}faces you... What? Lost your nerve?!{end}",
    "max": 66,
    "ptr": [
     "rel16 074F1B base 148050"
@@ -448,7 +448,7 @@
    "id": "148702",
    "fmt": "msg",
    "jp": "五虎将軍の武庸から逃げきった者など、{br}ひとりもおらぬわっ!{end}",
-   "en": "",
+   "en": "None has ever escaped Buyo of the{br}Five Tiger Generals!{end}",
    "max": 64,
    "ptr": [
     "rel16 074F1D base 148050"
@@ -458,7 +458,7 @@
    "id": "148742",
    "fmt": "msg",
    "jp": "ヘヘン… 五虎将軍の義相如がてめえらの死に場所を決めてやるぜ{end}",
-   "en": "",
+   "en": "Heh... Gi Shojo of the Five Tiger Generals picks your grave!{end}",
    "max": 64,
    "ptr": [
     "rel16 074F1F base 148050"
@@ -468,7 +468,7 @@
    "id": "148782",
    "fmt": "msg",
    "jp": "貴様ら、まとめて地獄へ案内してやる{end}",
-   "en": "",
+   "en": "I'll send the lot of you to hell!{end}",
    "max": 38,
    "ptr": [
     "rel16 074F21 base 148050"
@@ -478,7 +478,7 @@
    "id": "1487A8",
    "fmt": "msg",
    "jp": "も、者どもっ…{br}こやつらを斬れっ!{br}斬りすていっ!!{end}",
-   "en": "",
+   "en": "M-Men... Cut them{br}down! Slay them!!{end}",
    "max": 60,
    "ptr": [
     "rel16 074F23 base 148050"
@@ -488,7 +488,7 @@
    "id": "1487E4",
    "fmt": "msg",
    "jp": "それがし、名は武倒国と申す! これより{br}お前達を斬るっ!{end}",
-   "en": "",
+   "en": "My name is Butokoku! I shall now cut{br}you down!{end}",
    "max": 62,
    "ptr": [
     "rel16 074F25 base 148050"
@@ -498,7 +498,7 @@
    "id": "148822",
    "fmt": "msg",
    "jp": "問答無用!!{end}",
-   "en": "",
+   "en": "Enough talk!{end}",
    "max": 16,
    "ptr": [
     "rel16 074F27 base 148050"
@@ -508,7 +508,7 @@
    "id": "148832",
    "fmt": "msg",
    "jp": "どぅおりゃぁ〜〜っ!{end}",
-   "en": "",
+   "en": "Dooryaaaaah!{end}",
    "max": 24,
    "ptr": [
     "rel16 074F29 base 148050"
@@ -518,7 +518,7 @@
    "id": "14884A",
    "fmt": "msg",
    "jp": "各個撃破 敵将を狙え武将を守れ 撤退  一騎討ち  待機   待機   待機  やるじゃねぇか! だがオレはもっと強くなる 勝負はこの次だ!{end}",
-   "en": "",
+   "en": "Free FightHit LeaderBodyguard  Retreat     Duel      Wait      Wait      Wait   Not bad! But I'll grow stronger. Next time we settle it!{end}",
    "max": 144,
    "ptr": [
     "rel16 074F2B base 148050"
@@ -528,7 +528,7 @@
    "id": "1488DA",
    "fmt": "msg",
    "jp": "やるじゃねぇか! だが次はこうはいかねぇぜ!{end}",
-   "en": "",
+   "en": "Not bad! But next time won't go like this!{end}",
    "max": 48,
    "read_on": true
   },
@@ -536,7 +536,7 @@
    "id": "14890A",
    "fmt": "msg",
    "jp": "この独眼竜,そう簡単に討たれはしねぇぜ!{end}",
-   "en": "",
+   "en": "This One-Eyed Dragon won't fall so easy!{end}",
    "max": 44,
    "read_on": true
   },
@@ -544,7 +544,7 @@
    "id": "148936",
    "fmt": "msg",
    "jp": "どうやら手加減し過ぎたようだ この次は容赦せんぞ!{end}",
-   "en": "",
+   "en": "Seems I held back too much. No mercy next time!{end}",
    "max": 54,
    "read_on": true
   },
@@ -552,7 +552,7 @@
    "id": "14896C",
    "fmt": "msg",
    "jp": "わしも落ちぶれたものよ……貴様ごときに勝てぬとは…{end}",
-   "en": "",
+   "en": "I've fallen low... beaten by the likes of you...{end}",
    "max": 54,
    "read_on": true
   },
@@ -560,7 +560,7 @@
    "id": "1489A2",
    "fmt": "msg",
    "jp": "ちくしょう!おぼえていやがれ!{end}",
-   "en": "",
+   "en": "Damn it! You'll pay for this!{end}",
    "max": 34,
    "read_on": true
   },
@@ -568,7 +568,7 @@
    "id": "1489C4",
    "fmt": "msg",
    "jp": "やはり武器を取って戦うのはオレの役目じゃないな{end}",
-   "en": "",
+   "en": "Guess fighting with weapons ain't my job.{end}",
    "max": 50,
    "read_on": true
   },
@@ -576,7 +576,7 @@
    "id": "1489F6",
    "fmt": "msg",
    "jp": "いや〜 さすがはお強いですな ここは引き上げるとしましょう{end}",
-   "en": "",
+   "en": "Well, well, you're strong indeed. I'll withdraw for now.{end}",
    "max": 62,
    "read_on": true
   },
@@ -584,7 +584,7 @@
    "id": "148A34",
    "fmt": "msg",
    "jp": "やはり私ではかないませんね おとなしく撤退しましょう{end}",
-   "en": "",
+   "en": "I'm no match after all. I'll quietly withdraw.{end}",
    "max": 56,
    "read_on": true
   },
@@ -592,7 +592,7 @@
    "id": "148A6C",
    "fmt": "msg",
    "jp": "私にはこれ以上戦うことなんて出来ません{end}",
-   "en": "",
+   "en": "I can't fight any more than this.{end}",
    "max": 42,
    "read_on": true
   },
@@ -600,7 +600,7 @@
    "id": "148A96",
    "fmt": "msg",
    "jp": "今度会ったときはこうはいかへんで!!{end}",
-   "en": "",
+   "en": "Next time it won't go like this!!{end}",
    "max": 40,
    "read_on": true
   },
@@ -608,7 +608,7 @@
    "id": "148ABE",
    "fmt": "msg",
    "jp": "やるな! だがオレはまだ死ねん!銀河を統一するまではな!{end}",
-   "en": "",
+   "en": "Good! But I can't die till I unify the galaxy!{end}",
    "max": 60,
    "read_on": true
   },
@@ -616,7 +616,7 @@
    "id": "148AFA",
    "fmt": "msg",
    "jp": "ふっ… この程度で俺に勝ったと思うな!{end}",
-   "en": "",
+   "en": "Heh... Don't think this beats me!{end}",
    "max": 42,
    "read_on": true
   },
@@ -624,7 +624,7 @@
    "id": "148B24",
    "fmt": "msg",
    "jp": "貴様の首,次にあうときまで預けておくぞ!{end}",
-   "en": "",
+   "en": "Keep your head until we meet again!{end}",
    "max": 44,
    "read_on": true
   },
@@ -632,7 +632,7 @@
    "id": "148B50",
    "fmt": "msg",
    "jp": "ひけ〜! これ以上の白兵はこちらに不利だ!{end}",
-   "en": "",
+   "en": "Fall back! More melee only hurts us!{end}",
    "max": 46,
    "read_on": true
   },
@@ -640,7 +640,7 @@
    "id": "148B7E",
    "fmt": "msg",
    "jp": "強い!! このわしが手も足もでんとはな…{end}",
-   "en": "",
+   "en": "So strong!! I'm completely helpless...{end}",
    "max": 44,
    "read_on": true
   },
@@ -648,7 +648,7 @@
    "id": "148BAA",
    "fmt": "msg",
    "jp": "おのれ! 貴様の名 忘れはせぬぞ!{end}",
-   "en": "",
+   "en": "Curses! I'll not forget your name!{end}",
    "max": 38,
    "read_on": true
   },
@@ -656,7 +656,7 @@
    "id": "148BD0",
    "fmt": "msg",
    "jp": "ちっ! こうなったら艦隊戦でけりをつけてやる!{end}",
-   "en": "",
+   "en": "Tch! Then we'll settle this in a fleet battle!{end}",
    "max": 50,
    "read_on": true
   },
@@ -664,7 +664,7 @@
    "id": "148C02",
    "fmt": "msg",
    "jp": "オレより強い奴がいるのか! やはり銀河は広いぜ!{end}",
-   "en": "",
+   "en": "Someone stronger than me? The galaxy's big!{end}",
    "max": 52,
    "read_on": true
   },
@@ -672,7 +672,7 @@
    "id": "148C36",
    "fmt": "msg",
    "jp": "覚えてなさい! 次に勝つのはあたしなんだから!{end}",
-   "en": "",
+   "en": "Remember this! I'm winning next time!{end}",
    "max": 50,
    "read_on": true
   },
@@ -680,7 +680,7 @@
    "id": "148C68",
    "fmt": "msg",
    "jp": "そろそろ潮時か……{br}総員撤退!{end}",
-   "en": "",
+   "en": "Time's up... All{br}hands, retreat!{end}",
    "max": 36,
    "read_on": true
   },
@@ -688,7 +688,7 @@
    "id": "148C8C",
    "fmt": "msg",
    "jp": "ちっ… これまでか!{end}",
-   "en": "",
+   "en": "Tch... This is it!{end}",
    "max": 24,
    "read_on": true
   },
@@ -696,7 +696,7 @@
    "id": "148CA4",
    "fmt": "msg",
    "jp": "もはやこれまで! 撤退いそげっ〜!{end}",
-   "en": "",
+   "en": "It's over! Retreat, hurry!{end}",
    "max": 38,
    "read_on": true
   },
@@ -704,7 +704,7 @@
    "id": "148CCA",
    "fmt": "msg",
    "jp": "こっ,こんなところで死ぬわけには参らん!{end}",
-   "en": "",
+   "en": "I-I cannot die in a place like this!{end}",
    "max": 44,
    "read_on": true
   },
@@ -712,7 +712,7 @@
    "id": "148CF6",
    "fmt": "msg",
    "jp": "貴様… 覚えておれ!{end}",
-   "en": "",
+   "en": "You'll pay for this!{end}",
    "max": 24,
    "read_on": true
   },
@@ -720,7 +720,7 @@
    "id": "148D0E",
    "fmt": "msg",
    "jp": "よくもこのオレに恥をかかせてくれたな!この借りはいつか返すぞ{end}",
-   "en": "",
+   "en": "How dare you shame me! I'll repay this debt someday!{end}",
    "max": 64,
    "read_on": true
   },
@@ -728,7 +728,7 @@
    "id": "148D4E",
    "fmt": "msg",
    "jp": "これ以上の長居は無用! さらばだ!{end}",
-   "en": "",
+   "en": "No point lingering! Farewell!{end}",
    "max": 38,
    "read_on": true
   },
@@ -736,7 +736,7 @@
    "id": "148D74",
    "fmt": "msg",
    "jp": "やはり勝てぬか……{br}やもうえん,撤退する!{end}",
-   "en": "",
+   "en": "So I can't win... No{br}choice. Retreat!{end}",
    "max": 48,
    "read_on": true
   },
@@ -744,7 +744,7 @@
    "id": "148DA4",
    "fmt": "msg",
    "jp": "今はあなたにかないません しかしいつかあなたを越えて見せる!{end}",
-   "en": "",
+   "en": "I'm no match for you now, but someday I'll surpass you!{end}",
    "max": 64,
    "read_on": true
   },
@@ -752,7 +752,7 @@
    "id": "148DE4",
    "fmt": "msg",
    "jp": "きょ,今日のところはこれくらいにしておいてやる!{end}",
-   "en": "",
+   "en": "I-I'll let you off with this for today!{end}",
    "max": 52,
    "read_on": true
   },
@@ -760,7 +760,7 @@
    "id": "148E18",
    "fmt": "msg",
    "jp": "どうやらここまでのようだな・・・{end}",
-   "en": "",
+   "en": "Seems this is the end...{end}",
    "max": 36,
    "read_on": true
   },
@@ -768,7 +768,7 @@
    "id": "148E3C",
    "fmt": "msg",
    "jp": "おぬしなかなかやるな…敵にしておくのはもったいないぐらいだ!{end}",
-   "en": "",
+   "en": "You're good... It's a shame you're my enemy!{end}",
    "max": 64,
    "read_on": true
   },
@@ -776,7 +776,7 @@
    "id": "148E7C",
    "fmt": "msg",
    "jp": "こっ,こんなところで死ぬわけには参らん!{end}",
-   "en": "",
+   "en": "I-I cannot die in a place like this!{end}",
    "max": 44,
    "read_on": true
   },
@@ -784,7 +784,7 @@
    "id": "148EA8",
    "fmt": "msg",
    "jp": "やはり勝てぬか……{br}やもうえん,撤退するぞ!{end}",
-   "en": "",
+   "en": "So I can't win... No{br}choice. We retreat!{end}",
    "max": 50,
    "read_on": true
   },
@@ -792,7 +792,7 @@
    "id": "148EDA",
    "fmt": "msg",
    "jp": "そう簡単に討たれるほどわしの首は安くないぞ!{end}",
-   "en": "",
+   "en": "My head is not so cheaply taken!{end}",
    "max": 48,
    "read_on": true
   },
@@ -800,7 +800,7 @@
    "id": "148F0A",
    "fmt": "msg",
    "jp": "ちっ!少し肉が付いちまったようだぜ! 貴様,運が良かったな!{end}",
-   "en": "",
+   "en": "Tch! Guess I've put on some weight! You got lucky!{end}",
    "max": 64,
    "read_on": true
   },
@@ -808,7 +808,7 @@
    "id": "148F4A",
    "fmt": "msg",
    "jp": "きさまぁ～!この礼はいつかさせてもらうぞ!{end}",
-   "en": "",
+   "en": "Curse you! I'll pay you back someday!{end}",
    "max": 46,
    "read_on": true
   },
@@ -816,7 +816,7 @@
    "id": "148F78",
    "fmt": "msg",
    "jp": "私とてそれ程武芸に劣っているわけではないのだがな…{end}",
-   "en": "",
+   "en": "I'm not so poor at the martial arts, yet...{end}",
    "max": 54,
    "read_on": true
   },
@@ -824,7 +824,7 @@
    "id": "148FAE",
    "fmt": "msg",
    "jp": "なかなかやるね 次にあうときを楽しみにしているよ!{end}",
-   "en": "",
+   "en": "Not bad. I look forward to our next meeting!{end}",
    "max": 54,
    "read_on": true
   },
@@ -832,7 +832,7 @@
    "id": "148FE4",
    "fmt": "msg",
    "jp": "老いたものだ… 昔ならおぬしになど遅れを取らなかったのもを…{end}",
-   "en": "",
+   "en": "I've grown old... Once, I'd never have lost to you...{end}",
    "max": 64,
    "read_on": true
   },
@@ -840,7 +840,7 @@
    "id": "149024",
    "fmt": "msg",
    "jp": "ぬぅぅ…この白鬼をここまで追いつめるとは… 勝負はこの次だ!{end}",
-   "en": "",
+   "en": "Nngh... To corner Hakki this far... Next time, we settle it!{end}",
    "max": 64,
    "read_on": true
   },
@@ -848,7 +848,7 @@
    "id": "149064",
    "fmt": "msg",
    "jp": "やはり勝てぬか……{br}しかたない,撤退する!{end}",
-   "en": "",
+   "en": "So I can't win... Oh{br}well. Retreat!{end}",
    "max": 48,
    "read_on": true
   },
@@ -856,7 +856,7 @@
    "id": "149094",
    "fmt": "msg",
    "jp": "おぼえておけ!{br}貴様の首、必ずこのわしがとってやる!{end}",
-   "en": "",
+   "en": "Mark my words! I will take your head{br}myself!{end}",
    "max": 58,
    "read_on": true
   },
@@ -864,7 +864,7 @@
    "id": "1490CE",
    "fmt": "msg",
    "jp": "どうやらここまでのようだな…{end}",
-   "en": "",
+   "en": "Seems this is the end...{end}",
    "max": 32,
    "read_on": true
   },
@@ -872,7 +872,7 @@
    "id": "1490EE",
    "fmt": "msg",
    "jp": "こっ,このオレがここまでやられるとは…{end}",
-   "en": "",
+   "en": "T-To think I'd be beaten this badly...{end}",
    "max": 42,
    "read_on": true
   },
@@ -880,7 +880,7 @@
    "id": "149118",
    "fmt": "msg",
    "jp": "なかなかやるな!だが次はこうはいかんぞ!{end}",
-   "en": "",
+   "en": "Not bad! It won't be so next time!{end}",
    "max": 44,
    "read_on": true
   },
@@ -888,7 +888,7 @@
    "id": "149144",
    "fmt": "msg",
    "jp": "もっ,者共,ひけっ,ひけっ〜!!{end}",
-   "en": "",
+   "en": "M-Men, fall back, fall back!!{end}",
    "max": 36,
    "read_on": true
   },
@@ -896,7 +896,7 @@
    "id": "149168",
    "fmt": "msg",
    "jp": "勝負がついたわけではないぞ! それがしの命あるうちはな!{end}",
-   "en": "",
+   "en": "This isn't over! Not while I still live!{end}",
    "max": 60,
    "read_on": true
   },
@@ -904,7 +904,7 @@
    "id": "1491A4",
    "fmt": "msg",
    "jp": "この勝負、あずけておくぞ!{end}",
-   "en": "",
+   "en": "We'll settle this later!{end}",
    "max": 30,
    "read_on": true
   },
@@ -912,7 +912,7 @@
    "id": "1491C2",
    "fmt": "msg",
    "jp": "この借りはいつか返す…必ずな…{end}",
-   "en": "",
+   "en": "I'll repay this... I swear...{end}",
    "max": 34,
    "read_on": true
   }

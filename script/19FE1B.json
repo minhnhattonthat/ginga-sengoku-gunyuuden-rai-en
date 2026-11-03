@@ -6,7 +6,7 @@
    "id": "19FE1B",
    "fmt": "fixed:32",
    "jp": "この武将をどう処分されますか? ",
-   "en": "",
+   "en": "What to do with this officer?",
    "max": 32,
    "ptr": [
     "fixed 076C90",
@@ -17,7 +17,7 @@
    "id": "19FE3B",
    "fmt": "fixed:32",
    "jp": "よろしいですか?        ",
-   "en": "",
+   "en": "Are you sure?",
    "max": 32,
    "ptr": [
     "fixed 076D07"

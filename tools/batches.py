@@ -61,8 +61,21 @@ def width(t, wrap='one'):
     return max(lint.lines_of(t, wrap))
 
 
+def jp_lines(jp):
+    """Cells per {br} line of a JP string (one cell per character; codes take none)."""
+    return [len(en.TOKEN.sub('', p)) for p in jp.replace('{end}', '').split('{br}')]
+
+
+def own_budget(box, jp):
+    """battle_cmd is not measured (docs/status.md): hold each string to its own JP lines (cells, count)."""
+    if box and box['name'] == 'battle_cmd' and '{br}' in jp + '{br}':
+        return dict(box, letters=2 * max(jp_lines(jp)), lines=len(jp_lines(jp)))
+    return box
+
+
 def wrap(text, jp, box):
     """Authored English -> box text with breaks and {end}."""
+    box = own_budget(box, jp)
     t = text[:-5] if jp.endswith('{end}') and text.endswith('{end}') else text
     if box and box['wrap'] != 'one' and not BREAKS.search(t):
         brk = '{n}' if box['wrap'] == 'pad' else '{br}'
@@ -75,10 +88,12 @@ def wrap(text, jp, box):
             else:  # the quote joins the name's run
                 lead, t, at = name + ' "' + c5, t[1:], len(name) + 2
             cont = f'{{skip:0{at // 2:X}00}}' + ' ' * (at % 2)
+        # talk: the box wraps by itself after 14 cells, so a full line + {br} could leave a blank line
+        limit = box['letters'] - 2 if box['name'] == 'talk' else box['letters']
         lines, cur = [], lead
         for w in t.split(' '):
             cand = (cur + ' ' + w) if cur not in ('', lead, cont) else cur + w
-            if width(cand) > box['letters'] and cur not in (lead, cont):
+            if width(cand) > limit and cur not in (lead, cont):
                 lines.append(cur)
                 cur = cont + w
             else:
@@ -158,7 +173,7 @@ def check(name, E=None, quiet=False):
     out = {}
     for i in [x for x in ids if x in got]:
         e, _, bname = E[i]
-        box = boxes.get(bname)
+        box = own_budget(boxes.get(bname), e['jp'])
         raw = got[i]
         if '\t' in raw or re.search(r'\\u[0-9a-fA-F]{4}|\\n', raw):
             errs.append(f'{i}: tab or escape in text')
@@ -236,7 +251,7 @@ def merge(names):
         if hit:
             for e in hit:
                 e['en'] = allout[e['id']]
-            p.write_text(json.dumps(d, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+            p.write_text(json.dumps(d, ensure_ascii=False, indent=1) + '\n', encoding='utf-8', newline='\n')
     print(f'merged {len(allout)} strings')
     return 0
 
@@ -267,7 +282,7 @@ def split(size, skip):
     for b in batches:
         p = TL / f'b{num:03d}.tsv'
         assert not p.exists(), p
-        p.write_text('\n'.join(b) + '\n', encoding='utf-8')
+        p.write_text('\n'.join(b) + '\n', encoding='utf-8', newline='\n')
         print(p.name, len(b))
         num += 1
 
@@ -288,7 +303,7 @@ def main():
         hit = {ln.split('\t')[0] for ln in lines} & set(new)
         assert hit == set(new), f'not in {p.name}: {set(new) - hit}'
         p.write_text('\n'.join(f'{ln.split(chr(9))[0]}\t{new[ln.split(chr(9))[0]]}' if ln.split('\t')[0] in new
-                               else ln for ln in lines) + '\n', encoding='utf-8')
+                               else ln for ln in lines) + '\n', encoding='utf-8', newline='\n')
         return check(a.args[0], quiet=False)[1] and 1 or 0
     if a.cmd == 'fit':
         E = entries()

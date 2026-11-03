@@ -6,7 +6,7 @@
    "id": "1D2C9B",
    "fmt": "fixed:16",
    "jp": "記録がありません",
-   "en": "",
+   "en": "No saved data",
    "max": 16,
    "ptr": [
     "fixed 1D2C32"
@@ -16,7 +16,7 @@
    "id": "1D2CAB",
    "fmt": "fixed:18",
    "jp": "記録が壊れています",
-   "en": "",
+   "en": "Save data damaged",
    "max": 18,
    "ptr": [
     "fixed 1D2C5A"

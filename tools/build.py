@@ -40,6 +40,12 @@ def rows(name):
             yield [int(f, 16) for f in line.split('\t')]
 
 
+# FF runs (docs/re/graphics.md §Free space) text blocks may move into; 0x1E0000+ is the code patches' (patches.py)
+FREE = [(0x006812, 0x007FB0), (0x017170, 0x018000), (0x01E562, 0x020000), (0x0407FE, 0x048000),
+        (0x04ACCA, 0x050000), (0x05322F, 0x058000), (0x05DD10, 0x060000), (0x0669CD, 0x068000),
+        (0x06ED2A, 0x070000), (0x1A22F0, 0x1A8000), (0x1D3071, 0x1D8000)]
+
+
 class Rom:
     def __init__(self, orig):
         self.orig = bytes(orig)
@@ -90,10 +96,11 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False):
     blocks = extract.blocks(rom.orig)
     if edits is not None:
         blocks = [b for b in blocks if any(b['start'] <= s < b['end'] for s in edits)]
+    free = [[a + 0x10, z] for a, z in FREE]  # margin: a run may start with the FF end code of real data
     for b in blocks:
         new, blob = {}, bytearray()
         for e in b['entries']:
-            new[e['off']] = b['start'] + len(blob)
+            new[e['off']] = len(blob)
             text = (edits or {}).get(e['off'])
             if isinstance(text, bytes):  # already encoded (English, marker), prefix included
                 data = text
@@ -105,10 +112,16 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False):
             if text is not None and e['tails'] and text != e['jp'] and not (tails_ok and len(data) == e['len']):
                 raise ValueError(f'text {e["off"]:06X}: edited string has refs into its middle (tails)')
             blob += data
-        if len(blob) > b['end'] - b['start']:
-            raise ValueError(f'text block {b["start"]:06X}-{b["end"]:06X}: {len(blob)} bytes > '
-                             f'{b["end"] - b["start"]} (relocation needed)')
-        rom.write(b['start'], bytes(blob), f'text:{b["start"]:06X}')
+        start = b['start']
+        if len(blob) > b['end'] - b['start']:  # move the block to free space in its bank (refs must be p16/p24/rel16)
+            r = next((r for r in free if r[0] >> 15 == start >> 15 and r[1] - r[0] >= len(blob)), None)
+            if not r:
+                raise ValueError(f'text block {b["start"]:06X}-{b["end"]:06X}: {len(blob)} bytes > '
+                                 f'{b["end"] - b["start"]}, no free space in its bank')
+            start, r[0] = r[0], r[0] + len(blob)
+            assert set(rom.orig[start:r[0]]) == {0xFF}, f'free space {start:06X} is not FF'
+        rom.write(start, bytes(blob), f'text:{b["start"]:06X}')
+        new = {k: start + v for k, v in new.items()}
         for e in b['entries']:
             for kind, slot, x, *delta in e['refs'] + e['tails']:
                 t = new[e['off']] + (delta[0] if delta else 0)
