@@ -29,7 +29,7 @@ def test_marker_build_keeps_layout_and_shows_ids():
         assert who.startswith(('text:', 'font:', 'patch:', 'checksum')), who  # same lengths: no pointer moves
         if who.startswith('font:'):
             assert en.FONT <= off and off + len(data) <= font_end
-    edits, cells = build.english_edits(rom.orig, 'marker')
+    edits, cells, _ = build.english_edits(rom.orig, 'marker')
     decode = {}
     for off, glyph in cells.items():
         assert new[en.FONT + off * 24:en.FONT + off * 24 + 24] == glyph

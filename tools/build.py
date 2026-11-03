@@ -44,6 +44,7 @@ def rows(name):
 FREE = [(0x006812, 0x007FB0), (0x017170, 0x018000), (0x01E562, 0x020000), (0x0407FE, 0x048000),
         (0x04ACCA, 0x050000), (0x05322F, 0x058000), (0x05DD10, 0x060000), (0x0669CD, 0x068000),
         (0x06ED2A, 0x070000), (0x1A22F0, 0x1A8000), (0x1D3071, 0x1D8000)]
+STALE_TALK = 0x1D9BA4  # base of talk type 2 ($BA:9E27), a stale table landing mid-string (docs/re/text.md)
 
 
 class Rom:
@@ -85,20 +86,35 @@ def repack_rle(rom, edits=None):
         rom.write(off, packed, f'rle:{off:06X}')
 
 
-def repack_text(rom, edits=None, tails_ok=False, loose=False):
+def tail_delta(e, kind, x, d, moves):
+    """New offset of a tail ref into edited host e: its English tail (tail_en), 0 for the stale talk table,
+    None to leave an unverified immediate alone; raises for anything else."""
+    if (e['off'], d) in moves:
+        return moves[e['off'], d]
+    if kind == 'rel16' and x == STALE_TALK:
+        return 0  # the table is stale (docs/re/text.md): any target is as wrong as the JP's mid-string one
+    if kind == 'fixed' and 'verified=n' in str(x):
+        return None  # probably a constant that matches by chance
+    raise ValueError(f'text {e["off"]:06X}: edited string has refs into its middle (tails): give it tail_en')
+
+
+def repack_text(rom, edits=None, tails_ok=False, loose=False, moves=None):
     """Rewrite text blocks (tools/extract.py): each block's strings back to back from its start, then every ref.
     edits: {string offset: new jp-style text, or encoded bytes}; None = repack every block unchanged. Returns the
     blocks repacked. tails_ok (marker build): a string with tails may change if its length stays the same.
+    moves: {(host offset, JP tail offset): offset of its English tail in the host's new bytes} (english_edits).
+    A block that outgrows its room moves to free space in its bank (FREE).
 
     Refs: p16/p24 get the string's new address, rel16 the new distance from its (moved) base string, tails the
-    host's new address + offset (host must be unchanged). Fixed refs (code immediates, base + index forms) can't
-    be rewritten: their strings, and every string before them in the block, must keep their offsets."""
+    host's new address + offset (host unchanged, else tail_delta). Fixed refs (code immediates, base + index forms)
+    can't be rewritten: their strings, and every string before them in the block, must keep their offsets."""
     blocks = extract.blocks(rom.orig)
+    moves = moves or {}
     if edits is not None:
         blocks = [b for b in blocks if any(b['start'] <= s < b['end'] for s in edits)]
     free = [[a + 0x10, z] for a, z in FREE]  # margin: a run may start with the FF end code of real data
     for b in blocks:
-        new, blob = {}, bytearray()
+        new, blob, changed = {}, bytearray(), set()
         for e in b['entries']:
             new[e['off']] = len(blob)
             text = (edits or {}).get(e['off'])
@@ -110,7 +126,9 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False):
             if fixed and len(data) != fixed:
                 raise ValueError(f'text {e["off"]:06X}: fixed field is {fixed} bytes, got {len(data)}')
             if text is not None and e['tails'] and text != e['jp'] and not (tails_ok and len(data) == e['len']):
-                raise ValueError(f'text {e["off"]:06X}: edited string has refs into its middle (tails)')
+                changed.add(e['off'])
+                for kind, _, x, d in e['tails']:
+                    tail_delta(e, kind, x, d, moves)
             blob += data
         start = b['start']
         if len(blob) > b['end'] - b['start']:  # move the block to free space in its bank (refs must be p16/p24/rel16)
@@ -124,7 +142,12 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False):
         new = {k: start + v for k, v in new.items()}
         for e in b['entries']:
             for kind, slot, x, *delta in e['refs'] + e['tails']:
-                t = new[e['off']] + (delta[0] if delta else 0)
+                d = delta[0] if delta else 0
+                if delta and e['off'] in changed:
+                    d = tail_delta(e, kind, x, d, moves)
+                    if d is None:
+                        continue
+                t = new[e['off']] + d
                 if kind == 'fixed':
                     if loose and 'verified=n' in str(x):
                         continue  # stress build: unverified immediates are probably constants
@@ -181,20 +204,26 @@ def english_edits(rom_orig, mode='en', qa=None):
                 t = lint.expand_n(t, box['letters'])
             if t:
                 texts[e['off']] = (e, t)
+    tails = {off: {int(d): t for d, t in script[off].get('tail_en', {}).items()}
+             for off in texts if mode == 'en' and off not in (qa or {}) and script.get(off, {}).get('tail_en')}
     jp_left = [e for b in extract.blocks(rom_orig) for e in b['entries'] if e['off'] not in texts]
-    alloc = en.Alloc([t for _, t in texts.values()], en.jp_cells(rom_orig, jp_left))
-    out = {}
+    alloc = en.Alloc([t for _, t in texts.values()] + [t for d in tails.values() for t in d.values()],
+                     en.jp_cells(rom_orig, jp_left))
+    out, moves = {}, {}
     for off, (e, t) in texts.items():
         codec = extract.parse_fmt(e['fmt'])[0]
         data = e['pre'] + alloc.encode(t, codec)
         fixed = extract.parse_fmt(e['fmt'])[2]
         if fixed and len(data) < fixed:  # fixed fields: pad with blank cells
             data += en.SPACE.to_bytes(2, 'little') * ((fixed - len(data)) // 2)
+        for d, tt in sorted(tails.get(off, {}).items()):  # a name tail other refs point into: its own string after
+            moves[off, d] = len(data)
+            data += alloc.encode(tt, codec)
         out[off] = data
     cells = alloc.cells()
     if mode == 'marker':  # every other cell shows '##': font text the extractor missed can't hide as Japanese
         cells.update({c: font_en.cell('##') for c in range(en.CELLS) if c not in cells and c not in en.RESERVED})
-    return out, cells
+    return out, cells, moves
 
 
 def build(repack_all=False, edits=None, mode=None, qa=None):
@@ -205,13 +234,13 @@ def build(repack_all=False, edits=None, mode=None, qa=None):
     edits = dict(edits or {})
     if mode:
         patches.apply(rom)
-        edits['text'], cells = english_edits(rom.orig, mode, qa)
+        edits['text'], cells, moves = english_edits(rom.orig, mode, qa)
         for c, glyph in sorted(cells.items()):
             rom.write(en.FONT + c * 24, glyph, f'font:{c:03X}')
     repack_lz(rom, None if repack_all else edits.get('lz', {}))
     repack_rle(rom, None if repack_all else edits.get('rle', {}))
     blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker',
-                         loose=mode == 'marker' and bool(qa))
+                         loose=mode == 'marker' and bool(qa), moves=moves if mode else None)
     fixed, _ = snes_checksum(rom.buf)
     for off in range(0x7FDC, 0x7FE0):
         rom.write(off, fixed[off:off + 1], 'checksum')

@@ -55,7 +55,7 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 僧関 | Sokan | | | |
 | 興起 | Koki | | | |
 | 骸羅 | Gaira | | Emperor of Great Gojo | |
-| 骸山 | Gaizan | | Gaira's elder brother | |
+| 骸山 | Gaizan | | Gaira's brother (calls Gaira 兄者, 11629B) | |
 | 骸延 | Gaien | | Gaira's younger brother | |
 | 馬元宇 | Ba Genu | | Ryojun fortress commander | |
 | 武倒国 | Butokoku | | | |
@@ -168,7 +168,15 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
 | 武将 | officer | | | |
 | 白兵 | melee | | ship-boarding fight | |
 | 一騎討ち | duel | | | |
+| 轟雷砲 | Thunder Cannon | | New Kongo's line weapon | |
+| 艦首砲 | bow cannon | | | |
+| 鳳鳴 | Homei | | one of Gaira's four legions | |
+| 玄偉 | Geni | | one of Gaira's four legions | |
+| 車騎元帥 | Chariot Marshal | | | |
 
 ## Decisions from earlier batches
 - b001 南京楼軍 etc. in 10-letter labels: Nankinro / Ren Army / Nanten / Great Gojo.
+- Review (all batches): old-man わし/じゃ/のう lines get a marker ("eh", "ye", "I say", "mind"); Ranran's and
+  Shimon's kansai-ben always gets one ("y'know", "ya hear", "ain't", -in'); 甘い in a taunt = naive, not sweet;
+  王 = king (陛下 = Majesty). Melee orders (14884A): Free Fight / Hit Leader / Bodyguard / Retreat / Duel / Wait.
 - b001 composite notices: は、 -> ":" style ("Nankinro: Ren has taken it!").

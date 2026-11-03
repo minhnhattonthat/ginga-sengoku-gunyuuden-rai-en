@@ -168,7 +168,7 @@
    "id": "148286",
    "fmt": "msg",
    "jp": "刀のサビにしてくれる{end}",
-   "en": "My sword hungers!{end}",
+   "en": "Taste my sword!{end}",
    "max": 24,
    "ptr": [
     "rel16 074EE5 base 148050"
@@ -600,7 +600,7 @@
    "id": "148A96",
    "fmt": "msg",
    "jp": "今度会ったときはこうはいかへんで!!{end}",
-   "en": "Next time it won't go like this!!{end}",
+   "en": "Next time ya won't be so lucky!!{end}",
    "max": 40,
    "read_on": true
   },

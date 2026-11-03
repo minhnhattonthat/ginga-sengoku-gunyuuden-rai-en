@@ -36,7 +36,7 @@
    "id": "08F60B",
    "fmt": "plain",
    "jp": "ついに完成したぞ!!      金剛に代わる新型戦艦じゃ!!  その名も『新金剛』じゃ!!   この新金剛は 今までの金剛よりも主に攻撃力と防御力を上げた艦なのじゃが こいつには特別に    『轟雷砲』というのがついていてなこいつは一直線上の敵を倒すことができるのじゃ!!        どうじゃ 気に入ったか?    これからは金剛ではなくて この 新金剛で銀河を駆けるのじゃ!!{end}",
-   "en": "It's finally done!! A new{n}battleship to replace the{n}Kongo!! Her name: the New{n}Kongo!! She's got better attack{n}and defense than the old Kongo,{n}but she's also fitted with a{n}special Thunder Cannon that can{n}wipe out every enemy in a{n}straight line!! Well? Like her?{n}From now on you'll ride across{n}the galaxy in this New Kongo,{n}not the Kongo!!{end}",
+   "en": "At last she's done!! A new{n}battleship to replace the Kongo,{n}I tell ye!! Her name: the New{n}Kongo!! She's mainly got better{n}attack and defense than the old{n}Kongo, but she's also fitted{n}with a special Thunder Cannon{n}that can wipe out every enemy in{n}a straight line, ye see!! Well?{n}Like her, eh? From now on ye'll{n}ride across the galaxy in this{n}New Kongo, not the Kongo!!{end}",
    "max": 384,
    "ptr": [
     "p24 002424"
@@ -56,7 +56,7 @@
    "id": "08F8E7",
    "fmt": "plain",
    "jp": "皆の者! 我らの銀河統一に力強い味方が来たぞ! その名も新型戦艦『猛虎』だ!!         猛虎は旧戦艦の 弱点をおぎなった特別艦だ!! そろそろお前たちのもとへ 届いているはずだ!!  この銀河を我らの手に!!    そして 練と南蛮に勝利を!!!{end}",
-   "en": "Everyone! A mighty ally has come{n}for our unification of the{n}galaxy! Her name: the new{n}battleship Moko!! The Moko is a{n}special ship free of the old{n}battleships' weaknesses!! She{n}should be reaching you soon!!{n}This galaxy into our hands!! And{n}victory to Ren and Nanban!!!{end}",
+   "en": "Everyone! A mighty ally has come{n}for our unification of the{n}galaxy! Her name: the new{n}battleship Moko!! The Moko is a{n}special ship free of the old{n}battleships' weaknesses!! She{n}should have reached you by now!!{n}This galaxy into our hands!! And{n}victory to Ren and Nanban!!!{end}",
    "max": 256,
    "ptr": [
     "p24 00242A"

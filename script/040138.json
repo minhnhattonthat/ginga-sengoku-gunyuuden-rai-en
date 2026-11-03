@@ -37,7 +37,7 @@
    "id": "040206",
    "fmt": "plain",
    "jp": "惑星を早く成長させたい ときは 統治能力の高い 武将を置いて下され{end}",
-   "en": "To make a planet grow{n}fast, post an officer with{n}high governing skill.{end}",
+   "en": "To grow a planet fast,{n}post an officer with high{n}governing skill, mind.{end}",
    "max": 68,
    "ptr": [
     "p16 040130"

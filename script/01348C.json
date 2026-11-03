@@ -664,7 +664,7 @@
    "id": "013D48",
    "fmt": "plain",
    "jp": "雷が天下を統一するために戦うんや!!一気に勝負決めるんや!{end}",
-   "en": "We fight so Rai can unify{n}the realm!! Let's settle{n}this in one go!{end}",
+   "en": "We're fightin' so Rai can{n}unify the realm!! Let's{n}end it in one go, y'hear!{end}",
    "max": 60,
    "ptr": [
     "p16 013163",
@@ -684,7 +684,7 @@
    "id": "013D84",
    "fmt": "plain",
    "jp": "ほないくで～!     一気に勝負決めるんや!{end}",
-   "en": "Here we go! Let's settle{n}this in one go!{end}",
+   "en": "Alrighty, here we go!{n}Let's end it in one go!{end}",
    "max": 48,
    "ptr": [
     "p16 013374",
@@ -2439,7 +2439,7 @@
    "id": "01567A",
    "fmt": "plain",
    "jp": "五虎将裏切る賊を討つ!!賊を滅ぼす鬼となる!!{end}",
-   "en": "I'll smite the traitor of{n}the Five Tigers!! I'll be{n}a demon to destroy him!!{end}",
+   "en": "I'll smite the Five Tiger{n}Generals' traitor!! I'll{n}be a demon to end him!!{end}",
    "max": 48,
    "ptr": [
     "p16 013273",
@@ -3003,7 +3003,7 @@
    "id": "0159D2",
    "fmt": "plain",
    "jp": "よ…よし戦闘開始じゃ! ちゃんと勝ってくれよ…{end}",
-   "en": "R-right, battle start!{n}Make sure you win for{n}me...{end}",
+   "en": "R-right, the battle{n}begins! See that ye win,{n}now...{end}",
    "max": 48,
    "ptr": [
     "p16 0132C2",

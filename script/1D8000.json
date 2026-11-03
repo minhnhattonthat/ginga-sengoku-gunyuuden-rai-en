@@ -97,7 +97,7 @@
    "id": "1D81F4",
    "fmt": "msg",
    "jp": "おぬしの才 ふたたび天下のために使ってみないかね?{end}",
-   "en": "Why not use your talents{br}for the realm once again?{end}",
+   "en": "Care to use your talents{br}for the realm again, eh?{end}",
    "max": 54,
    "ptr": [
     "rel16 1D1A8E base 1D8000"
@@ -327,7 +327,7 @@
    "id": "1D86FA",
    "fmt": "msg",
    "jp": "夏候一族が殺し会う事はない!わしと共に来るのだ!!{end}",
-   "en": "The Kako clan need not{br}kill each other! Come with{br}me!!{end}",
+   "en": "The Kako clan has no cause{br}to kill each other! Come{br}with me, I say!!{end}",
    "max": 54,
    "ptr": [
     "rel16 1D1ABC base 1D8000"
@@ -337,7 +337,7 @@
    "id": "1D8730",
    "fmt": "msg",
    "jp": "夏候一族が殺し会う事はない!わしと共に来るのだ!!{end}",
-   "en": "The Kako clan need not{br}kill each other! Come with{br}me!!{end}",
+   "en": "The Kako clan has no cause{br}to kill each other! Come{br}with me, I say!!{end}",
    "max": 54,
    "ptr": [
     "rel16 1D1ABE base 1D8000"
@@ -377,7 +377,7 @@
    "id": "1D8808",
    "fmt": "msg",
    "jp": "父上! 私と共に覇王となられる方のために戦いましょう!!{end}",
-   "en": "Father! Let us fight with{br}me for the one who will be{br}the supreme king!!{end}",
+   "en": "Father! Fight with me for{br}the one who'll be supreme{br}king!!{end}",
    "max": 60,
    "ptr": [
     "rel16 1D1AC6 base 1D8000"
@@ -797,7 +797,7 @@
    "id": "1D91EC",
    "fmt": "msg",
    "jp": "なかなかやるじゃねぇか!{br}オレ達と一緒に来るなら命まではとらねぇぜ!{end}",
-   "en": "Not bad at all! Come with{br}us and I won't take your{br}life!{end}",
+   "en": "Not bad, huh! Come with us{br}and I ain't takin' yer{br}life!{end}",
    "max": 74,
    "ptr": [
     "rel16 1D1B1A base 1D8000"
@@ -968,7 +968,7 @@
    "id": "1D93FE",
    "fmt": "msg",
    "jp": "あんたの命もろうたで!{end}",
-   "en": "Your life's mine now!{end}",
+   "en": "Yer life's mine now, ya{br}hear!{end}",
    "max": 26,
    "ptr": [
     "rel16 1D1C73 base 1D9236"
@@ -1368,7 +1368,7 @@
    "id": "1D9842",
    "fmt": "msg",
    "jp": "ぐふふっ!{br}わしの部下であればのう～!{end}",
-   "en": "Guhuhu! If only you were{br}my man!{end}",
+   "en": "Guhuhu! If only you were{br}my man, eh!{end}",
    "max": 44,
    "ptr": [
     "rel16 1D1CC3 base 1D9236"
@@ -1676,7 +1676,7 @@
    "id": "1D9C5A",
    "fmt": "msg",
    "jp": "うん! やっぱり父上の専を叶える事ができるのは雷だけや!{end}",
-   "en": "Yeah! Only Rai can make{br}Father's dream come true{br}after all!{end}",
+   "en": "Yeah! Only Rai can make{br}Father's dream come true,{br}y'know!{end}",
    "max": 60,
    "ptr": [
     "rel16 1D2007 base 1D9BAE"
@@ -1910,7 +1910,7 @@
    "id": "1D9F92",
    "fmt": "msg",
    "jp": "他の国へ行った私が愚かでございました{br}王の偉大さに感謝致します{end}",
-   "en": "I was a fool to leave for{br}another nation. I thank{br}Your Majesty's grace.{end}",
+   "en": "I was a fool to leave for{br}another nation. I honor my{br}king's greatness.{end}",
    "max": 68,
    "ptr": [
     "rel16 1D2029 base 1D9BAE"
@@ -2571,7 +2571,7 @@
    "id": "1DAC7E",
    "fmt": "msg",
    "jp": "…あんたにゃまいったぜ…{br}あっしの命、あんたにあずけるとしよう!{end}",
-   "en": "...You got me beat... I'll{br}leave my life in your{br}hands!{end}",
+   "en": "...You've got me beat...{br}I'll put my life in your{br}hands!{end}",
    "max": 70,
    "ptr": [
     "rel16 1D209D base 1D9BAE"
@@ -2622,7 +2622,7 @@
    "id": "1DAD7C",
    "fmt": "msg",
    "jp": "残念やけど雷にはとうてい父上の叶えられへんのや…{end}",
-   "en": "Sorry, but there's no way{br}Rai can make Father's{br}dream come true...{end}",
+   "en": "Too bad, but Rai ain't{br}never gonna make Father's{br}dream come true...{end}",
    "max": 52,
    "ptr": [
     "rel16 1D21DC base 1DACC4"
@@ -3523,7 +3523,7 @@
    "id": "1DBF00",
    "fmt": "msg",
    "jp": "おわかれや…{end}",
-   "en": "This is goodbye...{end}",
+   "en": "Guess this is goodbye,{br}y'know...{end}",
    "max": 16,
    "ptr": [
     "rel16 1D23C5 base 1DBD4C"

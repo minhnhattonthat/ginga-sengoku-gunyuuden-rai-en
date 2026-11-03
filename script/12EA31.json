@@ -56,7 +56,7 @@
    "id": "12EC6F",
    "fmt": "msg",
    "jp": "雷{c5}「時間だな{c6}」{end}",
-   "en": "Rai{c5}\"It's time, right?{c6}\"{end}",
+   "en": "Rai{c5}\"Time, huh?{c6}\"{end}",
    "max": 26,
    "read_on": true
   },

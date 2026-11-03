@@ -12,7 +12,8 @@ of strings stored back to back: the build's repack unit (tools/build.py). Entry 
   fmt   plain | msg | fixed (fixed-length field, no end code) ; pre = raw prefix bytes (hex) before the text
   jp    decoded text (tbl/jp.tbl, tbl/msg_codes.tbl), en = English ("" = not translated), max = original bytes
   ptr   refs to it ("p16 010DC8", "p24 06B0AC", "rel16 1D1A7C", "fixed 07061C"); read_on = no ref of its own
-  tails refs that point inside it ("p16 0118BA +4"): the build keeps them only while the string is unchanged
+  tails refs that point inside it ("p16 0118BA +4"): the build keeps them only while the string is unchanged;
+        tail_en {"4": "English{end}"} = the tail's own English, stored after the host's (tools/build.py)
 """
 import argparse
 import json
@@ -26,7 +27,7 @@ import text  # noqa: E402
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPT = ROOT / 'script'
 ORIG = ROOT / 'rom' / 'Ginga Sengoku Gunyuuden Rai (Japan).sfc'
-KEEP = ('en', 'status', 'notes')  # translator fields: never overwritten
+KEEP = ('en', 'tail_en', 'status', 'notes')  # translator fields: never overwritten
 
 
 def not_text():
