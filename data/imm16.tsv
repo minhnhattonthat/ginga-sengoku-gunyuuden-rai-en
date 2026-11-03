@@ -2,6 +2,7 @@
 # operand offset	target	code	verified (y = one routine loads consecutive strings; n = may be a constant)
 # The build rewrites y operands (LDX/LDY only) when their string moves in its bank; the en build ignores n rows
 # (docs/re/text.md). Phase 8: 05AB8C, 05ABC9, 062305 were y but are 8-bit LDA #$xx + next opcode: set to n.
+# 2026-11-04: 0582C2, 058448 set to y (LDA #$82 / LDX #$A9xx / JSR $B8C0 map notice: "No fleets stationed." showed "et!").
 000804	016B00	$80:8804	n
 002032	0135EA	$80:A032	n
 002198	012240	$80:A198	n
@@ -173,8 +174,8 @@
 052EEF	016B00	$8A:AEEF	n
 0531AE	016B00	$8A:B1AE	n
 05803C	016B00	$8B:803C	n
-0582C2	012928	$8B:82C2	n
-058448	012908	$8B:8448	n
+0582C2	012928	$8B:82C2	y
+058448	012908	$8B:8448	y
 05854F	00641F	$8B:854F	y
 058905	016B00	$8B:8905	n
 0589CE	016B00	$8B:89CE	n

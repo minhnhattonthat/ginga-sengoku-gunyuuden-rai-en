@@ -22,7 +22,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
   every tour shot that shows them, not measured with `tools/stress.py`.
 - **Post-v1.0 (2026-11-04, owner playtest):** label boxes now draw from x = 4 (list cursor box no longer covers the
   first letter; `tools/patches.py` 5-cell layout). v1.0 zip predates it: rebuild the release before publishing.
-- **Open bugs:** map notice bar showing only "et!" (owner screenshot, Great Gojo game ~85 s after boot); trigger
-  unknown, not reproduced: no script line ends "et!" past a box edge.
+- **Fixed (owner savestate `work/states/gg_text.mss`, press A = Launch fleet):** the notice "No fleets stationed."
+  showed "et!": `$8B:8448` / `$8B:82C2` (`LDA #$82 / LDX #$A9xx / JSR $B8C0`) were `n` rows in `data/imm16.tsv`, so
+  the build left them pointing at the old offsets. Now `y`. The other unverified LDX/LDY rows load other banks or
+  constants (checked by shape, not each in game).
+- **Open bugs:** none.
 - **Waiting on the user:** publish v1.0 (owner's call); GUI keyboard input in `tools/mesen/Mesen.exe` not hand-tested
   (headless agent run; scripted input verified).
