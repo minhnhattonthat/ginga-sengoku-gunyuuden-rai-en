@@ -45,6 +45,99 @@ def px_to_tiles(img, n, cols=16):
     return bytes(out)
 
 
+def rows_of(path=ROOT / 'data' / 'gfx.tsv'):
+    """data/gfx.tsv: block, x, y, w, h, style, colours (fg,bg[,outline,shadow]), text."""
+    out = []
+    for line in Path(path).read_text(encoding='utf-8').splitlines():
+        if line.strip() and not line.startswith('#'):
+            f = line.split('\t')
+            out.append({'block': int(f[0], 16), 'rect': tuple(int(v) for v in f[1:5]), 'style': f[5],
+                        'colours': [int(v, 16) for v in f[6].split(',')], 'text': f[7]})
+    return out
+
+
+def glyph_cols(text, condensed=False):
+    """Column bitmaps (bit y = row y, rows 0-8) of text in the 5-px font, 1 px between letters."""
+    import font_en
+    if condensed:
+        return font_en.strip(text)
+    out = []
+    for i, ch in enumerate(text):
+        if i:
+            out.append(0)
+        rs = font_en.rows(ch)
+        out += [sum(((r >> (font_en.WIDTH - 1 - x)) & 1) << y for y, r in enumerate(rs))
+                for x in range(font_en.WIDTH)] if ch != ' ' else [0, 0, 0]
+    return out
+
+
+def draw(img, rect, style, colours, text):
+    """Clear rect to the bg colour and draw text centred in it. plain: fg on bg. outline: fill fg, 1-px outline,
+    shadow under the outline (colours fg, bg, outline, shadow). shadow: fg with a shadow 1 px down-right (fg, bg,
+    shadow)."""
+    x0, y0, w, h = rect
+    fg, bg = colours[0], colours[1]
+    pad = {'outline': 2, 'shadow': 1}.get(style, 0)
+    cols = glyph_cols(text)
+    if len(cols) > w - pad:
+        cols = glyph_cols(text, condensed=True)
+    if len(cols) + pad > w:
+        raise ValueError(f'gfx: {text!r} is {len(cols)} px, rect is {w}')
+    rows_used = [y for y in range(9) if any(c >> y & 1 for c in cols)]
+    top = 0 if not rows_used else min(rows_used)
+    gh = 7 - top if max(rows_used, default=0) <= 6 else max(rows_used) + 1 - top  # descenders count only if used
+    ox, oy = x0 + (w - len(cols)) // 2, y0 + (h - gh) // 2 - top
+    for y in range(y0, y0 + h):
+        for x in range(x0, x0 + w):
+            img[y][x] = bg
+    ink = {(ox + x, oy + y) for x, c in enumerate(cols) for y in range(9) if c >> y & 1}
+    if style == 'outline':
+        line, shadow = colours[2], colours[3]
+        ring = {(x + dx, y + dy) for x, y in ink for dx in (-1, 0, 1) for dy in (-1, 0, 1)} - ink
+        for x, y in ring:
+            if x0 <= x < x0 + w and y0 <= y < y0 + h:
+                img[y][x] = line
+        for x, y in ring:
+            if (x, y + 1) not in ink and (x, y + 1) not in ring and x0 <= x < x0 + w and y0 <= y + 1 < y0 + h:
+                img[y + 1][x] = shadow
+    if style == 'shadow':
+        ox -= pad // 2  # keep the shadow inside the rect
+        ink = {(x - pad // 2, y) for x, y in ink}
+        for x, y in ink:
+            if x + 1 < x0 + w and y + 1 < y0 + h:
+                img[y + 1][x + 1] = colours[2]
+    for x, y in ink:
+        img[y][x] = fg
+
+
+def edits(rom_orig, lz):
+    """{block offset: new raw bytes} for every block named in data/gfx.tsv. lz: tools/lz.py module."""
+    out = {}
+    for r in rows_of():
+        b = r['block']
+        if b not in out:
+            out[b] = (bytearray(lz.decompress(rom_orig, b)[0]), None)
+        raw, img = out[b]
+        img = img or tiles_to_px(raw)
+        draw(img, r['rect'], r['style'], r['colours'], r['text'])
+        out[b] = (raw, img)
+    return {b: px_to_tiles(img, len(raw) // 32) + bytes(raw[len(raw) // 32 * 32:]) for b, (raw, img) in out.items()}
+
+
+def preview(rom_orig, lz, out_dir, zoom=4):
+    """work/gfx/preview/<block>.png of every edited block (before | after)."""
+    from PIL import Image
+    Path(out_dir).mkdir(parents=True, exist_ok=True)
+    for b, new in edits(rom_orig, lz).items():
+        old = lz.decompress(rom_orig, b)[0]
+        a, n = tiles_to_px(old), tiles_to_px(new)
+        w, h = 128, len(a)
+        im = Image.new('L', (2 * w + 4, h), 80)
+        for k, img in enumerate((a, n)):
+            im.paste(Image.frombytes('L', (w, h), bytes(v * 17 for row in img for v in row)), (k * (w + 4), 0))
+        im.resize((im.width * zoom, h * zoom), Image.NEAREST).save(Path(out_dir) / f'{b:06X}.png')
+
+
 def palette(path, index):
     raw = Path(path).read_bytes()[index * 32:index * 32 + 32]
     out = []

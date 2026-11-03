@@ -20,6 +20,7 @@ import check_rom  # noqa: E402
 import en  # noqa: E402
 import extract  # noqa: E402
 import font_en  # noqa: E402
+import gfx  # noqa: E402
 import lint  # noqa: E402
 import lz  # noqa: E402
 import patches  # noqa: E402
@@ -362,6 +363,8 @@ def build(repack_all=False, edits=None, mode=None, qa=None):
             rom.write(en.FONT + c * 24, glyph, f'font:{c:03X}')
         for op, data in sorted(imms.items()):
             rom.write(op, data, f'imm:{op:06X}')
+        if mode == 'en':
+            edits['lz'] = {**gfx.edits(rom.orig, lz), **edits.get('lz', {})}
     repack_lz(rom, None if repack_all else edits.get('lz', {}))
     repack_rle(rom, None if repack_all else edits.get('rle', {}))
     blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker',

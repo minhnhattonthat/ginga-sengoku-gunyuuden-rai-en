@@ -1,0 +1,12 @@
+# Graphics text drawn by tools/gfx.py into LZ blocks (docs/re/graphics.md). block, x, y, w, h (px in the block
+# seen 16 tiles wide), style (plain | outline), colours hex (plain: fg,bg; outline: fill,bg,outline,shadow), text.
+# 08D6D3: battle / prisoner / flagship stat labels, 24x12 text rows inside 24x16 label tiles (rows 0-2, 15 frame)
+08D6D3	0	35	24	12	plain	8,2	ATK
+08D6D3	24	35	24	12	plain	8,2	DEF
+08D6D3	48	35	24	12	plain	8,2	EVA
+08D6D3	72	35	24	12	plain	8,2	RNG
+08D6D3	96	35	24	12	plain	8,2	SPD
+08D6D3	24	16	80	16	outline	2,6,8,4	New ship
+# 1617F1: strategy-map side panel count labels (惑星 / 艦隊), white with dark shadow; abbreviated (22-px field)
+1617F1	79	114	21	13	shadow	3,6,8	PLNT
+1617F1	8	130	21	12	shadow	3,6,8	FLT

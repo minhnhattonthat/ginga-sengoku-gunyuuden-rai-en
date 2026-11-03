@@ -35,7 +35,7 @@ def main():
     x0, y0, w, h = a.rect
     for L in range(4):
         bpp = BPP.get(mode, (0,) * 4)[L]
-        if not bpp or not main_layers >> L & 1:
+        if not bpp or main_layers and not main_layers >> L & 1:  # 0 in some dumps (mid-frame): try every layer
             continue
         g = lambda k: p[f'ppu.layers[{L}].{k}']  # noqa: E731
         chr_, tm = int(g('chrAddress')) * 2, int(g('tilemapAddress')) * 2
