@@ -1,5 +1,8 @@
-# Graphics text drawn by tools/gfx.py into LZ blocks (docs/re/graphics.md). block, x, y, w, h (px in the block
-# seen 16 tiles wide), style (plain | outline), colours hex (plain: fg,bg; outline: fill,bg,outline,shadow), text.
+# Graphics text drawn by tools/gfx.py into LZ blocks or word-RLE streams (`rle:OFFSET`; docs/re/graphics.md).
+# block[/2 for 2bpp], x, y, w, h (px in the block seen 16 tiles wide) or a tile canvas `tAA.BB/CC.DD` (block tiles
+# in screen order, `tools/gfx_canvas.py` prints it for a screen rect) then [x] y w h inside it; style (plain |
+# outline | shadow | overlay), colours hex (plain: fg,bg; outline: fill,bg,outline,shadow; shadow: fg,bg,shadow;
+# overlay: fill,outline over map art), text (a single space = clear the rect). Rows apply in order.
 # 08D6D3: battle / prisoner / flagship stat labels, 24x12 text rows inside 24x16 label tiles (rows 0-2, 15 frame)
 08D6D3	0	35	24	12	plain	8,2	ATK
 08D6D3	24	35	24	12	plain	8,2	DEF
@@ -22,3 +25,73 @@
 0FC121	t10A.10B.10C.10D.10E.10F.120.121/11A.11B.11C.11D.11E.11F.130.131	0	64	16	plain	F,1	Ren HQ
 0FC121	t122.123.124.125.126.127.128.129.12A.12B.12C.12D/132.133.134.135.136.137.138.139.13A.13B.13C.13D	0	96	16	plain	F,1	Nanten HQ
 0FC121	t12E.12F.140.141.142.143.144.145.146.147/13E.13F.150.151.152.153.154.155.156.157	0	80	16	plain	F,1	Great Gojo HQ
+# 100000: faction-select galaxy map labels (yellow F, outline 1) over map art: old kanji inpainted from the art
+100000	t14.15/23.24	0	16	16	overlay	F,1	Ren
+100000	t27.28.29.2A.2B.2C/38.39.3A.3B.3C.3D	0	48	16	overlay	F,1	Nankinro
+100000	t68.69.6A.6B.6C.6D.6E/79.7A.7B.7C.7D.7E.7F	0	56	16	overlay	F,1	Nanten
+100000	tC2.C3.C4.C5.C6.C7.C8/5C.5D.5E.5F.60.61.62	0	56	16	overlay	F,1	Great Gojo
+# 098628 (LZ, found at run time): battle unit-data panel labels, black 8 on yellow C (rows 2-14; column 23 frame)
+098628	t7D.7E.7F/8D.8E.8F	0	2	23	13	plain	8,C	HP
+098628	t99.9A.9B/A9.AA.AB	0	2	23	13	plain	8,C	ATK
+098628	t9C.9D.9E/AC.AD.AE	0	2	23	13	plain	8,C	DEF
+098628	t0E.0F.9F/1E.1F.AF	0	2	23	13	plain	8,C	RNG
+098628	t96.97.98/A6.A7.A8	0	2	23	13	plain	8,C	SPD
+098628	t93.94.95/A3.A4.A5	0	2	23	13	plain	8,C	EVA
+098628	t7A.7B.7C/8A.8B.8C	0	2	23	13	plain	8,C	Ships
+098628	t12.13.14.15.16/22.23.24.25.26	0	2	40	12	plain	C,5	Units
+# word-RLE label streams (rle:OFFSET, decoded words = 4bpp tiles): yellow labels, black 8 on 2, rows 2-14
+# 16AD14 / 168000 A0..: planet + production 技術力 工業力 (the 力 tail tile A4 / 04 is shared: blanked), 武将
+rle:16AD14	t04/14	0	2	8	13	plain	8,2
+rle:16AD14	t09/19	0	2	8	13	plain	8,2
+rle:16AD14	t00.01.02.03/10.11.12.13	0	2	32	13	plain	8,2	Tech
+rle:16AD14	t05.06.07.08/15.16.17.18	0	2	32	13	plain	8,2	Indus
+rle:16AD14	t0A.0B.0C/1A.1B.1C	0	2	24	13	plain	8,2	Ofcr
+rle:16BF89	t00.01.02/03.04.05	0	2	24	13	plain	8,2	Fort
+rle:168000	tA4/B4	0	2	8	13	plain	8,2	 
+rle:168000	tA0.A1.A2.A3/B0.B1.B2.B3	0	2	32	13	plain	8,2	Tech
+rle:168000	tA5.A6.A7.A8/B5.B6.B7.B8	0	2	32	13	plain	8,2	Indus
+rle:168000	tED.EE.EF/FD.FE.FF	0	2	24	13	plain	8,2
+rle:168000	tED.EE.EF/FD.FE.FF	2	2	21	13	plain	8,2	Free
+rle:168000	tAB.AC.AD.AE.AF.C0/BB.BC.BD.BE.BF.D0	0	2	48	13	plain	8,2	In stock
+rle:168000	tC1.C2.C3.C4.C5/D1.D2.D3.D4.D5	0	2	40	13	plain	8,2	Rate
+rle:168000	tC6.C7/D6.D7	0	2	16	13	plain	8,2	Shp
+rle:168000	tA9.AA/B9.BA	0	2	16	13	plain	8,2	Day
+rle:168000	tC8.C9.CA.CB.CC.CD.CE.CF/D8.D9.DA.DB.DC.DD.DE.DF	2	2	60	12	shadow	3,6,8	Production
+rle:168000	t10.11.12/20.21.22	0	2	24	13	plain	8,2	ATK
+rle:168000	t13.14.15/23.24.25	0	2	24	13	plain	8,2	DEF
+rle:168000	t16.17.18/26.27.28	0	2	24	13	plain	8,2	EVA
+rle:168000	t19.1A.1B/29.2A.2B	0	2	24	13	plain	8,2	MOV
+rle:168000	t1C.1D.1E/2C.2D.2E	0	2	24	13	plain	8,2	RNG
+rle:168000	t68.69.6A/6B.6C.6D	0	2	24	13	plain	8,2	CMD
+rle:168000	t74.75.76/84.85.86	0	2	24	13	plain	8,2	HP
+rle:168000	t92.93.94/95.96.97	0	2	24	13	plain	8,2	Ships
+rle:168000	t98.99.9A/9B.9C.9D	0	2	24	13	plain	8,2	Units
+rle:16B01B	t10.11.12/20.21.22	0	2	24	13	plain	8,2	ATK
+rle:16B01B	t13.14.15/23.24.25	0	2	24	13	plain	8,2	DEF
+rle:16B01B	t16.17.18/26.27.28	0	2	24	13	plain	8,2	EVA
+rle:16B01B	t68.69.6A/6B.6C.6D	0	2	24	13	plain	8,2	CMD
+rle:16B01B	t74.75.76/84.85.86	0	2	24	13	plain	8,2	HP
+rle:16B01B	t92.93.94/95.96.97	0	2	24	13	plain	8,2	Ships
+rle:16B01B	t98.99.9A/9B.9C.9D	0	2	24	13	plain	8,2	Units
+# 19E636: prisoner panel labels
+rle:19E636	t10.11.12/20.21.22	0	2	24	13	plain	8,2	HP
+rle:19E636	t13.14.15/23.24.25	0	2	24	13	plain	8,2	ATK
+rle:19E636	t16.17.18/26.27.28	0	2	24	13	plain	8,2	CMD
+rle:19E636	t19.1A.1B/29.2A.2B	0	2	24	13	plain	8,2	DEF
+rle:19E636	t1C.1D.1E/2C.2D.2E	0	2	24	13	plain	8,2	LOY
+rle:19E636	t30.31.32/40.41.42	0	2	24	13	plain	8,2	EVA
+rle:19E636	t33.34.35.36/43.44.45.46	0	2	32	13	plain	8,2	Level
+# 19F6BC: prisoner buttons (sprites), white 3 outlined 8 on 6
+rle:19F6BC	t04.05.06.07.08.09/14.15.16.17.18.19	3	2	42	12	outline	3,6,8,8	Recruit
+rle:19F6BC	t0A.0B.0C.0D.0E.0F/1A.1B.1C.1D.1E.1F	3	2	42	12	outline	3,6,8,8	Execute
+rle:19F6BC	t24.25.26.27.28.29/34.35.36.37.38.39	3	2	42	12	outline	3,6,8,8	Yes
+rle:19F6BC	t2A.2B.2C.2D.2E.2F/3A.3B.3C.3D.3E.3F	3	2	42	12	outline	3,6,8,8	No
+rle:19F6BC	t44.45.46.47.48.49/54.55.56.57.58.59	3	2	42	12	outline	3,6,8,8	Release
+# 1DE866: save / load screen title; tilemaps 1DF423 (load) / 1DF612 (save) re-laid by gfx.TITLE_MAPS to
+# [3 blank][Load|Save: 6 tiles][Game: 1C-1F][3 blank]; cyan 8 outlined 1 on 2
+rle:1DE866	t16.17.18.19.1A.1B/26.27.28.29.2A.2B	0	0	48	16	plain	2,2	 
+rle:1DE866	t16.17.18.19.1A.1B/26.27.28.29.2A.2B	19	1	29	14	outline	8,2,1,1	Load
+rle:1DE866	t30.31.32.33.34.35/40.41.42.43.44.45	0	0	48	16	plain	2,2	 
+rle:1DE866	t30.31.32.33.34.35/40.41.42.43.44.45	19	1	29	14	outline	8,2,1,1	Save
+rle:1DE866	t1C.1D.1E.1F/2C.2D.2E.2F	0	0	32	16	plain	2,2	 
+rle:1DE866	t1C.1D.1E.1F/2C.2D.2E.2F	0	1	27	14	outline	8,2,1,1	Game

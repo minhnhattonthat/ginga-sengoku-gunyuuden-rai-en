@@ -48,15 +48,16 @@ def rows_of(path=ROOT / 'data' / 'gfx.tsv'):
     for line in Path(path).read_text(encoding='utf-8').splitlines():
         if line.strip() and not line.startswith('#'):
             f = line.split('\t')
-            blk, _, bpp = f[0].partition('/')  # OFFSET or OFFSET/2 for a 2bpp block
+            blk, _, bpp = f[0].partition('/')  # OFFSET or OFFSET/2 for a 2bpp block; rle:OFFSET = word-RLE stream
+            kind, _, blk = blk.rpartition(':')
             grid = None
             if f[1].startswith('t'):  # tile canvas "tAA.BB.CC/DD.EE.FF" (rows of block tiles); rect inside it
                 grid = [[int(t, 16) for t in row.split('.')] for row in f[1][1:].split('/')]
-                f[1] = '0'
-            out.append({'block': int(blk, 16), 'bpp': int(bpp or 4), 'grid': grid,
+                f[1:2] = [] if f[5].isdigit() else ['0']  # canvas then x y w h, or y w h (x = 0)
+            out.append({'block': int(blk, 16), 'kind': kind or 'lz', 'bpp': int(bpp or 4), 'grid': grid,
                         'rect': tuple(int(v) for v in f[1:5]),
                         'style': f[5],
-                        'colours': [int(v, 16) for v in f[6].split(',')], 'text': f[7]})
+                        'colours': [int(v, 16) for v in f[6].split(',')], 'text': (f[7:] or [' '])[0]})
     return out
 
 
@@ -81,6 +82,8 @@ def draw(img, rect, style, colours, text):
     shadow)."""
     x0, y0, w, h = rect
     fg, bg = colours[0], colours[1]
+    if style == 'overlay':  # label over map art (fg fill, bg = outline colour): inpaint old label, keep the art
+        return overlay(img, rect, fg, bg, text)
     pad = {'outline': 2, 'shadow': 1}.get(style, 0)
     cols = glyph_cols(text)
     if len(cols) > w - pad:
@@ -114,14 +117,78 @@ def draw(img, rect, style, colours, text):
         img[y][x] = fg
 
 
-def edits(rom_orig, lz):
-    """{block offset: new raw bytes} for every block named in data/gfx.tsv. lz: tools/lz.py module."""
+def overlay(img, rect, fg, line, text):
+    """Erase every fg/line pixel in rect by filling from the art around it (majority of known neighbours, grown
+    inward), then draw text centred with fg fill and a 1-px line outline."""
+    from collections import Counter
+    x0, y0, w, h = rect
+    inside = lambda x, y: x0 <= x < x0 + w and y0 <= y < y0 + h  # noqa: E731
+    holes = {(x, y) for y in range(y0, y0 + h) for x in range(x0, x0 + w) if img[y][x] in (fg, line)}
+    while holes:
+        done = {}
+        for x, y in holes:
+            near = Counter(img[y + dy][x + dx] for dx in (-1, 0, 1) for dy in (-1, 0, 1)
+                           if (dx or dy) and inside(x + dx, y + dy) and (x + dx, y + dy) not in holes)
+            if near:
+                done[(x, y)] = near.most_common(1)[0][0]
+        if not done:
+            raise ValueError(f'gfx: no art left around {text!r} to fill from')
+        for (x, y), v in done.items():
+            img[y][x] = v
+        holes -= done.keys()
+    cols = glyph_cols(text)
+    if len(cols) + 2 > w:
+        cols = glyph_cols(text, condensed=True)
+    if len(cols) + 2 > w:
+        raise ValueError(f'gfx: {text!r} is {len(cols)} px, rect is {w}')
+    ox, oy = x0 + (w - len(cols)) // 2, y0 + (h - 7) // 2
+    ink = {(ox + x, oy + y) for x, c in enumerate(cols) for y in range(9) if c >> y & 1}
+    for x, y in {(x + dx, y + dy) for x, y in ink for dx in (-1, 0, 1) for dy in (-1, 0, 1)} - ink:
+        if inside(x, y):
+            img[y][x] = line
+    for x, y in ink:
+        img[y][x] = fg
+
+
+def unpack(rom_orig, kind, off):
+    """Raw bytes of an LZ block or a word-RLE stream (tools/rle.py)."""
+    if kind == 'rle':
+        import rle
+        return b''.join(w.to_bytes(2, 'little') for w in rle.decode(rom_orig, off)[0])
+    import lz
+    return lz.decompress(rom_orig, off)[0]
+
+
+TITLE_MAPS = {0x1DF423: 0x16, 0x1DF612: 0x30}  # load / save tilemap streams: first tile of the screen's own word
+
+
+def title_maps(rom_orig):
+    """{stream: words} of the save/load tilemaps with the title (rows 4-5, columns 8-23) re-laid as
+    [3 blank][own 6 tiles][shared 1C-1F][3 blank], so the English title is centred (data/gfx.tsv 1DE866)."""
+    import rle
+    out = {}
+    for off, own in TITLE_MAPS.items():
+        words = rle.decode(rom_orig, off)[0]
+        for r, add in ((4, 0), (5, 0x10)):
+            row = words[r * 32:r * 32 + 32]
+            attr, blank = row[8] & 0xFC00, row[6]
+            tiles = [own + add + i for i in range(6)] + [0x1C + add + i for i in range(4)]
+            row[8:24] = [blank] * 3 + [attr | t for t in tiles] + [blank] * 3
+            words[r * 32:r * 32 + 32] = row
+        out[off] = words
+    return out
+
+
+def edits(rom_orig, lz=None, kind='lz'):
+    """{block offset: new raw bytes} for every `kind` block (lz | rle) named in data/gfx.tsv."""
     out, bpp = {}, {}
     for r in rows_of():
         b = r['block']
+        if r['kind'] != kind:
+            continue
         bpp[b] = r['bpp']
         if b not in out:
-            out[b] = (bytearray(lz.decompress(rom_orig, b)[0]), None)
+            out[b] = (bytearray(unpack(rom_orig, kind, b)), None)
         raw, img = out[b]
         img = img or tiles_to_px(raw, bpp=bpp[b])
         if r['grid']:
@@ -187,6 +254,11 @@ def sheet(block, out, pal=None, zoom=4, cols=16):
 def selftest():
     raw = bytes(range(256)) * 2
     assert px_to_tiles(tiles_to_px(raw), 16) == raw
+    img = [bytearray([0xD] * 16) for _ in range(16)]
+    for y in range(4, 12):
+        img[y][2:14] = bytes([0xF, 1] * 6)  # old label
+    overlay(img, (0, 0, 16, 16), 0xF, 1, 'Ren')
+    assert {v for r in img for v in r} == {0xD, 0xF, 1} and img[0] == bytearray([0xD] * 16)
     print('gfx selftest ok')
 
 

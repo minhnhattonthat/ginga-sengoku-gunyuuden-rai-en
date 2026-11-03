@@ -365,6 +365,9 @@ def build(repack_all=False, edits=None, mode=None, qa=None):
             rom.write(op, data, f'imm:{op:06X}')
         if mode == 'en':
             edits['lz'] = {**gfx.edits(rom.orig, lz), **edits.get('lz', {})}
+            edits['rle'] = {**{o: [int.from_bytes(raw[i:i + 2], 'little') for i in range(0, len(raw), 2)]
+                               for o, raw in gfx.edits(rom.orig, kind='rle').items()},
+                            **gfx.title_maps(rom.orig), **edits.get('rle', {})}
     repack_lz(rom, None if repack_all else edits.get('lz', {}))
     repack_rle(rom, None if repack_all else edits.get('rle', {}))
     blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker',
