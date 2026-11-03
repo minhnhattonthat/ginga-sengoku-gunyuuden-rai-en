@@ -152,7 +152,10 @@ def english_edits(rom_orig, mode='en', qa=None):
         for e in b['entries']:
             s = script.get(e['off'], {})
             codec, _, fixed = extract.parse_fmt(e['fmt'])
-            t = (qa or {}).get(e['off']) or (
+            t = (qa or {}).get(e['off'])
+            if t and not fixed and not t.endswith('{end}'):
+                t += '{end}'
+            t = t or (
                 marker(e, codec, short and not fixed and not e['tails']) if mode == 'marker' else s.get('en'))
             if t:
                 texts[e['off']] = (e, t)
@@ -199,7 +202,7 @@ def main():
     ap.add_argument('--qa', action='append', default=[], metavar='ID=TEXT', help='override one string')
     ap.add_argument('--out', type=Path, default=OUT)
     a = ap.parse_args()
-    qa = {int(k, 16): v if v.endswith('{end}') else v + '{end}' for k, v in (s.split('=', 1) for s in a.qa)}
+    qa = {int(k, 16): v for k, v in (s.split('=', 1) for s in a.qa)}
     out = a.out
     out.parent.mkdir(exist_ok=True)
     out.unlink(missing_ok=True)  # a failed build must not leave a stale ROM to test
