@@ -31,16 +31,27 @@ Updated at the end of every session. Keep it to what the next session needs; his
     fleet_command name above the icon bar ("11 4C"), prisoner/officer data screens (faction "00 0C A6  T",
     name "12 2C"), battle_enemy_attack ship names ("0C F5"). Candidates: font users `$81:E86F`, `$81:EAE0`,
     `$83:BCE1`, `$8C:E2CA`, `$8E:C772`, `$8E:C85F`, `$8E:F099`, `$8E:F197`, `$BA:896B` (search `A9 95`).
-  - **Font text the extractor missed (shows `##`/random pairs):** attract demo year card (元魔三年, 4 cells),
-    save/load prompts (記録してよろしいですか? / 記録が壊れています, save_screen, load_screen, save_game), save-slot
-    labels ("######" next to the numbers), prisoner question line (prisoner_judge/ours: box above
-    登用する/処刑する). Find where they live (code-built or an unscanned table), extract, re-tour.
+  - **Missed font text, now extracted** (script/ 54 blocks, 1594 strings): counted strings (`$1AF0` = cells,
+    `$1AF1-3` = pointer, no end code; `refs.counted()` sweeps the immediate form `LDA #n/STA $1AF0/LDX/LDA/STX
+    $1AF1/STA $1AF3`): 06403E, 19FE1B (prisoner question), 1D2C9B (save errors); save prompts 1DFB2B
+    (`$BA:AD1F` base + index*32, `refs.FIXED`); formation-screen help 16E05B (word table `$8C:A0A4` -> bank
+    `$AD`, `refs.P16_FAR`; screen not in the debug tool yet); attract prologue 0FC029 (124 cells, drawn in
+    counted steps from RAM pointer `$1B24` by `$8C:D240`/`$8C:E2C7`; the stepping script isn't found, so the
+    English must keep its cell layout until it is). Re-toured: markers show (`work/p5/fix1.png`).
+  - **Still code-built (phase 7 patch):** save-slot labels ("######" in save/load): cells `$03D0 $02CA $02F4`
+    as `LDY #imm / STY $1B6x` around `$BA:ABC0..AC00`, drawn as counted strings from RAM `$1B60`. Sweep all
+    `LDY #cell / STY $1Bxx` builds; the build must write allocated pair codes into those immediates.
   - Map side panel shows the vertical-name blocks (005E17/005E61/006375) horizontally with `{FFFE}` = skip:
     English drops the `{FFFE}`s.
-- **Next:** patch the 16-px renderers; extract the missed strings; stress-measure each box variant (talk window,
-  battle quotes, advisor 13 cells x 3?, map notice, help line, game over, prisoner judge, epilogue, staff roll,
-  flagship speech, unit/option labels, names in lists) and fill `data/boxes.tsv` (format in `tools/lint.py`,
-  new, not yet wired into check.py); odd-length runtime names (6-px gap).
+- **Box budgets:** `data/boxes.tsv` (19 variants, every string mapped; format in `tools/lint.py`), lint runs in
+  `tools/check.py` (errors gate; `guess` budgets warn once en text exists). Measured: dialogue, faction_desc,
+  label, prompt32. The rest are guesses from marker shots.
+- **Next (to finish phase 5):** (1) patch the remaining 16-px renderers (fleet_move officer list, fleet_command
+  name, battle ship names: re-check after the label patch, then find their routine among the `A9 95` users);
+  (2) stress-measure every `guess` variant with `tools/stress.py` (talk via prisoner_recruit, advisor via
+  map_ren, map_notice via attack_notice, help_line via system_bar, game_over, prisoner_judge via hq_screen,
+  narration via ending/intro scenes, staff roll via credits; battle quotes and flagship speech need debug-tool
+  scenes) and flip them to `measured`; (3) odd-length runtime names (6-px gap): look at a composite notice.
 - **Phase 5/7 needs from phase 4:** (unchanged)
   - `data/imm16.tsv`: 480 code-immediate refs; 41 `verified=y`, the rest may be constants. They are `fixed` refs:
     the build refuses to move their strings, which blocks relocation of bank-01 pools (e.g. 0x01676A, 0x010396).

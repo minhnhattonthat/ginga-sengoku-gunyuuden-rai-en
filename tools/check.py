@@ -8,5 +8,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Text lint joins here once script/ exists (phase 4+).
-sys.exit(subprocess.run([sys.executable, "-X", "utf8", "-m", "pytest", "-q", str(ROOT / "tests")], cwd=ROOT).returncode)
+tests = subprocess.run([sys.executable, "-X", "utf8", "-m", "pytest", "-q", str(ROOT / "tests")], cwd=ROOT).returncode
+lint = subprocess.run([sys.executable, "-X", "utf8", str(ROOT / "tools" / "lint.py")], cwd=ROOT).returncode
+sys.exit(tests or lint)

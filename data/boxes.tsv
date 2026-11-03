@@ -1,0 +1,19 @@
+# Box variants (tools/lint.py): name, letters per line (6 px each), lines, wrap (br|pad|one), state (measured|guess), evidence, covers (blocks; =ID for one string)
+dialogue	40	3	br	measured	work/qa/stress/dlg (cell 21 overflows the tile row; {skip} indent counts)	1161FD 116A0B 11FC9E 12EA31 176E6A 17FBDE 187ABB 18EC39
+narration	40	7	br	guess	JP has 7-line pages (10EC1C, 19E244); not stressed	10EC1C 19E244
+talk	28	3	br	guess	marker prisoner_recruit: 28 letters fill the line	1D8000
+faction_desc	40	2	pad	measured	work/qa/marker/faction_select (40 letters fill each line)	011A46
+label	10	1	one	measured	work/qa/stress/lbl2 (5 cells packed after the label patch)	000C60 000CEC 00109E 00114C 001C64
+vertical_name	10	1	one	guess	map side panel shows these horizontally; drop {FFFE}	005E17 005E61 006375
+unit_label	8	1	one	guess	fixed 8-byte fields	002C91 0623D8
+advisor	26	3	pad	guess	marker map_ren advisor box: 26 letters per line	040016 040138 0402DA 040492
+battle_quote	24	3	pad	guess	not seen in the tour yet	010396 010E2C 011BE4 01214C 0129AC 01348C 015AC2 01611A 01676A
+map_notice	40	1	one	guess	marker attack_notice: composite line in a full-width bar	0048FE 0058A5 006181 00641F 0102D4 06403E
+help_line	40	1	one	guess	marker system_bar: full-width bar	01004E 01020A 0118D2 0119D0 16E05B
+game_over	32	2	pad	guess	marker game_over	011FBC
+prisoner_judge	30	3	pad	guess	marker hq_screen (typewriter, not complete)	016DDA
+prompt32	32	1	one	measured	work/qa/marker/save_screen, prisoner_judge (16-cell fixed fields fill the box)	19FE1B 1DFB2B
+save_error	18	1	one	guess	fixed 8/9-cell fields	1D2C9B
+flagship_speech	40	3	pad	guess	not seen in the tour yet	08F1DB
+battle_cmd	80	3	br	guess	deployment prompts (fixed:80) + melee quotes	148000
+attract	248	1	one	guess	attract prologue, drawn in counted steps; layout script unknown	0FC029

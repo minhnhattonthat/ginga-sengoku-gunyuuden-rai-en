@@ -8,11 +8,13 @@ A ref is (kind, slot, target, fmt, extra):
           fmt None = take the format other refs give the string (plain if none)
 Messages after a msg-format target are reached by reading on (no ref); text_ranges.tsv lists the extents.
 """
+import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import events  # noqa: E402
+import text  # noqa: E402
 
 DATA = Path(__file__).resolve().parents[1] / 'data'
 
@@ -40,7 +42,14 @@ P24_TABLES = [(0x00241B, 7, 'plain'),      # $80:A41B: new-flagship speeches in 
 FIXED = [(0x00E545, 0x000C60, 10, 4, 'fixed:10', '$81:E544 ADC #$8C60 (faction * 10)'),
          (0x0704ED, 0x000C88, 10, 4, 'fixed:10', '$8E:84EC ADC #$8C88 (faction * 10) and 11 more'),
          (0x00DC7F, 0x002C91, 8, 11, 'fixed:8', '$81:DC7E ADC #$AC91 (unit * 8)'),
-         (0x062339, 0x0623D8, 0, 1, 'fixed:8', '$8C:A338 LDX #$A3D8 (two 2-cell column labels)')]
+         (0x062339, 0x0623D8, 0, 1, 'fixed:8', '$8C:A338 LDX #$A3D8 (two 2-cell column labels)'),
+         # phase 5 (counted strings, $1AF0 = cells): save/load prompts, 16 cells each
+         (0x1D2D20, 0x1DFB2B, 0x20, 4, 'fixed:32', '$BA:AD1F ADC #$FB2B (index * 32), bank $BB'),
+         # attract-demo prologue: 124 cells drawn a few at a time from a RAM pointer ($8C:D240, $1B24); the
+         # code that steps the pointer is not found yet, so the slot here is the string itself (never moved)
+         (0x0FC029, 0x0FC029, 0, 1, 'fixed:248', 'attract prologue, $8C:D240 counted draws')]
+# Counted strings through a word table in another bank: (table, entries, string bank, fmt)
+P16_FAR = [(0x0620A4, 23, 0xAD, 'fixed:36')]  # $8C:A0A4: formation-screen help, 18 cells each ($8C:A05D)
 
 
 def rows(name):
@@ -58,8 +67,32 @@ def lorom24(rom, p):
     return ((rom[p + 2] & 0x7F) << 15) | (w(rom, p) & 0x7FFF)
 
 
+COUNTED = re.compile(rb'\xa9(.)\x8d\xf0\x1a\xa2(..)\xa9(.)\x8e\xf1\x1a\x8d\xf3\x1a', re.S)
+
+
+def counted(rom):
+    """Counted strings (no end code): LDA #cells / STA $1AF0 / LDX #ptr / LDA #bank / STX $1AF1 / STA $1AF3,
+    then a draw call (e.g. $BA:AC2C -> $BA:8968). The same form also copies palettes: keep only hits whose
+    bytes decode as clean text. -> [(operand offset of the LDX, target, cells)] (phase 5 sweep)."""
+    tab = text.plain_table()
+    out = []
+    for m in COUNTED.finditer(rom):
+        n = m.group(1)[0]
+        ptr = int.from_bytes(m.group(2), 'little') | m.group(3)[0] << 16
+        t = ((ptr & 0x7F0000) >> 1) | (ptr & 0x7FFF)
+        try:
+            s, _ = tab.decode(rom, t, length=2 * n)
+        except ValueError:
+            continue
+        if 0 < n <= 64 and '[' not in s and s.strip('0'):
+            out.append((m.start() + 6, t, n))
+    return out
+
+
 def collect(rom):
     out = []
+    for op, t, n in counted(rom):
+        out.append(('fixed', op, t, f'fixed:{2 * n}', 'counted string ($1AF0 = cells, $1AF1 = ptr)'))
     for off, cnt in rows('ptr_tables.tsv'):
         for k in range(cnt):
             p = off + 2 * k
@@ -98,6 +131,10 @@ def collect(rom):
         for k in range(n):
             p = tab + 2 * k
             out.append(('p16', p, (p & ~0x7FFF) | (w(rom, p) & 0x7FFF), fmt, None))
+    for tab, n, bank, fmt in P16_FAR:
+        for k in range(n):
+            p = tab + 2 * k
+            out.append(('p16', p, ((bank & 0x7F) << 15) | (w(rom, p) & 0x7FFF), fmt, None))
     for tab, n, fmt in P24_TABLES:
         for k in range(n):
             out.append(('p24', tab + 3 * k, lorom24(rom, tab + 3 * k), fmt, None))

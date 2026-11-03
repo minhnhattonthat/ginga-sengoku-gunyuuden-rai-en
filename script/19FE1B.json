@@ -1,0 +1,27 @@
+{
+ "block": "19FE1B",
+ "end": "19FE5B",
+ "entries": [
+  {
+   "id": "19FE1B",
+   "fmt": "fixed:32",
+   "jp": "この武将をどう処分されますか? ",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "fixed 076C90",
+    "fixed 077B0B"
+   ]
+  },
+  {
+   "id": "19FE3B",
+   "fmt": "fixed:32",
+   "jp": "よろしいですか?        ",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "fixed 076D07"
+   ]
+  }
+ ]
+}

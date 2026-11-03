@@ -1,0 +1,46 @@
+{
+ "block": "1DFB2B",
+ "end": "1DFBAB",
+ "entries": [
+  {
+   "id": "1DFB2B",
+   "fmt": "fixed:32",
+   "jp": " この記録の続きから始めます  ",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "fixed 1D2D20"
+   ]
+  },
+  {
+   "id": "1DFB4B",
+   "fmt": "fixed:32",
+   "jp": " 記録してよろしいですか?   ",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "fixed 1D2D20"
+   ]
+  },
+  {
+   "id": "1DFB6B",
+   "fmt": "fixed:32",
+   "jp": " デ〜タが壊れています     ",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "fixed 1D2D20"
+   ]
+  },
+  {
+   "id": "1DFB8B",
+   "fmt": "fixed:32",
+   "jp": " 記録しました         ",
+   "en": "",
+   "max": 32,
+   "ptr": [
+    "fixed 1D2D20"
+   ]
+  }
+ ]
+}

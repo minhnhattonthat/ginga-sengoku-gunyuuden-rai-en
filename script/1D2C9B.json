@@ -1,0 +1,26 @@
+{
+ "block": "1D2C9B",
+ "end": "1D2CBD",
+ "entries": [
+  {
+   "id": "1D2C9B",
+   "fmt": "fixed:16",
+   "jp": "記録がありません",
+   "en": "",
+   "max": 16,
+   "ptr": [
+    "fixed 1D2C32"
+   ]
+  },
+  {
+   "id": "1D2CAB",
+   "fmt": "fixed:18",
+   "jp": "記録が壊れています",
+   "en": "",
+   "max": 18,
+   "ptr": [
+    "fixed 1D2C5A"
+   ]
+  }
+ ]
+}
