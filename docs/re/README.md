@@ -13,6 +13,6 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 | File | Covers | State |
 |---|---|---|
 | [text.md](text.md) | header/map, encoding + font, both string formats, dialogue control codes, 16-bit tables, 24-bit event pointers, text ranges | encoding + dialogue codes verified; ranges and event format partly guessed |
-| [graphics.md](graphics.md) | LZ codec, block list, RLE tilemaps, graphics-text survey, free space | LZ verified; survey partial; free space candidates only |
+| [graphics.md](graphics.md) | LZ codec, block list, RLE tilemaps, graphics-text survey, free space | LZ + RLE verified; runtime-only LZ blocks found (lzlog.lua); survey complete for title→map, still needs phase-2 screens |
 
 No earlier fan translation was found (web search 2026-11-03: romhacking.net listings, general search).
