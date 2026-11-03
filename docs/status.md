@@ -2,9 +2,9 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 9 (release) done: v1.0 zip built and verified locally (`release/GingaSengokuRai_EN_v1.0.zip`,
-  patch sha1 c3960cdfe4bf52a94a92ce115b911e4ad8f6fddb, patched CRC32 3A23D092). Not published: publishing is the
-  owner's call (`references/pipeline.md` §Publish; never `gh release create` without the owner).
+- **Phase:** 9 (release) done: v1.0 published 2026-11-04 on github.com/minhnhattonthat/ginga-sengoku-gunyuuden-rai-en
+  (`release/GingaSengokuRai_EN_v1.0.zip`, patch sha1 ec47b97a62822c77377bed0fb2639539a5499988, patched CRC32
+  2F2AF74B; includes the two post-playtest fixes below). Next release: bump the version, never overwrite v1.0.
 - **Gates (all green at release):** build + 31 tests + lint (0 errors); smoke; `jp_left` over every text unit the
   build wrote: 0 runs; visual QA 58/58 tour sheets ok/fixed (`work/qa/manifest.tsv`, round 2 verdicts
   `work/qa/verdicts/r2_chunk_*.tsv`, `recheck_1.tsv`); story pass 17/17 chapters (`work/qa/story/`); `docs/polish.md`
@@ -21,11 +21,10 @@ Updated at the end of every session. Keep it to what the next session needs; his
   reaches them; 165 lint warnings are "budget is a guess" (officer_name, full_name, battle_cmd boxes): those fit in
   every tour shot that shows them, not measured with `tools/stress.py`.
 - **Post-v1.0 (2026-11-04, owner playtest):** label boxes now draw from x = 4 (list cursor box no longer covers the
-  first letter; `tools/patches.py` 5-cell layout). v1.0 zip predates it: rebuild the release before publishing.
-- **Fixed (owner savestate `work/states/gg_text.mss`, press A = Launch fleet):** the notice "No fleets stationed."
+  first letter; `tools/patches.py` 5-cell layout).- **Fixed (owner savestate `work/states/gg_text.mss`, press A = Launch fleet):** the notice "No fleets stationed."
   showed "et!": `$8B:8448` / `$8B:82C2` (`LDA #$82 / LDX #$A9xx / JSR $B8C0`) were `n` rows in `data/imm16.tsv`, so
   the build left them pointing at the old offsets. Now `y`. The other unverified LDX/LDY rows load other banks or
   constants (checked by shape, not each in game).
 - **Open bugs:** none.
-- **Waiting on the user:** publish v1.0 (owner's call); GUI keyboard input in `tools/mesen/Mesen.exe` not hand-tested
+- **Waiting on the user:** GUI keyboard input in `tools/mesen/Mesen.exe` not hand-tested
   (headless agent run; scripted input verified).
