@@ -44,6 +44,12 @@ def rows(name):
 FREE = [(0x006812, 0x007FB0), (0x017170, 0x018000), (0x01E562, 0x020000), (0x0407FE, 0x048000),
         (0x04ACCA, 0x050000), (0x05322F, 0x058000), (0x05DD10, 0x060000), (0x0669CD, 0x068000),
         (0x06ED2A, 0x070000), (0x1A22F0, 0x1A8000), (0x1D3071, 0x1D8000)]
+# Save-panel labels the code builds from cell immediates (LDY #cell / STY $1B6x, $BA:AB18-ABDB): JP Lv, 惑星数,
+# 武将数 with blank cells around (checked on screen). (English, LDY operand offsets): the en build writes their
+# pair cells there.
+CODE_LABELS = [('Lv  ', [0x1D2B19, 0x1D2B1F]),
+               (' Planets  ', [0x1D2B86, 0x1D2B8C, 0x1D2B92, 0x1D2B98, 0x1D2B9E]),
+               (' Officers ', [0x1D2BC1, 0x1D2BC7, 0x1D2BCD, 0x1D2BD3, 0x1D2BD9])]
 FAR = [(0x1E8000, 0x200000)]  # banks $BD-$BF (all FF): blocks reached only by 24-bit pointers
 STALE_TALK =0x1D9BA4  # base of talk type 2 ($BA:9E27), a stale table landing mid-string (docs/re/text.md)
 
@@ -196,7 +202,8 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False, moves=None):
                 if kind == 'fixed':
                     if loose and 'verified=n' in str(x):
                         continue  # unverified immediates are probably constants (docs/re/text.md §imm16)
-                    if str(x).startswith('imm ') and 'verified=y' in str(x) and not (t ^ e['off']) & ~0x7FFF:
+                    if (str(x).startswith('imm ') and 'verified=y' in str(x) and not (t ^ e['off']) & ~0x7FFF
+                            and rom.orig[slot - 1] in (0xA0, 0xA2)):  # LDY/LDX #: an LDA # may be 8-bit
                         rom.write(slot, (0x8000 | t & 0x7FFF).to_bytes(2, 'little'), f'imm:{slot:06X}')
                     elif t != e['off'] + (delta[0] if delta else 0):
                         raise ValueError(f'text {e["off"]:06X}: moved, but code at {slot:06X} holds it fixed')
@@ -251,11 +258,19 @@ def english_edits(rom_orig, mode='en', qa=None):
                 t = lint.expand_n(t, box['letters'])
             if t:
                 texts[e['off']] = (e, t)
+    labels = [t for t, _ in CODE_LABELS] if mode == 'en' else []
     tails = {off: {int(d): t for d, t in script[off].get('tail_en', {}).items()}
              for off in texts if mode == 'en' and off not in (qa or {}) and script.get(off, {}).get('tail_en')}
     jp_left = [e for b in extract.blocks(rom_orig) for e in b['entries'] if e['off'] not in texts]
-    alloc = en.Alloc([t for _, t in texts.values()] + [t for d in tails.values() for t in d.values()],
+    alloc = en.Alloc([t for _, t in texts.values()] + [t for d in tails.values() for t in d.values()] + labels,
                      en.jp_cells(rom_orig, jp_left))
+    imms = {}
+    for t, ops in CODE_LABELS if labels else []:
+        data = alloc.encode(t, 'plain')
+        assert len(data) == 2 * len(ops), t
+        for k, op in enumerate(ops):
+            assert rom_orig[op - 1] == 0xA0, f'{op:06X}: not LDY #'
+            imms[op] = data[2 * k:2 * k + 2]
     out, moves = {}, {}
     for off, (e, t) in texts.items():
         codec = extract.parse_fmt(e['fmt'])[0]
@@ -268,9 +283,11 @@ def english_edits(rom_orig, mode='en', qa=None):
             data += alloc.encode(tt, codec)
         out[off] = data
     cells = alloc.cells()
+    if mode == 'en':
+        cells.update({c: font_en.cell(p) for c, p in en.QUOTES.items()})
     if mode == 'marker':  # every other cell shows '##': font text the extractor missed can't hide as Japanese
         cells.update({c: font_en.cell('##') for c in range(en.CELLS) if c not in cells and c not in en.RESERVED})
-    return out, cells, moves
+    return out, cells, moves, imms
 
 
 def build(repack_all=False, edits=None, mode=None, qa=None):
@@ -281,9 +298,11 @@ def build(repack_all=False, edits=None, mode=None, qa=None):
     edits = dict(edits or {})
     if mode:
         patches.apply(rom)
-        edits['text'], cells, moves = english_edits(rom.orig, mode, qa)
+        edits['text'], cells, moves, imms = english_edits(rom.orig, mode, qa)
         for c, glyph in sorted(cells.items()):
             rom.write(en.FONT + c * 24, glyph, f'font:{c:03X}')
+        for op, data in sorted(imms.items()):
+            rom.write(op, data, f'imm:{op:06X}')
     repack_lz(rom, None if repack_all else edits.get('lz', {}))
     repack_rle(rom, None if repack_all else edits.get('rle', {}))
     blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker',

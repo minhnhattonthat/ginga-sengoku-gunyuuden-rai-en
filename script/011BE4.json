@@ -16,7 +16,7 @@
    "id": "011C16",
    "fmt": "plain",
    "jp": "今度会うときはおぬし達の命は、ないと思え!{end}",
-   "en": "Next time we meet,{n}consider yourselves dead!{end}",
+   "en": "Next time we meet,{n}consider yourselves{n}dead!{end}",
    "max": 44,
    "ptr": [
     "p16 011BC4",
@@ -39,7 +39,7 @@
    "id": "011C62",
    "fmt": "plain",
    "jp": "くそっ!今度会ったときはズタズタにしてやる!{end}",
-   "en": "Damn! Next time I'll tear{n}you to shreds!{end}",
+   "en": "Damn! Next time I'll{n}tear you to shreds!{end}",
    "max": 46,
    "ptr": [
     "p16 011B86",
@@ -95,7 +95,7 @@
    "id": "011D10",
    "fmt": "plain",
    "jp": "いつまでも、貴様らと  遊んではおられん!{end}",
-   "en": "I can't keep playing with{n}you lot forever!{end}",
+   "en": "I can't keep playing{n}with you lot forever!{end}",
    "max": 44,
    "ptr": [
     "p16 011B9E",
@@ -107,7 +107,7 @@
    "id": "011D3C",
    "fmt": "plain",
    "jp": "こうまで損害が出ては……撤退します{end}",
-   "en": "With losses like these...{n}We're withdrawing.{end}",
+   "en": "With losses like{n}these... We're{n}withdrawing.{end}",
    "max": 36,
    "ptr": [
     "p16 011B90",
@@ -122,7 +122,7 @@
    "id": "011D60",
    "fmt": "plain",
    "jp": "ぬううっ!これまでか……ひとまず引くぞ!{end}",
-   "en": "Nngh! Is this it...? Fall{n}back for now!{end}",
+   "en": "Nngh! Is this it...?{n}Fall back for now!{end}",
    "max": 42,
    "ptr": [
     "p16 011B88",
@@ -137,7 +137,7 @@
    "id": "011D8A",
    "fmt": "plain",
    "jp": "わはははっ!貴様らなどにかまっておれんわ!{end}",
-   "en": "Wahahaha! I've no time to{n}waste on the likes of you!{end}",
+   "en": "Wahahaha! I've no time{n}to waste on the likes of{n}you!{end}",
    "max": 44,
    "ptr": [
     "p16 011BC6"
@@ -147,7 +147,7 @@
    "id": "011DB6",
    "fmt": "plain",
    "jp": "う、うちは負けん……  負けてへんでぇ!!{end}",
-   "en": "I-I ain't lost... I ain't{n}lost, y'hear!!{end}",
+   "en": "I-I ain't lost... I{n}ain't lost, y'hear!!{end}",
    "max": 44,
    "ptr": [
     "p16 011B94"
@@ -180,7 +180,7 @@
    "id": "011E36",
    "fmt": "plain",
    "jp": "今回は武運がなかったと いうことか…{end}",
-   "en": "So fortune wasn't with me{n}this time...{end}",
+   "en": "So fortune wasn't with{n}me this time...{end}",
    "max": 38,
    "ptr": [
     "p16 011BA8"
@@ -239,7 +239,7 @@
    "id": "011EFE",
    "fmt": "plain",
    "jp": "                     武将には、撤退を命ずる 勇気も必要といことだな。{end}",
-   "en": "An officer also needs the{n}courage to order a{n}retreat, eh?{end}",
+   "en": "An officer also needs{n}the courage to order a{n}retreat, eh?{end}",
    "max": 92,
    "ptr": [
     "p16 011B8C"

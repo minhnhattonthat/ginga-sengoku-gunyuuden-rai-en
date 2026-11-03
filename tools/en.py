@@ -14,7 +14,9 @@ import text
 FONT = 0x0A8000          # cell c at FONT + c * 24 (bank $95)
 CELLS = 0x528            # 0x000-0x527 are font; past that is other data
 SPACE = 0x3E             # the game's blank cell; also the pair "  "
-RESERVED = set(range(0x0A)) | {SPACE}  # digits: numbers are drawn by code from cells 0-9
+# Cells code draws by number: digits 0-9, and 『 』 around advisor and flagship speeches (name + 『 + text + 』)
+QUOTES = {0x4F: ' "', 0x50: '" '}
+RESERVED = set(range(0x0A)) | {SPACE} | set(QUOTES)
 TOKEN = re.compile(r'(\{[^}]*\})')
 
 

@@ -21,7 +21,9 @@
    "fmt": "plain",
    "jp": "大覚屋師真紫紋姫{end}",
    "en": "Shishin Daigakuya{end}",
-   "tail_en": {"10": "Princess Shimon{end}"},
+   "tail_en": {
+    "10": "Princess Shimon{end}"
+   },
    "max": 18,
    "ptr": [
     "p16 000FCA",
@@ -59,7 +61,9 @@
    "fmt": "plain",
    "jp": "独眼竜正宗竜我雷{end}",
    "en": "Masamune{end}",
-   "tail_en": {"10": "Rai Ryuga{end}"},
+   "tail_en": {
+    "10": "Rai Ryuga{end}"
+   },
    "max": 18,
    "ptr": [
     "p16 000FE6",

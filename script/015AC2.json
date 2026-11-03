@@ -6,7 +6,7 @@
    "id": "015AC2",
    "fmt": "plain",
    "jp": "ここを攻め落とすと また一歩 銀河統一に近づく ことになる!!{end}",
-   "en": "Take this place, and we're{n}one step closer to{n}unifying the galaxy!!{end}",
+   "en": "Take this place, and{n}we're one step closer to{n}unifying the galaxy!!{end}",
    "max": 64,
    "ptr": [
     "p16 015A5E"
@@ -46,7 +46,7 @@
    "id": "015BB4",
    "fmt": "plain",
    "jp": "この星を 攻め取るのも…平和のためなの…!{end}",
-   "en": "Even taking this planet...{n}is for the sake of{n}peace...!{end}",
+   "en": "Even taking this{n}planet... is for the{n}sake of peace...!{end}",
    "max": 44,
    "ptr": [
     "p16 015A70"
@@ -56,7 +56,7 @@
    "id": "015BE0",
    "fmt": "plain",
    "jp": "うちだったら すぐにでも占領できるはずや!!{end}",
-   "en": "If it was me, I'd take it{n}in no time!!{end}",
+   "en": "If it was me, I'd take{n}it in no time!!{end}",
    "max": 46,
    "ptr": [
     "p16 015A72"
@@ -66,7 +66,7 @@
    "id": "015C0E",
    "fmt": "plain",
    "jp": "練国を強大にするために この拠点は、是が比でも 落とす!!{end}",
-   "en": "To make Ren mighty, we{n}must take this base at all{n}costs!!{end}",
+   "en": "To make Ren mighty, we{n}must take this base at{n}all costs!!{end}",
    "max": 60,
    "ptr": [
     "p16 015A74"
@@ -76,7 +76,7 @@
    "id": "015C4A",
    "fmt": "plain",
    "jp": "星を一つ落としていくごとに俺の専へと近づいて行く銀河統一の専に…!{end}",
-   "en": "Each planet I take brings{n}me closer to my dream...{n}of a united galaxy...!{end}",
+   "en": "Each planet taken brings{n}my dream of a united{n}galaxy closer...!{end}",
    "max": 68,
    "ptr": [
     "p16 015A76"
@@ -106,7 +106,7 @@
    "id": "015D1E",
    "fmt": "plain",
    "jp": "こ～んな星あたしがさっさと占領してあげるわ!!{end}",
-   "en": "A planet like thiiis? I'll{n}take it in a jiffy!!{end}",
+   "en": "A planet like thiiis?{n}I'll take it in a{n}jiffy!!{end}",
    "max": 48,
    "ptr": [
     "p16 015A84"
@@ -116,7 +116,7 @@
    "id": "015D4E",
    "fmt": "plain",
    "jp": "智の国を大きくしていかねば…智による銀河統一は専となって消えてしまう…{end}",
-   "en": "If Chi doesn't grow... a{n}galaxy united by Chi will{n}fade like a dream...{end}",
+   "en": "If Chi doesn't grow, its{n}united galaxy will fade{n}like a dream...{end}",
    "max": 72,
    "ptr": [
     "p16 015A86",
@@ -127,7 +127,7 @@
    "id": "015D96",
    "fmt": "plain",
    "jp": "銀河統一のためにはすべての星が自国の物とならねばいけないのだ…!{end}",
-   "en": "To unify the galaxy, every{n}planet must belong to our{n}nation...!{end}",
+   "en": "To unify the galaxy,{n}every planet must belong{n}to our nation...!{end}",
    "max": 66,
    "ptr": [
     "p16 015A88"
@@ -177,7 +177,7 @@
    "id": "015ED8",
    "fmt": "plain",
    "jp": "雑魚がいくら守っても俺の前では意味が無いぞ!!{end}",
-   "en": "No matter how much small{n}fry defend it, it's no use{n}against me!!{end}",
+   "en": "No matter how much small{n}fry defend it, it's no{n}use against me!!{end}",
    "max": 48,
    "ptr": [
     "p16 015AA6"
@@ -197,7 +197,7 @@
    "id": "015F4E",
    "fmt": "plain",
    "jp": "いくら戦闘で勝とうとも 星を取らねば意味が無い{end}",
-   "en": "No matter how many battles{n}we win, it's pointless if{n}we don't take planets.{end}",
+   "en": "Win all the battles you{n}like; without planets,{n}it's pointless.{end}",
    "max": 48,
    "ptr": [
     "p16 015AAA"
@@ -207,7 +207,7 @@
    "id": "015F7E",
    "fmt": "plain",
    "jp": "鬼に小手先の策など 通じぬぞ!!星を守りたいなら死ぬ気で来い!!{end}",
-   "en": "Petty tricks won't fool a{n}demon!! Want your planet?{n}Come ready to die!!{end}",
+   "en": "Tricks won't fool a{n}demon!! Want it? Come{n}ready to die!!{end}",
    "max": 66,
    "ptr": [
     "p16 015AAE"
@@ -248,7 +248,7 @@
    "id": "01604C",
    "fmt": "plain",
    "jp": "この星落とせば銀河の地図もまた変わる!しかし武将の道は決して変わらぬ!{end}",
-   "en": "Take this planet, and the{n}map changes! An officer's{n}way never does!{end}",
+   "en": "Planets change hands; an{n}officer's way never{n}changes!{end}",
    "max": 72,
    "ptr": [
     "p16 015AB6"

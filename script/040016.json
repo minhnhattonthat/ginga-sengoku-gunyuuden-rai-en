@@ -6,7 +6,7 @@
    "id": "040016",
    "fmt": "plain",
    "jp": "戦いは、おのれを知ることから始まる まず自国の 戦力をよく把握するんだ{end}",
-   "en": "War starts with knowing{n}yourself. First, know your{n}own strength.{end}",
+   "en": "War starts with knowing{n}yourself. First, know{n}your own strength.{end}",
    "max": 72,
    "ptr": [
     "p16 040008",
@@ -17,7 +17,7 @@
    "id": "04005E",
    "fmt": "plain",
    "jp": "殿! まずは国力を確認し戦力を整えることから  お始めください{end}",
-   "en": "My lord! Begin by checking{n}our national power and{n}building up our forces.{end}",
+   "en": "My lord! First check our{n}national power and build{n}our forces.{end}",
    "max": 64,
    "ptr": [
     "p16 04000C",
@@ -28,7 +28,7 @@
    "id": "04009E",
    "fmt": "plain",
    "jp": "お館様! 我が軍の拠点はどこも富み栄えております存分にお使いください{end}",
-   "en": "My lord! Every base of{n}ours is rich and thriving.{n}Use them as you see fit.{end}",
+   "en": "My lord! All our bases{n}are rich and thriving.{n}Use them as you will.{end}",
    "max": 70,
    "ptr": [
     "p16 040010",
@@ -39,7 +39,7 @@
    "id": "0400E4",
    "fmt": "plain",
    "jp": "陛下! 我が国は広大ですまず全拠点を把握し   戦力をお整えください{end}",
-   "en": "Your Majesty! Our realm is{n}vast. Survey every base,{n}then build up our forces.{end}",
+   "en": "Your Majesty! Our realm{n}is vast. Survey each{n}base, then build forces.{end}",
    "max": 70,
    "ptr": [
     "p16 040014"

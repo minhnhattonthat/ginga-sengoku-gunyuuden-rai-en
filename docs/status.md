@@ -12,6 +12,14 @@ Updated at the end of every session. Keep it to what the next session needs; his
     (talk block 1D8000 etc.), `tail_en` for shared name tails (0010A8 Princess Shimon, 0010CA Rai Ryuga).
     Melee labels / retreat-quote table found and split out (14884A fixed:80, 14889A base).
 - **Font:** digraph cells, 770 of 1,309 free cells used by the English script.
+- **Phase 8 tour 1 (work/qa/tour, verdicts work/qa/verdicts/chunk_00N.tsv) found, besides known graphics:**
+  battle_aftermath bottom box all garbage (notice missing); continue_map + offense_move_phase dialogue line 1
+  drawn over the speaker name ("ShishimyWar...", "Ryuga myTake"), lost spaces, odd indents; names split after
+  3 cells in list screens ("Nankin ro", "Rai Ry uga", "Battle ship": production, prisoner_ours, fleet_list,
+  planet_list/data, credits, save_game); cursor box over first letter in fleet lists; fleet_command tag clipped;
+  battle_result count table labels overflow; battle_enemy_attack unit tabs overflow; 第5要塞 font text JP in
+  battle_unit_data; 南京楼軍本陣 HQ header JP; 登用する/処刑する buttons JP; double spaces in attack_notice.
+  Save-panel labels fixed (build.CODE_LABELS), not yet re-shot.
 - **Next (phase 8):**
   1. `python -X utf8 tools/debug/regen.py --rom build/rai_en.sfc` -> shots per scene; contact sheets; visual-qa
      subagent verdicts (`qa_gate.py`). Watch: relocated text (talk/recruit, battle quotes bank $82, names

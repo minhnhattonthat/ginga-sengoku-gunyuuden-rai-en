@@ -6,7 +6,7 @@
    "id": "01611A",
    "fmt": "plain",
    "jp": "ここを 落とされたら  銀河の統一が 遠のいて しまう!!{end}",
-   "en": "If this place falls, the{n}galaxy's unification slips{n}away!!{end}",
+   "en": "If this place falls, the{n}galaxy's unification{n}slips away!!{end}",
    "max": 60,
    "ptr": [
     "p16 0160B6"
@@ -16,7 +16,7 @@
    "id": "016156",
    "fmt": "plain",
    "jp": "守るための戦いか…   俺 苦手なんだよな…  でも負けねえけどな!{end}",
-   "en": "A fight to defend, huh...{n}Not my thing... But I{n}won't lose!{end}",
+   "en": "A fight to defend,{n}huh... Not my thing...{n}But I won't lose!{end}",
    "max": 70,
    "ptr": [
     "p16 0160C0"
@@ -36,7 +36,7 @@
    "id": "0161CA",
    "fmt": "plain",
    "jp": "守りこそが大切なのです!みなさん この星を 守り抜きましょう!!{end}",
-   "en": "Defense matters most!{n}Everyone, let's hold this{n}planet to the end!!{end}",
+   "en": "Defense matters most!{n}Everyone, let's hold{n}this planet to the end!!{end}",
    "max": 66,
    "ptr": [
     "p16 0160C6"
@@ -46,7 +46,7 @@
    "id": "01620C",
    "fmt": "plain",
    "jp": "平和を守るためにこの星を守り抜いて見せます!!{end}",
-   "en": "I'll defend this planet to{n}the end, to protect the{n}peace!!{end}",
+   "en": "I'll defend this planet{n}to the end, to protect{n}the peace!!{end}",
    "max": 48,
    "ptr": [
     "p16 0160C8",
@@ -67,7 +67,7 @@
    "id": "01627C",
    "fmt": "plain",
    "jp": "この俺から星を取ることがどれだけ甘い専であるのか思い知らせてやるぜ!!{end}",
-   "en": "I'll show you how sweet a{n}dream it is to take a{n}planet from me!!{end}",
+   "en": "I'll show you how sweet{n}a dream it is to take a{n}planet from me!!{end}",
    "max": 72,
    "ptr": [
     "p16 0160CC"
@@ -77,7 +77,7 @@
    "id": "0162C4",
    "fmt": "plain",
    "jp": "…防衛戦か…      勝たねば意味無しだな…{end}",
-   "en": "...A defensive fight... No{n}point unless we win...{end}",
+   "en": "...A defensive fight...{n}No point unless we{n}win...{end}",
    "max": 48,
    "ptr": [
     "p16 0160CE"
@@ -87,7 +87,7 @@
    "id": "0162F4",
    "fmt": "plain",
    "jp": "ふははははは…!    そうだ!もっと攻めてこいこの世の混乱のために!{end}",
-   "en": "Fuhahahaha...! Yes! Attack{n}more, for the chaos of{n}this world!{end}",
+   "en": "Fuhahahaha...! Yes!{n}Attack more, for the{n}chaos of this world!{end}",
    "max": 72,
    "ptr": [
     "p16 0160D0"
@@ -107,7 +107,7 @@
    "id": "01637A",
    "fmt": "plain",
    "jp": "あたしの 守りの堅さを 教えてあげるわ!!{end}",
-   "en": "Let me show you how tough{n}my defense is!!{end}",
+   "en": "Let me show you how{n}tough my defense is!!{end}",
    "max": 44,
    "ptr": [
     "p16 0160DC"
@@ -117,7 +117,7 @@
    "id": "0163A6",
    "fmt": "plain",
    "jp": "ふんっ!他国の跳梁を許すほど私は甘くないぞ!!{end}",
-   "en": "Hmph! I'm not soft enough{n}to let other nations run{n}rampant!!{end}",
+   "en": "Hmph! I'm not soft{n}enough to let other{n}nations run rampant!!{end}",
    "max": 48,
    "ptr": [
     "p16 0160DE"
@@ -127,7 +127,7 @@
    "id": "0163D6",
    "fmt": "plain",
    "jp": "銀河統一のためにこの星を敵の手に 渡すわけには いかないのだ!!{end}",
-   "en": "For the sake of{n}unification, this planet{n}can't fall to the enemy!!{end}",
+   "en": "For unification, this{n}planet must not fall to{n}the enemy!!{end}",
    "max": 66,
    "ptr": [
     "p16 0160E0"
@@ -137,7 +137,7 @@
    "id": "016418",
    "fmt": "plain",
    "jp": "私の守る星であることを 知っていて 来られたのでしょうかね?{end}",
-   "en": "Did you come knowing this{n}planet is defended by me?{end}",
+   "en": "Did you come knowing{n}this planet is defended{n}by me?{end}",
    "max": 62,
    "ptr": [
     "p16 0160EC"
@@ -147,7 +147,7 @@
    "id": "016456",
    "fmt": "plain",
    "jp": "僕にはこの星を守る力量があるのだろうか?{end}",
-   "en": "Do I have what it takes to{n}defend this planet?{end}",
+   "en": "Do I have what it takes{n}to defend this planet?{end}",
    "max": 42,
    "ptr": [
     "p16 0160EE"
@@ -157,7 +157,7 @@
    "id": "016480",
    "fmt": "plain",
    "jp": "ぐふふっ!       わしは防衛戦も 実は得意なんじゃ!!{end}",
-   "en": "Guhuhu! Truth is, I'm good{n}at defense too!!{end}",
+   "en": "Guhuhu! Truth is, I'm{n}good at defense too!!{end}",
    "max": 62,
    "ptr": [
     "p16 0160F0"
@@ -177,7 +177,7 @@
    "id": "016506",
    "fmt": "plain",
    "jp": "俺の守る星に攻め込むとは勇気があるな!だが認めるのはその勇気だけだ!!{end}",
-   "en": "Brave, attacking a planet{n}I defend! But that's all{n}I'll grant you!!{end}",
+   "en": "Bold, attacking my{n}planet! But that's all{n}I'll grant you!!{end}",
    "max": 72,
    "ptr": [
     "p16 0160FE"
@@ -197,7 +197,7 @@
    "id": "01658A",
    "fmt": "plain",
    "jp": "どれだけ他の戦闘で負けようと 星を取られなければまだ負けではない!!{end}",
-   "en": "Lose other battles as we{n}may, we're not beaten till{n}a planet falls!!{end}",
+   "en": "Lose other battles as we{n}may, we're not beaten{n}till a planet falls!!{end}",
    "max": 70,
    "ptr": [
     "p16 016102"
@@ -207,7 +207,7 @@
    "id": "0165D0",
    "fmt": "plain",
    "jp": "鬼の守りし星を取ろうとは虫が良いとは思わんか!!白鬼の力とくと見よ!!{end}",
-   "en": "Taking a planet a demon{n}guards? Asking too much!!{n}Behold Hakki's might!!{end}",
+   "en": "Take a planet a demon{n}guards? Too much!!{n}Behold Hakki's might!!{end}",
    "max": 72,
    "ptr": [
     "p16 016106"
@@ -217,7 +217,7 @@
    "id": "016618",
    "fmt": "plain",
    "jp": "……来たか…!!{end}",
-   "en": "......So you've come...!!{end}",
+   "en": "......So you've{n}come...!!{end}",
    "max": 18,
    "ptr": [
     "p16 016108"
@@ -227,7 +227,7 @@
    "id": "01662A",
    "fmt": "plain",
    "jp": "がははははは…!    すぐにこの亮厳格が 撃退してくれるわ!!{end}",
-   "en": "Gahahahaha...! Ryogenkaku{n}will drive you off in no{n}time!!{end}",
+   "en": "Gahahahaha...!{n}Ryogenkaku will drive{n}you off in no time!!{end}",
    "max": 66,
    "ptr": [
     "p16 01610A"
@@ -257,7 +257,7 @@
    "id": "0166CA",
    "fmt": "plain",
    "jp": "来たか!! 我らが力で この星 何としても守って見せる!!{end}",
-   "en": "So you've come!! With our{n}might we'll defend this{n}planet, come what may!!{end}",
+   "en": "So you've come!! With{n}all our might, we'll{n}defend this planet!!{end}",
    "max": 60,
    "ptr": [
     "p16 0160B8",

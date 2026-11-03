@@ -46,7 +46,7 @@
    "id": "0121CC",
    "fmt": "plain",
    "jp": "{FFFD}は、我々が占領した!{end}",
-   "en": "We have taken {FFFD}!{end}",
+   "en": "We have taken{n}{FFFD}!{end}",
    "max": 24,
    "ptr": [
     "p16 0120F0"
@@ -100,7 +100,7 @@
    "id": "0122A6",
    "fmt": "plain",
    "jp": "{FFFD}を占領しました。{end}",
-   "en": "{FFFD} has been taken.{end}",
+   "en": "{FFFD} has fallen.{end}",
    "max": 20,
    "ptr": [
     "p16 0120FA",
@@ -123,7 +123,7 @@
    "id": "0122E8",
    "fmt": "plain",
    "jp": "よし!ここを足掛かりに 一気に攻め込むぞ!{end}",
-   "en": "Good! From this foothold,{n}we strike all at once!{end}",
+   "en": "Good! From this{n}foothold, we strike all{n}at once!{end}",
    "max": 44,
    "ptr": [
     "p16 0120FE",
@@ -154,7 +154,7 @@
    "id": "012350",
    "fmt": "plain",
    "jp": "この占領で、戦局も大きく変わるだろう。     わっはっはっ!{end}",
-   "en": "This capture will turn the{n}tide of war. Wahahaha!{end}",
+   "en": "This capture will turn{n}the tide of war.{n}Wahahaha!{end}",
    "max": 64,
    "ptr": [
     "p16 012104"
@@ -164,7 +164,7 @@
    "id": "012390",
    "fmt": "plain",
    "jp": "ふうっ!なんとかここも 占領することができたな{end}",
-   "en": "Phew! Somehow we took this{n}one too.{end}",
+   "en": "Phew! Somehow we took{n}this one too.{end}",
    "max": 48,
    "ptr": [
     "p16 012106"
@@ -184,7 +184,7 @@
    "id": "0123F0",
    "fmt": "plain",
    "jp": "この夏候才、占領ばかり では腕がなまるわ!{end}",
-   "en": "Kako Sai's arm grows dull{n}with nothing but{n}occupying!{end}",
+   "en": "Kako Sai's arm grows{n}dull with nothing but{n}occupying!{end}",
    "max": 44,
    "ptr": [
     "p16 01210A",
@@ -205,7 +205,7 @@
    "id": "01243A",
    "fmt": "plain",
    "jp": "あたいにだって惑星の占領ぐらいできるのよっ!{end}",
-   "en": "Even I can take a planet,{n}y'know!{end}",
+   "en": "Even I can take a{n}planet, y'know!{end}",
    "max": 46,
    "ptr": [
     "p16 01210E"
@@ -225,7 +225,7 @@
    "id": "01249A",
    "fmt": "plain",
    "jp": "これで少しは動きやすく なるだろう{end}",
-   "en": "This should give us a{n}little more room to move.{end}",
+   "en": "This should give us a{n}little more room to{n}move.{end}",
    "max": 36,
    "ptr": [
     "p16 012112"
@@ -235,7 +235,7 @@
    "id": "0124BE",
    "fmt": "plain",
    "jp": "これより、{FFFD}は、我が軍の拠点となる!{end}",
-   "en": "Our army's new base shall{n}be {FFFD}!{end}",
+   "en": "Our army's new base{n}shall be {FFFD}!{end}",
    "max": 38,
    "ptr": [
     "p16 012114"
@@ -256,7 +256,7 @@
    "id": "012504",
    "fmt": "plain",
    "jp": "軍のためとあらば、この 斎遠、いくらでも占領いたしましょう!{end}",
-   "en": "For the army's sake, Seien{n}will take as many as you{n}like!{end}",
+   "en": "For the army's sake,{n}Seien will take as many{n}as you like!{end}",
    "max": 62,
    "ptr": [
     "p16 012118"
@@ -286,7 +286,7 @@
    "id": "01256C",
    "fmt": "plain",
    "jp": "ようやく占領できたか…{end}",
-   "en": "Finally, we've taken it...{end}",
+   "en": "Finally, we've taken{n}it...{end}",
    "max": 24,
    "ptr": [
     "p16 01211E"
@@ -296,7 +296,7 @@
    "id": "012584",
    "fmt": "plain",
    "jp": "姉上、見ておられましたかこの虎丸が、{FFFD}を占領致しました!{end}",
-   "en": "Sister, were you watching?{n}Toramaru has taken{n}{FFFD}!{end}",
+   "en": "Sister, were you{n}watching? Toramaru has{n}taken {FFFD}!{end}",
    "max": 58,
    "ptr": [
     "p16 012120"
@@ -367,7 +367,7 @@
    "id": "0126A0",
    "fmt": "plain",
    "jp": "わっはっはっ!これで  また一つ拠点が増えたな{end}",
-   "en": "Wahaha! One more base for{n}us!{end}",
+   "en": "Wahaha! One more base{n}for us!{end}",
    "max": 48,
    "ptr": [
     "p16 01212E"
@@ -377,7 +377,7 @@
    "id": "0126D0",
    "fmt": "plain",
    "jp": "こんなもんじゃ、    まだ足りん!{end}",
-   "en": "This isn't nearly enough!{end}",
+   "en": "This isn't nearly{n}enough!{end}",
    "max": 38,
    "ptr": [
     "p16 012130"
@@ -397,7 +397,7 @@
    "id": "012716",
    "fmt": "plain",
    "jp": "みんなよくやった!   これで国庫も潤うだろう{end}",
-   "en": "Well done, everyone! This{n}should fill the treasury.{end}",
+   "en": "Well done, everyone!{n}This should fill the{n}treasury.{end}",
    "max": 48,
    "ptr": [
     "p16 012134"
@@ -407,7 +407,7 @@
    "id": "012746",
    "fmt": "plain",
    "jp": "この占領は貴重ですな。{end}",
-   "en": "This capture is valuable.{end}",
+   "en": "This capture is{n}valuable.{end}",
    "max": 24,
    "ptr": [
     "p16 012136"
@@ -427,7 +427,7 @@
    "id": "01278A",
    "fmt": "plain",
    "jp": "この五虎将軍王政に   占領されたことを    光栄に思うのだな!{end}",
-   "en": "Be honored to be conquered{n}by Osei of the Five Tiger{n}Generals!{end}",
+   "en": "Be honored to be{n}conquered by Osei of the{n}Five Tiger Generals!{end}",
    "max": 68,
    "ptr": [
     "p16 01213A"
@@ -457,7 +457,7 @@
    "id": "012824",
    "fmt": "plain",
    "jp": "やったぜっ!{FFFD}は頂いた!{end}",
-   "en": "Yeah! {FFFD} is mine!{end}",
+   "en": "{FFFD} is mine!{end}",
    "max": 26,
    "ptr": [
     "p16 012140"

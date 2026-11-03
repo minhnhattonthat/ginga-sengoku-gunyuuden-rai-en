@@ -1,6 +1,7 @@
 # Code immediates (LDX/LDY/LDA #$hhll) that load a text address, from tools/find_imm16.py.
 # operand offset	target	code	verified (y = one routine loads consecutive strings; n = may be a constant)
-# The build rewrites y operands when their string moves in its bank; the en build ignores n rows (docs/re/text.md).
+# The build rewrites y operands (LDX/LDY only) when their string moves in its bank; the en build ignores n rows
+# (docs/re/text.md). Phase 8: 05AB8C, 05ABC9, 062305 were y but are 8-bit LDA #$xx + next opcode: set to n.
 000804	016B00	$80:8804	n
 002032	0135EA	$80:A032	n
 002198	012240	$80:A198	n
@@ -185,8 +186,8 @@
 059D28	016B00	$8B:9D28	n
 059E39	010600	$8B:9E39	n
 05A671	016B00	$8B:A671	n
-05AB8C	016B00	$8B:AB8C	y
-05ABC9	016B00	$8B:ABC9	y
+05AB8C	016B00	$8B:AB8C	n
+05ABC9	016B00	$8B:ABC9	n
 05ABE8	006199	$8B:ABE8	y
 05ABF0	006181	$8B:ABF0	y
 05AC12	006187	$8B:AC12	y
@@ -271,7 +272,7 @@
 061E44	016B00	$8C:9E44	n
 061E92	016B00	$8C:9E92	n
 062063	016B00	$8C:A063	n
-062305	012204	$8C:A305	y
+062305	012204	$8C:A305	n
 062339	0623D8	$8C:A339	y
 062367	0623E0	$8C:A367	y
 06284D	016B00	$8C:A84D	n

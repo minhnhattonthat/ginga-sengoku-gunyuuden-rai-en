@@ -26,7 +26,7 @@
    "id": "012A30",
    "fmt": "plain",
    "jp": "俺は攻めることしかできないとでも思ったかい?{end}",
-   "en": "Thought all I could do was{n}attack, did ya?{end}",
+   "en": "Thought all I could do{n}was attack, did ya?{end}",
    "max": 46,
    "ptr": [
     "p16 012952"
@@ -46,7 +46,7 @@
    "id": "012A98",
    "fmt": "plain",
    "jp": "ふう… なんとか防衛に 成功しましたね{end}",
-   "en": "Phew... We managed to hold{n}our ground.{end}",
+   "en": "Phew... We managed to{n}hold our ground.{end}",
    "max": 40,
    "ptr": [
     "p16 012958"
@@ -116,7 +116,7 @@
    "id": "012C32",
    "fmt": "plain",
    "jp": "どうも防衛戦は性に合わんだが それでも勝ち続けることには違いないが{end}",
-   "en": "Defense ain't my style...{n}but a win's still a win.{end}",
+   "en": "Defense ain't my{n}style... but a win's{n}still a win.{end}",
    "max": 68,
    "ptr": [
     "p16 012968"
@@ -136,7 +136,7 @@
    "id": "012CA4",
    "fmt": "plain",
    "jp": "俺から 星を取ろうなんて無理だぜ!俺は銀河の覇者になる男だからな!!{end}",
-   "en": "Nobody takes a planet from{n}me! I'm the man who'll{n}rule the galaxy!!{end}",
+   "en": "Nobody takes a planet{n}from me! I'm the man{n}who'll rule the galaxy!!{end}",
    "max": 70,
    "ptr": [
     "p16 01296C"
@@ -156,7 +156,7 @@
    "id": "012D14",
    "fmt": "plain",
    "jp": "ふん!私を独眼竜と知って攻めたのか? 身の程を 知らぬやつだ!{end}",
-   "en": "Hmph! You attacked the{n}One-Eyed Dragon? Know your{n}place!{end}",
+   "en": "Hmph! You attacked the{n}One-Eyed Dragon? Know{n}your place!{end}",
    "max": 64,
    "ptr": [
     "p16 012970",
@@ -178,7 +178,7 @@
    "id": "012D80",
    "fmt": "plain",
    "jp": "ふむ…どうやら私の防衛戦の能力を みくびっていたようですな{end}",
-   "en": "Hmm... It seems you{n}underestimated my skill at{n}defense.{end}",
+   "en": "Hmm... It seems you{n}underestimated my skill{n}at defense.{end}",
    "max": 60,
    "ptr": [
     "p16 01297E"
@@ -188,7 +188,7 @@
    "id": "012DBC",
    "fmt": "plain",
    "jp": "僕にもっと能力があれば…もっと簡単に 撃退できたものを…{end}",
-   "en": "If only I were more{n}capable... I'd have driven{n}them off more easily...{end}",
+   "en": "Were I more capable, I'd{n}have repelled them more{n}easily...{end}",
    "max": 58,
    "ptr": [
     "p16 012980"
@@ -198,7 +198,7 @@
    "id": "012DF6",
    "fmt": "plain",
    "jp": "ぐふふふふ…      どうじゃ?わしの手腕は?防衛戦など軽いもんじゃ{end}",
-   "en": "Guhuhuhu... How's that for{n}skill? Defense is child's{n}play!{end}",
+   "en": "Guhuhuhu... How's that{n}for skill? Defense is{n}child's play!{end}",
    "max": 72,
    "ptr": [
     "p16 012982"
@@ -208,7 +208,7 @@
    "id": "012E3E",
    "fmt": "plain",
    "jp": "けっ!!うじ虫どもが!!わしの銀河を 汚すんじゃねえ!!!{end}",
-   "en": "Bah!! Maggots!! Don't you{n}dirty my galaxy!!!{end}",
+   "en": "Bah!! Maggots!! Don't{n}you dirty my galaxy!!!{end}",
    "max": 60,
    "ptr": [
     "p16 01298E"
@@ -258,7 +258,7 @@
    "id": "012F66",
    "fmt": "plain",
    "jp": "……それがしの勝ちだ{end}",
-   "en": "......The victory is mine.{end}",
+   "en": "......The victory is{n}mine.{end}",
    "max": 22,
    "ptr": [
     "p16 01299A"
@@ -278,7 +278,7 @@
    "id": "012FC4",
    "fmt": "plain",
    "jp": "これぞ男の生き様!!  鉄壁の守りを見たか!!{end}",
-   "en": "This is how a man lives!!{n}Behold my iron wall!!{end}",
+   "en": "This is how a man{n}lives!! Behold my iron{n}wall!!{end}",
    "max": 48,
    "ptr": [
     "p16 01299E"
@@ -288,7 +288,7 @@
    "id": "012FF4",
    "fmt": "plain",
    "jp": "己の信じる道を歩むのみ…守備 あればこその   攻めなのだ!!{end}",
-   "en": "I walk only my own path...{n}Without defense, there is{n}no attack!!{end}",
+   "en": "I walk only my own{n}path... Without defense,{n}there is no attack!!{end}",
    "max": 64,
    "ptr": [
     "p16 0129A0"
@@ -298,7 +298,7 @@
    "id": "013034",
    "fmt": "plain",
    "jp": "拠点の防衛なら     それがしに おまかせを!わはははは!{end}",
-   "en": "Leave base defense to me!{n}Wahahaha!{end}",
+   "en": "Leave base defense to{n}me! Wahahaha!{end}",
    "max": 62,
    "ptr": [
     "p16 0129A6"
