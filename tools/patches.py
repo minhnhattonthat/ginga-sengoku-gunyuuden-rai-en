@@ -79,6 +79,54 @@ PATCHES += [
      'fleet-command name tag: JSL namecopy / BRA $C938'),
 ]
 
+# Speech box ($81:ECE2 battle quotes, officer in $094F; $8B:DA66 advisor, officer in $0E01): JP draws the speaker name (3 cells), 『 at
+# cell 3, the text from cell 4, 』 after it. English names run past 3 cells, so the 『』 draws go and the name gets
+# cells 0-3; names over 7 letters use a tag from TAG_TABLE (build.speech_tags: word per officer, bank $BC pointer,
+# 0 = the officer's name as usual).
+TAG_TABLE = 0xBC9000
+TAGNAME = NAMECOPY + len(NAMECOPY_CODE)
+TAGNAME_CODE = bytes.fromhex(  # A (16-bit) = officer
+    '0A'         # ASL A
+    'AA'         # TAX
+    'BF') + ptr24(TAG_TABLE) + bytes.fromhex(  # LDA tag,x
+    'F00A'       # BEQ orig
+    'AA'         # TAX
+    'E220'       # SEP #$20
+    'A9') + bytes([TAG_TABLE >> 16]) + bytes.fromhex(  # LDA #$BC
+    '8D0709'     # STA $0907     (string bank)
+    '800A'       # BRA draw
+    'BFDC9000'   # orig: LDA $0090DC,x
+    'AA'         # TAX
+    'E220'       # SEP #$20
+    '9C0709'     # STZ $0907
+    '9C0609'     # draw: STZ $0906
+    '9C0509'     # STZ $0905
+    'A00082'     # LDY #$8200
+    '2262E981'   # JSL $81E962
+    '6B')        # RTL
+PATCHES += [
+    (TAGNAME, None, TAGNAME_CODE, 'speech box: speaker tag or name'),
+    (0x81ECEA, bytes.fromhex('0AAABFDC9000'), b'\x22' + ptr24(TAGNAME) + bytes.fromhex('8013'),
+     'speech box: JSL tagname / BRA $ED03'),
+    (0x81ED13, bytes.fromhex('2236DD81'), b'\xEA' * 4, 'speech box: no 『'),
+    (0x81ED36, bytes.fromhex('2236DD81'), b'\xEA' * 4, 'speech box: no 』'),
+    # the advisor's copy of the box ($8B:DA66, officer in $0E01, 『/』 strings at $00:E4B1/E4B5)
+    (0x8BDA6E, bytes.fromhex('0AAABFDC9000'), b'\x22' + ptr24(TAGNAME) + bytes.fromhex('8012'),
+     'advisor box: JSL tagname / BRA $DA86'),
+    (0x8BDA99, bytes.fromhex('20D0C0'), b'\xEA' * 3, 'advisor box: no 『'),
+    (0x8BDAB9, bytes.fromhex('20D0C0'), b'\xEA' * 3, 'advisor box: no 』'),
+]
+
+# Fortress header ($81:DCD9): code builds 第 <1-2 digits> 要塞 in $0E00. English "Fort <n>": start Y at 4 so the
+# digits land after three prefix cells; build.CODE_LABELS fills the "Fo"/"rt" immediates (placeholders here).
+PATCHES += [
+    (0x81DCDB, bytes.fromhex('A00000'), bytes.fromhex('A00400'), 'fortress header: Y = 4 (digits after "Fort ")'),
+    (0x81DCE1, bytes.fromhex('99000E'), bytes.fromhex('99FC0D'), 'fortress header: "Fo" -> $0E00'),
+    (0x81DD0B, bytes.fromhex('99040EA92F0399060EA9FFFF99080E'),  # $DD08 LDA #imm kept: "rt" (CODE_LABELS)
+     bytes.fromhex('8D020EA93E008D040EA9FFFF99040E'), 'fortress header: "rt", blank, {end}'),
+    (0x81DD26, bytes.fromhex('C900'), bytes.fromhex('C904'), 'fortress header: one digit when Y = 4'),
+]
+
 
 def apply(rom):
     """rom: build.Rom. Checks the original bytes of every patch site before writing."""

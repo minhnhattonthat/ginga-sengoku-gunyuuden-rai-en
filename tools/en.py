@@ -20,9 +20,17 @@ RESERVED = set(range(0x0A)) | {SPACE} | set(QUOTES)
 TOKEN = re.compile(r'(\{[^}]*\})')
 
 
+ZERO_WIDTH = re.compile(r'\{(c6|c7|c8|spd:[^}]*)\}')  # draw nothing: must not cut a pair ("feud. \"")
+
+
 def runs(s):
-    """[(is_code, str)] in order."""
-    return [(t.startswith('{'), t) for t in TOKEN.split(s) if t]
+    """[(is_code, str)] in order. A zero-width code after an odd text run moves one letter later."""
+    toks = [t for t in TOKEN.split(s) if t]
+    for i in range(1, len(toks) - 1):
+        a, c, b = toks[i - 1], toks[i], toks[i + 1]
+        if ZERO_WIDTH.fullmatch(c) and not a.startswith('{') and not b.startswith('{') and len(a) % 2:
+            toks[i - 1], toks[i + 1] = a + b[0], b[1:]
+    return [(t.startswith('{'), t) for t in toks if t]
 
 
 def pairs(s):
@@ -50,6 +58,7 @@ class Alloc:
                              f'(least used: {order[len(free):][-10:]})')
         self.code = dict(zip(order, free))
         self.code['  '] = SPACE
+        self.spare = free[len(order):]  # unallocated cells (custom glyph strips take these)
 
     def cells(self):
         """{code: 24-byte glyph} for every allocated pair (the space cell is the game's own)."""
@@ -79,6 +88,7 @@ def selftest():
     a = Alloc(['Hello{end}', 'He said "Hi"{FFFE}'])
     assert pairs('Hello{end}') == ['He', 'll', 'o ']
     assert a.code['He'] == 0x0A  # most frequent first, from the first free cell
+    assert pairs('feud.{c6}"{end}') == ['fe', 'ud', '."']
     enc = a.encode('He{FFFE}  {end}', 'plain')
     assert enc == bytes([0x0A, 0, 0xFE, 0xFF, SPACE, 0, 0xFF, 0xFF]), enc.hex()
     assert a.encode('Hello{br}{end}', 'msg')[-8:] == bytes.fromhex('FFFF0100FFFF0000')

@@ -49,7 +49,27 @@ FREE = [(0x006812, 0x007FB0), (0x017170, 0x018000), (0x01E562, 0x020000), (0x040
 # pair cells there.
 CODE_LABELS = [('Lv  ', [0x1D2B19, 0x1D2B1F]),
                (' Planets  ', [0x1D2B86, 0x1D2B8C, 0x1D2B92, 0x1D2B98, 0x1D2B9E]),
-               (' Officers ', [0x1D2BC1, 0x1D2BC7, 0x1D2BCD, 0x1D2BD3, 0x1D2BD9])]
+               (' Officers ', [0x1D2BC1, 0x1D2BC7, 0x1D2BCD, 0x1D2BD3, 0x1D2BD9]),
+               ('Fort', [0x00DCDF, 0x00DD09])]  # LDA # (16-bit) in the fortress header patch (patches.py)
+OFFICERS, NAME_TABLE = 56, 0x0010DC  # $00:90DC: word pointers (bank $00) to the officer names, block 00114C
+TAG_SHORT = {'Sanrakusai': 'Sanraku', 'Ryogenkaku': 'Genkaku', 'Sho Shigen': 'Shigen', 'Rin Sokuka': 'Sokuka',
+             'Kyo Shisho': 'Shisho'}  # too wide even condensed (glossary.md)
+TAG_PX = 42  # speech box: the text starts 48 px after the name; keep a 6-px gap
+
+
+def speech_tags(rom_orig, script):
+    """[(officer, tag)] for names over 7 letters (patches.TAGNAME): a short form, or the name to set condensed."""
+    out = []
+    for i in range(OFFICERS):
+        p = int.from_bytes(rom_orig[NAME_TABLE + 2 * i:NAME_TABLE + 2 * i + 2], 'little') & 0x7FFF
+        name = script.get(p, {}).get('en', '').replace('{end}', '')
+        if len(name) > 7:
+            t = TAG_SHORT.get(name, name)
+            assert len(t) <= 7 or len(font_en.strip(t)) <= TAG_PX, f'speech tag {t!r} too wide: add to TAG_SHORT'
+            out.append((i, t))
+    return out
+
+
 FAR = [(0x1E8000, 0x200000)]  # banks $BD-$BF (all FF): blocks reached only by 24-bit pointers
 STALE_TALK =0x1D9BA4  # base of talk type 2 ($BA:9E27), a stale table landing mid-string (docs/re/text.md)
 
@@ -259,6 +279,8 @@ def english_edits(rom_orig, mode='en', qa=None):
             if t:
                 texts[e['off']] = (e, t)
     labels = [t for t, _ in CODE_LABELS] if mode == 'en' else []
+    tags = speech_tags(rom_orig, script) if mode == 'en' else []
+    labels += [t for _, t in tags if len(t) <= 7]
     tails = {off: {int(d): t for d, t in script[off].get('tail_en', {}).items()}
              for off in texts if mode == 'en' and off not in (qa or {}) and script.get(off, {}).get('tail_en')}
     jp_left = [e for b in extract.blocks(rom_orig) for e in b['entries'] if e['off'] not in texts]
@@ -269,7 +291,7 @@ def english_edits(rom_orig, mode='en', qa=None):
         data = alloc.encode(t, 'plain')
         assert len(data) == 2 * len(ops), t
         for k, op in enumerate(ops):
-            assert rom_orig[op - 1] == 0xA0, f'{op:06X}: not LDY #'
+            assert rom_orig[op - 1] in (0xA0, 0xA9), f'{op:06X}: not LDY # / LDA #'
             imms[op] = data[2 * k:2 * k + 2]
     out, moves = {}, {}
     for off, (e, t) in texts.items():
@@ -285,6 +307,19 @@ def english_edits(rom_orig, mode='en', qa=None):
     cells = alloc.cells()
     if mode == 'en':
         cells.update({c: font_en.cell(p) for c, p in en.QUOTES.items()})
+        tab, data, spare = bytearray(2 * OFFICERS), bytearray(), iter(alloc.spare)
+        base = patches.off(patches.TAG_TABLE)
+        for i, t in tags:
+            tab[2 * i:2 * i + 2] = ((patches.TAG_TABLE + len(tab) + len(data)) & 0xFFFF).to_bytes(2, 'little')
+            if len(t) <= 7:
+                data += alloc.encode(t + '{end}', 'plain')
+                continue
+            for glyph in font_en.strip_cells(font_en.strip(t), 4):
+                c = next(spare)
+                cells[c] = glyph
+                data += c.to_bytes(2, 'little')
+            data += b'\xff\xff'
+        imms[base] = bytes(tab + data)
     if mode == 'marker':  # every other cell shows '##': font text the extractor missed can't hide as Japanese
         cells.update({c: font_en.cell('##') for c in range(en.CELLS) if c not in cells and c not in en.RESERVED})
     return out, cells, moves, imms

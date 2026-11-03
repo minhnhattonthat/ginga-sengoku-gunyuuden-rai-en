@@ -128,7 +128,49 @@ def cell(pair):
     return bytes(out)
 
 
+KEEP_WIDE = set('MTWVXYmwvx')  # no middle column to drop
+
+
+def narrow(ch):
+    """Column bitmaps (left to right, bit 0 = row 0) of a condensed glyph: empty edge columns trimmed, then a
+    5-wide letter loses its middle column. For speaker tags that must fit 4 cells (build.speech_tags)."""
+    rs = rows(ch)
+    cols = [sum(((r >> (WIDTH - 1 - x)) & 1) << y for y, r in enumerate(rs)) for x in range(WIDTH)]
+    while cols and not cols[0]:
+        cols.pop(0)
+    while cols and not cols[-1]:
+        cols.pop()
+    if len(cols) == WIDTH and ch not in KEEP_WIDE:
+        del cols[2]
+    return cols
+
+
+def strip(text):
+    """Column bitmaps of text set in the condensed glyphs: 1 px between letters, a space is 2 px."""
+    out = []
+    for i, ch in enumerate(text):
+        if i:
+            out.append(0)
+        out += [0, 0] if ch == ' ' else narrow(ch)
+    return out
+
+
+def strip_cells(cols, n):
+    """n 24-byte font cells (12 px each) holding the column strip from the left."""
+    cols = cols + [0] * (12 * n - len(cols))
+    out = []
+    for c in range(n):
+        cell = bytearray(24)
+        for y in range(9):
+            w = sum(((cols[12 * c + x] >> y) & 1) << (15 - x) for x in range(12))
+            cell[(y + TOP) * 2:(y + TOP) * 2 + 2] = w.to_bytes(2, 'big')
+        out.append(bytes(cell))
+    return out
+
+
 def selftest():
+    assert [len(narrow(c)) for c in 'oMi'] == [4, 5, 3]
+    assert strip_cells(strip('A'), 1)[0][TOP * 2:TOP * 2 + 2] == b'\x60\x00'  # .##. (middle column dropped)
     for ch, g in G.items():
         assert len(g) <= 9, ch
         assert all(len(r) == WIDTH for r in g if r), f'{ch!r}: rows must be {WIDTH} px wide or empty'

@@ -25,6 +25,11 @@ Binding for every translator and reviewer. Agents propose additions in reports; 
   colon, never glue a suffix onto a name.
 
 ## Characters (officer list names first; full names where the game gives them)
+
+Speech-box speaker tags (advisor and battle-quote boxes, 7 letters; `build.TAG_SHORT`): Sho Shigen -> Shigen,
+Rin Sokuka -> Sokuka, Kyo Shisho -> Shisho, Sanrakusai -> Sanraku, Ryogenkaku -> Genkaku. Other 8-letter names
+are set in condensed letters there. The box has no quote marks in English.
+
 | JP | EN | max | notes | Avoid |
 |---|---|---|---|---|
 | 竜我雷 | Rai Ryuga / Rai | | hero, Nankinro | Ryuuga |

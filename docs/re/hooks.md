@@ -14,6 +14,10 @@ bytes checked before writing; `tests/test_patches.py` disassembles them). Free s
 
 | `$BC:8011` | FF | name copy: up to 5 cells of the officer name to `$0E00` verbatim, `FFFF`-terminated | fleet-command name tag | verified: `work/qa/stress/fcname` |
 | `$8B:C8ED` | `LDA $000004,x / CMP #$FFFF` (2- vs 3-cell name, adds `{FFFE}` spacing) | `JSL $BC8011 / BRA $C938` | the game copied only 3 cells | verified (same); the tag box shows 4 cells (8 letters): widen in phase 7 |
+| `$BC:8030` | FF | speaker tag: A = officer; word at `$BC:9000 + 2A` (bank `$BC` pointer, set by `build.speech_tags`) or the name from `$00:90DC`; draw at `$8200` via `$81:E962` | names over 3 cells ran into the 『 cell and the text | verified: continue_map (+ `tools/lua/speaker.lua` forcing officer 2) |
+| `$81:ECEA` (battle quotes), `$8B:DA6E` (advisor) | `ASL / TAX / LDA $0090DC,x` | `JSL $BC8030 / BRA` past the name draw | speech boxes | verified: offense_move_phase, continue_map |
+| `$81:ED13`, `$81:ED36`, `$8B:DA99`, `$8B:DAB9` | draw 『 / 』 | NOP | the name now uses cells 0-3; English needs no 『』 beside a speaker label | verified (same) |
+| `$81:DCDB..DD27` | 第 n 要塞 built in `$0E00` | `Fort n`: Y starts at 4, "Fo"/"rt" immediates from `build.CODE_LABELS`, blank cell, `CMP #$04` for the 1-digit layout | fortress header in battle unit data | verified: battle_unit_data |
 
 Label-box family: caller sets `$1AF0` = 24-bit string pointer, `$1AF4` = tile buffer; `$8E:C96D` counts cells
 (max 5, stops at `FFFF`) and picks the routine from the table by 3 * length; the routine draws each glyph via
