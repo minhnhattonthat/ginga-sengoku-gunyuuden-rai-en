@@ -2,40 +2,35 @@
 
 Updated at the end of every session. Keep it to what the next session needs; history is in git.
 
-- **Phase:** 7 (insert, fit, check) done; phase 8 (emulator QA) next.
-  - Phase 6 done: all 1,595 strings translated (`work/tl/b001-b018`, `tools/batches.py`), batch check 0 errors,
-    reviewer pass on every batch (`work/qa/review/bNNN.txt` from `tools/pairs.py`, brief `docs/reviewer-brief.md`),
-    every Critical/Important fixed; Minors deferred to `docs/polish.md` (release blocks until ticked).
-  - Phase 7 done: `python -X utf8 tools/build.py` green (lint 0 errors, romdiff clean), identity and marker builds
-    still pass, smoke ok (faction select shows English). Build now relocates (docs/re/text.md §Relocation):
-    split overflowing blocks into free space, rewrite verified imm16 operands, p24-only units to banks `$BD-$BF`
-    (talk block 1D8000 etc.), `tail_en` for shared name tails (0010A8 Princess Shimon, 0010CA Rai Ryuga).
-    Melee labels / retreat-quote table found and split out (14884A fixed:80, 14889A base).
-- **Font:** digraph cells, 770 of 1,309 free cells used by the English script.
-- **Phase 8 tour 1 (work/qa/tour, verdicts work/qa/verdicts/chunk_00N.tsv) found, besides known graphics:**
-  battle_aftermath bottom box all garbage (notice missing); continue_map + offense_move_phase dialogue line 1
-  drawn over the speaker name ("ShishimyWar...", "Ryuga myTake"), lost spaces, odd indents; names split after
-  3 cells in list screens ("Nankin ro", "Rai Ry uga", "Battle ship": production, prisoner_ours, fleet_list,
-  planet_list/data, credits, save_game); cursor box over first letter in fleet lists; fleet_command tag clipped;
-  battle_result count table labels overflow; battle_enemy_attack unit tabs overflow; 第5要塞 font text JP in
-  battle_unit_data; 南京楼軍本陣 HQ header JP; 登用する/処刑する buttons JP; double spaces in attack_notice.
-  FIXED since: battle_aftermath (imm16 rows 05AB8C/05ABC9/062305 were 8-bit LDA, now n; build rewrites only
-  LDX/LDY), save-panel labels (build.CODE_LABELS), advisor/battle_quote (24 letters; 『』 cells 4F/50 reserved
-  as quote glyphs, en.QUOTES), names split after 3 cells (5-cell label routine pitch, patches.py). Still open:
-  cursor box over first letter in fleet/planet lists, fleet_command tag, battle_result + battle_enemy_attack
-  overflow, 第5要塞, double spaces in attack_notice, graphics. Re-run the full tour + qa_gate after fixes.
-- **Next (phase 8):**
-  1. `python -X utf8 tools/debug/regen.py --rom build/rai_en.sfc` -> shots per scene; contact sheets; visual-qa
-     subagent verdicts (`qa_gate.py`). Watch: relocated text (talk/recruit, battle quotes bank $82, names
-     block 00114C, ship labels 000CEC), officer names in the fleet-command tag (8 letters shown; D4),
-     full_name box (guess 18 letters), battle_cmd/battle_orders (never measured: play to a real melee).
-  2. Unverified imm16 rows (`verified=n`) are ignored by the en build: if a string shows garbage, check its row.
-  3. Retreat table word 50 (0x94A) still points at base+0x94A (block end in JP): check if any officer uses it.
-  4. Graphics text still Japanese (`docs/re/graphics.md` survey): title logo (D5: redraw), map labels
-     (南京楼, 練, 南天連合, 大五丈 on the faction map), menus drawn as tiles.
-  5. Code-built save-slot labels ("######") and fortress header `##5####` (marker): allocate pair codes.
-  6. Attract prologue layout script, save-error panel counts (engine work).
+- **Phase:** 8 (emulator QA) in progress. Phases 6 (translate, reviewed) and 7 (insert/fit, build green) done.
+- **Font:** digraph cells, ~770 of 1,309 free cells used; condensed glyph strips (`font_en.strip`) take spare cells.
+- **Phase 8 text/layout fixes done** (all verified in fresh warps, `work/qa/tour/<scene>/final.png`):
+  notice garbage (imm16 rows 05AB8C/05ABC9/062305 are 8-bit LDA: `n`); save-panel labels (`build.CODE_LABELS`);
+  names split after 3 cells (5-cell label pitch); speech boxes (battle quotes `$81:ECE2`, advisor `$8B:DA66`):
+  no 『』, speaker tags for names > 7 letters (`build.speech_tags`, `glossary.md` short forms, condensed 8-letter
+  names); `Fort n` fortress header; battle tabs + unit-data header read an English class-record copy at file
+  0x7C00 (left-aligned, long names condensed); fleet-command tag 4 px in; zero-width msg codes no longer cut a
+  letter pair (`en.runs`). All hooks: `docs/re/hooks.md`.
+- **Known limits (document in visual-qa brief / polish, not bugs):** a name inserted by `{FFFE}`/`{FFFD}` with an
+  odd letter count ends in a half-blank cell ("Ryuga  Fleet:"): digraph font, needs a VWF to fix. List cursor
+  box overlaps the first letter (5-cell label routine draws from x=0; JP names were centred).
+- **Next (phase 8): graphics text** (D5: translate all; the title LOGO stays Japanese, it has no official English
+  version, D5 keeps it). Tools: `tools/lua/finaldump.lua` (regen `--probe`: VRAM/CGRAM/OAM at the final shot;
+  JP dumps for all 55 scenes in `work/gfx/jp/<scene>/`), `tools/gfx_locate.py SCENE X Y W H` (BG tiles of a
+  screen rect -> LZ block + tile), `tools/gfx.py sheet` (block sheet with grid), decompressed blocks in
+  `work/gfx/blocks/` (from `data/lz_blocks.tsv`). Sources found so far:
+  - LZ 08D6D3 (16-wide layout): 新造戦艦名 (tiles 0x22-0x2B/0x32-0x3B, outlined: fill 2, outline 8, bg 6),
+    攻撃 防御 回避 射程 速力 (3 tiles each at 0x40.., rows 0x40/0x50; fg 8 on bg 2, text rows 3-14).
+  - LZ 0E48FE bottom rows: 艦隊戦画面環境設定 (battle config title); LZ 105339 レベルアップ!!; LZ 166080 艦隊選択.
+  - Prisoner panel labels (体力 指揮 忠誠 レベル ...): NOT LZ: `$81:8B99` composites raw ROM bank `$90`
+    (mask AND at `$90:85A0`, overlay ORA after it, 2 planes) into `$7E:3330`, sent each frame by `$81:90E6`.
+  - Still to locate: side panel 惑星/艦隊 (map screens), faction map labels (LZ 0FC121), production headers,
+    planet/fleet list headers, save/load titles, HQ banner 南京楼軍本陣, prisoner buttons 登用する/処刑する
+    (likely sprites), formation 指揮, title copyright line.
+  Plan: `tools/gfx.py` draws English into block images per `data/gfx.tsv` rows (block, rect, text, style), the
+  build recompresses (must not grow: else relocate) and writes; then cold-boot warps + visual QA.
+- **Then:** full tour regen + visual-qa round 2 (`qa_gate.py`), tick/waive `docs/polish.md` (99 open; release
+  refuses while open), story pass if the skill's release steps need it, `tools/release.py`.
 - **Open bugs:** none reported.
 - **Waiting on the user:** GUI keyboard input in `tools/mesen/Mesen.exe` not hand-tested (headless agent run);
-  scripted input verified. Non-blocking: title logo has no known official English version, so per D5 it gets
-  redrawn in English.
+  scripted input verified.
