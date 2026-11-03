@@ -23,3 +23,5 @@ flagship_speech	32	24	pad	measured	work/qa/stress/flag (flagship_speech: 32 lett
 battle_cmd	80	3	br	guess	deployment prompts (fixed:80) + melee quotes	148000
 attract	248	1	one	measured	work/qa/jp_attract, jp_attract2 (JP layout): one 124-cell stream whose line breaks come from a layout script not found yet, so English keeps the JP line cells: 4 | 8 9 11 13 | 6 9 5 | 8 12 | 5 9 10 | 15 (pages split by |); pad each line with spaces to its cells	0FC029
 battle_orders	80	1	one	guess	melee order labels, 8 fields x 5 cells (10 letters each, pad with spaces), fixed:80 read by LDX #$884A at $8E:85B4	=14884A
+result_enemy	8	1	one	measured	battle result left labels: 4 cells, the count covers the right half of the 4th (write 7 letters) (phase 8 tour battle_result)	=0118DA =0118E6 =0118F2 =011900
+result_ours	10	1	one	measured	battle result right labels: 5 cells, the count covers the right half of the 5th (write 9 letters) (phase 8 tour battle_result)	=01190E =01191C =01192A =01193A

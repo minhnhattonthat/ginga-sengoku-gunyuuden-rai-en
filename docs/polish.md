@@ -135,3 +135,7 @@ Tick each `[x]`: fixed, or `waived: reason`.
 - [ ] 148A6C - "I can't fight any further."
 - [ ] 149118 - "Next time will be different!"
 - [ ] 1485FA - ほめてやるぞ: "Well done, coming this far! I commend you!"
+
+## Phase 8 tour
+- [ ] 0118DA-011900 - battle_result left labels (7 letters) touch the count digits; abbreviations Flagshp/Btlship/Destryr (engine: move the count right)
+- [ ] fleet_list, planet_list - cursor box covers the first letter of the selected name
