@@ -1,2 +1,3 @@
 # SHA-1 of the supported dump, in sha1sum format (`sha1sum -c rom.sha1` works too). One line per file for discs.
-<sha1>  rom/<file>
+# Ginga Sengoku Gunyuuden Rai (Japan).sfc: 2,097,152 bytes, no copier header, CRC32 98f76260, LoROM, header checksum 7C11 valid.
+4b9050e1daeb39952be294e6a9bdcbaf5b8135d3  rom/Ginga Sengoku Gunyuuden Rai (Japan).sfc

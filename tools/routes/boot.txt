@@ -1,0 +1,4 @@
+# Cold boot: Start at frame 550 skips the intro to the character-select screen (~frame 700).
+550 -
+6 start
+300 -
