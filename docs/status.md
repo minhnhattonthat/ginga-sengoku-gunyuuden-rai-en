@@ -16,11 +16,13 @@ Updated at the end of every session. Keep it to what the next session needs; his
   rows cleared. Title logo stays Japanese (D5).
 - **Fixed fields too long as letter pairs** now fall back to condensed cells (`build.english_edits` `squeeze`):
   000CA6 "Great Gojo" (10-byte field).
-- **Known limits (README, visual-qa brief):** odd-length inserted name -> two spaces ("Ryuga  Fleet:"); list cursor
-  covers the first letter; a few abbreviations (Flagshp/Btlship/Destryr, PLNT/FLT, Reinf.).
+- **Known limits (README, visual-qa brief):** odd-length inserted name -> two spaces ("Ryuga  Fleet:"); a few abbreviations (Flagshp/Btlship/Destryr, PLNT/FLT, Reinf.).
 - **Caveats:** LEVEL UP!! (LZ 105339) and "Pick fleet" (LZ 166080) were drawn from the block layout but no tour scene
   reaches them; 165 lint warnings are "budget is a guess" (officer_name, full_name, battle_cmd boxes): those fit in
   every tour shot that shows them, not measured with `tools/stress.py`.
-- **Open bugs:** none reported.
+- **Post-v1.0 (2026-11-04, owner playtest):** label boxes now draw from x = 4 (list cursor box no longer covers the
+  first letter; `tools/patches.py` 5-cell layout). v1.0 zip predates it: rebuild the release before publishing.
+- **Open bugs:** map notice bar showing only "et!" (owner screenshot, Great Gojo game ~85 s after boot); trigger
+  unknown, not reproduced: no script line ends "et!" past a box edge.
 - **Waiting on the user:** publish v1.0 (owner's call); GUI keyboard input in `tools/mesen/Mesen.exe` not hand-tested
   (headless agent run; scripted input verified).

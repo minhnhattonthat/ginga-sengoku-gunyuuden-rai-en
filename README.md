@@ -18,7 +18,7 @@ helps most.
 | Graphics with text (headers, stat labels, buttons, faction map, banners) | Translated; the title logo stays Japanese (no official English logo) |
 | Staff credits | Translated |
 
-Known issues: an odd-length name inserted mid-sentence is followed by two spaces; the fleet/planet list cursor covers the first letter; a few labels are abbreviated. See [Issues](../../issues).
+Known issues: an odd-length name inserted mid-sentence is followed by two spaces; a few labels are abbreviated. See [Issues](../../issues).
 
 ## What's here
 

@@ -37,8 +37,6 @@ Known issues
 ------------
 - A name inserted mid-sentence with an odd number of letters is followed by
   two spaces ("Ryuga  Fleet:"), a limit of the two-letter font cells.
-- In the fleet and planet lists the cursor box covers the first letter of the
-  selected name.
 - Some short labels are abbreviated to fit (Flagshp, Btlship, PLNT, FLT,
   Reinf.).
 

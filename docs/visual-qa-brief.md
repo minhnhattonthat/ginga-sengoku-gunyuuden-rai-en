@@ -35,8 +35,6 @@ Standing non-bugs, `ok`:
 - the title-screen logo stays Japanese by the owner's decision (docs/decisions.md D5);
 - a name inserted mid-sentence with an odd letter count is followed by a blank half cell, so two spaces show
   ("Ryuga  Fleet:"): digraph font limit;
-- a list cursor box overlapping the first letter of the selected name (fleet / planet lists): engine draws the
-  label from x = 0;
 - short labels abbreviated to fit (Flagshp, Btlship, Destryr, PLNT, FLT, Reinf.).
 
 ## Verdicts
