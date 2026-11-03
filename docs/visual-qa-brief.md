@@ -6,7 +6,7 @@ except your one verdict file: no edits to the repo, no git, no subagents.
 ## Inputs (in your dispatch)
 - A chunk file: one `id<TAB>path` line per shot. Read every shot in it; none may be skipped.
 - Your verdict file: `work/qa/verdicts/<chunk>.tsv`.
-- The original ROM's shot of the same scene: `work/qa/warp/<scene>/final.png` (the scene is the folder name in
+- The original ROM's shot of the same scene: `work/gfx/jp/<scene>/final.png` (the scene is the folder name in
   the path), and `glossary.md`.
 
 ## How to look
@@ -31,7 +31,13 @@ The font draws two letters per 12-px cell, so letters are narrow and spacing is 
 Standing non-bugs, `ok`:
 - text still typing out, a box mid-fade or mid-scroll, a cursor caught mid-blink;
 - a map or scene still loading after a warp;
-- anything identical in the original's shot.
+- anything identical in the original's shot;
+- the title-screen logo stays Japanese by the owner's decision (docs/decisions.md D5);
+- a name inserted mid-sentence with an odd letter count is followed by a blank half cell, so two spaces show
+  ("Ryuga  Fleet:"): digraph font limit;
+- a list cursor box overlapping the first letter of the selected name (fleet / planet lists): engine draws the
+  label from x = 0;
+- short labels abbreviated to fit (Flagshp, Btlship, Destryr, PLNT, FLT, Reinf.).
 
 ## Verdicts
 Write your verdict file once you have read every shot, one line per id in the chunk:

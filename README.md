@@ -1,6 +1,6 @@
-# <Game title> English translation
+# Ginga Sengoku Gunyuuden Rai English translation
 
-Unofficial English fan translation of **<Game title>** (<platform>, <publisher>, <year>): the source text and tools
+Unofficial English fan translation of **Ginga Sengoku Gunyuuden Rai** (SNES, Angel, 1996): the source text and tools
 that build the patch.
 
 **Just want to play?** Download the patch from [Releases](../../releases) and follow its README. This repository holds
@@ -13,13 +13,12 @@ helps most.
 
 | Part | Status |
 |---|---|
-| <Dialogue / story> | <Translated> |
-| <Menus, items, skills, system messages> | <Translated> |
-| <Title screen, logos, graphics with text> | <Translated / Left in Japanese> |
-| <Name entry> | <Translated / Japanese kana only> |
-| <Songs, voiced lines, credits roll> | <Left in Japanese> |
+| Story events, openings, endings, battle quotes, advisor dialogue | Translated |
+| Menus, help lines, officer / planet / fleet / ship names, battle and map messages | Translated |
+| Graphics with text (headers, stat labels, buttons, faction map, banners) | Translated; the title logo stays Japanese (no official English logo) |
+| Staff credits | Translated |
 
-Known issues: <none known / see [Issues](../../issues)>.
+Known issues: an odd-length name inserted mid-sentence is followed by two spaces; the fleet/planet list cursor covers the first letter; a few labels are abbreviated. See [Issues](../../issues).
 
 ## What's here
 
@@ -40,11 +39,11 @@ Known issues: <none known / see [Issues](../../issues)>.
 Needs Python 3.12+ and your own dump of the Japanese game.
 
 ```sh
-git clone https://github.com/minhnhattonthat/<repo>
-cd <repo>
-# copy your dump to: rom/<file>
-#   (<size> bytes, SHA-1 <sha1>; the build refuses any other dump, see rom.sha1)
-python -X utf8 tools/build.py                          # -> build/<game>_en.<ext>
+git clone https://github.com/minhnhattonthat/ginga-sengoku-gunyuuden-rai-en
+cd ginga-sengoku-gunyuuden-rai-en
+# copy your dump to: rom/Ginga Sengoku Gunyuuden Rai (Japan).sfc
+#   (2,097,152 bytes, SHA-1 4b9050e1daeb39952be294e6a9bdcbaf5b8135d3; the build refuses any other dump, see rom.sha1)
+python -X utf8 tools/build.py                          # -> build/rai_en.sfc
 python -X utf8 tools/check.py                          # tests + text lint
 ```
 
@@ -56,8 +55,8 @@ If you enjoy this translation, you can support my work on Ko-fi:
 
 ## Licence
 
-Tools and English translation: MIT. The original Japanese text in `script/` is <publisher>'s and is included only so
-the translation can be checked against it. <Game title> is (c) <publisher>; this project is not affiliated with them.
+Tools and English translation: MIT. The original Japanese text in `script/` is Angel's and is included only so
+the translation can be checked against it. Ginga Sengoku Gunyuuden Rai is (c) Angel, Joji Manabe / MediaWorks; this project is not affiliated with them.
 Do not share patched ROMs.
 
 The translation was made with extensive AI assistance (Claude by Anthropic). Corrections are very welcome.

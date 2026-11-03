@@ -137,8 +137,8 @@ Tick each `[x]`: fixed, or `waived: reason`.
 - [x] 1485FA - ほめてやるぞ: "Well done, coming this far! I commend you!" -> fixed ("You made it this far! I commend you!")
 
 ## Phase 8 tour
-- [ ] 0118DA-011900 - battle_result left labels (7 letters) touch the count digits; abbreviations Flagshp/Btlship/Destryr (engine: move the count right)
-- [ ] fleet_list, planet_list - cursor box covers the first letter of the selected name
+- [x] 0118DA-011900 - battle_result left labels (7 letters) touch the count digits; abbreviations Flagshp/Btlship/Destryr (engine: move the count right) -> waived: readable; moving the count column needs a code hook, not worth the risk for v1
+- [x] fleet_list, planet_list - cursor box covers the first letter of the selected name -> waived: engine draws the 5-cell label from x=0; JP names were centred; listed as a known limit in docs/visual-qa-brief.md
 
 ## Story pass (b010-b013)
 - [x] 176EF0 - Tasuke アニキ: "You did it, big bro!" -> fixed
@@ -197,3 +197,13 @@ Tick each `[x]`: fixed, or `waived: reason`.
 - [x] 148050 - 総大将: "Nankinro's commander, Rai Ryuga, is your opponent!" if width allows -> fixed ("Face Nankinro's commander, Rai Ryuga!", one line)
 - [x] 14858E - Gaira: "The Emperor of the great galaxy is ME!" -> fixed ("The great galaxy's{br}Emperor is ME!", the JP's 2 lines)
 - [x] 14829E - "Justice is on my side!" if width allows (was waived at 16 letters) -> waived: still 16 letters; would need a second line
+
+## Story pass re-review (post-fix deltas)
+- [x] 1DDB7A - echo Ranran's "softness" line: "I'm not soft enough to lose again next time!!" -> waived: optional; current line reviewed ok
+- [x] 1DCCCE - かたき alternative wording -> waived: reviewer: current line OK
+- [x] 1D99EA - "Ready to die...?" stronger than 覚悟は良いか -> waived: reviewer: acceptable for the duel
+- [x] 015DD8 - 占領: "we can somehow take it!" -> waived: optional; meaning kept
+- [x] 116FB1 - 必ずや lost; "with my own hands" -> waived: optional; tone kept
+- [x] 01147E - stiff mocking line -> waived: optional
+- [x] 01459A - "overlord material" casual for a formal speaker -> waived: optional
+- [x] 0125BE - add "you" (resentful at the lord) -> waived: optional
