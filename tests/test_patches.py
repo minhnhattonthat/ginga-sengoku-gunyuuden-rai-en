@@ -26,7 +26,8 @@ def test_patches_apply_and_disassemble():
     assert ops(new, patches.NAMECOPY, 12) == [
         'LDY #$0000', 'LDA $000000,x', 'STA $0E00,y', 'CMP #$FFFF', f'BEQ ${(patches.NAMECOPY + 0x1E) & 0xFFFF:04X}',
         'INX', 'INX', 'INY', 'INY', 'CPY #$000A', f'BNE ${(patches.NAMECOPY + 3) & 0xFFFF:04X}', 'LDA #$FFFF']
-    assert ops(new, patches.NAMECOPY + 0x1B, 2) == ['STA $0E00,y', 'RTL']
+    assert ops(new, patches.NAMECOPY + 0x1B, 4) == ['STA $0E00,y', 'SEP #$20', 'STZ $0905', 'RTL']
+    assert ops(new, 0x8BC940, 1) == ['INC $0905']
     assert ops(new, 0x8BC8ED, 2) == [f'JSL ${patches.NAMECOPY:06X}', 'BRA $C938']
     for table, five, fetch, cpy in patches.FAMILIES:
         assert ops(new, fetch, 3) == ['REP #$20', 'LDY #$0000', 'JSL $BC8000']

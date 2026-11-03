@@ -72,11 +72,14 @@ NAMECOPY_CODE = bytes.fromhex(
     'D0EB'       # BNE loop
     'A9FFFF'     # LDA #$FFFF
     '99000E'     # STA $0E00,y
-    '6B')        # done: RTL
+    'E220'       # done: SEP #$20
+    '9C0509'     # STZ $0905     ($C940 INCs it: the tag text starts 4 px in, clear of the frame)
+    '6B')        # RTL
 PATCHES += [
     (NAMECOPY, None, NAMECOPY_CODE, 'fleet-command name tag: copy up to 5 cells'),
     (0x8BC8ED, bytes.fromhex('BF040000C9FFFF'), b'\x22' + ptr24(NAMECOPY) + bytes.fromhex('8045EA'),
      'fleet-command name tag: JSL namecopy / BRA $C938'),
+    (0x8BC940, bytes.fromhex('9C0509'), bytes.fromhex('EE0509'), 'fleet-command name tag: INC $0905 (4-px shift)'),
 ]
 
 # Speech box ($81:ECE2 battle quotes, officer in $094F; $8B:DA66 advisor, officer in $0E01): JP draws the speaker name (3 cells), 『 at
