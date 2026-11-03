@@ -12,4 +12,7 @@ Addresses are for the dump in `rom.sha1` unless a note says otherwise.
 
 | File | Covers | State |
 |---|---|---|
-| <text.md> | <encoding, control codes, pointer tables> | <verified / partly guessed> |
+| [text.md](text.md) | header/map, encoding + font, both string formats, dialogue control codes, 16-bit tables, 24-bit event pointers, text ranges | encoding + dialogue codes verified; ranges and event format partly guessed |
+| [graphics.md](graphics.md) | LZ codec, block list, RLE tilemaps, graphics-text survey, free space | LZ verified; survey partial; free space candidates only |
+
+No earlier fan translation was found (web search 2026-11-03: romhacking.net listings, general search).
