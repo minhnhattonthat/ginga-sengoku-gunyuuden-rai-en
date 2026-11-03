@@ -9,6 +9,7 @@
    "en": "Deploy whom?        Deploy where?       Recall whom?        Is this all right?",
    "max": 80,
    "ptr": [
+    "fixed 070619",
     "fixed 07061C"
    ]
   },
@@ -516,12 +517,23 @@
   },
   {
    "id": "14884A",
-   "fmt": "msg",
-   "jp": "各個撃破 敵将を狙え武将を守れ 撤退  一騎討ち  待機   待機   待機  やるじゃねぇか! だがオレはもっと強くなる 勝負はこの次だ!{end}",
-   "en": "Free FightHit LeaderBodyguard  Retreat     Duel      Wait      Wait      Wait   Not bad! But I'll grow stronger. Next time we settle it!{end}",
-   "max": 144,
+   "fmt": "fixed:80",
+   "jp": "各個撃破 敵将を狙え武将を守れ 撤退  一騎討ち  待機   待機   待機  ",
+   "en": "Free FightHit LeaderBodyguard  Retreat     Duel      Wait      Wait      Wait",
+   "max": 80,
    "ptr": [
-    "rel16 074F2B base 148050"
+    "rel16 074F2B base 148050",
+    "fixed 0705B5"
+   ]
+  },
+  {
+   "id": "14889A",
+   "fmt": "msg",
+   "jp": "やるじゃねぇか! だがオレはもっと強くなる 勝負はこの次だ!{end}",
+   "en": "Not bad! But I'll grow stronger. Next time we settle it!{end}",
+   "max": 64,
+   "ptr": [
+    "fixed 07340F"
    ]
   },
   {
@@ -530,7 +542,9 @@
    "jp": "やるじゃねぇか! だが次はこうはいかねぇぜ!{end}",
    "en": "Not bad! But next time won't go like this!{end}",
    "max": 48,
-   "read_on": true
+   "ptr": [
+    "rel16 074F2F base 14889A"
+   ]
   },
   {
    "id": "14890A",
@@ -538,7 +552,9 @@
    "jp": "この独眼竜,そう簡単に討たれはしねぇぜ!{end}",
    "en": "This One-Eyed Dragon won't fall so easy!{end}",
    "max": 44,
-   "read_on": true
+   "ptr": [
+    "rel16 074F31 base 14889A"
+   ]
   },
   {
    "id": "148936",
@@ -546,7 +562,9 @@
    "jp": "どうやら手加減し過ぎたようだ この次は容赦せんぞ!{end}",
    "en": "Seems I held back too much. No mercy next time!{end}",
    "max": 54,
-   "read_on": true
+   "ptr": [
+    "rel16 074F33 base 14889A"
+   ]
   },
   {
    "id": "14896C",
@@ -554,7 +572,9 @@
    "jp": "わしも落ちぶれたものよ……貴様ごときに勝てぬとは…{end}",
    "en": "I've fallen low... beaten by the likes of you...{end}",
    "max": 54,
-   "read_on": true
+   "ptr": [
+    "rel16 074F35 base 14889A"
+   ]
   },
   {
    "id": "1489A2",
@@ -562,7 +582,9 @@
    "jp": "ちくしょう!おぼえていやがれ!{end}",
    "en": "Damn it! You'll pay for this!{end}",
    "max": 34,
-   "read_on": true
+   "ptr": [
+    "rel16 074F37 base 14889A"
+   ]
   },
   {
    "id": "1489C4",
@@ -570,7 +592,9 @@
    "jp": "やはり武器を取って戦うのはオレの役目じゃないな{end}",
    "en": "Guess fighting with weapons ain't my job.{end}",
    "max": 50,
-   "read_on": true
+   "ptr": [
+    "rel16 074F39 base 14889A"
+   ]
   },
   {
    "id": "1489F6",
@@ -578,7 +602,9 @@
    "jp": "いや〜 さすがはお強いですな ここは引き上げるとしましょう{end}",
    "en": "Well, well, you're strong indeed. I'll withdraw for now.{end}",
    "max": 62,
-   "read_on": true
+   "ptr": [
+    "rel16 074F3B base 14889A"
+   ]
   },
   {
    "id": "148A34",
@@ -586,7 +612,9 @@
    "jp": "やはり私ではかないませんね おとなしく撤退しましょう{end}",
    "en": "I'm no match after all. I'll quietly withdraw.{end}",
    "max": 56,
-   "read_on": true
+   "ptr": [
+    "rel16 074F3D base 14889A"
+   ]
   },
   {
    "id": "148A6C",
@@ -594,7 +622,9 @@
    "jp": "私にはこれ以上戦うことなんて出来ません{end}",
    "en": "I can't fight any more than this.{end}",
    "max": 42,
-   "read_on": true
+   "ptr": [
+    "rel16 074F3F base 14889A"
+   ]
   },
   {
    "id": "148A96",
@@ -602,7 +632,9 @@
    "jp": "今度会ったときはこうはいかへんで!!{end}",
    "en": "Next time ya won't be so lucky!!{end}",
    "max": 40,
-   "read_on": true
+   "ptr": [
+    "rel16 074F41 base 14889A"
+   ]
   },
   {
    "id": "148ABE",
@@ -610,7 +642,9 @@
    "jp": "やるな! だがオレはまだ死ねん!銀河を統一するまではな!{end}",
    "en": "Good! But I can't die till I unify the galaxy!{end}",
    "max": 60,
-   "read_on": true
+   "ptr": [
+    "rel16 074F43 base 14889A"
+   ]
   },
   {
    "id": "148AFA",
@@ -618,7 +652,9 @@
    "jp": "ふっ… この程度で俺に勝ったと思うな!{end}",
    "en": "Heh... Don't think this beats me!{end}",
    "max": 42,
-   "read_on": true
+   "ptr": [
+    "rel16 074F45 base 14889A"
+   ]
   },
   {
    "id": "148B24",
@@ -626,7 +662,9 @@
    "jp": "貴様の首,次にあうときまで預けておくぞ!{end}",
    "en": "Keep your head until we meet again!{end}",
    "max": 44,
-   "read_on": true
+   "ptr": [
+    "rel16 074F47 base 14889A"
+   ]
   },
   {
    "id": "148B50",
@@ -634,7 +672,9 @@
    "jp": "ひけ〜! これ以上の白兵はこちらに不利だ!{end}",
    "en": "Fall back! More melee only hurts us!{end}",
    "max": 46,
-   "read_on": true
+   "ptr": [
+    "rel16 074F49 base 14889A"
+   ]
   },
   {
    "id": "148B7E",
@@ -642,7 +682,9 @@
    "jp": "強い!! このわしが手も足もでんとはな…{end}",
    "en": "So strong!! I'm completely helpless...{end}",
    "max": 44,
-   "read_on": true
+   "ptr": [
+    "rel16 074F4B base 14889A"
+   ]
   },
   {
    "id": "148BAA",
@@ -650,7 +692,9 @@
    "jp": "おのれ! 貴様の名 忘れはせぬぞ!{end}",
    "en": "Curses! I'll not forget your name!{end}",
    "max": 38,
-   "read_on": true
+   "ptr": [
+    "rel16 074F4D base 14889A"
+   ]
   },
   {
    "id": "148BD0",
@@ -658,7 +702,9 @@
    "jp": "ちっ! こうなったら艦隊戦でけりをつけてやる!{end}",
    "en": "Tch! Then we'll settle this in a fleet battle!{end}",
    "max": 50,
-   "read_on": true
+   "ptr": [
+    "rel16 074F4F base 14889A"
+   ]
   },
   {
    "id": "148C02",
@@ -666,7 +712,9 @@
    "jp": "オレより強い奴がいるのか! やはり銀河は広いぜ!{end}",
    "en": "Someone stronger than me? The galaxy's big!{end}",
    "max": 52,
-   "read_on": true
+   "ptr": [
+    "rel16 074F51 base 14889A"
+   ]
   },
   {
    "id": "148C36",
@@ -674,7 +722,9 @@
    "jp": "覚えてなさい! 次に勝つのはあたしなんだから!{end}",
    "en": "Remember this! I'm winning next time!{end}",
    "max": 50,
-   "read_on": true
+   "ptr": [
+    "rel16 074F53 base 14889A"
+   ]
   },
   {
    "id": "148C68",
@@ -682,7 +732,9 @@
    "jp": "そろそろ潮時か……{br}総員撤退!{end}",
    "en": "Time's up... All{br}hands, retreat!{end}",
    "max": 36,
-   "read_on": true
+   "ptr": [
+    "rel16 074F55 base 14889A"
+   ]
   },
   {
    "id": "148C8C",
@@ -690,7 +742,9 @@
    "jp": "ちっ… これまでか!{end}",
    "en": "Tch... This is it!{end}",
    "max": 24,
-   "read_on": true
+   "ptr": [
+    "rel16 074F57 base 14889A"
+   ]
   },
   {
    "id": "148CA4",
@@ -698,7 +752,9 @@
    "jp": "もはやこれまで! 撤退いそげっ〜!{end}",
    "en": "It's over! Retreat, hurry!{end}",
    "max": 38,
-   "read_on": true
+   "ptr": [
+    "rel16 074F59 base 14889A"
+   ]
   },
   {
    "id": "148CCA",
@@ -706,7 +762,9 @@
    "jp": "こっ,こんなところで死ぬわけには参らん!{end}",
    "en": "I-I cannot die in a place like this!{end}",
    "max": 44,
-   "read_on": true
+   "ptr": [
+    "rel16 074F5B base 14889A"
+   ]
   },
   {
    "id": "148CF6",
@@ -714,7 +772,9 @@
    "jp": "貴様… 覚えておれ!{end}",
    "en": "You'll pay for this!{end}",
    "max": 24,
-   "read_on": true
+   "ptr": [
+    "rel16 074F5D base 14889A"
+   ]
   },
   {
    "id": "148D0E",
@@ -722,7 +782,9 @@
    "jp": "よくもこのオレに恥をかかせてくれたな!この借りはいつか返すぞ{end}",
    "en": "How dare you shame me! I'll repay this debt someday!{end}",
    "max": 64,
-   "read_on": true
+   "ptr": [
+    "rel16 074F5F base 14889A"
+   ]
   },
   {
    "id": "148D4E",
@@ -730,7 +792,9 @@
    "jp": "これ以上の長居は無用! さらばだ!{end}",
    "en": "No point lingering! Farewell!{end}",
    "max": 38,
-   "read_on": true
+   "ptr": [
+    "rel16 074F61 base 14889A"
+   ]
   },
   {
    "id": "148D74",
@@ -738,7 +802,9 @@
    "jp": "やはり勝てぬか……{br}やもうえん,撤退する!{end}",
    "en": "So I can't win... No{br}choice. Retreat!{end}",
    "max": 48,
-   "read_on": true
+   "ptr": [
+    "rel16 074F63 base 14889A"
+   ]
   },
   {
    "id": "148DA4",
@@ -746,7 +812,9 @@
    "jp": "今はあなたにかないません しかしいつかあなたを越えて見せる!{end}",
    "en": "I'm no match for you now, but someday I'll surpass you!{end}",
    "max": 64,
-   "read_on": true
+   "ptr": [
+    "rel16 074F65 base 14889A"
+   ]
   },
   {
    "id": "148DE4",
@@ -754,7 +822,9 @@
    "jp": "きょ,今日のところはこれくらいにしておいてやる!{end}",
    "en": "I-I'll let you off with this for today!{end}",
    "max": 52,
-   "read_on": true
+   "ptr": [
+    "rel16 074F67 base 14889A"
+   ]
   },
   {
    "id": "148E18",
@@ -762,7 +832,9 @@
    "jp": "どうやらここまでのようだな・・・{end}",
    "en": "Seems this is the end...{end}",
    "max": 36,
-   "read_on": true
+   "ptr": [
+    "rel16 074F69 base 14889A"
+   ]
   },
   {
    "id": "148E3C",
@@ -770,7 +842,9 @@
    "jp": "おぬしなかなかやるな…敵にしておくのはもったいないぐらいだ!{end}",
    "en": "You're good... It's a shame you're my enemy!{end}",
    "max": 64,
-   "read_on": true
+   "ptr": [
+    "rel16 074F6B base 14889A"
+   ]
   },
   {
    "id": "148E7C",
@@ -778,7 +852,9 @@
    "jp": "こっ,こんなところで死ぬわけには参らん!{end}",
    "en": "I-I cannot die in a place like this!{end}",
    "max": 44,
-   "read_on": true
+   "ptr": [
+    "rel16 074F6D base 14889A"
+   ]
   },
   {
    "id": "148EA8",
@@ -786,7 +862,9 @@
    "jp": "やはり勝てぬか……{br}やもうえん,撤退するぞ!{end}",
    "en": "So I can't win... No{br}choice. We retreat!{end}",
    "max": 50,
-   "read_on": true
+   "ptr": [
+    "rel16 074F6F base 14889A"
+   ]
   },
   {
    "id": "148EDA",
@@ -794,7 +872,9 @@
    "jp": "そう簡単に討たれるほどわしの首は安くないぞ!{end}",
    "en": "My head is not so cheaply taken!{end}",
    "max": 48,
-   "read_on": true
+   "ptr": [
+    "rel16 074F71 base 14889A"
+   ]
   },
   {
    "id": "148F0A",
@@ -802,7 +882,9 @@
    "jp": "ちっ!少し肉が付いちまったようだぜ! 貴様,運が良かったな!{end}",
    "en": "Tch! Guess I've put on some weight! You got lucky!{end}",
    "max": 64,
-   "read_on": true
+   "ptr": [
+    "rel16 074F73 base 14889A"
+   ]
   },
   {
    "id": "148F4A",
@@ -810,7 +892,9 @@
    "jp": "きさまぁ～!この礼はいつかさせてもらうぞ!{end}",
    "en": "Curse you! I'll pay you back someday!{end}",
    "max": 46,
-   "read_on": true
+   "ptr": [
+    "rel16 074F75 base 14889A"
+   ]
   },
   {
    "id": "148F78",
@@ -818,7 +902,9 @@
    "jp": "私とてそれ程武芸に劣っているわけではないのだがな…{end}",
    "en": "I'm not so poor at the martial arts, yet...{end}",
    "max": 54,
-   "read_on": true
+   "ptr": [
+    "rel16 074F77 base 14889A"
+   ]
   },
   {
    "id": "148FAE",
@@ -826,7 +912,9 @@
    "jp": "なかなかやるね 次にあうときを楽しみにしているよ!{end}",
    "en": "Not bad. I look forward to our next meeting!{end}",
    "max": 54,
-   "read_on": true
+   "ptr": [
+    "rel16 074F79 base 14889A"
+   ]
   },
   {
    "id": "148FE4",
@@ -834,7 +922,9 @@
    "jp": "老いたものだ… 昔ならおぬしになど遅れを取らなかったのもを…{end}",
    "en": "I've grown old... Once, I'd never have lost to you...{end}",
    "max": 64,
-   "read_on": true
+   "ptr": [
+    "rel16 074F7B base 14889A"
+   ]
   },
   {
    "id": "149024",
@@ -842,7 +932,9 @@
    "jp": "ぬぅぅ…この白鬼をここまで追いつめるとは… 勝負はこの次だ!{end}",
    "en": "Nngh... To corner Hakki this far... Next time, we settle it!{end}",
    "max": 64,
-   "read_on": true
+   "ptr": [
+    "rel16 074F7D base 14889A"
+   ]
   },
   {
    "id": "149064",
@@ -850,7 +942,9 @@
    "jp": "やはり勝てぬか……{br}しかたない,撤退する!{end}",
    "en": "So I can't win... Oh{br}well. Retreat!{end}",
    "max": 48,
-   "read_on": true
+   "ptr": [
+    "rel16 074F7F base 14889A"
+   ]
   },
   {
    "id": "149094",
@@ -858,7 +952,9 @@
    "jp": "おぼえておけ!{br}貴様の首、必ずこのわしがとってやる!{end}",
    "en": "Mark my words! I will take your head{br}myself!{end}",
    "max": 58,
-   "read_on": true
+   "ptr": [
+    "rel16 074F81 base 14889A"
+   ]
   },
   {
    "id": "1490CE",
@@ -866,7 +962,9 @@
    "jp": "どうやらここまでのようだな…{end}",
    "en": "Seems this is the end...{end}",
    "max": 32,
-   "read_on": true
+   "ptr": [
+    "rel16 074F83 base 14889A"
+   ]
   },
   {
    "id": "1490EE",
@@ -874,7 +972,9 @@
    "jp": "こっ,このオレがここまでやられるとは…{end}",
    "en": "T-To think I'd be beaten this badly...{end}",
    "max": 42,
-   "read_on": true
+   "ptr": [
+    "rel16 074F85 base 14889A"
+   ]
   },
   {
    "id": "149118",
@@ -882,7 +982,9 @@
    "jp": "なかなかやるな!だが次はこうはいかんぞ!{end}",
    "en": "Not bad! It won't be so next time!{end}",
    "max": 44,
-   "read_on": true
+   "ptr": [
+    "rel16 074F87 base 14889A"
+   ]
   },
   {
    "id": "149144",
@@ -890,7 +992,9 @@
    "jp": "もっ,者共,ひけっ,ひけっ〜!!{end}",
    "en": "M-Men, fall back, fall back!!{end}",
    "max": 36,
-   "read_on": true
+   "ptr": [
+    "rel16 074F89 base 14889A"
+   ]
   },
   {
    "id": "149168",
@@ -898,7 +1002,9 @@
    "jp": "勝負がついたわけではないぞ! それがしの命あるうちはな!{end}",
    "en": "This isn't over! Not while I still live!{end}",
    "max": 60,
-   "read_on": true
+   "ptr": [
+    "rel16 074F8B base 14889A"
+   ]
   },
   {
    "id": "1491A4",
@@ -906,7 +1012,9 @@
    "jp": "この勝負、あずけておくぞ!{end}",
    "en": "We'll settle this later!{end}",
    "max": 30,
-   "read_on": true
+   "ptr": [
+    "rel16 074F8D base 14889A"
+   ]
   },
   {
    "id": "1491C2",
@@ -914,7 +1022,9 @@
    "jp": "この借りはいつか返す…必ずな…{end}",
    "en": "I'll repay this... I swear...{end}",
    "max": 34,
-   "read_on": true
+   "ptr": [
+    "rel16 074F8F base 14889A"
+   ]
   }
  ]
 }

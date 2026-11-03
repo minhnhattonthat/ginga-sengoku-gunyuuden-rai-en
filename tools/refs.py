@@ -24,6 +24,12 @@ TALK_LEN = 80          # entries per talk table (one per officer)
 QUOTE_BASE = 0x148050  # $A9:8050: LDX #$8050 / LDA #$A9 at $8E:9B98 and $8E:9C80
 QUOTE_TABLE = 0x074EC7  # $8E:CEC7: word offsets from QUOTE_BASE, indexed by officer ($1B60)
 QUOTE_LEN = 52
+# Melee retreat quotes: word offsets right after the quote table, from LDY #$889A / LDA #$A9 at $8E:B40E (the
+# 50th word, 0x94A, is the block end); 8 x 5-cell melee order labels sit before the base: LDX #$884A at $8E:85B4
+RETREAT_BASE = 0x14889A
+RETREAT_TABLE = QUOTE_TABLE + 2 * QUOTE_LEN
+RETREAT_LEN = 49
+MELEE_ORDERS = 0x14884A
 PROMPTS = 0x148000     # $A9:8000: 40-cell fixed field drawn by $8E:8618 (LDX #$8000 / LDA #$A9, $1AF0 = $28)
 # Battle quote lists, bank $82: an index of words -> per-officer lists of [opponent id | FE][word ptr] ... FF
 QUOTE_LISTS = [(0x013098, 50), (0x0132C9, 50)]  # the second index sits at an odd offset
@@ -149,5 +155,11 @@ def collect(rom):
     out.append(('fixed', 0x071B99, QUOTE_BASE, 'msg', '$8E:9B98 + $8E:9C80'))
     for i in range(QUOTE_LEN):
         p = QUOTE_TABLE + 2 * i
-        out.append(('rel16', p, QUOTE_BASE + w(rom, p), 'msg', QUOTE_BASE))
+        t = QUOTE_BASE + w(rom, p)
+        out.append(('rel16', p, t, None if t == MELEE_ORDERS else 'msg', QUOTE_BASE))  # entry 50: the labels
+    out.append(('fixed', 0x0705B5, MELEE_ORDERS, 'fixed:80', 'imm $8E:85B4 verified=y'))
+    out.append(('fixed', 0x07340F, RETREAT_BASE, 'msg', 'imm $8E:B40E verified=y'))
+    for i in range(RETREAT_LEN):
+        p = RETREAT_TABLE + 2 * i
+        out.append(('rel16', p, RETREAT_BASE + w(rom, p), 'msg', RETREAT_BASE))
     return out

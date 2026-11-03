@@ -47,9 +47,12 @@ Other command numbers are ignored by the renderer. Typical message: `師真{c5}�
 | p24 + rel16 | `$BA:9925` | talk (recruit/diplomacy) texts: 8 pairs (cell map, table); table = 24-bit base + 80 word offsets (one per officer). Type 2 (`$BA:9E27`, base 0x1D9BA4 `・・・`) offsets land mid-string in type 3: a stale table, kept as tails |
 | rel16 | `$8E:CEC7` | battle-start quotes: 52 offsets from `$A9:8050` (base loaded by `LDX #$8050 / LDA #$A9`, `$8E:9B98`) |
 | fixed | `refs.FIXED` | base + index * stride: faction names `$8C60`/`$8C88` (10 bytes), unit labels `$AC91` (8), column labels `$8C:A3D8`, deployment prompts `$A9:8000` (40 cells) |
-| fixed | `data/imm16.tsv` | code immediates `LDX/LDY/LDA #$hhll` (`tools/find_imm16.py`); `verified=y` = one routine loads consecutive strings, `n` = may be a constant. The build never rewrites them, so their strings stay in place |
+| fixed | `data/imm16.tsv` | code immediates `LDX/LDY/LDA #$hhll` (`tools/find_imm16.py`); `verified=y` = one routine loads consecutive strings: the build rewrites the operand when the string moves in its bank. `n` = may be a constant: the en build ignores them (checked in phase 7 for the names block: `$89:A30B/A317/A386` are WRAM `MVN` sources, `$8C:916C` a code address, `$8E:835C` a bank-`$A9` pointer) |
+| rel16 + imm | `$8E:CF2F` | melee retreat quotes: 49 offsets (right after the quote table) from `LDY #$889A / LDA #$A9` at `$8E:B40E`; the 50th word (0x94A) is the block end. Melee order labels (8 x 5 cells, fixed:80) at `$A9:884A`: `LDX #$884A` at `$8E:85B4`; quote-table entry 50 also points there. Found in phase 7 (the extractor had read the labels and the first retreat quote as one msg string) |
 
-Tails: refs that point inside a string (shared name tails in bank 0, the stale talk table). The build keeps them only while the host string is unchanged.
+Tails: refs that point inside a string (shared name tails in bank 0, the stale talk table). The build keeps them while the host string is unchanged; for an edited host it points p16/p24 tails at the host's `tail_en` (the tail's own English, stored right after the host), stale-talk rel16 tails at the host start, and leaves unverified immediates alone.
+
+Relocation (`build.layout`): a block that outgrows its room keeps the strings that fit and places each remaining unit (a string plus the `read_on` strings after it; a block with rel16 refs is one unit) in free space: `build.FREE` FF runs, then rooms other blocks of the bank left over; units reached only by p24 may go to banks `$BD-$BF` (`build.FAR`).
 
 ## Extraction (`tools/extract.py` -> `script/<block>.json`)
 

@@ -44,7 +44,8 @@ def rows(name):
 FREE = [(0x006812, 0x007FB0), (0x017170, 0x018000), (0x01E562, 0x020000), (0x0407FE, 0x048000),
         (0x04ACCA, 0x050000), (0x05322F, 0x058000), (0x05DD10, 0x060000), (0x0669CD, 0x068000),
         (0x06ED2A, 0x070000), (0x1A22F0, 0x1A8000), (0x1D3071, 0x1D8000)]
-STALE_TALK = 0x1D9BA4  # base of talk type 2 ($BA:9E27), a stale table landing mid-string (docs/re/text.md)
+FAR = [(0x1E8000, 0x200000)]  # banks $BD-$BF (all FF): blocks reached only by 24-bit pointers
+STALE_TALK =0x1D9BA4  # base of talk type 2 ($BA:9E27), a stale table landing mid-string (docs/re/text.md)
 
 
 class Rom:
@@ -86,6 +87,54 @@ def repack_rle(rom, edits=None):
         rom.write(off, packed, f'rle:{off:06X}')
 
 
+def units(b):
+    """Entry index runs that must stay together: a read_on string follows the one before it; a block with rel16
+    refs (offsets from a base string) stays whole."""
+    if any(r[0] == 'rel16' for e in b['entries'] for r in e['refs'] + e['tails']):
+        return [list(range(len(b['entries'])))]
+    out = []
+    for i, e in enumerate(b['entries']):
+        if out and e['read_on']:
+            out[-1].append(i)
+        else:
+            out.append([i])
+    return out
+
+
+def place(bank, size, p24, free, far, orig):
+    """Room for a unit that no longer fits its block: a free range in its bank (p16 refs and imm16 operands are
+    16-bit), else, when the unit is reached only by p24 (or rel16 from its own base), a far bank. -> start or None.
+    Ranges are [start, end, must be FF]; the chosen one shrinks."""
+    for r in [r for r in free if r[0] >> 15 == bank] + (far if p24 else []):
+        a = r[0] if r[0] >> 15 == (r[0] + size - 1) >> 15 else (r[0] | 0x7FFF) + 1  # don't cross a bank
+        if r[1] - a >= size:
+            assert not r[2] or set(orig[a:a + size]) == {0xFF}, f'free space {a:06X} is not FF'
+            r[0] = a + size
+            return a
+    return None
+
+
+def layout(b, sizes, free, far, orig):
+    """-> [(address, entry indexes)]: units in the block's own room in order while they fit, the rest each
+    placed in free space. The room left over joins `free` for later blocks of the bank."""
+    out, pos, us = [], b['start'], units(b)
+    while us and pos + sum(sizes[i] for i in us[0]) <= b['end']:
+        out.append((pos, us[0]))
+        pos += sum(sizes[i] for i in us.pop(0))
+    if b['end'] - pos > 0:
+        free.append([pos, b['end'], False])
+    for u in us:
+        es = [b['entries'][i] for i in u]
+        base = {e['off'] for e in es}
+        p24 = all(r[0] == 'p24' or r[0] == 'rel16' and r[2] in base for e in es for r in e['refs'] + e['tails'])
+        a = place(b['start'] >> 15, sum(sizes[i] for i in u), p24, free, far, orig)
+        if a is None:
+            raise ValueError(f'text {es[0]["off"]:06X}: {sum(sizes[i] for i in u)} bytes, no free space in '
+                             f'bank {b["start"] >> 15:02X}' + ('' if p24 else ' (p16/fixed refs keep it there)'))
+        out.append((a, u))
+    return out
+
+
 def tail_delta(e, kind, x, d, moves):
     """New offset of a tail ref into edited host e: its English tail (tail_en), 0 for the stale talk table,
     None to leave an unverified immediate alone; raises for anything else."""
@@ -103,7 +152,8 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False, moves=None):
     edits: {string offset: new jp-style text, or encoded bytes}; None = repack every block unchanged. Returns the
     blocks repacked. tails_ok (marker build): a string with tails may change if its length stays the same.
     moves: {(host offset, JP tail offset): offset of its English tail in the host's new bytes} (english_edits).
-    A block that outgrows its room moves to free space in its bank (FREE).
+    A block that outgrows its room keeps what fits and splits the rest into free space (layout: FREE, rooms
+    other blocks left over, FAR banks for p24-only units).
 
     Refs: p16/p24 get the string's new address, rel16 the new distance from its (moved) base string, tails the
     host's new address + offset (host unchanged, else tail_delta). Fixed refs (code immediates, base + index forms)
@@ -112,11 +162,11 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False, moves=None):
     moves = moves or {}
     if edits is not None:
         blocks = [b for b in blocks if any(b['start'] <= s < b['end'] for s in edits)]
-    free = [[a + 0x10, z] for a, z in FREE]  # margin: a run may start with the FF end code of real data
+    free = [[a + 0x10, z, True] for a, z in FREE]  # margin: a run may start with the FF end code of real data
+    far = [[a, z, True] for a, z in FAR]
     for b in blocks:
-        new, blob, changed = {}, bytearray(), set()
+        new, datas, changed = {}, [], set()
         for e in b['entries']:
-            new[e['off']] = len(blob)
             text = (edits or {}).get(e['off'])
             if isinstance(text, bytes):  # already encoded (English, marker), prefix included
                 data = text
@@ -129,17 +179,12 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False, moves=None):
                 changed.add(e['off'])
                 for kind, _, x, d in e['tails']:
                     tail_delta(e, kind, x, d, moves)
-            blob += data
-        start = b['start']
-        if len(blob) > b['end'] - b['start']:  # move the block to free space in its bank (refs must be p16/p24/rel16)
-            r = next((r for r in free if r[0] >> 15 == start >> 15 and r[1] - r[0] >= len(blob)), None)
-            if not r:
-                raise ValueError(f'text block {b["start"]:06X}-{b["end"]:06X}: {len(blob)} bytes > '
-                                 f'{b["end"] - b["start"]}, no free space in its bank')
-            start, r[0] = r[0], r[0] + len(blob)
-            assert set(rom.orig[start:r[0]]) == {0xFF}, f'free space {start:06X} is not FF'
-        rom.write(start, bytes(blob), f'text:{b["start"]:06X}')
-        new = {k: start + v for k, v in new.items()}
+            datas.append(data)
+        for a, u in layout(b, [len(d) for d in datas], free, far, rom.orig):
+            rom.write(a, b''.join(datas[i] for i in u), f'text:{b["start"]:06X}')
+            for i in u:
+                new[b['entries'][i]['off']] = a
+                a += len(datas[i])
         for e in b['entries']:
             for kind, slot, x, *delta in e['refs'] + e['tails']:
                 d = delta[0] if delta else 0
@@ -150,10 +195,12 @@ def repack_text(rom, edits=None, tails_ok=False, loose=False, moves=None):
                 t = new[e['off']] + d
                 if kind == 'fixed':
                     if loose and 'verified=n' in str(x):
-                        continue  # stress build: unverified immediates are probably constants
-                    if t != e['off'] + (delta[0] if delta else 0):
+                        continue  # unverified immediates are probably constants (docs/re/text.md §imm16)
+                    if str(x).startswith('imm ') and 'verified=y' in str(x) and not (t ^ e['off']) & ~0x7FFF:
+                        rom.write(slot, (0x8000 | t & 0x7FFF).to_bytes(2, 'little'), f'imm:{slot:06X}')
+                    elif t != e['off'] + (delta[0] if delta else 0):
                         raise ValueError(f'text {e["off"]:06X}: moved, but code at {slot:06X} holds it fixed')
-                elif (t ^ b['start']) & ~0x7FFF:
+                elif kind != 'p24' and (t ^ (new[x] if kind == 'rel16' else b['start'])) & ~0x7FFF:
                     raise ValueError(f'text {e["off"]:06X}: string left its bank')
                 elif kind == 'p16':
                     rom.write(slot, (0x8000 | t & 0x7FFF).to_bytes(2, 'little'), f'ptr:{slot:06X}')
@@ -240,7 +287,7 @@ def build(repack_all=False, edits=None, mode=None, qa=None):
     repack_lz(rom, None if repack_all else edits.get('lz', {}))
     repack_rle(rom, None if repack_all else edits.get('rle', {}))
     blocks = repack_text(rom, None if repack_all else edits.get('text', {}), tails_ok=mode == 'marker',
-                         loose=mode == 'marker' and bool(qa), moves=moves if mode else None)
+                         loose=mode == 'en' or mode == 'marker' and bool(qa), moves=moves if mode else None)
     fixed, _ = snes_checksum(rom.buf)
     for off in range(0x7FDC, 0x7FE0):
         rom.write(off, fixed[off:off + 1], 'checksum')

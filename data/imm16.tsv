@@ -1,6 +1,6 @@
 # Code immediates (LDX/LDY/LDA #$hhll) that load a text address, from tools/find_imm16.py.
 # operand offset	target	code	verified (y = one routine loads consecutive strings; n = may be a constant)
-# The build never rewrites these: their strings stay in place (fixed refs) until phase 7 verifies them.
+# The build rewrites y operands when their string moves in its bank; the en build ignores n rows (docs/re/text.md).
 000804	016B00	$80:8804	n
 002032	0135EA	$80:A032	n
 002198	012240	$80:A198	n
